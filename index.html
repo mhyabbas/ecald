@@ -30,16 +30,17 @@
 
 	<!-- Bootstrap core JavaScript -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js" async></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
 	<!-- include the web player -->
 	<script src="https://unpkg.com/spiritjs/dist/spirit.min.js"></script>
 
 	<script>
-		spirit.loadAnimation({ path: 'animation/animation.json' }).then(
-			({ Quiz }) => {
-				Quiz.play().repeat(-1).repeatDelay(1)
-			}
-		)
+		spirit.loadAnimation({
+			autoPlay: true,
+			loop: true,
+			delay: 2,
+			path: 'animation/animation.json'
+		})
 	</script>
-	</body>
-	</html>
+</body>
+</html>
