@@ -51,9 +51,9 @@
 	<script>
 		spirit.loadAnimation({ path: 'animation/animation.json' }).then(
 			({ Quiz, Awards, CCR }) => {
-				Quiz.yoyo(true).repeat(-1).repeatDelay(1)
-				Awards.play().yoyo(true).repeat(-1).repeatDelay(1)
-				CCR.play().yoyo(true).repeat(-1).repeatDelay(1)
+				Quiz.repeat(-1).repeatDelay(1)
+				Awards.play().repeat(-1).repeatDelay(1)
+				CCR.play().repeat(-1).repeatDelay(1)
 			}
 		)
 	</script>
