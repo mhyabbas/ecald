@@ -49,13 +49,11 @@
 	<script src="https://unpkg.com/spiritjs/dist/spirit.min.js"></script>
 
 	<script>
-		spirit.loadAnimation({ path: 'animation/animation.json' }).then(
-			({ Quiz, Awards, CCR }) => {
-				Quiz.repeat(-1).repeatDelay(1)
-				Awards.play().repeat(-1).repeatDelay(1)
-				CCR.play().repeat(-1).repeatDelay(1)
-			}
-		)
+		spirit.loadAnimation({
+			autoPlay: true,
+			path: 'animation/quiz.json',
+		})
 	</script>
+
 </body>
 </html>
