@@ -1,0 +1,319 @@
+/*Base card*/
+
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	margin: 10px;
+	width: 100%;
+	max-width: 400px;
+	background: white;
+	border-radius: 10px;
+	box-shadow: 0 3px 5px rgba(0,0,0,.15);
+}
+
+.card .thumbnail {
+	position: relative;
+	width: 100%;
+	padding-top: 63.5%;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	overflow: hidden;
+}
+
+.card .thumbnail img, .card .thumbnail .plyr {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.card .content {
+	flex: 1;
+	padding: 20px 30px;
+}
+
+.card .content h3 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: #334154;
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.card .content h4 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.card .content p {
+	color: #576784;
+	font-size: 14px;
+}
+
+/*Base card with forward arrow button*/
+
+.card .content .btn.arrow {
+	display: flex;
+	margin-left: auto;
+}
+
+/*Base card with tag and heading*/
+
+.card .content .tag {
+	margin-top: 10px;
+}
+
+.card .content h4 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: #334154;
+	font-size: 20px;
+}
+
+/*Base card with horizontal layout*/
+
+.card.horizontal {
+	border-radius: inherit;
+	box-shadow: inherit;
+}
+
+.card.horizontal .thumbnail {
+	padding-top: 0;
+	border-top-right-radius: inherit;
+	border-top-left-radius: inherit;
+}
+
+.card.horizontal .thumbnail .plyr {
+	position: relative;
+}
+
+.card.horizontal .content {
+	padding: inherit;
+}
+
+.card.horizontal .content h3 {
+	font-size: 28px;
+}
+
+.card.horizontal .content .btn {
+	display: flex;
+	padding: 10px;
+}
+
+/*Colour cards*/ 
+
+.card.colour.blue {
+	background-color: #629FC3;
+}
+
+.card.colour.teal {
+	background-color: #75A2A7;
+}
+
+.card.colour.orange {
+	background-color: #E48E5E;
+}
+
+.card.colour .curve {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.card.colour.blue .curve {
+	fill: #629FC3;
+}
+
+.card.colour.teal .curve {
+	fill: #75A2A7;
+}
+
+.card.colour.orange .curve {
+	fill: #E48E5E;
+}
+
+.card.colour .thumbnail h3 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 48%;
+	color: white;
+	font-size: 20px;
+	font-weight: 500;
+	text-align: center;
+}
+
+.card.colour .content {
+	padding: 0 30px 20px;
+}
+
+.card.colour .content h3 {
+	color: white;
+	font-size: 28px;
+}
+
+.card.colour .content p {
+	color: white;
+	font-size: 16px;
+}
+
+.card.colour .content .btn {
+	display: flex;
+	padding: 10px;
+}
+
+.card.colour .footer {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 5px 0;
+	background-color: rgba(0,0,0,.2);
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	overflow: hidden;
+}
+
+.card.colour .footer p {
+	color: white;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.card.colour .footer .btn.arrow {
+	position: absolute;
+	right: 15px;
+}
+
+/*Colour cards - alternate version*/
+
+.card.colour.alternate .content p {
+	font-size: 17px;
+}
+
+/*Icon cards*/
+
+.card.icon .thumbnail {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+	height: 140px;
+}
+
+.card.icon .thumbnail img {
+	position: relative;
+	width: 90px;
+	height: 90px;
+}
+
+.card.icon .content {
+	padding: 0 30px 20px;
+}
+
+/*Event cards*/
+
+.card.event .content {
+    flex: none;
+}
+
+.card.event .content h3 {
+	color: #8F5EA7;
+}
+
+.card.event .detail {
+	border-bottom: 1px solid #D5D5D5;
+}
+
+.card.event .detail p {
+	display: flex;
+	align-items: center;
+}
+
+.card.event .detail i {
+	margin-right: 10px;
+}
+
+.card.event .footer {
+	padding: 0 30px 20px;
+}
+
+.card.event .footer .tag {
+	margin: 3px;
+}
+
+@media all and (min-width: 800px) {
+
+	/*Base card*/
+
+	.cards {
+		justify-content: flex-start;
+	}
+
+	.card {
+		flex: 0 1 45%;
+	}
+
+	/*Base cards - horizontal layout*/
+
+	.card.horizontal {
+		flex-direction: row;
+		flex: none;
+		max-width: inherit;
+		margin: inherit;
+	}
+
+	.card.horizontal div {
+		flex: 1 1 50%;
+	}
+
+	.card.horizontal .thumbnail .plyr {
+		height: inherit;
+	}
+
+	.card.horizontal .content {
+		padding: 0 30px 20px;
+	}
+
+	.card.horizontal .content h3 {
+		font-size: 36px;
+	}
+
+	.card.horizontal .content p {
+		font-size: 18px;
+	}
+
+	.card.horizontal .content .btn {
+		display: inline-flex;
+		padding: 10px 40px;
+	}
+
+}
+
+@media all and (min-width: 1200px) {
+
+	/*Base card*/
+
+	.card {
+		flex: 0 1 30%;
+	}
+
+	/*Colour card*/
+
+	.card.colour .content h3 {
+		font-size: 34px;
+	}
+
+}

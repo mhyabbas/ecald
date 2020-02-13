@@ -1,0 +1,66 @@
+@import url('css/buttons.css');
+@import url('css/navigation.css');
+@import url('css/breadcrumb.css');
+@import url('css/pagination.css');
+@import url('css/tags.css');
+@import url('css/card.css');
+@import url('css/footer.css');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 2% 15%;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Zilla Slab', serif;
+}
+
+h1, h2 {
+    border-bottom: 1px solid #ccc;
+}
+
+a {
+    color: #8F5EA7;
+}
+
+code {
+    display: inline-block;
+    padding: 10px;
+    background: lemonchiffon;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+li code {
+    display: block;
+    margin: 10px 0;
+}
+
+.indented {
+    display: block;
+    margin-left: 20px;
+}
+
+.bg-light {
+    margin: 20px 0;
+    padding: 20px;
+    background: #F6F9FC;
+}
+
+.bg-dark {
+    margin: 20px 0;
+    padding: 20px;
+    background: #8F5EA7;
+}
+
+.text-light, .text-light a {
+    color: white;
+}
