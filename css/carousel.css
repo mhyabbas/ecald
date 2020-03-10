@@ -1,0 +1,44 @@
+.carousel {
+	width: 100%;
+	max-width: 560px;
+}
+
+.carousel .card {
+	flex: inherit;
+	max-width: inherit;
+	margin: inherit;
+	background: #576784;
+}
+
+.carousel .card .thumbnail {
+	padding-top: 56.25%;
+}
+
+.carousel .card .content p {
+	color: white;
+	font-size: 20px;
+}
+
+.carousel .slick-dots {
+	bottom: -40px;
+}
+
+.carousel .slick-dots li button::before {
+	font-size: 10px;
+}
+
+.carousel .slick-arrow {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+
+.carousel .slick-arrow.prev {
+    left: -50px;
+}
+
+.carousel .slick-arrow.next {
+    right: -50px;
+}

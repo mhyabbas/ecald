@@ -1,0 +1,49 @@
+.statistics {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.statistic {
+	margin: 10px;
+	padding: 30px;
+	width: 100%;
+	max-width: 400px;
+	border: 1px solid white;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.statistic i {
+	margin-bottom: 10px;
+	color: white;
+	font-size: 50px;
+}
+
+.statistic h3 {
+	margin-bottom: 10px;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 60px;
+	font-weight: 700;
+}
+
+.statistic p {
+	margin-top: 0;
+	color: white;
+	font-family: 'Zilla Slab', serif;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+@media all and (min-width: 800px) {
+	.statistic {
+		flex: 0 1 45%;
+	}
+}
+
+@media all and (min-width: 1200px) {
+	.statistic {
+		flex: 0 1 30%;
+	}
+}

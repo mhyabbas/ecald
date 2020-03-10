@@ -1,0 +1,122 @@
+/*3-wide layout*/
+
+.listing {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.spotlight {
+	display: flex;
+	flex-direction: column;
+	margin: 10px;
+	width: 100%;
+	max-width: 400px;
+	background: white;
+	border-radius: 10px;
+	box-shadow: 0 3px 5px rgba(0,0,0,.15);
+}
+
+.spotlight .thumbnail {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+	height: 140px;
+}
+
+.spotlight .thumbnail img {
+	position: relative;
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+}
+
+.spotlight .content {
+	flex: 1;
+	padding: 0 30px 20px;
+	text-align: center;
+}
+
+.spotlight .content h3 {
+	margin-bottom: 10px;
+	color: #334154;
+	font-size: 22px;
+	font-weight: 500;
+}
+
+.spotlight .content p {
+	color: #334154;
+	font-size: 14px;
+}
+
+/*2-wide layout with sidebar*/
+
+.two-wide {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.two-wide .spotlight {
+	flex-direction: row;
+	box-shadow: inherit;
+}
+
+.two-wide .spotlight .thumbnail {
+	align-items: inherit;
+	height: inherit;
+}
+
+
+.two-wide .spotlight .content {
+	text-align: inherit;
+}
+
+.two-wide .spotlight .content h3 {
+	color: #8F5EA7;
+}
+
+@media all and (min-width: 800px) {
+
+	.listing {
+		justify-content: flex-start;
+	}
+
+	.spotlight {
+		flex: 0 1 45%;
+	}
+
+	.spotlight .content h3 {
+		font-size: 24px;
+	}
+
+	/*2-wide layout with sidebar*/
+	.two-wide {
+		justify-content: flex-start;
+		align-content: flex-start;
+		flex: 2 1 63%;
+	}
+
+	.two-wide .spotlight {
+		flex: inherit;
+	}
+
+	.listing .sidebar {
+		flex: 1 1 30%;
+	}
+
+}
+
+@media all and (min-width: 1200px) {
+
+	.spotlight {
+		flex: 0 1 30%;
+	}
+
+	/*2-wide layout with sidebar*/
+	.two-wide .spotlight {
+		flex: 0 1 45%;
+	}
+
+}

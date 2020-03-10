@@ -40,7 +40,6 @@
 }
 
 .card .content h3 {
-	margin-top: 10px;
 	margin-bottom: 10px;
 	color: #334154;
 	font-size: 24px;
@@ -54,7 +53,7 @@
 }
 
 .card .content p {
-	color: #576784;
+	color: #334154;
 	font-size: 14px;
 }
 
@@ -68,11 +67,10 @@
 /*Base card with tag and heading*/
 
 .card .content .tag {
-	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .card .content h4 {
-	margin-top: 10px;
 	margin-bottom: 10px;
 	color: #334154;
 	font-size: 20px;

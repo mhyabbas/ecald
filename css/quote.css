@@ -1,0 +1,60 @@
+.quote {
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 580px;
+}
+
+.quote:after, .quote:before {
+	position: absolute;
+	right: 30px;
+	bottom: -30px;
+	border-bottom: 30px solid transparent;
+	border-right: 30px solid white;
+	content: "";
+}
+
+.quote:before {
+	right: 28px;
+	border-right: 30px solid rgba(0,0,0,.05);
+	bottom: -30px;
+}
+
+.speech {
+	padding: 30px;
+	background: white;
+	border-radius: 10px;
+	box-shadow: 0 3px 5px rgba(0,0,0,.15);
+}
+
+.speech.slick-slider {
+	display: flex;
+	justify-content: center;
+}
+
+.speech.slick-dotted.slick-slider {
+	margin-bottom: 0;
+}
+
+.speech .slick-dots {
+	bottom: -50px;
+}
+
+.speech .slick-dots li button::before {
+	font-size: 10px;
+}
+
+.speech svg {
+	width: 49px;
+	height: 46px;
+	fill: #3985B2;
+}
+
+.speech h3 {
+	color: #3985B2;
+	font-weight: 400;
+}
+
+.speech p {
+	color: #334154;
+}

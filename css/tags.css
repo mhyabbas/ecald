@@ -8,6 +8,13 @@
 	color: #8F5EA7;
 	text-decoration: none;
 	font-size: 14px;
+	transition: all .4s;
+}
+
+.tag:hover {
+	color: white;
+	background-color: #334154;
+	text-decoration: underline;
 }
 
 .tag.small {

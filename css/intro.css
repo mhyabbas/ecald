@@ -1,0 +1,27 @@
+.intro {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.intro h2 {
+	border-bottom: inherit;
+}
+
+.intro .btn {
+	display: flex;
+}
+
+@media all and (min-width: 600px) {
+    .intro .btn {
+		display: inline-flex;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .intro {
+        width: 750px;
+    }
+}

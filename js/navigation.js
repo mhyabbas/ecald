@@ -1,11 +1,12 @@
 $(function() {
-	$(".toggle").on("click", function() {
+	$(".toggle a").on("click", function(e) {
+		e.preventDefault();
 		if ($(".item").hasClass("active")) {
 			$(".item").removeClass("active");
-			$(this).find("a").html("<i class='material-icons'>menu</i> <span>Menu</span>");
+			$(this).html("<i class='material-icons'>menu</i> <span>Menu</span>");
 		} else {
 			$(".item").addClass("active");
-			$(this).find("a").html("<i class='material-icons'>close</i> <span>Menu</span>");
+			$(this).html("<i class='material-icons'>close</i> <span>Menu</span>");
 		}
 	});
 });

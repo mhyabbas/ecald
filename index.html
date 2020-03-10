@@ -10,110 +10,309 @@
         <link href="https://fonts.googleapis.com/css?family=Zilla+Slab:400,500,600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="css/plyr.css" type="text/css">
-        <link rel="stylesheet" href="main.css" type="text/css">
+        <link rel="stylesheet" href="slick/slick.css" type="text/css"/>
+        <link rel="stylesheet" href="slick/slick-theme.css" type="text/css"/>
+        <link rel="stylesheet" href="css/main.css" type="text/css">
 
     </head>
     <body>
+
+        <!-- SVG symbols -->
 
         <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
             <symbol id="curve" viewBox="0 0 315 200">
                 <title>Curve</title>
                 <path d="M315,0v200H0v-13.4C110.8,182.1,202.6,104.1,227.8,0H315z"/>
             </symbol>
+
+            <symbol id="quote" viewBox="0 0 26 28">
+                <title>Quote</title>
+                <path d="M12 15v6c0 1.656-1.344 3-3 3h-6c-1.656 0-3-1.344-3-3v-11c0-4.406 3.594-8 8-8h1c0.547 0 1 0.453 1 1v2c0 0.547-0.453 1-1 1h-1c-2.203 0-4 1.797-4 4v0.5c0 0.828 0.672 1.5 1.5 1.5h3.5c1.656 0 3 1.344 3 3zM26 15v6c0 1.656-1.344 3-3 3h-6c-1.656 0-3-1.344-3-3v-11c0-4.406 3.594-8 8-8h1c0.547 0 1 0.453 1 1v2c0 0.547-0.453 1-1 1h-1c-2.203 0-4 1.797-4 4v0.5c0 0.828 0.672 1.5 1.5 1.5h3.5c1.656 0 3 1.344 3 3z"></path>
+            </symbol>
+
+            <symbol id="arrow-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <title>Arrow down</title>
+                <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+                <path d="M0 0h24v24H0V0z" fill="none"/>
+            </symbol>
+
+            <symbol id="arrow-up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <title>Arrow up</title>
+                <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+                <path d="M0 0h24v24H0z" fill="none"/>
+            </symbol>
         </svg>
 
-        <h1>eCALD Website Rebuild design system - WIP</h1>
-        <p><big>Starts of a basic design system for the eCALD website rebuild. This is just a rough working document that will be further developed. The intention of this build is to use development principles that will allow us to build components with as little specificity as possible so that elements can be used as many contexts as possible.</big></p>
-        
-        <!-- Typography -->
-        <h2>Typography</h2>
-        <ul>
-            <li>font setup</li>
-            <li>H1 - H6</li>
-            <li>p, ul, ol</li>
-            <li>table styles (no design for this - just a nice simple table style)</li>
-        </ul>
+        <div class="container">
 
-        <h3>Font setup</h3>
-        <ul>
-            <li>Heading: Zilla Slab</li>
-            <li>Paragraphs: Open Sans</li>
-            <li>Icons: Material Icons</li>
-        </ul>
+            <h1>eCALD Website Rebuild design system - WIP</h1>
+            <p><big>Starts of a basic design system for the eCALD website rebuild. This is just a rough working document that will be further developed. The intention of this build is to use development principles that will allow us to build components with as little specificity as possible so that elements can be used as many contexts as possible.</big></p>
+            
+            <!-- Typography -->
+            <h2>Typography</h2>
 
-        <!-- Header -->
-        <h2>Header</h2>
-        <img src="assets/header.png"/>
-        <nav class="main">
+            <h3>Fonts</h3>
             <ul>
-                <li class="toggle"><a href="#"><i class="material-icons">menu</i> <span>Menu</span></a></li>
-                <li class="logo"><a href=""><img src="assets/logo.svg" alt="logo"></a></li>
-                <li class="item"><a href="">FAQs</a></li>
-                <li class="item"><a href="">Cross-Cultural Interest group</a></li>
-                <li class="item"><a href="">Locations</a></li>
-                <li class="item"><a href="">Contact us</a></li>
-                <li class="item button"><a href=""><i class="material-icons">account_circle</i> <span>Log in</span></a></li>
-                <li class="item search"><a href=""><i class="material-icons">search</i></a></li>
+                <li style="font-family:'Zilla Slab';font-weight:600;">Zilla Slab Bold</li>
+                <li style="font-family:'Zilla Slab';font-weight:500;">Zilla Slab Semibold</li>
+                <li style="font-family:'Zilla Slab';">Zilla Slab Medium</li>
+                <li style="font-family:'Open Sans';font-weight:700;">Open Sans Bold</li>
+                <li style="font-family:'Open Sans';">Open Sans Regular</li>
+                <li style="font-family:'Open Sans';font-style:italic;">Open Sans Italic</li>
+                <li>Material Icons</li>
             </ul>
-        </nav>
 
-        <!-- Footer -->
-        <h2>Footer</h2>
-        <footer>
-          <div class="footer">
-            <div>
-              <ul>
-                <li><strong>Training venues</strong></li>
-                <li><a href="#">North Shore Hospital</a></li>
-                <li><a href="#">Waitakere Hospital</a></li>
-                <li><a href="#">Auckland City Hospital</a></li>
-                <li><a href="#">Greenlane Clinical Centre</a></li>
-                <li><a href="#">Middlemore Hospital</a></li>
-              </ul>
-            </div>
-            <div>
-              <ul>
-                <li><strong>CALD® newsletters</strong></li>
-                <li><a href="#">View newsletters</a></li>
-                <li><a href="#">Newsletter subscription</a></li>
-                <br>
-                <li><strong>About us</strong></li>
-                <li><a href="#">About eCALD</a></li>
-                <li><a href="#">Contact us</a></li>
-              </ul>
-            </div>
-            <div>
-              <ul>
-                <li><strong>Contact</strong></li>
-                <li>Phone: DDI 09 440 6926</li>
-                <li>Email: cald@waitematadhb.govt.nz</li>
-                <li>Contact hours: Mon - Fri, 10am - 4pm</li>
-                <li>Excluding public holidays and weekends</li>
-                <li><a class="btn outline white" href="">Send a message</a></li>
-              </ul>
-            </div>
-            <!-- Twitter feed -->
-            <div>
-              <div style="box-sizing:border-box;height:100%;width:100%;padding:2px 20px;border-radius:5px;background:rgba(0,0,0,.1);">
+            <h3>Heading Styles</h3>
+            <h1 style="border-bottom:none;">Heading 1</h1>
+            <h2 style="border-bottom:none;">Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+
+            <!-- Header -->
+            <h2>Header</h2>
+        </div>
+
+            <nav class="nav">
                 <ul>
-                    <li><strong>Twitter feed</strong></li>
+                    <li class="toggle"><a href="#"><i class="material-icons">menu</i> <span>Menu</span></a></li>
+                    <li class="logo"><a href=""><img src="assets/logo.svg" alt="logo"></a></li>
+                    <li class="item search">
+                        <div>
+                            <input type="search" name="search" placeholder="Search">
+                            <a href=""><i class="material-icons">search</i></a>
+                        </div>
+                    </li>
+
+                    <div class="main-nav">
+                        <ul>
+                            <li class="item">
+                                <a class="dropdown" href="#">
+                                    Courses
+                                    <svg class="arrow-down">
+                                        <use xlink:href="#arrow-down"/>
+                                    </svg>
+                                    <svg class="arrow-up">
+                                        <use xlink:href="#arrow-up"/>
+                                    </svg> 
+                                </a>
+                                <div class="sub-nav">
+                                    <div class="sub-item">
+                                        <a href="">Courses for working with CALD Patients</a>
+                                    </div>
+                                    <div class="sub-item">
+                                        <a href="">Courses for Culturally Diverse Workplaces</a>
+                                    </div>
+                                    <div class="sub-item">
+                                        <a href="">Eligibility</a>
+                                    </div>
+                                    <div class="sub-item">
+                                        <a href="">Courses Calendar</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <a class="dropdown" href="#">
+                                    Resources
+                                    <svg class="arrow-down">
+                                        <use xlink:href="#arrow-down"/>
+                                    </svg>
+                                    <svg class="arrow-up">
+                                        <use xlink:href="#arrow-up"/>
+                                    </svg> 
+                                </a>
+                                <div class="sub-nav">
+                                    <div class="sub-item">
+                                        <a href="">Cross Cultural Resources</a>
+                                    </div>
+                                    <div class="sub-item">
+                                        <a href="">Translated Information</a>
+                                    </div>
+                                    <div class="sub-item">
+                                        <a href="">Publications</a>
+                                    </div>
+                                    <div class="sub-item">
+                                        <a href="">Research Commentary</a>
+                                    </div>
+                                    <div class="sub-item">
+                                        <a href="">Migrant and Refugee Services</a>
+                                    </div>
+                                    <div class="sub-item">
+                                        <a href="">Screening Tools</a>
+                                    </div>
+                                     <div class="sub-item">
+                                        <a href="">Cultural Competence Assessment Tools</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item"><a href="#">About us</a></li>
+                            <li class="item"><a href="#">News and updates</a></li>
+                        </ul>
+                    </div>
+
+                    <li class="item login"><a class="btn dark" href=""><i class="material-icons">account_circle</i><span>Log in</span></a></li>
+                    <li class="item account"><a class="btn" href=""><i class="material-icons">person_add</i><span>Create an account</span></a></li>
+                    <li class="item"><a href="">FAQs</a></li>
+                    <li class="item"><a href="">Course Calendar</a></li>
+                    <li class="item"><a href="">Cross-Cultural Interest group</a></li>
+                    <li class="item"><a href="">Locations</a></li>
+                    <li class="item"><a href="">Contact us</a></li>
+                </ul>
+            </nav>
+
+        <div class="container">
+            <br>
+            <h3>Markup</h3>
+<pre><code>&lt;nav class="nav"&gt;
+    &lt;ul&gt;
+        &lt;li class="toggle"&gt;&lt;a href="#"&gt;&lt;i class="material-icons"&gt;menu&lt;/i&gt; &lt;span&gt;Menu&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="logo"&gt;&lt;a href=""&gt;&lt;img src="assets/logo.svg" alt="logo"&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="item search"&gt;
+            &lt;div&gt;
+                &lt;input type="search" name="search" placeholder="Search"&gt;
+                &lt;a href=""&gt;&lt;i class="material-icons"&gt;search&lt;/i&gt;&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+
+        &lt;div class="main-nav"&gt;
+            &lt;ul&gt;
+                &lt;li class="item"&gt;
+                    &lt;a class="dropdown" href="#"&gt;
+                        Courses
+                        &lt;svg class="arrow-down"&gt;
+                            &lt;use xlink:href="#arrow-down"/&gt;
+                        &lt;/svg&gt;
+                        &lt;svg class="arrow-up"&gt;
+                            &lt;use xlink:href="#arrow-up"/&gt;
+                        &lt;/svg&gt; 
+                    &lt;/a&gt;
+                    &lt;div class="sub-nav"&gt;
+                        &lt;div class="sub-item"&gt;
+                            &lt;a href=""&gt;Courses for working with CALD Patients&lt;/a&gt;
+                        &lt;/div&gt;
+                        &lt;div class="sub-item"&gt;
+                            &lt;a href=""&gt;Courses for Culturally Diverse Workplaces&lt;/a&gt;
+                        &lt;/div&gt;
+                        &lt;div class="sub-item"&gt;
+                            &lt;a href=""&gt;Eligibility&lt;/a&gt;
+                        &lt;/div&gt;
+                        &lt;div class="sub-item"&gt;
+                            &lt;a href=""&gt;Courses Calendar&lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/li&gt;
+                &lt;li class="item"&gt;
+                    &lt;a class="dropdown" href="#"&gt;
+                        Resources
+                        &lt;svg class="arrow-down"&gt;
+                            &lt;use xlink:href="#arrow-down"/&gt;
+                        &lt;/svg&gt;
+                        &lt;svg class="arrow-up"&gt;
+                            &lt;use xlink:href="#arrow-up"/&gt;
+                        &lt;/svg&gt; 
+                    &lt;/a&gt;
+                    &lt;div class="sub-nav"&gt;
+                        &lt;div class="sub-item"&gt;
+                            &lt;a href=""&gt;Cross Cultural Resources&lt;/a&gt;
+                        &lt;/div&gt;
+                        &lt;div class="sub-item"&gt;
+                            &lt;a href=""&gt;Translated Information&lt;/a&gt;
+                        &lt;/div&gt;
+                        &lt;div class="sub-item"&gt;
+                            &lt;a href=""&gt;Publications&lt;/a&gt;
+                        &lt;/div&gt;
+                        &lt;div class="sub-item"&gt;
+                            &lt;a href=""&gt;Research Commentary&lt;/a&gt;
+                        &lt;/div&gt;
+                        &lt;div class="sub-item"&gt;
+                            &lt;a href=""&gt;Migrant and Refugee Services&lt;/a&gt;
+                        &lt;/div&gt;
+                        &lt;div class="sub-item"&gt;
+                            &lt;a href=""&gt;Screening Tools&lt;/a&gt;
+                        &lt;/div&gt;
+                         &lt;div class="sub-item"&gt;
+                            &lt;a href=""&gt;Cultural Competence Assessment Tools&lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/li&gt;
+                &lt;li class="item"&gt;&lt;a href="#"&gt;About us&lt;/a&gt;&lt;/li&gt;
+                &lt;li class="item"&gt;&lt;a href="#"&gt;News and updates&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+
+        &lt;li class="item login"&gt;&lt;a class="btn dark" href=""&gt;&lt;i class="material-icons"&gt;account_circle&lt;/i&gt;&lt;span&gt;Log in&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="item account"&gt;&lt;a class="btn" href=""&gt;&lt;i class="material-icons"&gt;person_add&lt;/i&gt;&lt;span&gt;Create an account&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="item"&gt;&lt;a href=""&gt;FAQs&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="item"&gt;&lt;a href=""&gt;Course Calendar&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="item"&gt;&lt;a href=""&gt;Cross-Cultural Interest group&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="item"&gt;&lt;a href=""&gt;Locations&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="item"&gt;&lt;a href=""&gt;Contact us&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+
+            <!-- Footer -->
+            <h2>Footer</h2>
+
+        </div>
+
+            <footer>
+              <div class="footer">
+                <div>
+                  <ul>
+                    <li><strong>Training venues</strong></li>
+                    <li><a href="#">North Shore Hospital</a></li>
+                    <li><a href="#">Waitakere Hospital</a></li>
+                    <li><a href="#">Auckland City Hospital</a></li>
+                    <li><a href="#">Greenlane Clinical Centre</a></li>
+                    <li><a href="#">Middlemore Hospital</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <ul>
+                    <li><strong>CALD® newsletters</strong></li>
+                    <li><a href="#">View newsletters</a></li>
+                    <li><a href="#">Newsletter subscription</a></li>
+                    <br>
+                    <li><strong>About us</strong></li>
+                    <li><a href="#">About eCALD</a></li>
+                    <li><a href="#">Contact us</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <ul>
+                    <li><strong>Contact</strong></li>
+                    <li>Phone: DDI 09 440 6926</li>
+                    <li>Email: cald@waitematadhb.govt.nz</li>
+                    <li>Contact hours: Mon - Fri, 10am - 4pm</li>
+                    <li>Excluding public holidays and weekends</li>
+                    <li><a class="btn outline white" href="">Send a message</a></li>
+                  </ul>
+                </div>
+                <!-- Twitter feed -->
+                <div>
+                  <div style="box-sizing:border-box;height:100%;width:100%;padding:2px 20px;border-radius:5px;background:rgba(0,0,0,.1);">
+                    <ul>
+                        <li><strong>Twitter feed</strong></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="copyright">
+                <ul>
+                  <li class="logo"><a href=""><img src="assets/logo-white.svg" alt="logo"></a></li>
+                  <li><a href="#">Terms &amp; Conditions</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li>Copyright &copy; Waitemata DHB 2020</li>
                 </ul>
               </div>
-            </div>
-          </div>
 
-          <div class="copyright">
-            <ul>
-              <li class="logo"><a href=""><img src="assets/logo-white.svg" alt="logo"></a></li>
-              <li><a href="#">Terms &amp; Conditions</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li>Copyright &copy; Waitemata DHB 2020</li>
-            </ul>
-          </div>
+            </footer>
 
-        </footer>
+        <div class="container">
 
-        <h3>Markup</h3>
+            <br>
+            <h3>Markup</h3>
 <pre><code>&lt;footer&gt;
   &lt;div class="footer"&gt;
     &lt;div&gt;
@@ -163,30 +362,87 @@
   &lt;/div&gt;
 &lt;/footer&gt;</code></pre>
 
-        <!-- Sidebar -->
-        <h2>Sidebar</h2>
-        <p>We don't have to code this yet - but please bear in mind that the main framework will need to account for 
-        a sidebar which will likely affect responsive sizing for card grids etc. If you like you can accomodate a sidebar
-         block which can be used for responsive testing.</p>
-        
-        <!-- Breadcrumb -->
-        <h2>Breadcrumb</h2>
-        <ul>
-            <li>Dark &amp; light options</li>
-        </ul>
+            <!-- Sidebar -->
+            <h2>Sidebar</h2>
 
-        <h3>Breadcrumb - Light</h3>
-        <div class="bg-light">
-            <nav class="breadcrumb" aria-label="breadcrumb">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Section</a></li>
-                    <li><span aria-current="page">H1 page heading</span></li>
-                </ul>
-            </nav>
-        </div>
+            <h3>Sidebar - Icons & links</h3>
+            
+            <div class="sidebar">
+                <h3>H3 Title</h3>
+                <div>
+                    <p><a href=""><i class="material-icons">date_range</i>Course calendar</a></p>
+                    <p><a href=""><i class="material-icons">assignment</i>Eligibility and Enrolment</a></p>
+                </div>
+            </div>
+            <br>
+            <h3>Markup</h3>
 
-        <h3>Markup</h3>
+<pre><code>&lt;div class="sidebar"&gt;
+    &lt;h3&gt;H3 Title&lt;/h3&gt;
+    &lt;div&gt;
+        &lt;p&gt;&lt;a href=""&gt;&lt;i class="material-icons"&gt;date_range&lt;/i&gt;Course calendar&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;a href=""&gt;&lt;i class="material-icons"&gt;assignment&lt;/i&gt;Eligibility and Enrolment&lt;/a&gt;&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+            <h3>Sidebar - Icons, links & button</h3>
+
+            <div class="sidebar">
+                <h3>H3 Title</h3>
+                <div>
+                    <p><a href=""><i class="material-icons">date_range</i>Course calendar</a></p>
+                    <p><a href=""><i class="material-icons">assignment</i>Eligibility and Enrolment</a></p>
+                </div>
+                <a class="btn dark" href="">Create an account</a>
+            </div>
+            <br>
+            <h3>Markup</h3>
+
+<pre><code>&lt;div class="sidebar"&gt;
+    &lt;h3&gt;H3 Title&lt;/h3&gt;
+    &lt;div&gt;
+        &lt;p&gt;&lt;a href=""&gt;&lt;i class="material-icons"&gt;date_range&lt;/i&gt;Course calendar&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;a href=""&gt;&lt;i class="material-icons"&gt;assignment&lt;/i&gt;Eligibility and Enrolment&lt;/a&gt;&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;a class="btn dark" href=""&gt;Create an account&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+
+            <h3>Sidebar - Text only</h3>
+
+            <div class="sidebar">
+                <h3>H3 Title</h3>
+                <p>Body  Lorem <a href="">Text link</a> ipsum dolor sit amet, consectetur adipiscing elit aenean euismod bibendum laoreet proin gravida dolor sit amet. orem ipsum dolor.</p>
+                <h4>H4 Title</h4>
+                <p>Body  Lorem ipsum dolor sit amet, consectetur adipiscing elit aenean euismod bibendum laoreet proin gravida dolor sit amet. orem ipsum dolor.</p>
+            </div>
+            <br>
+            <h3>Markup</h3>
+
+<pre><code>&lt;div class="sidebar"&gt;
+    &lt;h3&gt;H3 Title&lt;/h3&gt;
+    &lt;p&gt;Body  Lorem &lt;a href=""&gt;Text link&lt;/a&gt; ipsum dolor sit amet, consectetur adipiscing elit aenean euismod bibendum laoreet proin gravida dolor sit amet. orem ipsum dolor.&lt;/p&gt;
+    &lt;h4&gt;H4 Title&lt;/h4&gt;
+    &lt;p&gt;Body  Lorem ipsum dolor sit amet, consectetur adipiscing elit aenean euismod bibendum laoreet proin gravida dolor sit amet. orem ipsum dolor.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+
+            <!-- Breadcrumb -->
+            <h2>Breadcrumb</h2>
+            <ul>
+                <li>Dark &amp; light options</li>
+            </ul>
+
+            <h3>Breadcrumb - Light</h3>
+            <div class="bg-light">
+                <nav class="breadcrumb" aria-label="breadcrumb">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Section</a></li>
+                        <li><span aria-current="page">H1 page heading</span></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <h3>Markup</h3>
 <pre><code>&lt;nav class="breadcrumb" aria-label="breadcrumb"&gt;
     &lt;ul&gt;
         &lt;li&gt;&lt;a href=""&gt;Home&lt;/a&gt;&lt;/li&gt;
@@ -195,18 +451,18 @@
     &lt;/ul&gt;
 &lt;/nav&gt;</code></pre>
 
-        <h3>Breadcrumb - Dark</h3>
-        <div class="bg-dark">
-            <nav class="breadcrumb text-light" aria-label="breadcrumb">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Section</a></li>
-                    <li><span aria-current="page">H1 page heading</span></li>
-                </ul>
-            </nav>
-        </div>
+            <h3>Breadcrumb - Dark</h3>
+            <div class="bg-dark">
+                <nav class="breadcrumb text-light" aria-label="breadcrumb">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Section</a></li>
+                        <li><span aria-current="page">H1 page heading</span></li>
+                    </ul>
+                </nav>
+            </div>
 
-        <h3>Markup</h3>
+            <h3>Markup</h3>
 <pre><code>&lt;nav class="breadcrumb text-light" aria-label="breadcrumb"&gt;
     &lt;ul&gt;
         &lt;li&gt;&lt;a href=""&gt;Home&lt;/a&gt;&lt;/li&gt;
@@ -215,30 +471,30 @@
     &lt;/ul&gt;
 &lt;/nav&gt;</code></pre>
 
-        <!-- Pagination -->
-        <h2>Pagination</h2>
-        <ul>
-            <li>Appears at top and bottom</li>
-            <li>Bottom pagination doesn't include total summary</li>
-        </ul>
+            <!-- Pagination -->
+            <h2>Pagination</h2>
+            <ul>
+                <li>Appears at top and bottom</li>
+                <li>Bottom pagination doesn't include total summary</li>
+            </ul>
 
-        <h3>Pagination - Top</h3>
-        <div class="pagination-total">
-            <p>Showing total 25 resources</p>
-            <nav class="pagination" aria-label="pagination">
-                <ul>
-                    <li><a class="btn arrow" href=""><i class="material-icons">arrow_back</i></a></li>
-                    <li><a href="">1</a></li>
-                    <li><a href="" aria-current="page">2</a></li>
-                    <li><a href="">3</a></li>
-                    <li><a href="">4</a></li>
-                    <li><a href="">5</a></li>
-                    <li><a class="btn arrow" href=""><i class="material-icons">arrow_forward</i></a></li>
-                </ul>
-            </nav>
-        </div>
-
-        <h3>Markup</h3>
+            <h3>Pagination - Top</h3>
+            <div class="pagination-total">
+                <p>Showing total 25 resources</p>
+                <nav class="pagination" aria-label="pagination">
+                    <ul>
+                        <li><a class="btn arrow" href=""><i class="material-icons">arrow_back</i></a></li>
+                        <li><a href="">1</a></li>
+                        <li><a href="" aria-current="page">2</a></li>
+                        <li><a href="">3</a></li>
+                        <li><a href="">4</a></li>
+                        <li><a href="">5</a></li>
+                        <li><a class="btn arrow" href=""><i class="material-icons">arrow_forward</i></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <br>
+            <h3>Markup</h3>
 <pre><code>&lt;div class="pagination-total"&gt;
     &lt;p&gt;Showing total 25 resources&lt;/p&gt;
     &lt;nav class="pagination" aria-label="pagination"&gt;
@@ -254,20 +510,20 @@
     &lt;/nav&gt;
 &lt;/div&gt;</code></pre>
 
-        <h3>Pagination - Bottom</h3>
-        <nav class="pagination" aria-label="pagination">
-            <ul>
-                <li><a class="btn arrow" href=""><i class="material-icons">arrow_back</i></a></li>
-                <li><a href="">1</a></li>
-                <li><a href="" aria-current="page">2</a></li>
-                <li><a href="">3</a></li>
-                <li><a href="">4</a></li>
-                <li><a href="">5</a></li>
-                <li><a class="btn arrow" href=""><i class="material-icons">arrow_forward</i></a></li>
-            </ul>
-        </nav>
-
-        <h3>Markup</h3>
+            <h3>Pagination - Bottom</h3>
+            <nav class="pagination" aria-label="pagination">
+                <ul>
+                    <li><a class="btn arrow" href=""><i class="material-icons">arrow_back</i></a></li>
+                    <li><a href="">1</a></li>
+                    <li><a href="" aria-current="page">2</a></li>
+                    <li><a href="">3</a></li>
+                    <li><a href="">4</a></li>
+                    <li><a href="">5</a></li>
+                    <li><a class="btn arrow" href=""><i class="material-icons">arrow_forward</i></a></li>
+                </ul>
+            </nav>
+            <br>
+            <h3>Markup</h3>
 <pre><code>&lt;nav class="pagination" aria-label="pagination"&gt;
     &lt;ul&gt;
         &lt;li&gt;&lt;a class="btn arrow" href=""&gt;&lt;i class="material-icons"&gt;arrow_back&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
@@ -280,62 +536,62 @@
     &lt;/ul&gt;
 &lt;/nav&gt;</code></pre>
 
-        <!-- Buttons -->
-        <h2>Buttons</h2>
-        <p>Button styles include:</p>
-        <ul>
-            <li>Button - default (filled)</li>
-            <li>Button - outline</li>
-            <li>Button with icon</li>
-            <li>Arrow button - used in pagination and cards</li>
-            <li>Colour options</li>
-        </ul>
+            <!-- Buttons -->
+            <h2>Buttons</h2>
+            <p>Button styles include:</p>
+            <ul>
+                <li>Button - default (filled)</li>
+                <li>Button - outline</li>
+                <li>Button with icon</li>
+                <li>Arrow button - used in pagination and cards</li>
+                <li>Colour options</li>
+            </ul>
 
-        <h3>Button - default (filled)</h3>
-        <div class="bg-light">
-            <a class="btn" href="">Button text</a>
-            <a class="btn dark" href="">Button text</a>
-        </div>
+            <h3>Button - default (filled)</h3>
+            <div class="bg-light">
+                <a class="btn" href="">Button text</a>
+                <a class="btn dark" href="">Button text</a>
+            </div>
 
-        <h3>Markup</h3>
+            <h3>Markup</h3>
 <pre><code>&lt;a class="btn" href=""&gt;Button text&lt;/a&gt;
 &lt;a class="btn dark" href=""&gt;Button text&lt;/a&gt;</code></pre>
 
-        <h3>Button - outline</h3>
-        <a class="btn outline" href="">Button text</a>
-        <div class="bg-dark">
-            <a class="btn outline white" href="">Button text</a>
-        </div>
+            <h3>Button - outline</h3>
+            <a class="btn outline" href="">Button text</a>
+            <div class="bg-dark">
+                <a class="btn outline white" href="">Button text</a>
+            </div>
 
-        <h3>Markup</h3>
+            <h3>Markup</h3>
 <pre><code>&lt;a class="btn outline" href=""&gt;Button text&lt;/a&gt;
 &lt;a class="btn outline white" href=""&gt;Button text&lt;/a&gt;</code></pre>
 
-        <h3>Button with icon</h3>
-        <a class="btn icon" href=""><i class="material-icons">event_note</i> Button text</a>
-        <div class="bg-dark">
-            <a class="btn icon cyan" href=""><i class="material-icons">play_circle_filled</i> Button text</a>
-            <a class="btn icon outline white" href=""><i class="material-icons">play_circle_filled</i> Button text</a>
-        </div>
+            <h3>Button with icon</h3>
+            <a class="btn icon" href=""><i class="material-icons">event_note</i> <span>Button text</span></a>
+            <div class="bg-dark">
+                <a class="btn icon cyan" href=""><i class="material-icons">play_circle_filled</i> <span>Button text</span></a>
+                <a class="btn icon outline white" href=""><i class="material-icons">play_circle_filled</i> <span>Button text</span></a>
+            </div>
 
-        <h3>Markup</h3>
-<pre><code>&lt;a class="btn icon" href=""&gt;&lt;i class="material-icons"&gt;event_note&lt;/i&gt; Button text&lt;/a&gt;
-&lt;a class="btn icon cyan" href=""&gt;&lt;i class="material-icons"&gt;play_circle_filled&lt;/i&gt; Button text&lt;/a&gt;
-&lt;a class="btn icon outline white" href=""&gt;&lt;i class="material-icons"&gt;play_circle_filled&lt;/i&gt; Button text&lt;/a&gt;</code></pre>
+            <h3>Markup</h3>
+<pre><code>&lt;a class="btn icon" href=""&gt;&lt;i class="material-icons"&gt;event_note&lt;/i&gt; &lt;span&gt;Button text&lt;/span&gt;&lt;/a&gt;
+&lt;a class="btn icon cyan" href=""&gt;&lt;i class="material-icons"&gt;play_circle_filled&lt;/i&gt; &lt;span&gt;Button text&lt;/span&gt;&lt;/a&gt;
+&lt;a class="btn icon outline white" href=""&gt;&lt;i class="material-icons"&gt;play_circle_filled&lt;/i&gt; &lt;span&gt;Button text&lt;/span&gt;&lt;/a&gt;</code></pre>
 
-        <h3>Arrow button - used in pagination and cards</h3>
-        <div class="bg-light">
-            <a class="btn arrow" href=""><i class="material-icons">arrow_back</i></a>
-            <a class="btn arrow" href=""><i class="material-icons">arrow_forward</i></a>
-            <a class="btn arrow cyan" href=""><i class="material-icons">arrow_back</i></a>
-            <a class="btn arrow cyan" href=""><i class="material-icons">arrow_forward</i></a>
-        </div>
-        <div class="bg-dark">
-            <a class="btn arrow white" href=""><i class="material-icons">arrow_back</i></a>
-            <a class="btn arrow white" href=""><i class="material-icons">arrow_forward</i></a>
-        </div>
+            <h3>Arrow button - used in pagination and cards</h3>
+            <div class="bg-light">
+                <a class="btn arrow" href=""><i class="material-icons">arrow_back</i></a>
+                <a class="btn arrow" href=""><i class="material-icons">arrow_forward</i></a>
+                <a class="btn arrow cyan" href=""><i class="material-icons">arrow_back</i></a>
+                <a class="btn arrow cyan" href=""><i class="material-icons">arrow_forward</i></a>
+            </div>
+            <div class="bg-dark">
+                <a class="btn arrow white" href=""><i class="material-icons">arrow_back</i></a>
+                <a class="btn arrow white" href=""><i class="material-icons">arrow_forward</i></a>
+            </div>
 
-        <h3>Markup</h3>
+            <h3>Markup</h3>
 <pre><code>&lt;a class="btn arrow" href=""&gt;&lt;i class="material-icons"&gt;arrow_back&lt;/i&gt;&lt;/a&gt;
 &lt;a class="btn arrow" href=""&gt;&lt;i class="material-icons"&gt;arrow_forward&lt;/i&gt;&lt;/a&gt;
 &lt;a class="btn arrow cyan" href=""&gt;&lt;i class="material-icons"&gt;arrow_back&lt;/i&gt;&lt;/a&gt;
@@ -343,79 +599,79 @@
 &lt;a class="btn arrow white" href=""&gt;&lt;i class="material-icons"&gt;arrow_back&lt;/i&gt;&lt;/a&gt;
 &lt;a class="btn arrow white" href=""&gt;&lt;i class="material-icons"&gt;arrow_forward&lt;/i&gt;&lt;/a&gt;</code></pre>
 
-        <!-- Tags -->
-        <h2>Tags</h2>
-        <ul>
-            <li>Default</li>
-            <li>Small
-                <ul>
-                    <li>Has colour options</li>
-                </ul>
-            </li>
-        </ul>
+            <!-- Tags -->
+            <h2>Tags</h2>
+            <ul>
+                <li>Default</li>
+                <li>Small
+                    <ul>
+                        <li>Has colour options</li>
+                    </ul>
+                </li>
+            </ul>
 
-        <a class="tag" href="">Tag text</a>
-        <a class="tag small" href="">Tag text</a>
-        <a class="tag flag blue" href="">Tag text</a>
-        <a class="tag flag softblue" href="">Tag text</a>
-
-        <h3>Markup</h3>
+            <a class="tag" href="">Tag text</a>
+            <a class="tag small" href="">Tag text</a>
+            <a class="tag flag blue" href="">Tag text</a>
+            <a class="tag flag softblue" href="">Tag text</a>
+            <p>&nbsp;</p>
+            <h3>Markup</h3>
 <pre><code>&lt;a class="tag" href=""&gt;Tag text&lt;/a&gt;
 &lt;a class="tag small" href=""&gt;Tag text&lt;/a&gt;
 &lt;a class="tag flag blue" href=""&gt;Tag text&lt;/a&gt;
 &lt;a class="tag flag softblue" href=""&gt;Tag text&lt;/a&gt;</code></pre>
 
-        <!-- Cards -->
-        <h2>Cards</h2>
+            <!-- Cards -->
+            <h2>Cards</h2>
 
-        <h3>Base cards</h3>
-        <p>Each base card has:</p>
-        <ul>
-            <li>Image or video</li>
-            <li>Heading</li>
-            <li>Text</li>
-            <li>Link locations (we can work out which elements are linked later)</li>
-            <li>Optional link or arrow button - positioned at the bottom of the card</li>
-            <li>Optional link with icon - positioned at the bottom of the card</li>
-            <li>Grid: 3, 2 or 1 column (1 column is full width)</li>
-        </ul>
+            <h3>Base cards</h3>
+            <p>Each base card has:</p>
+            <ul>
+                <li>Image or video</li>
+                <li>Heading</li>
+                <li>Text</li>
+                <li>Link locations (we can work out which elements are linked later)</li>
+                <li>Optional link or arrow button - positioned at the bottom of the card</li>
+                <li>Optional link with icon - positioned at the bottom of the card</li>
+                <li>Grid: 3, 2 or 1 column (1 column is full width)</li>
+            </ul>
 
-        <div class="cards">
-            <div class="card">
-                <div class="thumbnail">
-                    <img src="assets/card-base.jpg" alt="image">
+            <div class="cards">
+                <div class="card">
+                    <div class="thumbnail">
+                        <img src="assets/card-base.jpg" alt="image">
+                    </div>
+                    <div class="content">
+                        <h3>Card title</h3>
+                        <p>A medium to long length paragraph for the card text.</p>
+                    </div>
                 </div>
-                <div class="content">
-                    <h3>Card title</h3>
-                    <p>A medium to long length paragraph for the card text.</p>
+
+                <div class="card">
+                    <div class="thumbnail">
+                        <video poster="assets/video-poster.png" id="player" controls>
+                            <source src="assets/ecald.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                    <div class="content">
+                        <h3>Card title</h3>
+                        <p>A medium to long length paragraph for the card text.</p>
+                        <a class="btn arrow" href=""><i class="material-icons">arrow_forward</i></a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="thumbnail">
+                        <img src="assets/card-base2.jpg" alt="image">
+                    </div>
+                    <div class="content">
+                        <a class="tag flag blue" href="">Tag text</a>
+                        <h4>Card title</h4>
+                    </div>
                 </div>
             </div>
-
-            <div class="card">
-                <div class="thumbnail">
-                    <video poster="assets/video-poster.png" id="player" controls>
-                        <source src="assets/ecald.mp4" type="video/mp4" />
-                    </video>
-                </div>
-                <div class="content">
-                    <h3>Card title</h3>
-                    <p>A medium to long length paragraph for the card text.</p>
-                    <a class="btn arrow" href=""><i class="material-icons">arrow_forward</i></a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="thumbnail">
-                    <img src="assets/card-base2.jpg" alt="image">
-                </div>
-                <div class="content">
-                    <a class="tag flag blue" href="">Tag text</a>
-                    <h4>Card title</h4>
-                </div>
-            </div>
-        </div>
-
-        <h3>Markup</h3>
+            <br>
+            <h3>Markup</h3>
 <pre><code>&lt;div class="cards"&gt;
     &lt;div class="card"&gt;
         &lt;div class="thumbnail"&gt;
@@ -451,24 +707,24 @@
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 
-        <h3>Base cards - horizontal layout</h3>
+            <h3>Base cards - horizontal layout</h3>
 
-        <div class="cards">
-            <div class="card horizontal">
-                <div class="thumbnail">
-                    <video poster="assets/video-poster.png" id="player" controls>
-                        <source src="assets/ecald.mp4" type="video/mp4" />
-                    </video>
-                </div>
-                <div class="content">
-                    <h3>Card title</h3>
-                    <p>A medium to long length paragraph for the card text.</p>
-                    <a class="btn outline" href="">Button text</a>
+            <div class="cards">
+                <div class="card horizontal">
+                    <div class="thumbnail">
+                        <video poster="assets/video-poster.png" id="player" controls>
+                            <source src="assets/ecald.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                    <div class="content">
+                        <h3>Card title</h3>
+                        <p>A medium to long length paragraph for the card text.</p>
+                        <a class="btn outline" href="">Button text</a>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <h3>Markup</h3>
+            <br>
+            <h3>Markup</h3>
 <pre><code>&lt;div class="cards"&gt;
     &lt;div class="card horizontal"&gt;
         &lt;div class="thumbnail"&gt;
@@ -484,68 +740,68 @@
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 
-        <h3>Colour cards</h3>
-        <ul>
-            <li>Different treatment to base cards and can only work in a 2-3 column grid (never full width)</li>
-            <li>Variations:    
-                <ul>
-                    <li>May include a link with arrow button</li>
-                    <li>Different placement of title (and text is larger, no link at bottom but may include button in text)</li>
-                    <li>Colour options - based on eCALD palette</li>
-                </ul>
-            </li>
-        </ul>
-        <div class="cards">
-            <div class="card colour blue">
-                <div class="thumbnail">                   
-                    <img src="assets/card-colour.jpg" alt="image">
-                    <svg class="curve">
-                        <use xlink:href="#curve"/>
-                    </svg>
+            <h3>Colour cards</h3>
+            <ul>
+                <li>Different treatment to base cards and can only work in a 2-3 column grid (never full width)</li>
+                <li>Variations:    
+                    <ul>
+                        <li>May include a link with arrow button</li>
+                        <li>Different placement of title (and text is larger, no link at bottom but may include button in text)</li>
+                        <li>Colour options - based on eCALD palette</li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="cards">
+                <div class="card colour blue">
+                    <div class="thumbnail">                   
+                        <img src="assets/card-colour.jpg" alt="image">
+                        <svg class="curve">
+                            <use xlink:href="#curve"/>
+                        </svg>
+                    </div>
+                    <div class="content">
+                        <h3>Card title</h3>
+                        <p>A medium to long length paragraph for the card text.</p>
+                    </div>
+                    <div class="footer">
+                        <p>Link text</p>
+                        <a class="btn arrow white" href=""><i class="material-icons">arrow_forward</i></a>
+                    </div>
                 </div>
-                <div class="content">
-                    <h3>Card title</h3>
-                    <p>A medium to long length paragraph for the card text.</p>
+
+                <div class="card colour orange">
+                    <div class="thumbnail">                   
+                        <img src="assets/card-colour2.jpg" alt="image">
+                        <svg class="curve">
+                            <use xlink:href="#curve"/>
+                        </svg>
+                    </div>
+                    <div class="content">
+                        <h3>Card title</h3>
+                        <p>A medium to long length paragraph for the card text.</p>
+                    </div>
+                    <div class="footer">
+                        <p>Link text</p>
+                        <a class="btn arrow white" href=""><i class="material-icons">arrow_forward</i></a>
+                    </div>
                 </div>
-                <div class="footer">
-                    <p>Link text</p>
-                    <a class="btn arrow white" href=""><i class="material-icons">arrow_forward</i></a>
+
+                <div class="card colour alternate teal">
+                    <div class="thumbnail">                   
+                        <img src="assets/card-colour3.jpg" alt="image">
+                        <svg class="curve">
+                            <use xlink:href="#curve"/>
+                        </svg>
+                        <h3>Card title</h3>
+                    </div>
+                    <div class="content">
+                        <p>A medium to long length paragraph for the card text.</p>
+                        <a class="btn" href="">Button text</a>
+                    </div>
                 </div>
             </div>
-
-            <div class="card colour orange">
-                <div class="thumbnail">                   
-                    <img src="assets/card-colour2.jpg" alt="image">
-                    <svg class="curve">
-                        <use xlink:href="#curve"/>
-                    </svg>
-                </div>
-                <div class="content">
-                    <h3>Card title</h3>
-                    <p>A medium to long length paragraph for the card text.</p>
-                </div>
-                <div class="footer">
-                    <p>Link text</p>
-                    <a class="btn arrow white" href=""><i class="material-icons">arrow_forward</i></a>
-                </div>
-            </div>
-
-            <div class="card colour alternate teal">
-                <div class="thumbnail">                   
-                    <img src="assets/card-colour3.jpg" alt="image">
-                    <svg class="curve">
-                        <use xlink:href="#curve"/>
-                    </svg>
-                    <h3>Card title</h3>
-                </div>
-                <div class="content">
-                    <p>A medium to long length paragraph for the card text.</p>
-                    <a class="btn" href="">Button text</a>
-                </div>
-            </div>
-        </div>
-
-        <h3>Markup</h3>
+            <br>
+            <h3>Markup</h3>
 
 <pre><code>&lt;div class="cards">
     &lt;div class="card colour blue"&gt;
@@ -597,35 +853,35 @@
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 
-        <h3>Icon cards</h3>
-        <ul>
-            <li>The image is an icon, it is smaller and centered in the card</li>
-        </ul>
-        <div class="cards">
-            <div class="card icon">
-                <div class="thumbnail">
-                    <img src="assets/card-icon.png" alt="image">
+            <h3>Icon cards</h3>
+            <ul>
+                <li>The image is an icon, it is smaller and centered in the card</li>
+            </ul>
+            <div class="cards">
+                <div class="card icon">
+                    <div class="thumbnail">
+                        <img src="assets/card-icon.png" alt="image">
+                    </div>
+                    <div class="content">
+                        <h3>Card title</h3>
+                        <p>A medium to long length paragraph for the card text.</p>
+                        <a class="btn arrow" href=""><i class="material-icons">arrow_forward</i></a>
+                    </div>
                 </div>
-                <div class="content">
-                    <h3>Card title</h3>
-                    <p>A medium to long length paragraph for the card text.</p>
-                    <a class="btn arrow" href=""><i class="material-icons">arrow_forward</i></a>
+
+                <div class="card icon">
+                    <div class="thumbnail">
+                        <img src="assets/card-icon2.png" alt="image">
+                    </div>
+                    <div class="content">
+                        <h3>Card title</h3>
+                        <p>A medium to long length paragraph for the card text.</p>
+                        <a class="btn arrow" href=""><i class="material-icons">arrow_forward</i></a>
+                    </div>
                 </div>
             </div>
-
-            <div class="card icon">
-                <div class="thumbnail">
-                    <img src="assets/card-icon2.png" alt="image">
-                </div>
-                <div class="content">
-                    <h3>Card title</h3>
-                    <p>A medium to long length paragraph for the card text.</p>
-                    <a class="btn arrow" href=""><i class="material-icons">arrow_forward</i></a>
-                </div>
-            </div>
-        </div>
-
-        <h3>Markup</h3>
+            <br>
+            <h3>Markup</h3>
 
 <pre><code>&lt;div class="cards"&gt;
     &lt;div class="card icon"&gt;
@@ -651,48 +907,48 @@
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 
-        <h3>Events cards</h3>
-        <div class="cards">
-            <div class="card event">
-                <div class="thumbnail">
-                    <img src="assets/card-event.jpg" alt="image">
-                </div>
-                <div class="content">
-                    <h3>H3 Event long title lorem ipsum dolor sit amet, consectetur </h3>
-                    <p>Event description Lorem ipsum dolor sit amet, consectetur adipiscing elit aenean euismod bibendum laoreet proin gravida dolor sit amet.</p>
-                    <div class="detail">
-                        <p><i class="material-icons">date_range</i>Date</p>
-                        <p><i class="material-icons">place</i>Venue name, Suburb</p>
+            <h3>Events cards</h3>
+            <div class="cards">
+                <div class="card event">
+                    <div class="thumbnail">
+                        <img src="assets/card-event.jpg" alt="image">
+                    </div>
+                    <div class="content">
+                        <h3>H3 Event long title lorem ipsum dolor sit amet, consectetur </h3>
+                        <p>Event description Lorem ipsum dolor sit amet, consectetur adipiscing elit aenean euismod bibendum laoreet proin gravida dolor sit amet.</p>
+                        <div class="detail">
+                            <p><i class="material-icons">date_range</i>Date</p>
+                            <p><i class="material-icons">place</i>Venue name, Suburb</p>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <a class="tag small" href="">Tag text</a>
+                        <a class="tag small" href="">Tag text</a>
+                        <a class="tag small" href="">Tag text</a>
                     </div>
                 </div>
-                <div class="footer">
-                    <a class="tag small" href="">Tag text</a>
-                    <a class="tag small" href="">Tag text</a>
-                    <a class="tag small" href="">Tag text</a>
-                </div>
-            </div>
 
-            <div class="card event">
-                <div class="thumbnail">
-                    <img src="assets/card-event2.jpg" alt="image">
-                </div>
-                <div class="content">
-                    <h3>H3 Event title</h3>
-                    <p>Event description</p>
-                    <div class="detail">
-                        <p><i class="material-icons">date_range</i>Date</p>
-                        <p><i class="material-icons">place</i>Venue name, Suburb</p>
+                <div class="card event">
+                    <div class="thumbnail">
+                        <img src="assets/card-event2.jpg" alt="image">
+                    </div>
+                    <div class="content">
+                        <h3>H3 Event title</h3>
+                        <p>Event description</p>
+                        <div class="detail">
+                            <p><i class="material-icons">date_range</i>Date</p>
+                            <p><i class="material-icons">place</i>Venue name, Suburb</p>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <a class="tag small" href="">Tag text</a>
+                        <a class="tag small" href="">Tag text</a>
+                        <a class="tag small" href="">Tag text</a>
                     </div>
                 </div>
-                <div class="footer">
-                    <a class="tag small" href="">Tag text</a>
-                    <a class="tag small" href="">Tag text</a>
-                    <a class="tag small" href="">Tag text</a>
-                </div>
             </div>
-        </div>
-
-        <h3>Markup</h3>
+            <br>
+            <h3>Markup</h3>
 
 <pre><code>&lt;div class="cards"&gt;
     &lt;div class="card event"&gt;
@@ -734,26 +990,523 @@
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 
-        <!-- Spotlight -->
-        <h2>Spotlight listing</h2>
-        <p>Unordered list with image, heading and description used for people listing</p>
-        <ul>
-            <li>Grid variations: full width (3-wide centre aligned) <img src="assets/spotlight-3col.png"/></li>
-            <li>Grid variations: full width with sidebar (2-wide left aligned)<img src="assets/spotlight-2col.png"/></li>
-        </ul>
-        <h3>Markup example</h3>
-        <p><code>&lt;ul class="spotlight"&gt;
-            <span class="indented">&lt;li&gt;</span>
-            <span class="indented"><span class="indented">&lt;img src="...." alt="" /&gt;</span></span>
-            <span class="indented"><span class="indented">&lt;h3&gt;Card title&lt;/h3&gt;</span></span>
-            <span class="indented"><span class="indented">&lt;p&gt;A medium to long length paragraph for the card text&lt;/p&gt;</span></span>
-            <span class="indented">&lt;/li&gt;</span>
-            &lt;/div&gt;</code>
-        </p>
+            <!-- Spotlight -->
+            <h2>Spotlight listing</h2>
+            <p>Unordered list with image, heading and description used for people listing</p>
+            <ul>
+                <li>Grid variations: full width (3-wide centre aligned)</li>
+                <li>Grid variations: full width with sidebar (2-wide left aligned)</li>
+            </ul>
+
+            <h3>Spotlight - 3-wide centre aligned</h3>
+
+            <div class="listing">
+                <div class="spotlight">
+                    <div class="thumbnail">
+                        <img src="assets/sue-lim.png" alt="image">
+                    </div>
+                    <div class="content">
+                        <h3>H3 Sue Lim</h3>
+                        <p>Job title eCALD® National Programme Director</p>
+                    </div>
+                </div>
+
+                <div class="spotlight">
+                    <div class="thumbnail">
+                        <img src="assets/amy-cao.jpg" alt="image">
+                    </div>
+                    <div class="content">
+                        <h3>Amy Cao</h3>
+                        <p>eCALD® Course Coordinator</p>
+                    </div>
+                </div>
+
+                <div class="spotlight">
+                    <div class="thumbnail">
+                        <img src="assets/elena-wong.jpg" alt="image">
+                    </div>
+                    <div class="content">
+                        <h3>Elena Wong</h3>
+                        <p>eCALD® Course Coordinator</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <h3>Markup</h3>
+<pre><code>&lt;div class="listing"&gt;
+    &lt;div class="spotlight"&gt;
+        &lt;div class="thumbnail"&gt;
+            &lt;img src="assets/sue-lim.png" alt="image"&gt;
+        &lt;/div&gt;
+        &lt;div class="content"&gt;
+            &lt;h3&gt;H3 Sue Lim&lt;/h3&gt;
+            &lt;p&gt;Job title eCALD® National Programme Director&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="spotlight"&gt;
+        &lt;div class="thumbnail"&gt;
+            &lt;img src="assets/amy-cao.jpg" alt="image"&gt;
+        &lt;/div&gt;
+        &lt;div class="content"&gt;
+            &lt;h3&gt;Amy Cao&lt;/h3&gt;
+            &lt;p&gt;eCALD® Course Coordinator&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="spotlight"&gt;
+        &lt;div class="thumbnail"&gt;
+            &lt;img src="assets/elena-wong.jpg" alt="image"&gt;
+        &lt;/div&gt;
+        &lt;div class="content"&gt;
+            &lt;h3&gt;Elena Wong&lt;/h3&gt;
+            &lt;p&gt;eCALD® Course Coordinator&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+            <h3>Spotlight - 2-wide left aligned with sidebar</h3>
+
+            <div class="listing">
+                <div class="two-wide">
+                    <div class="spotlight">
+                        <div class="thumbnail">
+                            <img src="assets/sue-lim.png" alt="image">
+                        </div>
+                        <div class="content">
+                            <h3>H3 Sue Lim</h3>
+                            <p>Job title eCALD® National Programme Director</p>
+                        </div>
+                    </div>
+
+                    <div class="spotlight">
+                        <div class="thumbnail">
+                            <img src="assets/amy-cao.jpg" alt="image">
+                        </div>
+                        <div class="content">
+                            <h3>Amy Cao</h3>
+                            <p>eCALD® Course Coordinator</p>
+                        </div>
+                    </div>
+
+                    <div class="spotlight">
+                        <div class="thumbnail">
+                            <img src="assets/elena-wong.jpg" alt="image">
+                        </div>
+                        <div class="content">
+                            <h3>Elena Wong</h3>
+                            <p>eCALD® Course Coordinator</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar">
+                    <h3>H3 Title</h3>
+                    <div>
+                        <p><a href=""><i class="material-icons">date_range</i>Course calendar</a></p>
+                        <p><a href=""><i class="material-icons">assignment</i>Eligibility and Enrolment</a></p>
+                    </div>
+                </div>
+
+            </div>
+            <br>
+            <h3>Markup</h3>
+<pre><code>&lt;div class="listing"&gt;
+    &lt;div class="two-wide"&gt;
+        &lt;div class="spotlight"&gt;
+            &lt;div class="thumbnail"&gt;
+                &lt;img src="assets/sue-lim.png" alt="image"&gt;
+            &lt;/div&gt;
+            &lt;div class="content"&gt;
+                &lt;h3&gt;H3 Sue Lim&lt;/h3&gt;
+                &lt;p&gt;Job title eCALD® National Programme Director&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class="spotlight"&gt;
+            &lt;div class="thumbnail"&gt;
+                &lt;img src="assets/amy-cao.jpg" alt="image"&gt;
+            &lt;/div&gt;
+            &lt;div class="content"&gt;
+                &lt;h3&gt;Amy Cao&lt;/h3&gt;
+                &lt;p&gt;eCALD® Course Coordinator&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class="spotlight"&gt;
+            &lt;div class="thumbnail"&gt;
+                &lt;img src="assets/elena-wong.jpg" alt="image"&gt;
+            &lt;/div&gt;
+            &lt;div class="content"&gt;
+                &lt;h3&gt;Elena Wong&lt;/h3&gt;
+                &lt;p&gt;eCALD® Course Coordinator&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="sidebar"&gt;
+        &lt;h3&gt;H3 Title&lt;/h3&gt;
+        &lt;div&gt;
+            &lt;p&gt;&lt;a href=""&gt;&lt;i class="material-icons"&gt;date_range&lt;/i&gt;Course calendar&lt;/a&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;a href=""&gt;&lt;i class="material-icons"&gt;assignment&lt;/i&gt;Eligibility and Enrolment&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+            <!-- Inroduction -->
+            <h2>Inroduction</h2>
+            <div class="intro">
+                <h2>CALD cultural competency courses</h2>
+                <p>eCALD offers a range of face-to-face and online courses for both caring for culturally and linguistically diverse (CALD) patients as well as working in a CALD workforce. With all course bases on cultural awareness, sensitivity, knowledge and practical skills.</p>
+                <a class="btn icon" href=""><i class="material-icons">assignment</i> <span>View eligibility information</span></a>
+                <a class="btn icon" href=""><i class="material-icons">date_range</i> <span>View upcoming courses</span></a>
+            </div>
+            <br>
+            <h3>Markup</h3>
+
+<pre><code>&lt;div class="intro"&gt;
+    &lt;h2&gt;CALD cultural competency courses&lt;/h2&gt;
+    &lt;p&gt;eCALD offers a range of face-to-face and online courses for both caring for culturally and linguistically diverse (CALD) patients as well as working in a CALD workforce. With all course bases on cultural awareness, sensitivity, knowledge and practical skills.&lt;/p&gt;
+    &lt;a class="btn icon" href=""&gt;&lt;i class="material-icons"&gt;assignment&lt;/i&gt; &lt;span&gt;View eligibility information&lt;/span&gt;&lt;/a&gt;
+    &lt;a class="btn icon" href=""&gt;&lt;i class="material-icons"&gt;date_range&lt;/i&gt; &lt;span&gt;View upcoming courses&lt;/span&gt;&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+
+            <div class="intro">
+                <h2>Our resources</h2>
+                <p>We provide a range of supplementary resources in addition to the material covered in our courses. These include digital reference materials as well as translated information, links to relevant research, and information regarding services available to culturally and linguistically diverse communitites.</p>
+                <a class="btn outline" href="">View all resources</a>
+            </div>
+            <br>
+            <h3>Markup</h3>
+
+<pre><code>&lt;div class="intro"&gt;
+    &lt;h2&gt;Our resources&lt;/h2&gt;
+    &lt;p&gt;We provide a range of supplementary resources in addition to the material covered in our courses. These include digital reference materials as well as translated information, links to relevant research, and information regarding services available to culturally and linguistically diverse communitites.&lt;/p&gt;
+    &lt;a class="btn outline" href=""&gt;View all resources&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+
+            <!-- Quote -->
+            <h2>Quote</h2>
+
+            <div class="bg-light" style="padding-bottom:60px;">
+                <div class="quote">
+                    <div class="speech">
+                        <div>
+                            <svg>
+                                <use xlink:href="#quote"/>
+                            </svg>
+                            <h3>I think could help a lot of people in their every day practice...</h3>
+                            <p>I think that this course should be done by everyone that works within a medical environment. I think that far too often there is a lack of understanding between cultures and individuals and this needs to be addressed. This course has given useful information that I think could help a lot of people in their every day practice.</p>
+                            <p>eCALD Learner, <strong>CALD 1</strong></p>
+                        </div>
+                        <div>
+                            <svg>
+                                <use xlink:href="#quote"/>
+                            </svg>
+                            <h3>I think could help a lot of people in their every day practice...</h3>
+                            <p>I think that this course should be done by everyone that works within a medical environment. I think that far too often there is a lack of understanding between cultures and individuals and this needs to be addressed. This course has given useful information that I think could help a lot of people in their every day practice.</p>
+                            <p>eCALD Learner, <strong>CALD 1</strong></p>
+                        </div>
+                        <div>
+                            <svg>
+                                <use xlink:href="#quote"/>
+                            </svg>
+                            <h3>I think could help a lot of people in their every day practice...</h3>
+                            <p>I think that this course should be done by everyone that works within a medical environment. I think that far too often there is a lack of understanding between cultures and individuals and this needs to be addressed. This course has given useful information that I think could help a lot of people in their every day practice.</p>
+                            <p>eCALD Learner, <strong>CALD 1</strong></p>
+                        </div>
+                    </div>
+                    <div class="speech-arrow"></div>
+                </div>
+            </div>
+            <br>
+            <h3>Markup</h3>
+<pre><code>&lt;div class="quote"&gt;
+    &lt;div class="speech"&gt;
+        &lt;div&gt;
+            &lt;svg&gt;
+                &lt;use xlink:href="#quote"/&gt;
+            &lt;/svg&gt;
+            &lt;h3&gt;I think could help a lot of people in their every day practice...&lt;/h3&gt;
+            &lt;p&gt;I think that this course should be done by everyone that works within a medical environment. I think that far too often there is a lack of understanding between cultures and individuals and this needs to be addressed. This course has given useful information that I think could help a lot of people in their every day practice.&lt;/p&gt;
+            &lt;p&gt;eCALD Learner, &lt;strong&gt;CALD 1&lt;/strong&gt;&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+            &lt;svg&gt;
+                &lt;use xlink:href="#quote"/&gt;
+            &lt;/svg&gt;
+            &lt;h3&gt;I think could help a lot of people in their every day practice...&lt;/h3&gt;
+            &lt;p&gt;I think that this course should be done by everyone that works within a medical environment. I think that far too often there is a lack of understanding between cultures and individuals and this needs to be addressed. This course has given useful information that I think could help a lot of people in their every day practice.&lt;/p&gt;
+            &lt;p&gt;eCALD Learner, &lt;strong&gt;CALD 1&lt;/strong&gt;&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+            &lt;svg&gt;
+                &lt;use xlink:href="#quote"/&gt;
+            &lt;/svg&gt;
+            &lt;h3&gt;I think could help a lot of people in their every day practice...&lt;/h3&gt;
+            &lt;p&gt;I think that this course should be done by everyone that works within a medical environment. I think that far too often there is a lack of understanding between cultures and individuals and this needs to be addressed. This course has given useful information that I think could help a lot of people in their every day practice.&lt;/p&gt;
+            &lt;p&gt;eCALD Learner, &lt;strong&gt;CALD 1&lt;/strong&gt;&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="speech-arrow"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+            <!-- Statistics -->
+            <h2>Statistics</h2>
+            <div class="bg-dark">
+                <div class="statistics">
+                    <div class="statistic">
+                        <i class="material-icons">group</i>
+                        <h3 id="visitor-count"></h3>
+                        <p>New visitors this month</p>
+                    </div>
+
+                    <div class="statistic">
+                        <i class="material-icons">web</i>
+                        <h3 id="country-count"></h3>
+                        <p>Countries visited eCALD website</p>
+                    </div>
+
+                    <div class="statistic">
+                        <i class="material-icons">mail_outline</i>
+                        <h3 id="subscriber-count"></h3>
+                        <p>eCALD new subscribers</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <h3>Markup</h3>
+
+<pre><code>&lt;div class="statistics"&gt;
+    &lt;div class="statistic"&gt;
+        &lt;i class="material-icons"&gt;group&lt;/i&gt;
+        &lt;h3 id="visitor-count"&gt;&lt;/h3&gt;
+        &lt;p&gt;New visitors this month&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;div class="statistic"&gt;
+        &lt;i class="material-icons"&gt;web&lt;/i&gt;
+        &lt;h3 id="country-count"&gt;&lt;/h3&gt;
+        &lt;p&gt;Countries visited eCALD website&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;div class="statistic"&gt;
+        &lt;i class="material-icons"&gt;mail_outline&lt;/i&gt;
+        &lt;h3 id="subscriber-count"&gt;&lt;/h3&gt;
+        &lt;p&gt;eCALD new subscribers&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+            <!-- Form -->
+            <h2>Form</h2>
+
+            <h3>Form - Light</h3>
+
+            <form class="form light">
+                <p>All fields are mandatory.</p>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fname">First name</label>
+                        <input type="text" id="fname" name="firstname">
+                    </div>
+                    <div class="form-group">
+                        <label for="lname">Last name</label>
+                        <input type="text" id="lname" name="lastname">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="organisation">Organisation name</label>
+                        <input type="text" id="organisation" name="organisation">
+                    </div>
+                    <div class="form-group">
+                        <label for="role">Your role</label>
+                        <input type="text" id="role" name="role">
+                    </div>
+                </div>
+                <input class="btn dark" type="submit" value="Subscribe">
+            </form>
+            <br>
+            <h3>Markup</h3>
+<pre><code>&lt;form class="form light"&gt;
+    &lt;p&gt;All fields are mandatory.&lt;/p&gt;
+    &lt;div class="form-row"&gt;
+        &lt;div class="form-group"&gt;
+            &lt;label for="fname"&gt;First name&lt;/label&gt;
+            &lt;input type="text" id="fname" name="firstname"&gt;
+        &lt;/div&gt;
+        &lt;div class="form-group"&gt;
+            &lt;label for="lname"&gt;Last name&lt;/label&gt;
+            &lt;input type="text" id="lname" name="lastname"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="form-group"&gt;
+        &lt;label for="email"&gt;Email&lt;/label&gt;
+        &lt;input type="email" id="email"&gt;
+    &lt;/div&gt;
+    &lt;div class="form-row"&gt;
+        &lt;div class="form-group"&gt;
+            &lt;label for="organisation"&gt;Organisation name&lt;/label&gt;
+            &lt;input type="text" id="organisation" name="organisation"&gt;
+        &lt;/div&gt;
+        &lt;div class="form-group"&gt;
+            &lt;label for="role"&gt;Your role&lt;/label&gt;
+            &lt;input type="text" id="role" name="role"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;input class="btn dark" type="submit" value="Subscribe"&gt;
+&lt;/form&gt;</code></pre>
+
+            <h3>Form - Dark</h3>
+
+            <form class="form dark">
+                <p>All fields are mandatory.</p>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fname">First name</label>
+                        <input type="text" id="fname" name="firstname">
+                    </div>
+                    <div class="form-group">
+                        <label for="lname">Last name</label>
+                        <input type="text" id="lname" name="lastname">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="organisation">Organisation name</label>
+                        <input type="text" id="organisation" name="organisation">
+                    </div>
+                    <div class="form-group">
+                        <label for="role">Your role</label>
+                        <input type="text" id="role" name="role">
+                    </div>
+                </div>
+                <input class="btn dark" type="submit" value="Subscribe">
+            </form>
+            <br>
+            <h3>Markup</h3>
+<pre><code>&lt;form class="form dark"&gt;
+    &lt;p&gt;All fields are mandatory.&lt;/p&gt;
+    &lt;div class="form-row"&gt;
+        &lt;div class="form-group"&gt;
+            &lt;label for="fname"&gt;First name&lt;/label&gt;
+            &lt;input type="text" id="fname" name="firstname"&gt;
+        &lt;/div&gt;
+        &lt;div class="form-group"&gt;
+            &lt;label for="lname"&gt;Last name&lt;/label&gt;
+            &lt;input type="text" id="lname" name="lastname"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="form-group"&gt;
+        &lt;label for="email"&gt;Email&lt;/label&gt;
+        &lt;input type="email" id="email"&gt;
+    &lt;/div&gt;
+    &lt;div class="form-row"&gt;
+        &lt;div class="form-group"&gt;
+            &lt;label for="organisation"&gt;Organisation name&lt;/label&gt;
+            &lt;input type="text" id="organisation" name="organisation"&gt;
+        &lt;/div&gt;
+        &lt;div class="form-group"&gt;
+            &lt;label for="role"&gt;Your role&lt;/label&gt;
+            &lt;input type="text" id="role" name="role"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;input class="btn dark" type="submit" value="Subscribe"&gt;
+&lt;/form&gt;</code></pre>
+
+            <!-- Carousel -->
+            <h2>Carousel</h2>
+
+            <div class="bg-dark" style="padding:30px 60px;">
+                <div class="carousel">
+                    <div class="card">
+                        <div class="thumbnail">
+                            <video poster="assets/video-poster.png" id="player" controls>
+                                <source src="assets/ecald.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                        <div class="content">
+                            <p>At eCALD our vision is to enhance culturally and and linguistically diverse cultural competence, through the provision of resources and courses for health workers in New Zealand, for the benefit of both patients and practitioners.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="thumbnail">
+                            <video poster="assets/video-poster.png" id="player" controls>
+                                <source src="assets/ecald.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                        <div class="content">
+                            <p>At eCALD our vision is to enhance culturally and and linguistically diverse cultural competence, through the provision of resources and courses for health workers in New Zealand, for the benefit of both patients and practitioners.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="thumbnail">
+                            <video poster="assets/video-poster.png" id="player" controls>
+                                <source src="assets/ecald.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                        <div class="content">
+                            <p>At eCALD our vision is to enhance culturally and and linguistically diverse cultural competence, through the provision of resources and courses for health workers in New Zealand, for the benefit of both patients and practitioners.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <h3>Markup</h3>
+<pre><code>&lt;div class="carousel"&gt;
+    &lt;div class="card"&gt;
+        &lt;div class="thumbnail"&gt;
+            &lt;video poster="assets/video-poster.png" id="player" controls&gt;
+                &lt;source src="assets/ecald.mp4" type="video/mp4" /&gt;
+            &lt;/video&gt;
+        &lt;/div&gt;
+        &lt;div class="content"&gt;
+            &lt;p&gt;At eCALD our vision is to enhance culturally and and linguistically diverse cultural competence, through the provision of resources and courses for health workers in New Zealand, for the benefit of both patients and practitioners.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="card"&gt;
+        &lt;div class="thumbnail"&gt;
+            &lt;video poster="assets/video-poster.png" id="player" controls&gt;
+                &lt;source src="assets/ecald.mp4" type="video/mp4" /&gt;
+            &lt;/video&gt;
+        &lt;/div&gt;
+        &lt;div class="content"&gt;
+            &lt;p&gt;At eCALD our vision is to enhance culturally and and linguistically diverse cultural competence, through the provision of resources and courses for health workers in New Zealand, for the benefit of both patients and practitioners.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="card"&gt;
+        &lt;div class="thumbnail"&gt;
+            &lt;video poster="assets/video-poster.png" id="player" controls&gt;
+                &lt;source src="assets/ecald.mp4" type="video/mp4" /&gt;
+            &lt;/video&gt;
+        &lt;/div&gt;
+        &lt;div class="content"&gt;
+            &lt;p&gt;At eCALD our vision is to enhance culturally and and linguistically diverse cultural competence, through the provision of resources and courses for health workers in New Zealand, for the benefit of both patients and practitioners.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+
+
+        </div>
 
         <script src="js/jquery-3.2.1.min.js"></script>
         <script src="js/plyr.js"></script>
+        <script src="slick/slick.min.js"></script>
+        <script src="js/ScrollMagic.min.js"></script>
+        <script src="js/countUp.min.js"></script>
         <script src="js/navigation.js"></script>
+        <script src="js/carousel.js"></script>
+        <script src="js/quote.js"></script>
+        <script src="js/statistics.js"></script>
 
         <script>
             const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));

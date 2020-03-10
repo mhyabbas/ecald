@@ -50,13 +50,18 @@ footer .copyright ul li a {
   text-decoration: underline;
 }
 
+footer .copyright ul li a:hover {
+  color: inherit;
+  text-decoration: inherit;
+}
+
 footer .copyright .logo img {
   display: inline-block;
   width: 120px;
   height: auto;
 }
 
-@media all and (min-width: 1200px) {
+@media all and (min-width: 800px) {
   footer .footer {
     display: flex;
     justify-content: space-between;
