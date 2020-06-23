@@ -6,15 +6,24 @@
 	justify-content: center;
 }
 
+.cards > a {
+	text-decoration: none;
+}
+
 .card {
 	display: flex;
 	flex-direction: column;
-	margin: 10px;
+	margin: 10px 15px 20px;
 	width: 100%;
 	max-width: 400px;
 	background: white;
 	border-radius: 10px;
 	box-shadow: 0 3px 5px rgba(0,0,0,.15);
+	transition: box-shadow .4s;
+}
+
+.card:hover {
+	box-shadow: 0 10px 10px rgba(0,0,0,.15);
 }
 
 .card .thumbnail {
@@ -57,11 +66,22 @@
 	font-size: 14px;
 }
 
+.card:hover .content span.btn {
+	text-decoration: underline;
+}
+
 /*Base card with forward arrow button*/
 
 .card .content .btn.arrow {
 	display: flex;
 	margin-left: auto;
+	font-size: 24px;
+	font-weight: normal;
+}
+
+.card:hover .content .btn.arrow {
+	border-color: #334154;
+	color: #334154;
 }
 
 /*Base card with tag and heading*/
@@ -94,7 +114,7 @@
 }
 
 .card.horizontal .content {
-	padding: inherit;
+	padding: 20px 0;
 }
 
 .card.horizontal .content h3 {
@@ -193,6 +213,15 @@
 .card.colour .footer .btn.arrow {
 	position: absolute;
 	right: 15px;
+	border-color: white;
+	color: white;
+	font-size: 24px;
+	font-weight: normal;
+}
+
+.card.colour:hover .footer .btn.arrow {
+	background-color: white;
+	color: #334154;
 }
 
 /*Colour cards - alternate version*/
@@ -224,7 +253,7 @@
 /*Event cards*/
 
 .card.event .content {
-    flex: none;
+	flex: none;
 }
 
 .card.event .content h3 {
@@ -252,16 +281,52 @@
 	margin: 3px;
 }
 
+/*Resource cards*/
+
+.card.resource a {
+	text-decoration: none;
+}
+
+.card.resource a:hover {
+	text-decoration: underline;
+}
+
+.card.resource .detail {
+	border-top: 1px solid #D5D5D5;
+}
+
+.card.resource .detail p {
+	display: flex;
+	align-items: flex-start;
+}
+
+.card.resource .detail i {
+	margin-right: 10px;
+	color: #576784;
+}
+
+.card.resource .footer {
+	padding: 0 30px 20px;
+}
+
+/*Standalone card*/
+
+.card.one-column {
+	max-width: 400px;
+	margin: 10px 0;
+}
+
 @media all and (min-width: 800px) {
 
 	/*Base card*/
 
 	.cards {
-		justify-content: flex-start;
+		margin-bottom: 20px;
 	}
 
 	.card {
 		flex: 0 1 45%;
+		max-width: inherit;
 	}
 
 	/*Base cards - horizontal layout*/
@@ -269,12 +334,14 @@
 	.card.horizontal {
 		flex-direction: row;
 		flex: none;
+		justify-content: space-between;
+		margin: 0;
 		max-width: inherit;
-		margin: inherit;
 	}
 
-	.card.horizontal div {
-		flex: 1 1 50%;
+	.card.horizontal > div {
+		flex: 0 1 45%;
+		margin: 10px 25px;
 	}
 
 	.card.horizontal .thumbnail .plyr {
@@ -282,7 +349,7 @@
 	}
 
 	.card.horizontal .content {
-		padding: 0 30px 20px;
+		padding: 0;
 	}
 
 	.card.horizontal .content h3 {
@@ -306,6 +373,21 @@
 
 	.card {
 		flex: 0 1 30%;
+	}
+
+	.cards.two-column {
+		justify-content: space-between;
+	}
+
+	.cards.two-column .card {
+		flex: 0 1 45%;
+		margin: 10px 25px;
+	}
+
+	/*Base cards - horizontal layout*/
+
+	.card.horizontal > div {
+		flex: 0 1 45%;
 	}
 
 	/*Colour card*/

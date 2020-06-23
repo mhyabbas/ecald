@@ -1,0 +1,73 @@
+.accordion {
+  margin: 30px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.accordion a {
+  text-decoration: none;
+}
+
+.accordion .button {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-top: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.accordion .button h4 {
+  margin: 0;
+}
+
+.accordion .button .btn {
+  width: 30px;
+  height: 30px;
+  margin: 0 0 0 10px;
+  background-color: #334154;
+  border: 2px solid #334154;
+  color: white;
+}
+
+.accordion .button.active .btn {
+  background-color: transparent;
+  border: 2px solid #8F5EA7;
+  color: #8F5EA7;
+}
+
+.accordion .button i {
+  font-size: 30px;
+  transition: all .5s;
+}
+
+.accordion .button.active i {
+  transform: rotate(180deg);
+}
+
+.accordion .panel {
+  padding: 0 0 10px 0;
+  display: none;
+}
+
+.accordion .panel a:hover {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.accordion .panel ol {
+  padding-inline-start: 55px;
+}
+
+.accordion .panel li {
+  position: relative;
+  color: #8F5EA7;
+  line-height: 40px;
+}
+
+.accordion .panel li:before {
+  position: absolute;
+  left: -55px;
+  color: #334154;
+  font-family: "Material Icons";
+  font-size: 25px;
+  content: "\e415";
+}

@@ -1,4 +1,7 @@
 $(function() {
+
+	// Burger menu toggle
+
 	$(".toggle a").on("click", function(e) {
 		e.preventDefault();
 		if ($(".item").hasClass("active")) {
@@ -9,4 +12,31 @@ $(function() {
 			$(this).html("<i class='material-icons'>close</i> <span>Menu</span>");
 		}
 	});
+
+	// Mobile navigation
+	
+	$(".main-nav ul li").on("click", function(e) {
+		e.preventDefault();
+		if ($(this).hasClass("current")) {
+			$(".item").removeClass("current");
+		} else {
+			$(".item").removeClass("current");
+			$(this).addClass("current");
+		}
+	});
+
+	// Search toggle
+	
+	$("#search-toggle").click(function(e){
+		e.preventDefault();
+		$("#search").addClass("show");
+		$(".nav > ul > li.item").addClass("hide");
+	});
+
+	$("#search a").click(function(e){
+		e.preventDefault();
+		$("#search").removeClass("show");
+		$(".nav > ul > li.item").removeClass("hide");
+	});
+
 });

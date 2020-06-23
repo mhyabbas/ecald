@@ -1,16 +1,16 @@
-.form {
+.form.padding {
 	margin: 20px 0;
 	padding: 20px;
-}
-
-.form p {
-	color: #334154;
-	font-size: 14px;
 }
 
 .form.light {
 	background: #F6F9FC;
 	border-radius: 10px;
+}
+
+.form p {
+	color: #334154;
+	font-size: 14px;
 }
 
 .form-group {
@@ -71,6 +71,11 @@
 }
 
 @media all and (min-width: 800px) {
+
+	.form-title {
+		display: flex;
+		justify-content: space-between;
+	}
 
 	.form-row {
 		display: flex;

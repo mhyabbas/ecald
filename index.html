@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="css/main.css" type="text/css">
 
     </head>
-    <body>
+    <body style="padding: 0;">
 
         <!-- SVG symbols -->
 
@@ -73,16 +73,11 @@
             <h2>Header</h2>
         </div>
 
-            <nav class="nav">
+            <nav class="nav" style="position: relative;">
                 <ul>
                     <li class="toggle"><a href="#"><i class="material-icons">menu</i> <span>Menu</span></a></li>
                     <li class="logo"><a href=""><img src="assets/logo.svg" alt="logo"></a></li>
-                    <li class="item search">
-                        <div>
-                            <input type="search" name="search" placeholder="Search">
-                            <a href=""><i class="material-icons">search</i></a>
-                        </div>
-                    </li>
+                    <li class="item search"><a id="search-toggle" href=""><i class="material-icons">search</i></a></li>
 
                     <div class="main-nav">
                         <ul>
@@ -97,17 +92,19 @@
                                     </svg> 
                                 </a>
                                 <div class="sub-nav">
-                                    <div class="sub-item">
-                                        <a href="">Courses for working with CALD Patients</a>
-                                    </div>
-                                    <div class="sub-item">
-                                        <a href="">Courses for Culturally Diverse Workplaces</a>
-                                    </div>
-                                    <div class="sub-item">
-                                        <a href="">Eligibility</a>
-                                    </div>
-                                    <div class="sub-item">
-                                        <a href="">Courses Calendar</a>
+                                    <div class="sub-nav-wrapper">
+                                        <div class="sub-item">
+                                            <a href="">Courses for working with CALD Patients</a>
+                                        </div>
+                                        <div class="sub-item">
+                                            <a href="">Courses for Culturally Diverse Workplaces</a>
+                                        </div>
+                                        <div class="sub-item">
+                                            <a href="">Eligibility</a>
+                                        </div>
+                                        <div class="sub-item">
+                                            <a href="">Courses Calendar</a>
+                                        </div>
                                     </div>
                                 </div>
                             </li>
@@ -122,26 +119,28 @@
                                     </svg> 
                                 </a>
                                 <div class="sub-nav">
-                                    <div class="sub-item">
-                                        <a href="">Cross Cultural Resources</a>
-                                    </div>
-                                    <div class="sub-item">
-                                        <a href="">Translated Information</a>
-                                    </div>
-                                    <div class="sub-item">
-                                        <a href="">Publications</a>
-                                    </div>
-                                    <div class="sub-item">
-                                        <a href="">Research Commentary</a>
-                                    </div>
-                                    <div class="sub-item">
-                                        <a href="">Migrant and Refugee Services</a>
-                                    </div>
-                                    <div class="sub-item">
-                                        <a href="">Screening Tools</a>
-                                    </div>
-                                     <div class="sub-item">
-                                        <a href="">Cultural Competence Assessment Tools</a>
+                                    <div class="sub-nav-wrapper">
+                                        <div class="sub-item">
+                                            <a href="">Cross Cultural Resources</a>
+                                        </div>
+                                        <div class="sub-item">
+                                            <a href="">Translated Information</a>
+                                        </div>
+                                        <div class="sub-item">
+                                            <a href="">Publications</a>
+                                        </div>
+                                        <div class="sub-item">
+                                            <a href="">Research Commentary</a>
+                                        </div>
+                                        <div class="sub-item">
+                                            <a href="">Migrant and Refugee Services</a>
+                                        </div>
+                                        <div class="sub-item">
+                                            <a href="">Screening Tools</a>
+                                        </div>
+                                         <div class="sub-item">
+                                            <a href="">Cultural Competence Assessment Tools</a>
+                                        </div>
                                     </div>
                                 </div>
                             </li>
@@ -158,6 +157,12 @@
                     <li class="item"><a href="">Locations</a></li>
                     <li class="item"><a href="">Contact us</a></li>
                 </ul>
+
+                <div id="search">
+                    <input type="search" name="search" placeholder="Search">
+                    <a href=""><i class="material-icons">close</i></a>
+                </div>
+
             </nav>
 
         <div class="container">
@@ -187,17 +192,19 @@
                         &lt;/svg&gt; 
                     &lt;/a&gt;
                     &lt;div class="sub-nav"&gt;
-                        &lt;div class="sub-item"&gt;
-                            &lt;a href=""&gt;Courses for working with CALD Patients&lt;/a&gt;
-                        &lt;/div&gt;
-                        &lt;div class="sub-item"&gt;
-                            &lt;a href=""&gt;Courses for Culturally Diverse Workplaces&lt;/a&gt;
-                        &lt;/div&gt;
-                        &lt;div class="sub-item"&gt;
-                            &lt;a href=""&gt;Eligibility&lt;/a&gt;
-                        &lt;/div&gt;
-                        &lt;div class="sub-item"&gt;
-                            &lt;a href=""&gt;Courses Calendar&lt;/a&gt;
+                        &lt;div class="sub-nav-wrapper"&gt;
+                            &lt;div class="sub-item"&gt;
+                                &lt;a href=""&gt;Courses for working with CALD Patients&lt;/a&gt;
+                            &lt;/div&gt;
+                            &lt;div class="sub-item"&gt;
+                                &lt;a href=""&gt;Courses for Culturally Diverse Workplaces&lt;/a&gt;
+                            &lt;/div&gt;
+                            &lt;div class="sub-item"&gt;
+                                &lt;a href=""&gt;Eligibility&lt;/a&gt;
+                            &lt;/div&gt;
+                            &lt;div class="sub-item"&gt;
+                                &lt;a href=""&gt;Courses Calendar&lt;/a&gt;
+                            &lt;/div&gt;
                         &lt;/div&gt;
                     &lt;/div&gt;
                 &lt;/li&gt;
@@ -212,26 +219,28 @@
                         &lt;/svg&gt; 
                     &lt;/a&gt;
                     &lt;div class="sub-nav"&gt;
-                        &lt;div class="sub-item"&gt;
-                            &lt;a href=""&gt;Cross Cultural Resources&lt;/a&gt;
-                        &lt;/div&gt;
-                        &lt;div class="sub-item"&gt;
-                            &lt;a href=""&gt;Translated Information&lt;/a&gt;
-                        &lt;/div&gt;
-                        &lt;div class="sub-item"&gt;
-                            &lt;a href=""&gt;Publications&lt;/a&gt;
-                        &lt;/div&gt;
-                        &lt;div class="sub-item"&gt;
-                            &lt;a href=""&gt;Research Commentary&lt;/a&gt;
-                        &lt;/div&gt;
-                        &lt;div class="sub-item"&gt;
-                            &lt;a href=""&gt;Migrant and Refugee Services&lt;/a&gt;
-                        &lt;/div&gt;
-                        &lt;div class="sub-item"&gt;
-                            &lt;a href=""&gt;Screening Tools&lt;/a&gt;
-                        &lt;/div&gt;
-                         &lt;div class="sub-item"&gt;
-                            &lt;a href=""&gt;Cultural Competence Assessment Tools&lt;/a&gt;
+                        &lt;div class="sub-nav-wrapper"&gt;
+                            &lt;div class="sub-item"&gt;
+                                &lt;a href=""&gt;Cross Cultural Resources&lt;/a&gt;
+                            &lt;/div&gt;
+                            &lt;div class="sub-item"&gt;
+                                &lt;a href=""&gt;Translated Information&lt;/a&gt;
+                            &lt;/div&gt;
+                            &lt;div class="sub-item"&gt;
+                                &lt;a href=""&gt;Publications&lt;/a&gt;
+                            &lt;/div&gt;
+                            &lt;div class="sub-item"&gt;
+                                &lt;a href=""&gt;Research Commentary&lt;/a&gt;
+                            &lt;/div&gt;
+                            &lt;div class="sub-item"&gt;
+                                &lt;a href=""&gt;Migrant and Refugee Services&lt;/a&gt;
+                            &lt;/div&gt;
+                            &lt;div class="sub-item"&gt;
+                                &lt;a href=""&gt;Screening Tools&lt;/a&gt;
+                            &lt;/div&gt;
+                             &lt;div class="sub-item"&gt;
+                                &lt;a href=""&gt;Cultural Competence Assessment Tools&lt;/a&gt;
+                            &lt;/div&gt;
                         &lt;/div&gt;
                     &lt;/div&gt;
                 &lt;/li&gt;
@@ -432,7 +441,7 @@
             </ul>
 
             <h3>Breadcrumb - Light</h3>
-            <div class="bg-light">
+            <div style="background-color:#F6F9FC;padding:20px;margin-bottom:20px;">
                 <nav class="breadcrumb" aria-label="breadcrumb">
                     <ul>
                         <li><a href="">Home</a></li>
@@ -452,8 +461,8 @@
 &lt;/nav&gt;</code></pre>
 
             <h3>Breadcrumb - Dark</h3>
-            <div class="bg-dark">
-                <nav class="breadcrumb text-light" aria-label="breadcrumb">
+            <div style="background-color:#8F5EA7;padding:20px;margin-bottom:20px;">
+                <nav class="breadcrumb text-white" aria-label="breadcrumb">
                     <ul>
                         <li><a href="">Home</a></li>
                         <li><a href="">Section</a></li>
@@ -463,7 +472,7 @@
             </div>
 
             <h3>Markup</h3>
-<pre><code>&lt;nav class="breadcrumb text-light" aria-label="breadcrumb"&gt;
+<pre><code>&lt;nav class="breadcrumb text-white" aria-label="breadcrumb"&gt;
     &lt;ul&gt;
         &lt;li&gt;&lt;a href=""&gt;Home&lt;/a&gt;&lt;/li&gt;
         &lt;li&gt;&lt;a href=""&gt;Section&lt;/a&gt;&lt;/li&gt;
@@ -548,7 +557,7 @@
             </ul>
 
             <h3>Button - default (filled)</h3>
-            <div class="bg-light">
+            <div style="background-color:#F6F9FC;padding:20px;margin-bottom:20px;">
                 <a class="btn" href="">Button text</a>
                 <a class="btn dark" href="">Button text</a>
             </div>
@@ -559,7 +568,7 @@
 
             <h3>Button - outline</h3>
             <a class="btn outline" href="">Button text</a>
-            <div class="bg-dark">
+            <div style="background-color:#8F5EA7;padding:20px;margin-bottom:20px;">
                 <a class="btn outline white" href="">Button text</a>
             </div>
 
@@ -569,7 +578,7 @@
 
             <h3>Button with icon</h3>
             <a class="btn icon" href=""><i class="material-icons">event_note</i> <span>Button text</span></a>
-            <div class="bg-dark">
+            <div style="background-color:#8F5EA7;padding:20px;margin-bottom:20px;">
                 <a class="btn icon cyan" href=""><i class="material-icons">play_circle_filled</i> <span>Button text</span></a>
                 <a class="btn icon outline white" href=""><i class="material-icons">play_circle_filled</i> <span>Button text</span></a>
             </div>
@@ -580,13 +589,13 @@
 &lt;a class="btn icon outline white" href=""&gt;&lt;i class="material-icons"&gt;play_circle_filled&lt;/i&gt; &lt;span&gt;Button text&lt;/span&gt;&lt;/a&gt;</code></pre>
 
             <h3>Arrow button - used in pagination and cards</h3>
-            <div class="bg-light">
+            <div style="background-color:#F6F9FC;padding:20px;margin-bottom:20px;">
                 <a class="btn arrow" href=""><i class="material-icons">arrow_back</i></a>
                 <a class="btn arrow" href=""><i class="material-icons">arrow_forward</i></a>
                 <a class="btn arrow cyan" href=""><i class="material-icons">arrow_back</i></a>
                 <a class="btn arrow cyan" href=""><i class="material-icons">arrow_forward</i></a>
             </div>
-            <div class="bg-dark">
+            <div style="background-color:#8F5EA7;padding:20px;margin-bottom:20px;">
                 <a class="btn arrow white" href=""><i class="material-icons">arrow_back</i></a>
                 <a class="btn arrow white" href=""><i class="material-icons">arrow_forward</i></a>
             </div>
@@ -637,7 +646,7 @@
             </ul>
 
             <div class="cards">
-                <div class="card">
+                <a href="" class="card">
                     <div class="thumbnail">
                         <img src="assets/card-base.jpg" alt="image">
                     </div>
@@ -645,7 +654,7 @@
                         <h3>Card title</h3>
                         <p>A medium to long length paragraph for the card text.</p>
                     </div>
-                </div>
+                </a>
 
                 <div class="card">
                     <div class="thumbnail">
@@ -660,20 +669,20 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <a href="" class="card">
                     <div class="thumbnail">
                         <img src="assets/card-base2.jpg" alt="image">
                     </div>
                     <div class="content">
-                        <a class="tag flag blue" href="">Tag text</a>
+                        <span class="tag flag blue" href="">Tag text</span>
                         <h4>Card title</h4>
                     </div>
-                </div>
+                </a>
             </div>
             <br>
             <h3>Markup</h3>
 <pre><code>&lt;div class="cards"&gt;
-    &lt;div class="card"&gt;
+    &lt;a href="" class="card"&gt;
         &lt;div class="thumbnail"&gt;
             &lt;img src="assets/card-base.jpg" alt="image"&gt;
         &lt;/div&gt;
@@ -681,7 +690,7 @@
             &lt;h3&gt;Card title&lt;/h3&gt;
             &lt;p&gt;A medium to long length paragraph for the card text.&lt;/p&gt;
         &lt;/div&gt;
-    &lt;/div&gt;
+    &lt;/a&gt;
 
     &lt;div class="card"&gt;
         &lt;div class="thumbnail"&gt;
@@ -696,15 +705,15 @@
         &lt;/div&gt;
     &lt;/div&gt;
 
-    &lt;div class="card"&gt;
+    &lt;a href="" class="card"&gt;
         &lt;div class="thumbnail"&gt;
             &lt;img src="assets/card-base2.jpg" alt="image"&gt;
         &lt;/div&gt;
         &lt;div class="content"&gt;
-            &lt;a class="tag flag blue" href=""&gt;Tag text&lt;/a&gt;
+            &lt;span class="tag flag blue" href=""&gt;Tag text&lt;/span&gt;
             &lt;h4&gt;Card title&lt;/h4&gt;
         &lt;/div&gt;
-    &lt;/div&gt;
+    &lt;/a&gt;
 &lt;/div&gt;</code></pre>
 
             <h3>Base cards - horizontal layout</h3>
@@ -752,7 +761,7 @@
                 </li>
             </ul>
             <div class="cards">
-                <div class="card colour blue">
+                <a href="" class="card colour blue">
                     <div class="thumbnail">                   
                         <img src="assets/card-colour.jpg" alt="image">
                         <svg class="curve">
@@ -765,11 +774,11 @@
                     </div>
                     <div class="footer">
                         <p>Link text</p>
-                        <a class="btn arrow white" href=""><i class="material-icons">arrow_forward</i></a>
+                        <i class="btn arrow material-icons">arrow_forward</i>
                     </div>
-                </div>
+                </a>
 
-                <div class="card colour orange">
+                <a href="" class="card colour orange">
                     <div class="thumbnail">                   
                         <img src="assets/card-colour2.jpg" alt="image">
                         <svg class="curve">
@@ -782,11 +791,11 @@
                     </div>
                     <div class="footer">
                         <p>Link text</p>
-                        <a class="btn arrow white" href=""><i class="material-icons">arrow_forward</i></a>
+                        <i class="btn arrow material-icons">arrow_forward</i>
                     </div>
-                </div>
+                </a>
 
-                <div class="card colour alternate teal">
+                <a href="" class="card colour alternate teal">
                     <div class="thumbnail">                   
                         <img src="assets/card-colour3.jpg" alt="image">
                         <svg class="curve">
@@ -796,15 +805,15 @@
                     </div>
                     <div class="content">
                         <p>A medium to long length paragraph for the card text.</p>
-                        <a class="btn" href="">Button text</a>
+                        <span class="btn" href="">Button text</span>
                     </div>
-                </div>
+                </a>
             </div>
             <br>
             <h3>Markup</h3>
 
-<pre><code>&lt;div class="cards">
-    &lt;div class="card colour blue"&gt;
+<pre><code>&lt;div class="cards"&gt;
+    &lt;a href="" class="card colour blue"&gt;
         &lt;div class="thumbnail"&gt;                   
             &lt;img src="assets/card-colour.jpg" alt="image"&gt;
             &lt;svg class="curve"&gt;
@@ -817,11 +826,11 @@
         &lt;/div&gt;
         &lt;div class="footer"&gt;
             &lt;p&gt;Link text&lt;/p&gt;
-            &lt;a class="btn arrow white" href=""&gt;&lt;i class="material-icons"&gt;arrow_forward&lt;/i&gt;&lt;/a&gt;
+            &lt;i class="btn arrow material-icons"&gt;arrow_forward&lt;/i&gt;
         &lt;/div&gt;
-    &lt;/div&gt;
+    &lt;/a&gt;
 
-    &lt;div class="card colour orange"&gt;
+    &lt;a href="" class="card colour orange"&gt;
         &lt;div class="thumbnail"&gt;                   
             &lt;img src="assets/card-colour2.jpg" alt="image"&gt;
             &lt;svg class="curve"&gt;
@@ -834,11 +843,11 @@
         &lt;/div&gt;
         &lt;div class="footer"&gt;
             &lt;p&gt;Link text&lt;/p&gt;
-            &lt;a class="btn arrow white" href=""&gt;&lt;i class="material-icons"&gt;arrow_forward&lt;/i&gt;&lt;/a&gt;
+            &lt;i class="btn arrow material-icons"&gt;arrow_forward&lt;/i&gt;
         &lt;/div&gt;
-    &lt;/div&gt;
+    &lt;/a&gt;
 
-    &lt;div class="card colour alternate teal"&gt;
+    &lt;a href="" class="card colour alternate teal"&gt;
         &lt;div class="thumbnail"&gt;                   
             &lt;img src="assets/card-colour3.jpg" alt="image"&gt;
             &lt;svg class="curve"&gt;
@@ -848,9 +857,9 @@
         &lt;/div&gt;
         &lt;div class="content"&gt;
             &lt;p&gt;A medium to long length paragraph for the card text.&lt;/p&gt;
-            &lt;a class="btn" href=""&gt;Button text&lt;/a&gt;
+            &lt;span class="btn" href=""&gt;Button text&lt;/span&gt;
         &lt;/div&gt;
-    &lt;/div&gt;
+    &lt;/a&gt;
 &lt;/div&gt;</code></pre>
 
             <h3>Icon cards</h3>
@@ -858,58 +867,58 @@
                 <li>The image is an icon, it is smaller and centered in the card</li>
             </ul>
             <div class="cards">
-                <div class="card icon">
+                <a href="" class="card icon">
                     <div class="thumbnail">
                         <img src="assets/card-icon.png" alt="image">
                     </div>
                     <div class="content">
                         <h3>Card title</h3>
                         <p>A medium to long length paragraph for the card text.</p>
-                        <a class="btn arrow" href=""><i class="material-icons">arrow_forward</i></a>
+                        <i class="btn arrow material-icons">arrow_forward</i>
                     </div>
-                </div>
+                </a>
 
-                <div class="card icon">
+                <a href="" class="card icon">
                     <div class="thumbnail">
                         <img src="assets/card-icon2.png" alt="image">
                     </div>
                     <div class="content">
                         <h3>Card title</h3>
                         <p>A medium to long length paragraph for the card text.</p>
-                        <a class="btn arrow" href=""><i class="material-icons">arrow_forward</i></a>
+                        <i class="btn arrow material-icons">arrow_forward</i>
                     </div>
-                </div>
+                </a>
             </div>
             <br>
             <h3>Markup</h3>
 
 <pre><code>&lt;div class="cards"&gt;
-    &lt;div class="card icon"&gt;
+    &lt;a href="" class="card icon"&gt;
         &lt;div class="thumbnail"&gt;
             &lt;img src="assets/card-icon.png" alt="image"&gt;
         &lt;/div&gt;
         &lt;div class="content"&gt;
             &lt;h3&gt;Card title&lt;/h3&gt;
             &lt;p&gt;A medium to long length paragraph for the card text.&lt;/p&gt;
-            &lt;a class="btn arrow" href=""&gt;&lt;i class="material-icons"&gt;arrow_forward&lt;/i&gt;&lt;/a&gt;
+            &lt;i class="btn arrow material-icons"&gt;arrow_forward&lt;/i&gt;
         &lt;/div&gt;
-    &lt;/div&gt;
+    &lt;/a&gt;
 
-    &lt;div class="card icon"&gt;
+    &lt;a href="" class="card icon"&gt;
         &lt;div class="thumbnail"&gt;
             &lt;img src="assets/card-icon2.png" alt="image"&gt;
         &lt;/div&gt;
         &lt;div class="content"&gt;
             &lt;h3&gt;Card title&lt;/h3&gt;
             &lt;p&gt;A medium to long length paragraph for the card text.&lt;/p&gt;
-            &lt;a class="btn arrow" href=""&gt;&lt;i class="material-icons"&gt;arrow_forward&lt;/i&gt;&lt;/a&gt;
+            &lt;i class="btn arrow material-icons"&gt;arrow_forward&lt;/i&gt;
         &lt;/div&gt;
-    &lt;/div&gt;
+    &lt;/a&gt;
 &lt;/div&gt;</code></pre>
 
             <h3>Events cards</h3>
             <div class="cards">
-                <div class="card event">
+                <a href="" class="card event">
                     <div class="thumbnail">
                         <img src="assets/card-event.jpg" alt="image">
                     </div>
@@ -922,13 +931,13 @@
                         </div>
                     </div>
                     <div class="footer">
-                        <a class="tag small" href="">Tag text</a>
-                        <a class="tag small" href="">Tag text</a>
-                        <a class="tag small" href="">Tag text</a>
+                        <span class="tag small" href="">Tag text</span>
+                        <span class="tag small" href="">Tag text</span>
+                        <span class="tag small" href="">Tag text</span>
                     </div>
-                </div>
+                </a>
 
-                <div class="card event">
+                <a href="" class="card event">
                     <div class="thumbnail">
                         <img src="assets/card-event2.jpg" alt="image">
                     </div>
@@ -941,17 +950,17 @@
                         </div>
                     </div>
                     <div class="footer">
-                        <a class="tag small" href="">Tag text</a>
-                        <a class="tag small" href="">Tag text</a>
-                        <a class="tag small" href="">Tag text</a>
+                        <span class="tag small" href="">Tag text</span>
+                        <span class="tag small" href="">Tag text</span>
+                        <span class="tag small" href="">Tag text</span>
                     </div>
-                </div>
+                </a>
             </div>
             <br>
             <h3>Markup</h3>
 
 <pre><code>&lt;div class="cards"&gt;
-    &lt;div class="card event"&gt;
+    &lt;a href="" class="card event"&gt;
         &lt;div class="thumbnail"&gt;
             &lt;img src="assets/card-event.jpg" alt="image"&gt;
         &lt;/div&gt;
@@ -964,13 +973,13 @@
             &lt;/div&gt;
         &lt;/div&gt;
         &lt;div class="footer"&gt;
-            &lt;a class="tag small" href=""&gt;Tag text&lt;/a&gt;
-            &lt;a class="tag small" href=""&gt;Tag text&lt;/a&gt;
-            &lt;a class="tag small" href=""&gt;Tag text&lt;/a&gt;
+            &lt;span class="tag small" href=""&gt;Tag text&lt;/span&gt;
+            &lt;span class="tag small" href=""&gt;Tag text&lt;/span&gt;
+            &lt;span class="tag small" href=""&gt;Tag text&lt;/span&gt;
         &lt;/div&gt;
-    &lt;/div&gt;
+    &lt;/a&gt;
 
-    &lt;div class="card event"&gt;
+    &lt;a href="" class="card event"&gt;
         &lt;div class="thumbnail"&gt;
             &lt;img src="assets/card-event2.jpg" alt="image"&gt;
         &lt;/div&gt;
@@ -983,11 +992,11 @@
             &lt;/div&gt;
         &lt;/div&gt;
         &lt;div class="footer"&gt;
-            &lt;a class="tag small" href=""&gt;Tag text&lt;/a&gt;
-            &lt;a class="tag small" href=""&gt;Tag text&lt;/a&gt;
-            &lt;a class="tag small" href=""&gt;Tag text&lt;/a&gt;
+            &lt;span class="tag small" href=""&gt;Tag text&lt;/span&gt;
+            &lt;span class="tag small" href=""&gt;Tag text&lt;/span&gt;
+            &lt;span class="tag small" href=""&gt;Tag text&lt;/span&gt;
         &lt;/div&gt;
-    &lt;/div&gt;
+    &lt;/a&gt;
 &lt;/div&gt;</code></pre>
 
             <!-- Spotlight -->
@@ -1188,32 +1197,38 @@
             <!-- Quote -->
             <h2>Quote</h2>
 
-            <div class="bg-light" style="padding-bottom:60px;">
+            <div style="background-color:#F6F9FC;padding:20px 20px 60px;">
                 <div class="quote">
                     <div class="speech">
-                        <div>
+                        <div class="slide">
                             <svg>
                                 <use xlink:href="#quote"/>
                             </svg>
                             <h3>I think could help a lot of people in their every day practice...</h3>
-                            <p>I think that this course should be done by everyone that works within a medical environment. I think that far too often there is a lack of understanding between cultures and individuals and this needs to be addressed. This course has given useful information that I think could help a lot of people in their every day practice.</p>
-                            <p>eCALD Learner, <strong>CALD 1</strong></p>
+                            <div>
+                                <p>I think that this course should be done by everyone that works within a medical environment. I think that far too often there is a lack of understanding between cultures and individuals and this needs to be addressed. This course has given useful information that I think could help a lot of people in their every day practice.</p>
+                                <p>eCALD Learner, <strong>CALD 1</strong></p>
+                            </div>
                         </div>
-                        <div>
+                        <div class="slide">
                             <svg>
                                 <use xlink:href="#quote"/>
                             </svg>
                             <h3>I think could help a lot of people in their every day practice...</h3>
-                            <p>I think that this course should be done by everyone that works within a medical environment. I think that far too often there is a lack of understanding between cultures and individuals and this needs to be addressed. This course has given useful information that I think could help a lot of people in their every day practice.</p>
-                            <p>eCALD Learner, <strong>CALD 1</strong></p>
+                            <div>
+                                <p>I think that this course should be done by everyone that works within a medical environment. I think that far too often there is a lack of understanding between cultures and individuals and this needs to be addressed. This course has given useful information that I think could help a lot of people in their every day practice.</p>
+                                <p>eCALD Learner, <strong>CALD 1</strong></p>
+                            </div>
                         </div>
-                        <div>
+                        <div class="slide">
                             <svg>
                                 <use xlink:href="#quote"/>
                             </svg>
                             <h3>I think could help a lot of people in their every day practice...</h3>
-                            <p>I think that this course should be done by everyone that works within a medical environment. I think that far too often there is a lack of understanding between cultures and individuals and this needs to be addressed. This course has given useful information that I think could help a lot of people in their every day practice.</p>
-                            <p>eCALD Learner, <strong>CALD 1</strong></p>
+                            <div>
+                                <p>I think that this course should be done by everyone that works within a medical environment. I think that far too often there is a lack of understanding between cultures and individuals and this needs to be addressed. This course has given useful information that I think could help a lot of people in their every day practice.</p>
+                                <p>eCALD Learner, <strong>CALD 1</strong></p>
+                            </div>
                         </div>
                     </div>
                     <div class="speech-arrow"></div>
@@ -1223,29 +1238,35 @@
             <h3>Markup</h3>
 <pre><code>&lt;div class="quote"&gt;
     &lt;div class="speech"&gt;
-        &lt;div&gt;
+        &lt;div class="slide"&gt;
             &lt;svg&gt;
                 &lt;use xlink:href="#quote"/&gt;
             &lt;/svg&gt;
             &lt;h3&gt;I think could help a lot of people in their every day practice...&lt;/h3&gt;
-            &lt;p&gt;I think that this course should be done by everyone that works within a medical environment. I think that far too often there is a lack of understanding between cultures and individuals and this needs to be addressed. This course has given useful information that I think could help a lot of people in their every day practice.&lt;/p&gt;
-            &lt;p&gt;eCALD Learner, &lt;strong&gt;CALD 1&lt;/strong&gt;&lt;/p&gt;
+            &lt;div&gt;
+                &lt;p&gt;I think that this course should be done by everyone that works within a medical environment. I think that far too often there is a lack of understanding between cultures and individuals and this needs to be addressed. This course has given useful information that I think could help a lot of people in their every day practice.&lt;/p&gt;
+                &lt;p&gt;eCALD Learner, &lt;strong&gt;CALD 1&lt;/strong&gt;&lt;/p&gt;
+            &lt;/div&gt;
         &lt;/div&gt;
-        &lt;div&gt;
+        &lt;div class="slide"&gt;
             &lt;svg&gt;
                 &lt;use xlink:href="#quote"/&gt;
             &lt;/svg&gt;
             &lt;h3&gt;I think could help a lot of people in their every day practice...&lt;/h3&gt;
-            &lt;p&gt;I think that this course should be done by everyone that works within a medical environment. I think that far too often there is a lack of understanding between cultures and individuals and this needs to be addressed. This course has given useful information that I think could help a lot of people in their every day practice.&lt;/p&gt;
-            &lt;p&gt;eCALD Learner, &lt;strong&gt;CALD 1&lt;/strong&gt;&lt;/p&gt;
+            &lt;div&gt;
+                &lt;p&gt;I think that this course should be done by everyone that works within a medical environment. I think that far too often there is a lack of understanding between cultures and individuals and this needs to be addressed. This course has given useful information that I think could help a lot of people in their every day practice.&lt;/p&gt;
+                &lt;p&gt;eCALD Learner, &lt;strong&gt;CALD 1&lt;/strong&gt;&lt;/p&gt;
+            &lt;/div&gt;
         &lt;/div&gt;
-        &lt;div&gt;
+        &lt;div class="slide"&gt;
             &lt;svg&gt;
                 &lt;use xlink:href="#quote"/&gt;
             &lt;/svg&gt;
             &lt;h3&gt;I think could help a lot of people in their every day practice...&lt;/h3&gt;
-            &lt;p&gt;I think that this course should be done by everyone that works within a medical environment. I think that far too often there is a lack of understanding between cultures and individuals and this needs to be addressed. This course has given useful information that I think could help a lot of people in their every day practice.&lt;/p&gt;
-            &lt;p&gt;eCALD Learner, &lt;strong&gt;CALD 1&lt;/strong&gt;&lt;/p&gt;
+            &lt;div&gt;
+                &lt;p&gt;I think that this course should be done by everyone that works within a medical environment. I think that far too often there is a lack of understanding between cultures and individuals and this needs to be addressed. This course has given useful information that I think could help a lot of people in their every day practice.&lt;/p&gt;
+                &lt;p&gt;eCALD Learner, &lt;strong&gt;CALD 1&lt;/strong&gt;&lt;/p&gt;
+            &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="speech-arrow"&gt;&lt;/div&gt;
@@ -1253,7 +1274,7 @@
 
             <!-- Statistics -->
             <h2>Statistics</h2>
-            <div class="bg-dark">
+            <div style="background-color:#8F5EA7;padding:20px;margin-bottom:20px;">
                 <div class="statistics">
                     <div class="statistic">
                         <i class="material-icons">group</i>
@@ -1302,7 +1323,7 @@
 
             <h3>Form - Light</h3>
 
-            <form class="form light">
+            <form class="form light padding">
                 <p>All fields are mandatory.</p>
                 <div class="form-row">
                     <div class="form-group">
@@ -1332,7 +1353,7 @@
             </form>
             <br>
             <h3>Markup</h3>
-<pre><code>&lt;form class="form light"&gt;
+<pre><code>&lt;form class="form light padding"&gt;
     &lt;p&gt;All fields are mandatory.&lt;/p&gt;
     &lt;div class="form-row"&gt;
         &lt;div class="form-group"&gt;
@@ -1363,7 +1384,7 @@
 
             <h3>Form - Dark</h3>
 
-            <form class="form dark">
+            <form class="form dark padding">
                 <p>All fields are mandatory.</p>
                 <div class="form-row">
                     <div class="form-group">
@@ -1393,7 +1414,7 @@
             </form>
             <br>
             <h3>Markup</h3>
-<pre><code>&lt;form class="form dark"&gt;
+<pre><code>&lt;form class="form dark padding"&gt;
     &lt;p&gt;All fields are mandatory.&lt;/p&gt;
     &lt;div class="form-row"&gt;
         &lt;div class="form-group"&gt;
@@ -1425,7 +1446,7 @@
             <!-- Carousel -->
             <h2>Carousel</h2>
 
-            <div class="bg-dark" style="padding:30px 60px;">
+            <div style="background-color:#8F5EA7;padding:30px 60px;margin-bottom:20px;">
                 <div class="carousel">
                     <div class="card">
                         <div class="thumbnail">
@@ -1494,19 +1515,179 @@
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 
+            <!-- Timeline -->
+            <h2>Timeline</h2>
+            <div class="timeline">
+                <div class="event">
+                    <div class="thumbnail">
+                        <img src="assets/timeline1.jpg" alt="image">
+                    </div>
+                    <div class="content">
+                        <svg class="border" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2 100" preserveAspectRatio="none">
+                            <line x1="1" y1="0" x2="1" y2="100"/>
+                        </svg>
+                        <svg class="circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14">
+                            <circle cx="7" cy="7" r="6"/>
+                        </svg>
+                        <h2>2003-2006</h2>
+                        <p>Produced four CALD Cultural Competency face-to-face courses for working with patients for Waitemata DHB workforce [2005] using evidenced-based and pedagogical</p>
+                    </div>
+                </div>
+                <div class="event">
+                    <div class="thumbnail">
+                        <img src="assets/timeline2.jpg" alt="image">
+                    </div>
+                    <div class="content">
+                        <svg class="border" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2 100" preserveAspectRatio="none">
+                            <line x1="1" y1="0" x2="1" y2="100"/>
+                        </svg>
+                        <svg class="circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14">
+                            <circle cx="7" cy="7" r="6"/>
+                        </svg>
+                        <h2>2007-2008</h2>
+                        <p>Produced four CALD Cultural Competency face-to-face courses for working with patients for Waitemata DHB workforce [2005] using evidenced-based and pedagogical</p>
+                    </div>
+                </div>
+                <div class="event">
+                    <div class="thumbnail">
+                        <img src="assets/timeline3.jpg" alt="image">
+                    </div>
+                    <div class="content">
+                        <svg class="border" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2 100" preserveAspectRatio="none">
+                            <line x1="1" y1="0" x2="1" y2="100"/>
+                        </svg>
+                        <svg class="circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14">
+                            <circle cx="7" cy="7" r="6"/>
+                        </svg>
+                        <h2>2009-2010</h2>
+                        <p>Produced four CALD Cultural Competency face-to-face courses for working with patients for Waitemata DHB workforce [2005] using evidenced-based and pedagogical</p>
+                    </div>
+                </div>
+            </div>
 
+            <br>
+            <h3>Markup</h3>
+<pre><code>&lt;div class="timeline"&gt;
+    &lt;div class="event"&gt;
+        &lt;div class="thumbnail"&gt;
+            &lt;img src="assets/timeline1.jpg" alt="image"&gt;
+        &lt;/div&gt;
+        &lt;div class="content"&gt;
+            &lt;svg class="border" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2 100" preserveAspectRatio="none"&gt;
+                &lt;line x1="1" y1="0" x2="1" y2="100"/&gt;
+            &lt;/svg&gt;
+            &lt;svg class="circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"&gt;
+                &lt;circle cx="7" cy="7" r="6"/&gt;
+            &lt;/svg&gt;
+            &lt;h2&gt;2003-2006&lt;/h2&gt;
+            &lt;p&gt;Produced four CALD Cultural Competency face-to-face courses for working with patients for Waitemata DHB workforce [2005] using evidenced-based and pedagogical&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="event"&gt;
+        &lt;div class="thumbnail"&gt;
+            &lt;img src="assets/timeline2.jpg" alt="image"&gt;
+        &lt;/div&gt;
+        &lt;div class="content"&gt;
+            &lt;svg class="border" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2 100" preserveAspectRatio="none"&gt;
+                &lt;line x1="1" y1="0" x2="1" y2="100"/&gt;
+            &lt;/svg&gt;
+            &lt;svg class="circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"&gt;
+                &lt;circle cx="7" cy="7" r="6"/&gt;
+            &lt;/svg&gt;
+            &lt;h2&gt;2007-2008&lt;/h2&gt;
+            &lt;p&gt;Produced four CALD Cultural Competency face-to-face courses for working with patients for Waitemata DHB workforce [2005] using evidenced-based and pedagogical&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="event"&gt;
+        &lt;div class="thumbnail"&gt;
+            &lt;img src="assets/timeline3.jpg" alt="image"&gt;
+        &lt;/div&gt;
+        &lt;div class="content"&gt;
+            &lt;svg class="border" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2 100" preserveAspectRatio="none"&gt;
+                &lt;line x1="1" y1="0" x2="1" y2="100"/&gt;
+            &lt;/svg&gt;
+            &lt;svg class="circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"&gt;
+                &lt;circle cx="7" cy="7" r="6"/&gt;
+            &lt;/svg&gt;
+            &lt;h2&gt;2009-2010&lt;/h2&gt;
+            &lt;p&gt;Produced four CALD Cultural Competency face-to-face courses for working with patients for Waitemata DHB workforce [2005] using evidenced-based and pedagogical&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+            <!-- Accordion -->
+            <h2>Accordion</h2>
+            <div class="accordion">
+                <div class="button">
+                    <h4>Recommended background learning</h4>
+                    <a class="btn arrow" href=""><i class="material-icons">keyboard_arrow_down</i></a>
+                </div>
+                <div class="panel">
+                    <p>It is highly recommended that viewers complete the CALD 1 Culture and Cultural Competency course to gain more knowledge about working with CALD clients.</p>
+                </div>
+
+                <div class="button">
+                    <h4>How to access</h4>
+                    <a class="btn arrow" href=""><i class="material-icons">keyboard_arrow_down</i></a>
+                </div>
+                <div class="panel">
+                    <p>The resource is produced as multiple documents. You can click on the section heading of your choice for viewing.</p>
+                    <ol>
+                        <li><a href="">Cultural competency and working with interpreters (PDF, 127kb)</a></li>
+                        <li><a href="">Introduction to Asian cultures (PDF, 127kb)</a></li>
+                        <li><a href="">Chinese culture (PDF, 127kb)</a></li>
+                        <li><a href="">Indian culture (PDF, 127kb)</a></li>
+                        <li><a href="">Korean culture (PDF, 127kb)</a></li>
+                    </ol>
+                </div>
+            </div>
+
+            <br>
+            <h3>Markup</h3>
+<pre><code>&lt;div class="accordion"&gt;
+    &lt;div class="button"&gt;
+        &lt;h4&gt;Recommended background learning&lt;/h4&gt;
+        &lt;a class="btn arrow" href=""&gt;&lt;i class="material-icons"&gt;keyboard_arrow_down&lt;/i&gt;&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class="panel"&gt;
+        &lt;p&gt;It is highly recommended that viewers complete the CALD 1 Culture and Cultural Competency course to gain more knowledge about working with CALD clients.&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;div class="button"&gt;
+        &lt;h4&gt;How to access&lt;/h4&gt;
+        &lt;a class="btn arrow" href=""&gt;&lt;i class="material-icons"&gt;keyboard_arrow_down&lt;/i&gt;&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class="panel"&gt;
+        &lt;p&gt;The resource is produced as multiple documents. You can click on the section heading of your choice for viewing.&lt;/p&gt;
+        &lt;ol&gt;
+            &lt;li&gt;&lt;a href=""&gt;Cultural competency and working with interpreters (PDF, 127kb)&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=""&gt;Introduction to Asian cultures (PDF, 127kb)&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=""&gt;Chinese culture (PDF, 127kb)&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=""&gt;Indian culture (PDF, 127kb)&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=""&gt;Korean culture (PDF, 127kb)&lt;/a&gt;&lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 
         </div>
+
+        <div style="height:600px;"></div>
 
         <script src="js/jquery-3.2.1.min.js"></script>
         <script src="js/plyr.js"></script>
         <script src="slick/slick.min.js"></script>
+        <script src="js/gsap.min.js"></script>
         <script src="js/ScrollMagic.min.js"></script>
+        <script src="js/animation.gsap.min.js"></script>
+        <script src="js/MorphSVGPlugin.min.js"></script>
+        <script src="js/DrawSVGPlugin.min.js"></script>
         <script src="js/countUp.min.js"></script>
         <script src="js/navigation.js"></script>
         <script src="js/carousel.js"></script>
         <script src="js/quote.js"></script>
         <script src="js/statistics.js"></script>
+        <script src="js/timeline.js"></script>
+        <script src="js/accordion.js"></script>
 
         <script>
             const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));

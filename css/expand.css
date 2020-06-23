@@ -1,0 +1,37 @@
+.expand .panel-show {
+	position: relative;
+}
+
+.expand .panel-show .btn-wrapper { 
+	position: absolute;
+	display: block;
+	bottom: 0; 
+	left: 0;
+	width: 100%; 
+	padding-top: 80px;
+	text-align: center;
+	background-image: linear-gradient(to bottom, transparent, #F6F9FC 60%);
+}
+
+.expand .panel-show .btn-wrapper.bg-light {
+	background-color: transparent;
+	background-image: linear-gradient(to bottom, transparent, #f6f6f7 60%);
+}
+
+.expand .panel-show .btn {
+	width: 30px;
+	height: 30px;
+	background-color: #334154;
+	border: 2px solid #334154;
+	color: white;
+}
+
+.expand .panel-show .btn:hover {
+	background-color: transparent;
+	border: 2px solid #8F5EA7;
+	color: #8F5EA7;
+}
+
+.expand .panel-hide {
+	display: none;
+}

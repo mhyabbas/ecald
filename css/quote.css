@@ -1,6 +1,6 @@
 .quote {
 	position: relative;
-	margin: 0 auto;
+	margin: 30px auto;
 	width: 100%;
 	max-width: 580px;
 }
@@ -36,6 +36,10 @@
 	margin-bottom: 0;
 }
 
+.speech .slick-slide {
+	outline: 0;
+}
+
 .speech .slick-dots {
 	bottom: -50px;
 }
@@ -57,4 +61,33 @@
 
 .speech p {
 	color: #334154;
+}
+
+@media all and (min-width: 800px) {
+	/*Horizontal*/
+	.quote.horizontal {
+		max-width: 95%;
+	}
+
+	.quote.horizontal .speech .slide {
+		display: flex;
+	}
+
+	.quote.horizontal .speech .slide svg {
+		flex: 1 0 auto;
+		margin-right: 15px;
+	}
+
+	.quote.horizontal .speech .slide h3 {
+		flex: 1 0 30%;
+		margin-right: 15px;
+	}
+
+	.quote.horizontal .speech .slide div {
+		flex: 1 0 55%;
+	}
+
+	.quote.horizontal .speech .slide div p:first-of-type {
+		margin-top: 0;
+	}
 }

@@ -1,0 +1,68 @@
+.timeline {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.timeline .event {
+  display: flex;
+}
+
+.timeline .event .thumbnail {
+  display: none;
+}
+
+.timeline .event .content {
+  position: relative;
+  flex: 1;
+  padding-left: 25px;
+  padding-bottom: 80px;
+}
+
+.timeline .event .content h2 {
+  margin-top: -13px;
+  margin-bottom: 0;
+}
+
+.timeline .event .content svg.border {
+  position: absolute;
+  top: 0;
+  left: -1px;
+  width: 2px;
+  height: 100%;
+  fill:none;
+  stroke: #344154;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+}
+
+.timeline .event .content svg.circle {
+  position: absolute;
+  top: -2px;
+  left: -7px;
+  width: 14px;
+  height: 14px;
+  fill: #FFFFFF;
+  stroke: #354154;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+}
+
+@media all and (min-width: 800px) {
+  .timeline .event .thumbnail {
+    display: block;
+    max-width: 33%;
+    padding-right: 25px;
+    padding-bottom: 80px;
+  }
+
+  .timeline .event .thumbnail img {
+    border-radius: 10px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .timeline .event .content h2 {
+    margin-top: -22px;
+  }
+}

@@ -1,5 +1,10 @@
 .nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
   background: white;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  z-index: 100;
 }
 
 .nav ul {
@@ -73,33 +78,55 @@
 }
 
 .nav .item.search {
-  margin: 0;
-  padding: 20px;
-  background-color: rgba(51,65,84,.1);
-  border-top: 1px solid #D5D5D5;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  margin-left: inherit;
+  margin-right: inherit;
+  padding: 16px 5px;
+  width: inherit;
 }
 
-.nav .item.search div {
+.nav .item.search a {
   display: flex;
   align-items: center;
-  flex: 1 1 auto;
-  background-color: white;
-  border: 1px solid #677794;
-  border-radius: 4px;
-  overflow: hidden;
 }
 
-.nav .item.search input {
+.nav #search {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 0;
+  right: 0;
+  height: 50px;
+  width: 0;
+  padding: 0 5px;
+  background-color: white;
+  z-index: 1000;
+  opacity: 0;
+  transition: all .4s;
+}
+
+.nav #search.show {
+  width: 100%;
+  opacity: 1;
+}
+
+.nav #search input {
   flex: 1;
   padding: 10px;
   border: 0;
   font-family: inherit;
   font-size: 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
-.nav .item.search a {
-  display: flex;
-  padding: 5px;
+.nav #search i {
+  padding: 10px;
+  color: #334154;
 }
 
 .nav .item.login {
@@ -172,18 +199,15 @@
   display: none;
 }
 
-.main-nav ul li:hover a.dropdown svg.arrow-down {
+.main-nav ul li.current a.dropdown svg.arrow-down {
   display: none;
 }
 
-.main-nav ul li:hover a.dropdown svg.arrow-up {
+.main-nav ul li.current a.dropdown svg.arrow-up {
   display: block;
 }
 
 .main-nav .sub-nav {
-  display: flex;
-  flex: 1;
-  flex-wrap: wrap;
   max-height: 0;
   min-width: 0;
   margin-bottom: 0;
@@ -193,7 +217,13 @@
   z-index: 1;
 }
 
-.main-nav ul li:hover .sub-nav {
+.main-nav .sub-nav-wrapper {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.main-nav ul li.current .sub-nav {
   max-height: 1000px;
 }
 
@@ -216,6 +246,17 @@
     text-align: center;
   }
 
+  .nav > ul > li.item {
+    position: relative;
+    left: 0;
+    transition: all .4s;
+  }
+
+  .nav > ul > li.item.hide {
+    left: -200px;
+    opacity: 0;
+  }
+
   .nav .toggle {
     display: none;
   }
@@ -232,22 +273,21 @@
 
   .nav .item.search {
     order: 3;
+    display: inherit;
+    position: inherit;
+    top: inherit;
+    right: inherit;
+    margin-left: 10px;
     margin-right: 20px;
     padding: inherit;
-    border: inherit;
   }
 
-  .nav .item.search div {
-    border: inherit;
-    border-radius: inherit;
+  .nav #search {
+    height: 72px;
   }
 
-  .nav .item.search input {
-    display: none;
-  }
-
-  .nav .item.search a {
-    margin: 5px;
+  .nav #search.show {
+    width: 500px;
   }
 
   .nav .item.login {
@@ -300,6 +340,7 @@
   }
 
   .main-nav ul li {
+    position: relative;
     display: flex;
     flex: 1;
     text-align: center;
@@ -335,6 +376,22 @@
     z-index: 2;
   }
 
+  .main-nav ul li.current a.dropdown svg.arrow-down {
+    display: block;
+  }
+
+  .main-nav ul li.current a.dropdown svg.arrow-up {
+    display: none;
+  }
+
+  .main-nav ul li:hover a.dropdown svg.arrow-down {
+    display: none;
+  }
+
+  .main-nav ul li:hover a.dropdown svg.arrow-up {
+    display: block;
+  }
+
   .main-nav ul li a {
     position: relative;
     flex: 1;
@@ -347,16 +404,41 @@
   .main-nav .sub-nav {
     position: absolute;
     display: none;
-    top: 64px;
-    right: 0;
-    left: 0;
+    top: 67px;
+    width: 200%;
     margin-bottom: 30px;
+    padding-bottom: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
   }
 
-  .main-nav .sub-item {
-    flex-basis: 25%;
-    padding: 15px 30px;
+  .main-nav .sub-nav .sub-nav-wrapper {
+    display: flex;
+    flex-wrap: wrap;
   }
+
+  .main-nav ul li:last-of-type .sub-nav {
+    right: 0;
+  }
+
+  .main-nav ul li:hover .sub-nav {
+    max-height: 1000px;
+  }
+
+  .main-nav .sub-item {
+    flex-basis: 50%;
+    padding: 0;
+  }
+
+  .main-nav .sub-item a {
+    margin: 0 15px;
+    padding: 10px 0;
+    font-size: 15px;
+    border-bottom: 1px solid #D5D5D5;
+  }
+
+  .main-nav .sub-item:last-of-type a, .main-nav .sub-item:nth-last-child(2):nth-child(odd) a {
+    border-bottom: 0;
+  }
+
 }
