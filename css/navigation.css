@@ -94,8 +94,8 @@
 }
 
 .nav #search {
-  position: absolute;
   display: flex;
+  position: absolute;
   align-items: center;
   top: 0;
   right: 0;
@@ -104,7 +104,6 @@
   padding: 0 5px;
   background-color: white;
   z-index: 1000;
-  opacity: 0;
   transition: all .4s;
 }
 
@@ -114,14 +113,28 @@
 }
 
 .nav #search input {
+  display: none;
   flex: 1;
   padding: 10px;
   border: 0;
+  width: 0;
   font-family: inherit;
   font-size: 16px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+
+.nav #search.show input {
+  display: block;
+}
+
+.nav #search a {
+  display: none;
+}
+
+.nav #search.show a {
+  display: block;
 }
 
 .nav #search i {
