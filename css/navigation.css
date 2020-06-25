@@ -349,13 +349,13 @@
   .main-nav ul {
     position: relative;
     display: flex;
+    justify-content: space-around;
     width: 1140px;
   }
 
   .main-nav ul li {
     position: relative;
     display: flex;
-    flex: 1;
     text-align: center;
   }
 
@@ -418,9 +418,11 @@
     position: absolute;
     display: none;
     top: 67px;
-    width: 200%;
+    left: -15px;
+    width: 350%;
     margin-bottom: 30px;
-    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 15px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
   }
@@ -444,11 +446,14 @@
   }
 
   .main-nav .sub-item a {
-    margin: 0 15px;
+    margin: 0 20px;
     padding: 10px 0;
-    font-size: 15px;
     border-bottom: 1px solid #D5D5D5;
   }
+
+  .main-nav .sub-item:nth-child(even) a {
+    margin-left: 10px;
+  }  
 
   .main-nav .sub-item:last-of-type a, .main-nav .sub-item:nth-last-child(2):nth-child(odd) a {
     border-bottom: 0;
