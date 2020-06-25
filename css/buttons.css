@@ -170,3 +170,9 @@
 .btn-wrapper .btn {
 	margin: 10px 15px;
 }
+
+input[type='submit'] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
