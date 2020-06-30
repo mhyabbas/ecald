@@ -1,7 +1,19 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .statistics {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
 .statistic {
@@ -38,12 +50,16 @@
 
 @media all and (min-width: 800px) {
 	.statistic {
-		flex: 0 1 45%;
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 1 45%;
+		        flex: 0 1 45%;
 	}
 }
 
 @media all and (min-width: 1200px) {
 	.statistic {
-		flex: 0 1 30%;
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 1 30%;
+		        flex: 0 1 30%;
 	}
 }

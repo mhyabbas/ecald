@@ -1,9 +1,21 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /*Base card*/
 
 .cards {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
 .cards > a {
@@ -11,19 +23,30 @@
 }
 
 .card {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	margin: 10px 15px 20px;
 	width: 100%;
 	max-width: 400px;
 	background: white;
 	border-radius: 10px;
-	box-shadow: 0 3px 5px rgba(0,0,0,.15);
+	-webkit-box-shadow: 0 3px 5px rgba(0,0,0,.15);
+	        box-shadow: 0 3px 5px rgba(0,0,0,.15);
+	-webkit-transition: -webkit-box-shadow .4s;
+	transition: -webkit-box-shadow .4s;
+	-o-transition: box-shadow .4s;
 	transition: box-shadow .4s;
+	transition: box-shadow .4s, -webkit-box-shadow .4s;
 }
 
 .card:hover {
-	box-shadow: 0 10px 10px rgba(0,0,0,.15);
+	-webkit-box-shadow: 0 10px 10px rgba(0,0,0,.15);
+	        box-shadow: 0 10px 10px rgba(0,0,0,.15);
 }
 
 .card .thumbnail {
@@ -44,7 +67,9 @@
 }
 
 .card .content {
-	flex: 1;
+	-webkit-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
 	padding: 20px 30px;
 }
 
@@ -73,6 +98,8 @@
 /*Base card with forward arrow button*/
 
 .card .content .btn.arrow {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	margin-left: auto;
 	font-size: 24px;
@@ -100,7 +127,8 @@
 
 .card.horizontal {
 	border-radius: inherit;
-	box-shadow: inherit;
+	-webkit-box-shadow: inherit;
+	        box-shadow: inherit;
 }
 
 .card.horizontal .thumbnail {
@@ -122,6 +150,8 @@
 }
 
 .card.horizontal .content .btn {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	padding: 10px;
 }
@@ -188,15 +218,23 @@
 }
 
 .card.colour .content .btn {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	padding: 10px;
 }
 
 .card.colour .footer {
 	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	padding: 5px 0;
 	background-color: rgba(0,0,0,.2);
 	border-bottom-right-radius: 10px;
@@ -233,9 +271,15 @@
 /*Icon cards*/
 
 .card.icon .thumbnail {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	padding: 0;
 	height: 140px;
 }
@@ -253,7 +297,9 @@
 /*Event cards*/
 
 .card.event .content {
-	flex: none;
+	-webkit-box-flex: 0;
+	    -ms-flex: none;
+	        flex: none;
 }
 
 .card.event .content h3 {
@@ -265,8 +311,12 @@
 }
 
 .card.event .detail p {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 .card.event .detail i {
@@ -296,8 +346,12 @@
 }
 
 .card.resource .detail p {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: flex-start;
+	-webkit-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
 }
 
 .card.resource .detail i {
@@ -325,22 +379,33 @@
 	}
 
 	.card {
-		flex: 0 1 45%;
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 1 45%;
+		        flex: 0 1 45%;
 		max-width: inherit;
 	}
 
 	/*Base cards - horizontal layout*/
 
 	.card.horizontal {
-		flex-direction: row;
-		flex: none;
-		justify-content: space-between;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+		-webkit-box-flex: 0;
+		    -ms-flex: none;
+		        flex: none;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
 		margin: 0;
 		max-width: inherit;
 	}
 
 	.card.horizontal > div {
-		flex: 0 1 45%;
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 1 45%;
+		        flex: 0 1 45%;
 		margin: 10px 25px;
 	}
 
@@ -361,6 +426,8 @@
 	}
 
 	.card.horizontal .content .btn {
+		display: -webkit-inline-box;
+		display: -ms-inline-flexbox;
 		display: inline-flex;
 		padding: 10px 40px;
 	}
@@ -372,22 +439,30 @@
 	/*Base card*/
 
 	.card {
-		flex: 0 1 30%;
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 1 30%;
+		        flex: 0 1 30%;
 	}
 
 	.cards.two-column {
-		justify-content: space-between;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
 	}
 
 	.cards.two-column .card {
-		flex: 0 1 45%;
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 1 45%;
+		        flex: 0 1 45%;
 		margin: 10px 25px;
 	}
 
 	/*Base cards - horizontal layout*/
 
 	.card.horizontal > div {
-		flex: 0 1 45%;
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 1 45%;
+		        flex: 0 1 45%;
 	}
 
 	/*Colour card*/

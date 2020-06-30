@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .intro {
     padding-right: 15px;
     padding-left: 15px;
@@ -7,16 +14,20 @@
 }
 
 .intro h2 {
-	border-bottom: inherit;
+    border-bottom: inherit;
 }
 
 .intro .btn {
-	display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 }
 
 @media all and (min-width: 600px) {
     .intro .btn {
-		display: inline-flex;
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
     }
 }
 

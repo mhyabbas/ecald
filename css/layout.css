@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 section {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -176,14 +183,20 @@ svg.purple {
     }
 
     .row {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         width: 100%;
     }
 
     .column {
-        flex-basis: 100%;
-        flex: 1;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+        -webkit-box-flex: 1;
+            -ms-flex: 1;
+                flex: 1;
     }
 
     .column.border-right {
@@ -191,8 +204,11 @@ svg.purple {
     }
 
     .double-column {
-        flex-basis: 100%;
-        flex: 2;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+        -webkit-box-flex: 2;
+            -ms-flex: 2;
+                flex: 2;
     }
 
 }

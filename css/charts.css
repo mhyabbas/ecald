@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .highcharts-figure {
 	position: relative;
 	min-width: 310px; 
@@ -16,7 +23,9 @@
 	width: 120px;
 	height: 20%;
 	text-align: center;
-	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	    -ms-transform: translate(-50%,-50%);
+	        transform: translate(-50%,-50%);
 }
 
 .highcharts-figure .highcharts-axis-labels.highcharts-xaxis-labels span {

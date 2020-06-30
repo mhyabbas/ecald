@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .quote {
 	position: relative;
 	margin: 30px auto;
@@ -24,12 +31,17 @@
 	padding: 30px;
 	background: white;
 	border-radius: 10px;
-	box-shadow: 0 3px 5px rgba(0,0,0,.15);
+	-webkit-box-shadow: 0 3px 5px rgba(0,0,0,.15);
+	        box-shadow: 0 3px 5px rgba(0,0,0,.15);
 }
 
 .speech.slick-slider {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
 .speech.slick-dotted.slick-slider {
@@ -70,21 +82,29 @@
 	}
 
 	.quote.horizontal .speech .slide {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
 	}
 
 	.quote.horizontal .speech .slide svg {
-		flex: 1 0 auto;
+		-webkit-box-flex: 1;
+		    -ms-flex: 1 0 auto;
+		        flex: 1 0 auto;
 		margin-right: 15px;
 	}
 
 	.quote.horizontal .speech .slide h3 {
-		flex: 1 0 30%;
+		-webkit-box-flex: 1;
+		    -ms-flex: 1 0 30%;
+		        flex: 1 0 30%;
 		margin-right: 15px;
 	}
 
 	.quote.horizontal .speech .slide div {
-		flex: 1 0 55%;
+		-webkit-box-flex: 1;
+		    -ms-flex: 1 0 55%;
+		        flex: 1 0 55%;
 	}
 
 	.quote.horizontal .speech .slide div p:first-of-type {

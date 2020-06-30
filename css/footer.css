@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 footer {
   background-color: #576784;
   color: white;
@@ -72,19 +79,30 @@ footer .copyright .logo img {
 
 @media all and (min-width: 800px) {
   footer .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 
   footer .footer div {
-    flex: 1 0 0;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 0px;
+            flex: 1 0 0;
     padding: 0 10px;
   }
 
   footer .copyright ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
   }
 
@@ -98,7 +116,9 @@ footer .copyright .logo img {
   }
 
   footer .copyright .logo {
-    flex: 1 0 120px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 120px;
+            flex: 1 0 120px;
   }
 
   footer .copyright .logo img {
