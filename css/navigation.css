@@ -1,5 +1,5 @@
 .nav {
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
   background: white;
@@ -56,8 +56,8 @@
 
 .nav .item {
   display: none;
-  margin-left: 12px;
-  margin-right: 12px;
+  margin-left: 8px;
+  margin-right: 8px;
   width: 100%;
 }
 
@@ -169,6 +169,10 @@
   border-bottom: 1px solid #D5D5D5;
 }
 
+.nav ul li.main-nav {
+  padding: 0;
+}
+
 .main-nav ul {
   position: relative;
   margin: 0;
@@ -229,12 +233,6 @@
   z-index: 1;
 }
 
-.main-nav .sub-nav-wrapper {
-  display: flex;
-  flex: 1;
-  flex-wrap: wrap;
-}
-
 .main-nav ul li.current .sub-nav {
   max-height: 1000px;
 }
@@ -249,7 +247,11 @@
   text-align: left;
 }
 
-@media all and (min-width: 1200px) {
+@media all and (min-width: 1024px) {
+
+  .nav {
+    position: absolute;
+  }
 
   .nav .item {
     order: 1;
@@ -291,7 +293,7 @@
     top: inherit;
     right: inherit;
     margin-left: 10px;
-    margin-right: 20px;
+    margin-right: 15px;
     padding: inherit;
   }
 
@@ -314,7 +316,7 @@
 
   .nav .item.login .btn {
     color: white;
-    padding: 10px 40px;
+    padding: 10px 30px;
     background-color: #8F5EA7;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0,0,0,.1);
@@ -361,6 +363,7 @@
 
   .main-nav ul li:hover .sub-nav {
     display: flex;
+    justify-content: flex-start;
   }
 
   .main-nav ul li:hover a.dropdown:before {
@@ -427,11 +430,6 @@
     border-bottom-right-radius: 10px;
   }
 
-  .main-nav .sub-nav .sub-nav-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
   .main-nav ul li:last-of-type .sub-nav {
     right: 0;
   }
@@ -442,6 +440,7 @@
 
   .main-nav .sub-item {
     flex-basis: 50%;
+    align-self: stretch;
     padding: 0;
   }
 

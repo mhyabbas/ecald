@@ -26,6 +26,10 @@ footer .footer div {
   padding: 0 0 10px;
 }
 
+footer .footer ul.pb-1 {
+  padding-bottom: 10px;
+}
+
 footer .footer li {
   margin-bottom: 10px;
   color: white;
