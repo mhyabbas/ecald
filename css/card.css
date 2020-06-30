@@ -250,6 +250,7 @@
 
 .card.colour .footer .btn.arrow {
 	position: absolute;
+	top: 18px;
 	right: 15px;
 	border-color: white;
 	color: white;
