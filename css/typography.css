@@ -90,14 +90,13 @@ ul, ol {
     color: white;
 }
 
-@media all and (min-width: 800px) {
-
-}
-
-@media all and (min-width: 1200px) {
+@media all and (min-width: 1024px) {
     body {
         padding: 138px 0 0 0;
     }
+}
+
+@media all and (min-width: 1200px) {
 
     h1 {
         font-size: 50px;
