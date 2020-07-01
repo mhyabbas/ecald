@@ -179,24 +179,12 @@ header .slide-in, header .fade-in {
 
 /*Background animation*/
 
-.svg-wrapper {
+header svg[class^="wave"] {
 	position: absolute; 
-	bottom: 0;
-	height: 0; 
-	width: 100%; 
-	padding: 0;
-	padding-bottom: 22.43%; 
-}
-
-header svg.svg-divider, header svg[class^="wave"] {
-	position: absolute; 
-	height: 100%; 
-	width: 100%; 
 	left: 0; 
 	top: 0;
-}
-
-header svg[class^="wave"] {
+	height: 100%; 
+	width: 100%; 
 	z-index: 0;
 }
 
