@@ -180,7 +180,6 @@ header .slide-in, header .fade-in {
 /*Background animation*/
 
 .svg-wrapper {
-	border: 2px solid yellow;
 	position: absolute; 
 	bottom: 0;
 	height: 0; 
