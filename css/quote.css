@@ -53,6 +53,7 @@
 }
 
 .speech .slick-dots {
+	left: 0;
 	bottom: -50px;
 }
 
