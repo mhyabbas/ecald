@@ -196,13 +196,6 @@ header svg.svg-divider, header svg[class^="wave"] {
 	top: 0;
 }
 
-/*header svg.svg-divider, header svg[class^="wave"] {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: auto;
-}*/
-
 header svg[class^="wave"] {
 	z-index: 0;
 }
