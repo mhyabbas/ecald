@@ -31,7 +31,8 @@ $(function() {
 		e.preventDefault();
 		$("#search").addClass("show");
 		$(".nav > ul > li.item").addClass("hide");
-		setTimeout(function() {$("#search-input").focus();}, 400);
+		// setTimeout(function() {$("#search-input").focus();}, 400);
+		setTimeout(function() {document.getElementById("search-input").focus();}, 400);
 	});
 
 
