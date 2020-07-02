@@ -36,7 +36,7 @@ $(function() {
 	});
 
 	focusMethod = function getFocus() {           
-		document.getElementById("myTextField").focus();
+		setTimeout(function() {document.getElementById("myTextField").focus();}, 400);
 	}
 
 
