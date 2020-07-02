@@ -35,6 +35,10 @@ $(function() {
 		setTimeout(function() {document.getElementById("search-input").focus();}, 400);
 	});
 
+	focusMethod = function getFocus() {           
+		document.getElementById("myTextField").focus();
+	}
+
 
 	$("#search a").click(function(e){
 		e.preventDefault();
