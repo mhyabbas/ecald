@@ -148,6 +148,10 @@
   appearance: none;
 }
 
+.nav #search input:focus {
+  outline: 1px solid #8F5EA7;
+}
+
 .nav #search.show input {
   display: block;
 }

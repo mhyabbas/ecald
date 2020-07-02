@@ -31,14 +31,8 @@ $(function() {
 		e.preventDefault();
 		$("#search").addClass("show");
 		$(".nav > ul > li.item").addClass("hide");
-		// setTimeout(function() {$("#search-input").focus();}, 400);
-		setTimeout(function() {document.getElementById("search-input").focus();}, 400);
+		setTimeout(function() {$("#search input").focus();}, 400);
 	});
-
-	focusMethod = function getFocus() {           
-		setTimeout(function() {document.getElementById("myTextField").focus();}, 400);
-	}
-
 
 	$("#search a").click(function(e){
 		e.preventDefault();
