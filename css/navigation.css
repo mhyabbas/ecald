@@ -14,7 +14,11 @@
   -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
   z-index: 100;
-  overflow-y: auto;
+  
+}
+
+.nav.active {
+  overflow-y: scroll;
 }
 
 .nav ul {
@@ -299,7 +303,6 @@
 
   .nav {
     position: absolute;
-    overflow-y: inherit;
   }
 
   .nav ul {

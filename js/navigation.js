@@ -4,6 +4,12 @@ $(function() {
 
 	$(".toggle a").on("click", function(e) {
 		e.preventDefault();
+		if ($(".nav").hasClass("active")) {
+			$(".nav").removeClass("active");
+		} else {
+			$(".nav").addClass("active");
+		}
+
 		if ($(".item").hasClass("active")) {
 			$(".item").removeClass("active");
 			$(this).html("<i class='material-icons'>menu</i> <span>Menu</span>");
