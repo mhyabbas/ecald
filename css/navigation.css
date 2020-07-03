@@ -333,6 +333,10 @@
     text-align: center;
   }
 
+  .nav .item.active {
+    display: block;
+  }
+
   .nav > ul > li.item {
     position: relative;
     left: 0;
@@ -453,14 +457,6 @@
 
   .main-nav ul li {
     position: relative;
-/*    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;*/
-    /*text-align: center;*/
-  }
-
-  .main-nav ul li.active {
-    display: block;
   }
 
   .main-nav ul li:hover .sub-nav {
