@@ -305,7 +305,7 @@
   }
 
   .nav.active {
-    overflow-y: hidden;
+    overflow-y: inherit;
   }
 
   .nav ul {
