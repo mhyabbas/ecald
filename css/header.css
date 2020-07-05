@@ -5,10 +5,6 @@
 * Browsers: last 4 version
 */
 
-* {
-	-webkit-backface-visibility: hidden;
-}
-
 header {
 	position: relative;
 	min-height: 500px;

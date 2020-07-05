@@ -2,35 +2,37 @@ $(document).ready(function() {
 
 	// Background animation
 
-	// var wave = document.querySelector(".wave1 path")
-	// var wave2 = document.querySelector(".wave2 path")
-	// var wave3 = document.querySelector(".wave3 path")
+	var wave = document.querySelector(".wave1 path")
+	var wave2 = document.querySelector(".wave2 path")
+	var wave3 = document.querySelector(".wave3 path")
 
-	// var tl = gsap.timeline({repeat: -1, yoyo: true})
+	var tl = gsap.timeline({repeat: -1, yoyo: true})
 
-	// tl
-	// .to(wave, {duration: 5, morphSVG: ".wave-morph1 path", ease: "power1.inOut"}, 1)
-	// .to(wave2, {duration: 7, morphSVG: ".wave-morph2 path", ease: "power1.inOut"}, 1)
-	// .to(wave3, {duration: 9, morphSVG: ".wave-morph3 path", ease: "power1.inOut"}, 1)
+	tl
+	.to(wave, {duration: 5, morphSVG: ".wave-morph1 path", ease: "power1.inOut"}, 1)
+	.to(wave2, {duration: 7, morphSVG: ".wave-morph2 path", ease: "power1.inOut"}, 1)
+	.to(wave3, {duration: 9, morphSVG: ".wave-morph3 path", ease: "power1.inOut"}, 1)
+	.from(".slide-in", {duration: 0.7, autoAlpha:0, x: -100, ease: "power1.inOut"}, 0)
+	.from(".fade-in", {duration: 0.3, autoAlpha:0, delay:0.7, ease: "power1.inOut"}, 0)
 
 	// Slide and Fade animation
 
-	var slideincontroller = new ScrollMagic.Controller();
+	// var slideincontroller = new ScrollMagic.Controller();
 	// var fadeincontroller = new ScrollMagic.Controller();
-	var slidein = Array.prototype.slice.call(document.querySelectorAll(".slide-in"));
+	// var slidein = Array.prototype.slice.call(document.querySelectorAll(".slide-in"));
 	// var fadein = Array.prototype.slice.call(document.querySelectorAll(".fade-in"));
-	var self = this;
+	// var self = this;
 
-	slidein.forEach(function(self) {
+	// slidein.forEach(function(self) {
 
-		var slideintween = gsap.from(self, {duration: 0.7, autoAlpha:0, x: -100, ease: "power1.inOut"});
+	// 	var slideintween = gsap.from(self, {duration: 0.7, autoAlpha:0, x: -100, ease: "power1.inOut"});
 
-		var slideinscene = new ScrollMagic.Scene({triggerElement: self, triggerHook: 'onEnter', reverse: false})
-		.setTween(slideintween)
-		.setClassToggle(self, "active")
-		.addTo(slideincontroller)
+	// 	var slideinscene = new ScrollMagic.Scene({triggerElement: self, triggerHook: 'onEnter', reverse: false})
+	// 	.setTween(slideintween)
+	// 	.setClassToggle(self, "active")
+	// 	.addTo(slideincontroller)
 
-	});
+	// });
 
 	// fadein.forEach(function(self) {
 
