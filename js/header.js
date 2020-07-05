@@ -45,17 +45,17 @@ $(document).ready(function() {
 
 	// SVG icon animation
 
-	var hand = document.querySelector("#hand")
-	var star1 = document.querySelector("#star1")
-	var star2 = document.querySelector("#star2")
-	var star3 = document.querySelector("#star3")
+	// var hand = document.querySelector("#hand")
+	// var star1 = document.querySelector("#star1")
+	// var star2 = document.querySelector("#star2")
+	// var star3 = document.querySelector("#star3")
 
-	var icontl = gsap.timeline({repeat: -1, repeatDelay: 1})
+	// var icontl = gsap.timeline({repeat: -1, repeatDelay: 1})
 
-	icontl
-	.from(hand, {duration: 1.2, x: -60, ease: "power1.inOut"}, 0)
-	.from(star1, {duration: 0.3, autoAlpha:0, ease: "power1.inOut"}, 0.3)
-	.from(star2, {duration: 0.3, autoAlpha:0, ease: "power1.inOut"}, 0.6)
-	.from(star3, {duration: 0.3, autoAlpha:0, ease: "power1.inOut"}, 0.9);
+	// icontl
+	// .from(hand, {duration: 1.2, x: -60, ease: "power1.inOut"}, 0)
+	// .from(star1, {duration: 0.3, autoAlpha:0, ease: "power1.inOut"}, 0.3)
+	// .from(star2, {duration: 0.3, autoAlpha:0, ease: "power1.inOut"}, 0.6)
+	// .from(star3, {duration: 0.3, autoAlpha:0, ease: "power1.inOut"}, 0.9);
 
 });
