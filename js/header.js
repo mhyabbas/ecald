@@ -15,33 +15,33 @@ $(document).ready(function() {
 
 	// Slide and Fade animation
 
-	// var slideincontroller = new ScrollMagic.Controller();
-	var fadeincontroller = new ScrollMagic.Controller();
-	// var slidein = Array.prototype.slice.call(document.querySelectorAll(".slide-in"));
-	var fadein = Array.prototype.slice.call(document.querySelectorAll(".fade-in"));
+	var slideincontroller = new ScrollMagic.Controller();
+	// var fadeincontroller = new ScrollMagic.Controller();
+	var slidein = Array.prototype.slice.call(document.querySelectorAll(".slide-in"));
+	// var fadein = Array.prototype.slice.call(document.querySelectorAll(".fade-in"));
 	var self = this;
 
-	// slidein.forEach(function(self) {
+	slidein.forEach(function(self) {
 
-	// 	var slideintween = gsap.from(self, {duration: 0.7, autoAlpha:0, x: -100, ease: "power1.inOut"});
+		var slideintween = gsap.from(self, {duration: 0.7, autoAlpha:0, x: -100, ease: "power1.inOut"});
 
-	// 	var slideinscene = new ScrollMagic.Scene({triggerElement: self, triggerHook: 'onEnter', reverse: false})
-	// 	.setTween(slideintween)
-	// 	.setClassToggle(self, "active")
-	// 	.addTo(slideincontroller)
-
-	// });
-
-	fadein.forEach(function(self) {
-
-		var fadeintween = gsap.from(self, {duration: 0.3, autoAlpha:0, delay:0.7, ease: "power1.inOut"});
-
-		var fadeinscene = new ScrollMagic.Scene({triggerElement: self, triggerHook: 'onEnter', reverse: false})
-		.setTween(fadeintween)
+		var slideinscene = new ScrollMagic.Scene({triggerElement: self, triggerHook: 'onEnter', reverse: false})
+		.setTween(slideintween)
 		.setClassToggle(self, "active")
-		.addTo(fadeincontroller)
+		.addTo(slideincontroller)
 
 	});
+
+	// fadein.forEach(function(self) {
+
+	// 	var fadeintween = gsap.from(self, {duration: 0.3, autoAlpha:0, delay:0.7, ease: "power1.inOut"});
+
+	// 	var fadeinscene = new ScrollMagic.Scene({triggerElement: self, triggerHook: 'onEnter', reverse: false})
+	// 	.setTween(fadeintween)
+	// 	.setClassToggle(self, "active")
+	// 	.addTo(fadeincontroller)
+
+	// });
 
 	// SVG icon animation
 
