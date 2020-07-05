@@ -179,7 +179,7 @@ header .slide-in, header .fade-in {
 
 /*Background animation*/
 
-/*header svg[class^="wave"] {
+header svg[class^="wave"] {
 	position: absolute; 
 	left: 0; 
 	top: 0;
@@ -190,11 +190,11 @@ header .slide-in, header .fade-in {
 
 header .wave-morph1, header .wave-morph2, header .wave-morph3 {
 	display: none;
-}*/
+}
 
 /*SVG icon animation*/
 
-/*header svg.svg-animation {
+header svg.svg-animation {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -203,7 +203,7 @@ header .wave-morph1, header .wave-morph2, header .wave-morph3 {
 	-webkit-transform: translate(-50%, -50%);
 	    -ms-transform: translate(-50%, -50%);
 	        transform: translate(-50%, -50%);
-}*/
+}
 
 header svg polygon[id^="star"] {
 	visibility: hidden;
