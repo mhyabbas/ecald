@@ -177,17 +177,17 @@
                         <div class="carousel">
                             <div class="card">
                                 <div class="thumbnail">
-                                    <!-- <video poster="assets/video-poster.png" class="plyr" controls>
+                                    <video preload="none" poster="assets/video-poster.png" class="plyr" controls>
                                         <source src="assets/ecald.mp4" type="video/mp4" />
-                                    </video> -->
+                                    </video>
 
-                                    <div class="plyr__video-embed" id="player">
+                                    <!-- <div class="plyr__video-embed" id="player">
                                       <iframe
                                         src="https://player.vimeo.com/video/76979871?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media"
                                         allowfullscreen
                                         allowtransparency
                                       ></iframe>
-                                    </div>
+                                    </div> -->
 
                                 </div>
                                 <div class="content">
@@ -721,8 +721,8 @@
         <script src="js/statistics.js"></script>
         <script src="js/plyr.js"></script>
 
-<!--         <script>
+        <script>
             const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
-        </script> -->
+        </script>
     </body>
 </html>
