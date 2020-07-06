@@ -9,7 +9,7 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Zilla+Slab:400,500,600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <!-- <link rel="stylesheet" href="css/plyr.css" type="text/css"> -->
+        <link rel="stylesheet" href="css/plyr.css" type="text/css">
         <link rel="stylesheet" href="slick/slick.css" type="text/css"/>
         <link rel="stylesheet" href="slick/slick-theme.css" type="text/css"/>
         <link rel="stylesheet" href="css/main.css" type="text/css">
@@ -177,9 +177,18 @@
                         <div class="carousel">
                             <div class="card">
                                 <div class="thumbnail">
-                                    <video poster="assets/video-poster.png" class="plyr" controls>
+                                    <!-- <video poster="assets/video-poster.png" class="plyr" controls>
                                         <source src="assets/ecald.mp4" type="video/mp4" />
-                                    </video>
+                                    </video> -->
+
+                                    <div class="plyr__video-embed" id="player">
+                                      <iframe
+                                        src="https://player.vimeo.com/video/76979871?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media"
+                                        allowfullscreen
+                                        allowtransparency
+                                      ></iframe>
+                                    </div>
+
                                 </div>
                                 <div class="content">
                                     <p>At eCALD our vision is to enhance culturally and linguistically diverse cultural competence, through the provision of resources and courses for health workers in New Zealand, for the benefit of both patients and practitioners.</p>
@@ -432,9 +441,9 @@
                 <div class="cards">
                     <div class="card horizontal">
                         <div class="thumbnail">
-                            <video poster="assets/video-poster.png" class="plyr" controls>
+                            <!-- <video poster="assets/video-poster.png" class="plyr" controls>
                                 <source src="assets/ecald.mp4" type="video/mp4" />
-                            </video>
+                            </video> -->
                         </div>
                         <div class="content">
                             <h3>Working with migrant patients</h3>
@@ -710,7 +719,7 @@
         <script src="js/card.js"></script>
         <script src="js/quote.js"></script>
         <script src="js/statistics.js"></script>
-        <!-- <script src="js/plyr.js"></script> -->
+        <script src="js/plyr.js"></script>
 
 <!--         <script>
             const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
