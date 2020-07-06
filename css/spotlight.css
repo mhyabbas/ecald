@@ -60,8 +60,6 @@
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
-    -ms-flex-preferred-size: 0;
-        flex-basis: 0;
 	padding: 0 30px 20px;
 	text-align: center;
 }
@@ -110,6 +108,8 @@
 
 .two-wide .spotlight .content {
 	text-align: inherit;
+    -ms-flex-preferred-size: 0;
+        flex-basis: 0;
 }
 
 .two-wide .spotlight .content h3 {
