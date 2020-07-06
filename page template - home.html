@@ -180,15 +180,6 @@
                                     <video preload="none" poster="assets/video-poster.png" class="plyr" controls>
                                         <source src="assets/ecald.mp4" type="video/mp4" />
                                     </video>
-
-                                    <!-- <div class="plyr__video-embed" id="player">
-                                      <iframe
-                                        src="https://player.vimeo.com/video/76979871?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media"
-                                        allowfullscreen
-                                        allowtransparency
-                                      ></iframe>
-                                    </div> -->
-
                                 </div>
                                 <div class="content">
                                     <p>At eCALD our vision is to enhance culturally and linguistically diverse cultural competence, through the provision of resources and courses for health workers in New Zealand, for the benefit of both patients and practitioners.</p>
@@ -441,9 +432,9 @@
                 <div class="cards">
                     <div class="card horizontal">
                         <div class="thumbnail">
-                            <!-- <video poster="assets/video-poster.png" class="plyr" controls>
+                            <video preload="none" poster="assets/video-poster.png" class="plyr" controls>
                                 <source src="assets/ecald.mp4" type="video/mp4" />
-                            </video> -->
+                            </video>
                         </div>
                         <div class="content">
                             <h3>Working with migrant patients</h3>
@@ -460,9 +451,9 @@
                 <div class="cards two-column">
                     <div class="card">
                         <div class="thumbnail">
-                            <!-- <video poster="assets/video-poster.png" class="plyr" controls>
+                            <video preload="none" poster="assets/video-poster.png" class="plyr" controls>
                                 <source src="assets/ecald.mp4" type="video/mp4" />
-                            </video> -->
+                            </video>
                         </div>
                         <div class="content">
                             <h3>Chinese Families Autism Support Group Meeting</h3>
@@ -706,6 +697,7 @@
         </footer>
 
         <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/plyr.js"></script>
         <script src="slick/slick.min.js"></script>
         <script src="js/gsap.min.js"></script>
         <script src="js/ScrollMagic.min.js"></script>
@@ -719,7 +711,6 @@
         <script src="js/card.js"></script>
         <script src="js/quote.js"></script>
         <script src="js/statistics.js"></script>
-        <script src="js/plyr.js"></script>
 
         <script>
             const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
