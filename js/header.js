@@ -1,4 +1,4 @@
-// $(document).ready(function() {
+$(document).ready(function() {
 
 	// Background animation
 
@@ -58,4 +58,4 @@
 	.from(star2, {duration: 0.3, autoAlpha:0, ease: "power1.inOut"}, 0.6)
 	.from(star3, {duration: 0.3, autoAlpha:0, ease: "power1.inOut"}, 0.9);
 
-// });
+});
