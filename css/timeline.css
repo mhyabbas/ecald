@@ -11,11 +11,11 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .timeline .event {
@@ -81,12 +81,16 @@
   }
 
   .timeline .event .thumbnail img {
-    max-height: 300px;
+    max-height: 150px;
     border-radius: 10px;
   }
 }
 
 @media all and (min-width: 1200px) {
+  .timeline .event .thumbnail img {
+    max-height: 300px;
+  }
+
   .timeline .event .content h2 {
     margin-top: -22px;
   }
