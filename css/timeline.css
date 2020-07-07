@@ -76,12 +76,12 @@
     flex-grow: 1;
     -ms-flex-preferred-size: 33%;
     flex-basis: 33%;
-    /*max-width: 33%;*/
     padding-right: 25px;
     padding-bottom: 80px;
   }
 
   .timeline .event .thumbnail img {
+    max-height: 300px;
     border-radius: 10px;
   }
 }
