@@ -46,6 +46,7 @@
 
 .timeline .event .content svg.border {
   position: absolute;
+  display: block;
   top: 0;
   left: -1px;
   width: 2px;
