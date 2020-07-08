@@ -7,10 +7,12 @@
 
 	.column {
 		float: left;
+		width: 33%;
 	}
 
     .double-column {
         float: left;
+        width: 66%;
     }
 }
 
