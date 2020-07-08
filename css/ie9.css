@@ -7,17 +7,17 @@ img {
 
 /*Layout*/
 
+.row {
+	display: block;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
 @media all and (min-width: 1200px) {
-	.row {
-		display: block;
-	}
-
-	.row:after {
-		content: "";
-		display: table;
-		clear: both;
-	}
-
 	.column {
 		float: left;
 		width: 33%;
@@ -68,7 +68,7 @@ header.bg-wave {
 @media all and (min-width: 800px) {
 	.card {
 		float: left;
-		width: 50%;
+		width: 45%;
 	}
 }
 
@@ -78,6 +78,25 @@ header.bg-wave {
 	}
 
 	.cards.two-column .card {
+		width: 45%;
+	}
+}
+
+/*Spotlight*/
+
+.listing {
+	display: block;
+}
+
+.listing:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+@media all and (min-width: 800px) {
+	.spotlight {
+		float: left;
 		width: 45%;
 	}
 }
