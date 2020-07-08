@@ -59,6 +59,12 @@ header.bg-wave {
 	display: block;
 }
 
+.cards:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
 @media all and (min-width: 800px) {
 	.card {
 		float: left;
