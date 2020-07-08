@@ -5,15 +5,21 @@
 		display: block;
 	}
 
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
 	.column {
-		display: inline-block;
+		float: left;
 		width: 33%;
 	}
 
-    .double-column {
-        display: inline-block;
-        width: 66%;
-    }
+	.double-column {
+		float: left;
+		width: 66%;
+	}
 }
 
 /*Header*/
