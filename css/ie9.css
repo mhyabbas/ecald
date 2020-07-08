@@ -1,0 +1,11 @@
+/*Navigation*/
+
+@media all and (min-width: 1024px) {
+	.nav ul {
+		display: block;
+	}
+
+	.nav .item {
+		float: left;
+	}
+}
