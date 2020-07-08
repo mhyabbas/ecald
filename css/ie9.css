@@ -74,6 +74,10 @@ header.bg-wave {
 
 @media all and (min-width: 1200px) {
 	.card {
-		width: 33%;
+		width: 30%;
+	}
+
+	.cards.two-column .card {
+		width: 50%;
 	}
 }
