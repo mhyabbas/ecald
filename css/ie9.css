@@ -155,4 +155,18 @@ header.bg-wave {
 }
 
 /*Footer*/
+footer .footer {
+	display: block;
+}
 
+footer .footer:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+@media all and (min-width: 800px) {
+	footer .footer div {
+		width: 25%;
+	}
+}
