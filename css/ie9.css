@@ -6,12 +6,12 @@
 	}
 
 	.column {
-		float: left;
+		display: inline-block;
 		width: 33%;
 	}
 
     .double-column {
-        float: left;
+        display: inline-block;
         width: 66%;
     }
 }
