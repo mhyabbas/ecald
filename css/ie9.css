@@ -99,4 +99,25 @@ header.bg-wave {
 		float: left;
 		width: 45%;
 	}
+
+	.two-wide {
+		width: 63%;
+	}
+
+	.listing .sidebar {
+		width: 30%;
+	}
 }
+
+@media all and (min-width: 1200px) {
+	.spotlight {
+		width: 30%;
+	}
+
+	.two-wide .spotlight {
+		width: 45%;
+	}
+}
+
+/*Footer*/
+
