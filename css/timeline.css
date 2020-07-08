@@ -44,19 +44,6 @@
   margin-bottom: 0;
 }
 
-.timeline .event .content svg.border {
-  position: absolute;
-  /*display: block;*/
-  display: none;
-  top: 0;
-  left: -1px;
-  width: 2px;
-  height: 100%;
-  fill:none;
-  stroke: #344154;
-  stroke-width: 2;
-  stroke-miterlimit: 10;
-}
 .timeline .event .content:after {
   content: '';
   position: absolute;

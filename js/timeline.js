@@ -11,7 +11,6 @@ $(document).ready(function() {
 		var p = self.querySelectorAll(".content p");
 		var img = self.querySelectorAll(".thumbnail img");
 		var circle = self.querySelectorAll(".content svg.circle circle");
-		// var border = self.querySelectorAll(".content svg.border line");
 
 		var tl = gsap.timeline();
 
@@ -21,7 +20,6 @@ $(document).ready(function() {
 		.from(img, {duration: .5, autoAlpha: 0, x: -40, ease: "power1.out"}, "0")
 		.fromTo(circle, {drawSVG: "0% 0%"}, {duration: .2, drawSVG: "0% 100%"}, "0")
 		.to(circle, {duration: .2, fill:"#334154", ease: "power1.out"}, "0.2")
-		// .fromTo(border, {drawSVG: "0% 0%"}, {duration: .3, drawSVG: "0% 100%"}, "0.2")
 		.call(function() {
 			$(self).find(".content").toggleClass("active");
 		}, null, null, "0");
