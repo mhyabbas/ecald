@@ -73,6 +73,7 @@ header.bg-wave {
 
 	.card.horizontal {
 		display: block;
+		width: 100%;
 	}
 
 	.card.horizontal > div {
