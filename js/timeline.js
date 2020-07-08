@@ -23,7 +23,7 @@ $(document).ready(function() {
 		.fromTo(border, {drawSVG: "0% 0%"}, {duration: .3, drawSVG: "0% 100%"}, "0.2")
 
 		// var scene = new ScrollMagic.Scene({triggerElement: self, triggerHook: 'onEnter', offset: 100, duration: 400})
-		var scene = new ScrollMagic.Scene({triggerElement: self, triggerHook: 'onEnter', offset: 100, reverse: false})
+		var scene = new ScrollMagic.Scene({triggerElement: self, triggerHook: 'onEnter', offset: 100, duration: 400, reverse: false})
 		.setTween(tl)
 		.setClassToggle(self, "active")
 		.addTo(controller);
