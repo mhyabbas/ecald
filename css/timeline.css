@@ -49,7 +49,7 @@
   display: block;
   top: 0;
   left: -1px;
-  /*width: 2px;*/
+  width: 2px;
   height: 100%;
   fill:none;
   stroke: #344154;
