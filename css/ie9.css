@@ -22,6 +22,12 @@ header.bg-wave {
 	background-color: #8F5EA7;
 }
 
+@media all and (min-width: 1200px) {
+	header .column {
+		width: 50%;
+	}
+}
+
 /*Navigation*/
 
 @media all and (min-width: 1024px) {
