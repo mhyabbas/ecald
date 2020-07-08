@@ -6,11 +6,12 @@ $(document).ready(function() {
 
 	event.forEach(function(self) {
 
+		var content = self.querySelectorAll(".content");
 		var h2 = self.querySelectorAll(".content h2");
 		var p = self.querySelectorAll(".content p");
 		var img = self.querySelectorAll(".thumbnail img");
 		var circle = self.querySelectorAll(".content svg.circle circle");
-		var border = self.querySelectorAll(".content svg.border line");
+		// var border = self.querySelectorAll(".content svg.border line");
 
 		var tl = gsap.timeline();
 
@@ -20,9 +21,12 @@ $(document).ready(function() {
 		.from(img, {duration: .5, autoAlpha: 0, x: -40, ease: "power1.out"}, "0")
 		.fromTo(circle, {drawSVG: "0% 0%"}, {duration: .2, drawSVG: "0% 100%"}, "0")
 		.to(circle, {duration: .2, fill:"#334154", ease: "power1.out"}, "0.2")
-		.fromTo(border, {drawSVG: "0% 0%"}, {duration: .3, drawSVG: "0% 100%"}, "0.2")
+		// .fromTo(border, {drawSVG: "0% 0%"}, {duration: .3, drawSVG: "0% 100%"}, "0.2")
+		.call(function() {
+			$(self).find(".content").toggleClass("active");
+		}, null, null, "0");
 
-		var scene = new ScrollMagic.Scene({triggerElement: self, triggerHook: 'onEnter', offset: 100, duration: 400})
+		var scene = new ScrollMagic.Scene({triggerElement: self, triggerHook: 'onEnter', offset: 100, duration: 300})
 		.setTween(tl)
 		.setClassToggle(self, "active")
 		.addTo(controller);

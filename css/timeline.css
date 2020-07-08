@@ -46,7 +46,8 @@
 
 .timeline .event .content svg.border {
   position: absolute;
-  display: block;
+  /*display: block;*/
+  display: none;
   top: 0;
   left: -1px;
   width: 2px;
@@ -55,6 +56,19 @@
   stroke: #344154;
   stroke-width: 2;
   stroke-miterlimit: 10;
+}
+.timeline .event .content:after {
+  content: '';
+  position: absolute;
+  border-left: 2px solid #344154;
+  top: 0;
+  left: -1px;
+  bottom: 100%;
+  transition: all .3s;
+}
+
+.timeline .event .content.active:after {
+  bottom: 0;
 }
 
 .timeline .event .content svg.circle {
