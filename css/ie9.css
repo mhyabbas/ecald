@@ -1,3 +1,10 @@
+/*Typography*/
+
+img {
+	text-decoration: none;
+	border: 0px;
+}
+
 /*Layout*/
 
 @media all and (min-width: 1200px) {
