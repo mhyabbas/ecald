@@ -167,6 +167,7 @@ footer .footer:after {
 
 @media all and (min-width: 800px) {
 	footer .footer div {
+		float: left;
 		width: 25%;
 	}
 }
