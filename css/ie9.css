@@ -70,6 +70,15 @@ header.bg-wave {
 		float: left;
 		width: 45%;
 	}
+
+	.card.horizontal {
+		display: block;
+	}
+
+	.card.horizontal > div {
+		float: left;
+		width: 45%;
+	}
 }
 
 @media all and (min-width: 1200px) {
