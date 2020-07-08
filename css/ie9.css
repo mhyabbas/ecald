@@ -119,5 +119,30 @@ header.bg-wave {
 	}
 }
 
+/*Statistics*/
+
+.statistics {
+	display: block;
+}
+
+.statistics:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+@media all and (min-width: 800px) {
+	.statistic {
+		float: left;
+		width: 45%;
+	}
+}
+
+@media all and (min-width: 1200px) {
+	.statistic {
+		width: 30%;
+	}
+}
+
 /*Footer*/
 
