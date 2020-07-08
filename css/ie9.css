@@ -1,3 +1,19 @@
+/*Layout*/
+
+@media all and (min-width: 1200px) {
+	.row {
+		display: block;
+	}
+
+	.column {
+		float: left;
+	}
+
+    .double-column {
+        float: left;
+    }
+}
+
 /*Header*/
 
 header.bg-wave {
@@ -15,4 +31,3 @@ header.bg-wave {
 		float: left;
 	}
 }
-
