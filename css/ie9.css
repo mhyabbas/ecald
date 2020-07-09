@@ -29,6 +29,13 @@ img {
 	}
 }
 
+/*Buttons*/
+
+.btn {
+	display: inline-block;
+	text-align: center;
+}
+
 /*Header*/
 
 header.bg-wave {
