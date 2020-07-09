@@ -183,9 +183,10 @@ footer .footer:after {
 
 	footer .copyright ul li {
 		float: left;
+		width: auto;
 	}
 
 	footer .copyright .logo {
-		margin-right: 70%;
+		width: 70%;
 	}
 }
