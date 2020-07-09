@@ -170,4 +170,16 @@ footer .footer:after {
 		float: left;
 		width: 25%;
 	}
+
+	footer .copyright ul {
+		display: block;
+	}
+
+	footer .copyright ul li {
+		float: left;
+	}
+
+	footer .copyright .logo {
+		margin-right: auto;
+	}
 }
