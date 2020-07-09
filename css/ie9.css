@@ -38,6 +38,7 @@ img {
 
 .btn > * {
 	display: inline-block;
+	width: auto;
 }
 
 /*Header*/
