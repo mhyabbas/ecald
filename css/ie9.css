@@ -178,6 +178,7 @@ footer .footer:after {
 	footer .copyright ul li {
 	    display: table-cell;
 	    width: auto;
+	    vertical-align: middle;
 	    white-space: nowrap;
 	}
 
