@@ -175,11 +175,18 @@ footer .footer:after {
 		display: block;
 	}
 
+	footer .copyright ul:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
 	footer .copyright ul li {
-		float: left;
+		float: right;
 	}
 
 	footer .copyright .logo {
+		float: left;
 		margin-right: auto;
 	}
 }
