@@ -172,21 +172,16 @@ footer .footer:after {
 	}
 
 	footer .copyright ul {
-		display: block;
-	}
-
-	footer .copyright ul:after {
-		content: "";
 		display: table;
-		clear: both;
 	}
 
 	footer .copyright ul li {
-		float: left;
-		width: auto;
+	    display: table-cell;
+	    width: auto;
+	    white-space: nowrap;
 	}
 
 	footer .copyright .logo {
-		width: 60%;
+		width: 70%;
 	}
 }
