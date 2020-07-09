@@ -41,6 +41,11 @@ img {
 	width: 50%;
 }
 
+.btn span {
+	display: inline-block;
+	width: 50%;	
+}
+
 /*Header*/
 
 header.bg-wave {
