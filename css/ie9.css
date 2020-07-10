@@ -43,11 +43,8 @@ img {
     white-space: nowrap;
 }
 
-.btn.arrow > * {
-    display: table-cell;
-    width: auto;
-    vertical-align: middle;
-    white-space: nowrap;
+.btn.arrow {
+    padding: 5px;
 }
 
 /*Header*/
