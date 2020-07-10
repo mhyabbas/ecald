@@ -36,6 +36,10 @@ img {
 	text-align: center;
 }
 
+.btn i:nth-of-type {
+	display: none;
+}
+
 /*Header*/
 
 header.bg-wave {
