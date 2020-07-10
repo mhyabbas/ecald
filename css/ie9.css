@@ -32,12 +32,19 @@ img {
 /*Buttons*/
 
 .btn {
-	display: inline-block;
+	display: table-cell;
 	text-align: center;
 }
 
 .btn i.material-icons {
     /*display: inline-block;*/
+}
+
+.btn > * {
+    display: table-cell;
+    width: auto;
+    vertical-align: middle;
+    white-space: nowrap;
 }
 
 .btn i:last-of-type {
