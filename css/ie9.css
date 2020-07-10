@@ -84,6 +84,7 @@ header.bg-wave {
 }
 
 .card .content .btn.arrow {
+	display: block;
 	margin-left: auto;
 }
 
