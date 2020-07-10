@@ -37,7 +37,7 @@ img {
 
 .btn i.material-icons {
 	display: inline-block;
-	margin-top: 8px;
+	margin: 10px;
 }
 
 .btn i:last-of-type {
