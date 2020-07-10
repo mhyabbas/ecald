@@ -83,6 +83,10 @@ header.bg-wave {
 	clear: both;
 }
 
+.card .content .btn.arrow {
+	margin-left: auto;
+}
+
 .card.colour .footer {
 	text-align: center;
 }
