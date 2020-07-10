@@ -32,7 +32,7 @@ img {
 /*Buttons*/
 
 .btn {
-	display: table-cell;
+	display: table;
 	text-align: center;
 }
 
