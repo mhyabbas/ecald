@@ -3,7 +3,7 @@ $(document).ready(function(){
 		arrows: true,
 		dots: true,
 		speed: 500,
-		prevArrow: '<a class="btn arrow white prev" href=""><i class="material-icons">arrow_back</i></a>', 
-		nextArrow: '<a class="btn arrow white next" href=""><i class="material-icons">arrow_forward</i></a>'
+		prevArrow: '<a class="btn arrow white prev" href=""><i class="material-icons">&#xe5c4;</i></a>', 
+		nextArrow: '<a class="btn arrow white next" href=""><i class="material-icons">&#xe5c8;</i></a>'
 	});
 });

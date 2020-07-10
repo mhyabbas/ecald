@@ -36,10 +36,6 @@ img {
 	text-align: center;
 }
 
-.btn i.material-icons {
-    /*display: inline-block;*/
-}
-
 .btn > * {
     display: table-cell;
     width: auto;
