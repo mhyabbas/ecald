@@ -83,6 +83,10 @@ header.bg-wave {
 	clear: both;
 }
 
+.card.colour .footer {
+	text-align: center;
+}
+
 @media all and (min-width: 800px) {
 	.card {
 		float: left;
