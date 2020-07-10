@@ -43,9 +43,11 @@ img {
     white-space: nowrap;
 }
 
-.btn.arrow {
-	display: inline;
-	text-align: center;
+.btn.arrow > * {
+    display: table-cell;
+    width: auto;
+    vertical-align: middle;
+    white-space: nowrap;
 }
 
 /*Header*/
