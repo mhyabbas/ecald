@@ -43,6 +43,10 @@ img {
     white-space: nowrap;
 }
 
+.btn.arrow {
+	text-align: center;
+}
+
 /*Header*/
 
 header.bg-wave {
