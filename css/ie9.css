@@ -35,9 +35,13 @@ img {
 	text-align: center;
 }
 
-/*.btn i:last-of-type {
+.btn i.material-icons {
+	margin-top: 8px;
+}
+
+.btn i:last-of-type {
 	display: none;
-}*/
+}
 
 /*Header*/
 
