@@ -43,10 +43,6 @@ img {
     white-space: nowrap;
 }
 
-.btn i:last-of-type {
-	display: none;
-}
-
 /*Header*/
 
 header.bg-wave {
