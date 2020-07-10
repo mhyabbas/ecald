@@ -36,7 +36,7 @@ img {
 	text-align: center;
 }
 
-.btn i:nth-of-type {
+.btn i:nth-of-type(2) {
 	display: none;
 }
 
