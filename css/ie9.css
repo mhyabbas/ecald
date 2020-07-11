@@ -83,7 +83,7 @@ header.bg-wave {
 	clear: both;
 }
 
-.media > div {
+.media > * {
 	float: left;
 }
 
