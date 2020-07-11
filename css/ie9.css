@@ -74,17 +74,14 @@ header.bg-wave {
 /*Media*/
 
 .media {
-    display: block;
-}
-
-.media:after {
-	content: "";
-	display: table;
-	clear: both;
+    display: table;
 }
 
 .media > * {
-	float: left;
+    display: table-cell;
+    width: auto;
+    vertical-align: middle;
+    white-space: nowrap;
 }
 
 /*Cards*/
