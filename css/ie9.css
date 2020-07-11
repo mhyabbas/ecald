@@ -71,6 +71,22 @@ header.bg-wave {
 	}
 }
 
+/*Media*/
+
+.media {
+    display: block;
+}
+
+.media:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.media > div {
+	float: left;
+}
+
 /*Cards*/
 
 .cards {
