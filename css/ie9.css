@@ -90,6 +90,10 @@ header.bg-wave {
 	display: block;
 }
 
+.form-group > * {
+	display: block;
+}
+
 @media all and (min-width: 800px) {
 	.form-title {
 		display: table;
@@ -100,6 +104,10 @@ header.bg-wave {
 		width: auto;
 		vertical-align: middle;
 		white-space: nowrap;
+	}
+
+	.form-title > p {
+		text-align: right;
 	}
 
 	.form-row {
