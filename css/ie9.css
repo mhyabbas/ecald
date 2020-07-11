@@ -97,6 +97,11 @@ header.bg-wave {
 }
 
 @media all and (min-width: 1024px) {
+
+	.nav {
+		height: 138px;
+	}
+
 	.nav ul {
 		display: block;
 	}
@@ -106,7 +111,9 @@ header.bg-wave {
 	}
 
 	.main-nav {
+		position: absolute;
 		display: block;
+		top: 75px;
 	}
 
 	.main-nav ul {
