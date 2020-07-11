@@ -68,6 +68,34 @@ header.bg-wave {
 
 /*Navigation*/
 
+.nav .toggle a {
+	display: block;
+}
+
+.nav .item.active {
+	display: block;
+}
+
+.nav .item.search a {
+	display: block;
+}
+
+.nav #search {
+	display: block;
+}
+
+.main-nav ul li.active {
+	display: block;
+}
+
+.main-nav ul li a.dropdown {
+	display: inline-block;
+}
+
+.main-nav .sub-item {
+	display: block;
+}
+
 @media all and (min-width: 1024px) {
 	.nav ul {
 		display: block;
@@ -75,6 +103,18 @@ header.bg-wave {
 
 	.nav .item {
 		float: left;
+	}
+
+	.main-nav {
+		display: block;
+	}
+
+	.main-nav ul {
+		display: block;
+	}
+
+	.main-nav ul li:hover .sub-nav {
+		display: block;
 	}
 }
 
