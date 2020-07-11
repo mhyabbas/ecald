@@ -130,6 +130,10 @@ header.bg-wave {
 		margin: 0 auto;
 	}
 
+	.main-nav ul li {
+		display: inline-block;
+	}
+
 	.main-nav ul li:hover .sub-nav {
 		display: block;
 	}
