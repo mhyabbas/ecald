@@ -117,7 +117,9 @@ header.bg-wave {
 	.main-nav {
 		position: absolute;
 		display: block;
-		top: 72px;
+		top: 71px;
+		width: 100%;
+		border-bottom: none;
 	}
 
 	.main-nav ul {
