@@ -68,6 +68,10 @@ header.bg-wave {
 
 /*Navigation*/
 
+.nav {
+	width: 100%;
+}
+
 .nav .toggle a {
 	display: block;
 }
@@ -113,7 +117,7 @@ header.bg-wave {
 	.main-nav {
 		position: absolute;
 		display: block;
-		top: 75px;
+		top: 72px;
 	}
 
 	.main-nav ul {
