@@ -125,6 +125,10 @@ header.bg-wave {
 		float: left;
 		width: 49%;
 	}
+
+	.form-row .form-group:first-of-type {
+		margin-right: 2%;
+	}
 }
 
 /*Cards*/
