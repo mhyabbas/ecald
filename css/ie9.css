@@ -118,12 +118,16 @@ header.bg-wave {
 		position: absolute;
 		display: block;
 		top: 71px;
+		left: 0;
+		right: 0;
+		bottom: 0;
 		width: 100%;
 		border-bottom: none;
 	}
 
 	.main-nav ul {
 		display: block;
+		margin: 0 auto;
 	}
 
 	.main-nav ul li:hover .sub-nav {
