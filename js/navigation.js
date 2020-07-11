@@ -12,10 +12,10 @@ $(function() {
 
 		if ($(".item").hasClass("active")) {
 			$(".item").removeClass("active");
-			$(this).html("<i class='material-icons'>menu</i> <span>Menu</span>");
+			$(this).html("<i class='material-icons'>&#xe5d2;</i> <span>Menu</span>");
 		} else {
 			$(".item").addClass("active");
-			$(this).html("<i class='material-icons'>close</i> <span>Menu</span>");
+			$(this).html("<i class='material-icons'>&#xe5cd;</i> <span>Menu</span>");
 		}
 	});
 
