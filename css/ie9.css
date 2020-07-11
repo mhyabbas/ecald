@@ -59,6 +59,12 @@ header.bg-wave {
 	}
 }
 
+/*Tags*/
+
+.tag {
+	display: inline-block;
+}
+
 /*Navigation*/
 
 @media all and (min-width: 1024px) {
