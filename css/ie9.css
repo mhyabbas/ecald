@@ -110,7 +110,7 @@ header.bg-wave {
 		display: block;
 	}
 
-	.nav > ul > .item, .nav .logo {
+	.nav .item, .nav .logo {
 		float: left;
 	}
 
@@ -126,15 +126,8 @@ header.bg-wave {
 	}
 
 	.main-nav ul {
-		display: table;
+		display: block;
 		margin: 0 auto;
-	}
-
-	.main-nav ul li {
-		display: table-cell;
-		width: 25%;
-		vertical-align: middle;
-		white-space: nowrap;
 	}
 
 	.main-nav ul li:hover .sub-nav {
