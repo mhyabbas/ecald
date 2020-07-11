@@ -121,7 +121,7 @@ header.bg-wave {
 		clear: both;
 	}
 
-	.form-group {
+	.form-row .form-group {
 		float: left;
 		width: 49%;
 	}
