@@ -126,12 +126,15 @@ header.bg-wave {
 	}
 
 	.main-nav ul {
-		display: block;
+		display: table;
 		margin: 0 auto;
 	}
 
 	.main-nav ul li {
-		display: inline-block;
+		display: table-cell;
+		width: auto;
+		vertical-align: middle;
+		white-space: nowrap;
 	}
 
 	.main-nav ul li:hover .sub-nav {
