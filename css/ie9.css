@@ -101,7 +101,7 @@ header.bg-wave {
 		display: block;
 	}
 
-	.nav .item {
+	.nav .item, .nav .logo {
 		float: left;
 	}
 
