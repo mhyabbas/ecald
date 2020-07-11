@@ -107,8 +107,8 @@ header.bg-wave {
 		white-space: nowrap;
 	}
 
-	.form-title > p {
-		text-align: right;
+	.form-title h3 {
+		width: 70%;
 	}
 
 	.form-row {
