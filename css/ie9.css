@@ -92,6 +92,7 @@ header.bg-wave {
 
 .form-group > * {
 	display: block;
+	width: 100%;
 }
 
 @media all and (min-width: 800px) {
