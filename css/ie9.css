@@ -132,7 +132,7 @@ header.bg-wave {
 
 	.main-nav ul li {
 		display: table-cell;
-		width: auto;
+		width: 25%;
 		vertical-align: middle;
 		white-space: nowrap;
 	}
