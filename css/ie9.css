@@ -37,14 +37,14 @@ img {
 }
 
 .btn > * {
-    display: table-cell;
-    width: auto;
-    vertical-align: middle;
-    white-space: nowrap;
+	display: table-cell;
+	width: auto;
+	vertical-align: middle;
+	white-space: nowrap;
 }
 
 .btn.arrow {
-    padding: 3px;
+	padding: 3px;
 }
 
 /*Header*/
@@ -74,14 +74,48 @@ header.bg-wave {
 /*Media*/
 
 .media {
-    display: table;
+	display: table;
 }
 
 .media > * {
-    display: table-cell;
-    width: auto;
-    vertical-align: middle;
-    white-space: nowrap;
+	display: table-cell;
+	width: auto;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+/*Form*/
+
+.form-group {
+	display: block;
+}
+
+@media all and (min-width: 800px) {
+	.form-title {
+		display: table;
+	}
+
+	.form-title > * {
+		display: table-cell;
+		width: auto;
+		vertical-align: middle;
+		white-space: nowrap;
+	}
+
+	.form-row {
+		display: block;
+	}
+
+	.form-row:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	.form-group {
+		float: left;
+		width: 49%;
+	}
 }
 
 /*Cards*/
@@ -215,10 +249,10 @@ footer .footer:after {
 	}
 
 	footer .copyright ul li {
-	    display: table-cell;
-	    width: auto;
-	    vertical-align: middle;
-	    white-space: nowrap;
+		display: table-cell;
+		width: auto;
+		vertical-align: middle;
+		white-space: nowrap;
 	}
 
 	footer .copyright .logo {
