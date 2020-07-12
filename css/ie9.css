@@ -181,6 +181,7 @@ header.bg-wave {
 	}
 
 	.main-nav .sub-nav {
+		top: 66px;
 		width: 200%;
 	}
 
