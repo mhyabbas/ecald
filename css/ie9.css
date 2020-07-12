@@ -137,8 +137,16 @@ header.bg-wave {
 		display: block;
 	}
 
-	.nav .item, .nav .logo {
+/*	.nav .item, .nav .logo {
 		float: left;
+	}*/
+
+	.nav .item.search {
+		float: right;
+	}
+
+	.nav .item.login {
+		float: right;
 	}
 
 	.main-nav {
