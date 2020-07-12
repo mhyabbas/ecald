@@ -143,6 +143,8 @@ header.bg-wave {
 
 	.nav .top-nav {
 		float: right;
+		margin: 0;
+		padding: 0;
 	}
 
 	.nav .item.search {
