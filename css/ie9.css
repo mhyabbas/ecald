@@ -89,11 +89,14 @@ header.bg-wave {
 }
 
 .nav #search.show input {
-	width: 90%;
+	float: left;
+	margin-top: 5px;
+	width: 95%;
 }
 
 .nav #search.show a {
 	float: right;
+	margin-top: 8px;
 }
 
 .main-nav ul li.active {
