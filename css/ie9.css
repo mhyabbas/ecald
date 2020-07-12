@@ -156,7 +156,7 @@ header.bg-wave {
 	}
 
 	.main-nav ul li:hover .sub-nav {
-		display: block;
+		display: table;
 	}
 
 	.main-nav ul li a.dropdown svg {
@@ -178,6 +178,17 @@ header.bg-wave {
 
 	.main-nav ul li:hover a.dropdown svg.arrow-up {
 		display: inline-block;
+	}
+
+	.main-nav .sub-nav {
+		width: 200%;
+	}
+
+	.main-nav .sub-item {
+		display: table-cell;
+		width: 50%;
+		vertical-align: middle;
+		white-space: nowrap;
 	}
 }
 
