@@ -122,7 +122,8 @@ header.bg-wave {
 		right: 0;
 		bottom: 0;
 		width: 100%;
-		border: 1px solid #D5D5D5;
+		border: 0;
+		border-top: 1px solid #D5D5D5;
 	}
 
 	.main-nav ul {
