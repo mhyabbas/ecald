@@ -85,7 +85,11 @@ header.bg-wave {
 }
 
 .nav #search {
-	display: table;
+	display: block;
+}
+
+.nav #search.show {
+	width: 100%;
 }
 
 .nav #search.show input {
@@ -97,7 +101,7 @@ header.bg-wave {
 
 .nav #search.show a {
 	display: table-cell;
-	width: auto;
+	width: 10%;
 	vertical-align: middle;
 	white-space: nowrap;
 }
