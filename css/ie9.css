@@ -134,6 +134,12 @@ header.bg-wave {
 		border: 1px solid pink;
 	}
 
+	.main-nav ul:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
 	.main-nav ul li {
 		display: block;
 		float: left;
