@@ -133,24 +133,15 @@ header.bg-wave {
 		height: 138px;
 	}
 
-	.nav > ul {
-		display: table;
-		width: 100%;
+	.nav ul {
+		display: block;
 	}
 
-	.nav .logo {
+	.nav .item, .nav .logo {
 		float: left;
 	}
 
-	.nav .item {
-		display: table-cell;
-		width: auto;
-		vertical-align: middle;
-		white-space: nowrap;
-	}
-
 	.nav .item.search {
-		display: block;
 		float: right;
 		margin-top: 28px;
 	}
@@ -169,7 +160,6 @@ header.bg-wave {
 	}
 
 	.nav .item.login {
-		display: block;
 		float: right;
 	}
 
