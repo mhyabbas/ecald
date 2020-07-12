@@ -256,7 +256,6 @@ header.bg-wave {
 
 	.main-nav .sub-item a {
 		display: block;
-		min-height: 35px;
 		white-space: normal;
 	}
 }
@@ -331,6 +330,10 @@ header.bg-wave {
 	content: "";
 	display: table;
 	clear: both;
+}
+
+.card {
+	width: 400px;
 }
 
 .card .content .btn.arrow {
