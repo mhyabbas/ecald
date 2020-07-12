@@ -153,6 +153,7 @@ header.bg-wave {
 	.nav .top-nav li.item {
 		position: relative;
 		left: 0;
+		margin-top: 10px;
 	}
 
 	.nav .top-nav li.item.hide {
