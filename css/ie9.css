@@ -152,7 +152,7 @@ header.bg-wave {
 	}
 
 	.main-nav ul li a.dropdown svg {
-		display: inline-block;
+		margin-top: 3px;
 		float: none;
 	}
 
