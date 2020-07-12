@@ -356,6 +356,8 @@ header.bg-wave {
 
 	.card.horizontal {
 		display: block;
+		margin-left: 0;
+		margin-right: 0;
 		width: 100%;
 	}
 
