@@ -189,10 +189,12 @@ header.bg-wave {
 		display: block;
 		float: left;
 		width: 50%;
+		border-bottom: 1px solid #D5D5D5;
 	}
 
 	.main-nav .sub-item a {
 		white-space: normal;
+		border: 0;
 	}
 }
 
