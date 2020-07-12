@@ -332,7 +332,7 @@ header.bg-wave {
 	clear: both;
 }
 
-.card {
+.card, a.card {
 	width: 400px;
 }
 
