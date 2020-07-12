@@ -73,7 +73,14 @@ header.bg-wave {
 }
 
 .nav .toggle a {
-	display: block;
+	display: table;
+}
+
+.nav .toggle a > * {
+	display: table-cell;
+	width: auto;
+	vertical-align: middle;
+	white-space: nowrap;
 }
 
 .nav .top-nav {
@@ -153,7 +160,7 @@ header.bg-wave {
 	.nav .top-nav li.item {
 		position: relative;
 		left: 0;
-		margin-top: 10px;
+		margin-top: 9px;
 	}
 
 	.nav .top-nav li.item.hide {
