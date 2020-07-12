@@ -134,7 +134,7 @@ header.bg-wave {
 		border: 1px solid pink;
 	}
 
-	.main-nav ul li {
+	.main-nav ul li.item {
 		display: table-cell;
 		width: 25%;
 		vertical-align: middle;
