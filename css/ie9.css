@@ -129,9 +129,6 @@ header.bg-wave {
 	.main-nav ul {
 		display: table;
 		margin: 0 auto;
-		width: 1140px;
-		height: 70px;
-		border: 1px solid pink;
 	}
 
 	.main-nav ul li.item {
