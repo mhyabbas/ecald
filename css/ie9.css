@@ -111,6 +111,10 @@ header.bg-wave {
 	margin-top: 8px;
 }
 
+.item.account.active {
+    display: none;
+}
+
 .main-nav ul li.active {
 	display: block;
 }
