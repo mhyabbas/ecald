@@ -100,6 +100,10 @@ header.bg-wave {
 	float: right;
 }
 
+.main-nav ul li.current a.dropdown svg.arrow-up {
+	display: inline-block;
+}
+
 .main-nav .sub-item {
 	display: block;
 }
@@ -138,7 +142,7 @@ header.bg-wave {
 		display: table-cell;
 		width: 25%;
 		margin-left: 0;
-    	margin-right: 0;
+		margin-right: 0;
 		vertical-align: middle;
 		white-space: nowrap;
 	}
@@ -148,7 +152,15 @@ header.bg-wave {
 	}
 
 	.main-nav ul li a.dropdown svg {
+		display: inline-block;
 		float: none;
+	}
+
+	.main-nav ul li.current a.dropdown svg.arrow-down {
+		display: inline-block;
+	}
+
+	.main-nav ul li:hover a.dropdown svg.arrow-up {
 		display: inline-block;
 	}
 }
