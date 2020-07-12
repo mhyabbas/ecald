@@ -133,7 +133,7 @@ header.bg-wave {
 		height: 138px;
 	}
 
-	.nav ul {
+	.nav > ul {
 		display: table;
 		width: 100%;
 	}
