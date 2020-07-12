@@ -88,10 +88,6 @@ header.bg-wave {
 	display: block;
 }
 
-.nav #search.show {
-	display: table;
-}
-
 .nav #search.show > * {
 	display: table-cell;
 	width: auto;
