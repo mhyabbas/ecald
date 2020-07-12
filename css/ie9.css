@@ -188,7 +188,11 @@ header.bg-wave {
 	.main-nav .sub-item {
 		display: block;
 		float left;
-		width: 40%;
+		width: 30%;
+	}
+
+	.main-nav .sub-item a {
+		white-space: normal;
 	}
 }
 
