@@ -143,6 +143,11 @@ header.bg-wave {
 
 	.nav .item.search {
 		float: right;
+		margin-top: 15px;
+	}
+
+	.nav #search {
+		height: 70px;
 	}
 
 	.nav .item.login {
