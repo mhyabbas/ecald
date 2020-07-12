@@ -113,7 +113,7 @@ header.bg-wave {
 }
 
 .main-nav .sub-item {
-	display: inline-block;
+	display: block;
 	border: 1px solid pink;
 }
 
@@ -186,8 +186,9 @@ header.bg-wave {
 	}
 
 	.main-nav .sub-item {
+		display: block;
 		float left;
-		width: 40%;
+		width: 45%;
 	}
 }
 
