@@ -93,18 +93,11 @@ header.bg-wave {
 }
 
 .main-nav ul li a.dropdown {
-	display: table;
+	display: block;
 }
 
-.main-nav ul li a.dropdown > * {
-	display: table-cell;
-	width: auto;
-	vertical-align: middle;
-	white-space: nowrap;
-}
-
-.main-nav ul li a.dropdown:first-of-type {
-	width: 95%;
+.main-nav ul li a.dropdown svg {
+	float: right;
 }
 
 .main-nav .sub-item {
@@ -145,7 +138,7 @@ header.bg-wave {
 		display: table-cell;
 		width: 25%;
 		margin-left: 0;
-		margin-right: 0;
+    	margin-right: 0;
 		vertical-align: middle;
 		white-space: nowrap;
 	}
