@@ -88,15 +88,18 @@ header.bg-wave {
 	display: block;
 }
 
-.nav #search.show > * {
+.nav #search.show input {
+	display: table-cell;
+	vertical-align: middle;
+	white-space: nowrap;
+	width: 90%;
+}
+
+.nav #search.show a {
 	display: table-cell;
 	width: auto;
 	vertical-align: middle;
 	white-space: nowrap;
-}
-
-.nav #search.show input {
-	width: 90%;
 }
 
 .main-nav ul li.active {
