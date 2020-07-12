@@ -133,6 +133,7 @@ header.bg-wave {
 	}
 
 	.main-nav ul li {
+		display: block;
 		float: left;
 		width: 25%;
 		border: 1px solid green;
