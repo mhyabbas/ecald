@@ -85,7 +85,7 @@ header.bg-wave {
 }
 
 .nav #search {
-	display: block;
+	display: table;
 }
 
 .nav #search.show input {
