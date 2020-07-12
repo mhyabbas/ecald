@@ -134,11 +134,18 @@ header.bg-wave {
 	}
 
 	.nav ul {
-		display: block;
+		display: table;
 	}
 
-	.nav .item, .nav .logo {
+	.nav .logo {
 		float: left;
+	}
+
+	.nav .item {
+		display: table-cell;
+		width: auto;
+		vertical-align: middle;
+		white-space: nowrap;
 	}
 
 	.nav .item.search {
