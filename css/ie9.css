@@ -135,6 +135,7 @@ header.bg-wave {
 
 	.nav ul {
 		display: table;
+		width: 100%;
 	}
 
 	.nav .logo {
@@ -149,6 +150,7 @@ header.bg-wave {
 	}
 
 	.nav .item.search {
+		display: block;
 		float: right;
 		margin-top: 28px;
 	}
@@ -167,6 +169,7 @@ header.bg-wave {
 	}
 
 	.nav .item.login {
+		display: block;
 		float: right;
 	}
 
