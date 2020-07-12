@@ -114,7 +114,6 @@ header.bg-wave {
 
 .main-nav .sub-item {
 	display: block;
-	border: 1px solid pink;
 }
 
 @media all and (min-width: 1024px) {
@@ -189,12 +188,11 @@ header.bg-wave {
 		display: block;
 		float: left;
 		width: 50%;
-		border-bottom: 1px solid #D5D5D5;
 	}
 
 	.main-nav .sub-item a {
+		display: block;
 		white-space: normal;
-		border: 0;
 	}
 }
 
