@@ -136,7 +136,7 @@ header.bg-wave {
 
 	.main-nav ul li.item {
 		display: table-cell;
-		width: 25%;
+		width: auto;
 		vertical-align: middle;
 		white-space: nowrap;
 		border: 1px solid green;
