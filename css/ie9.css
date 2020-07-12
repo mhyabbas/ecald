@@ -123,6 +123,7 @@ header.bg-wave {
 		bottom: 0;
 		width: 100%;
 		border-bottom: none;
+		border: 1px solid yellow;
 	}
 
 	.main-nav ul {
