@@ -141,6 +141,10 @@ header.bg-wave {
 		float: left;
 	}
 
+	.nav .top-nav {
+		float: right;
+	}
+
 	.nav .item.search {
 		float: right;
 		margin-top: 28px;
