@@ -348,7 +348,12 @@ header.bg-wave {
 
 .card.icon .thumbnail {
 	display: block;
-	text-align: center;
+}
+
+.card.icon .thumbnail img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 @media all and (min-width: 800px) {
