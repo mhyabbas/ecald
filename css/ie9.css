@@ -88,6 +88,14 @@ header.bg-wave {
 	display: block;
 }
 
+.nav #search.show input {
+	width: 95%;
+}
+
+.nav #search.show a {
+	float: right;
+}
+
 .main-nav ul li.active {
 	display: block;
 }
@@ -191,6 +199,7 @@ header.bg-wave {
 
 	.main-nav .sub-item a {
 		display: block;
+		white-space: normal;
 	}
 }
 
