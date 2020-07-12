@@ -362,13 +362,17 @@ header.bg-wave {
 
 	.card.horizontal > div {
 		float: left;
-		width: 43%;
+		width: 40%;
 	}
 }
 
 @media all and (min-width: 1200px) {
 	.card {
 		width: 30%;
+	}
+
+	.card.horizontal > div {
+		width: 45%;
 	}
 
 	.cards.two-column .card {
