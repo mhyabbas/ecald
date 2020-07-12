@@ -76,6 +76,11 @@ header.bg-wave {
 	display: block;
 }
 
+.nav .top-nav {
+	margin: 0;
+	padding: 0;
+}
+
 .nav .item.active {
 	display: block;
 }
@@ -143,8 +148,17 @@ header.bg-wave {
 
 	.nav .top-nav {
 		float: right;
-		margin: 0;
-		padding: 0;
+	}
+
+	.nav .top-nav li.item {
+		position: relative;
+		left: 0;
+	}
+
+	.nav .top-nav li.item.hide {
+		left: -200px;
+		opacity: 0;
+		visibility: hidden;
 	}
 
 	.nav .item.search {

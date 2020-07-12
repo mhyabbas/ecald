@@ -4,12 +4,12 @@ $(function() {
 	
 	$("#search-toggle").click(function(e){
 		e.preventDefault();
-		$(".top-nav li.item").hide();
+		$(".nav .top-nav li.item").addClass("hide");
 	});
 
 	$("#search a").click(function(e){
 		e.preventDefault();
-		$(".top-nav li.item").show();
+		$(".nav .top-nav li.item").removeClass("hide");
 	});
 
 });
