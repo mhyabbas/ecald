@@ -354,6 +354,10 @@ header.bg-wave {
 		width: 45%;
 	}
 
+	.card .content {
+		min-height: 150px;
+	}
+
 	.card.horizontal {
 		display: block;
 		margin: 0;
