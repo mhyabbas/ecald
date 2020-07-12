@@ -187,8 +187,8 @@ header.bg-wave {
 
 	.main-nav .sub-item {
 		display: block;
-		float left;
-		width: 30%;
+		float: left;
+		width: 40%;
 	}
 
 	.main-nav .sub-item a {
