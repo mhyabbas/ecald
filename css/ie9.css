@@ -129,11 +129,13 @@ header.bg-wave {
 		display: block;
 		margin: 0 auto;
 		width: 100%;
+		border: 1px solid pink;
 	}
 
 	.main-nav ul li {
 		float: left;
 		width: 25%;
+		border: 1px solid green;
 	}
 
 	.main-nav ul li:hover .sub-nav {
