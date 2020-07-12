@@ -146,6 +146,11 @@ header.bg-wave {
 	.main-nav ul li:hover .sub-nav {
 		display: block;
 	}
+
+	.main-nav ul li a.dropdown svg {
+		float: none;
+		display: inline-block;
+	}
 }
 
 /*Media*/
