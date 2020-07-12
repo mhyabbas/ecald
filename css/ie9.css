@@ -346,6 +346,11 @@ header.bg-wave {
 	text-align: center;
 }
 
+.card.icon .thumbnail {
+	display: block;
+	text-align: center;
+}
+
 @media all and (min-width: 800px) {
 	.card {
 		float: left;
