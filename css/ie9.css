@@ -356,14 +356,12 @@ header.bg-wave {
 
 	.card.horizontal {
 		display: block;
-		margin-left: 0;
-		margin-right: 0;
 		width: 100%;
 	}
 
 	.card.horizontal > div {
 		float: left;
-		width: 45%;
+		width: 43%;
 	}
 }
 
