@@ -85,18 +85,18 @@ header.bg-wave {
 }
 
 .nav #search {
-	display: block;
+	display: table;
+}
+
+.nav #search > * {
+	display: table-cell;
+	width: auto;
+	vertical-align: middle;
+	white-space: nowrap;
 }
 
 .nav #search.show input {
-	float: left;
-	margin-top: 5px;
-	width: 90%;
-}
-
-.nav #search.show a {
-	float: right;
-	margin-top: 8px;
+	width: 95%;
 }
 
 .main-nav ul li.active {
