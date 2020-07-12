@@ -334,14 +334,9 @@ header.bg-wave {
 
 .card {
 	display: block;
-}
-
-/*.cards .card, .cards a.card {
-	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 400px;
-}*/
+}
 
 .card .content .btn.arrow {
 	display: block;
@@ -425,6 +420,12 @@ header.bg-wave {
 	content: "";
 	display: table;
 	clear: both;
+}
+
+.statistic {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 @media all and (min-width: 800px) {
