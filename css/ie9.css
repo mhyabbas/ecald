@@ -349,8 +349,8 @@ header.bg-wave {
 @media all and (min-width: 800px) {
 	.card {
 		float: left;
-		margin-left: inherit;
-		margin-right: inherit;
+		margin-left: 15px;
+		margin-right: 15px;
 		width: 45%;
 	}
 
@@ -433,8 +433,8 @@ header.bg-wave {
 @media all and (min-width: 800px) {
 	.statistic {
 		float: left;
-		margin-left: inherit;
-		margin-right: inherit;
+		margin-left: 15px;
+		margin-right: 15px;
 		width: 45%;
 	}
 }
