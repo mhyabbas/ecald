@@ -100,6 +100,14 @@ header.bg-wave {
 	float: right;
 }
 
+.main-nav ul li a.dropdown svg.arrow-up {
+	display: none;
+}
+
+.main-nav ul li.current a.dropdown svg.arrow-down {
+	display: none;
+}
+
 .main-nav ul li.current a.dropdown svg.arrow-up {
 	display: inline-block;
 }
@@ -158,6 +166,14 @@ header.bg-wave {
 
 	.main-nav ul li.current a.dropdown svg.arrow-down {
 		display: inline-block;
+	}
+
+	.main-nav ul li.current a.dropdown svg.arrow-up {
+		display: none;
+	}
+
+	.main-nav ul li:hover a.dropdown svg.arrow-down {
+		display: none;
 	}
 
 	.main-nav ul li:hover a.dropdown svg.arrow-up {
