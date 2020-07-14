@@ -111,10 +111,6 @@ header.bg-wave {
 	margin-top: 8px;
 }
 
-.item.account.active {
-    display: none;
-}
-
 .main-nav ul li.active {
 	display: block;
 }
@@ -171,6 +167,10 @@ header.bg-wave {
 		left: -200px;
 		opacity: 0;
 		visibility: hidden;
+	}
+
+	.item.account.active {
+	    display: none;
 	}
 
 	.nav .item.search {
