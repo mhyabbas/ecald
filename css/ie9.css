@@ -334,14 +334,17 @@ header.bg-wave {
 
 .pagination ul {
 	display: block;
+	border: 1px solid pink;
 }
 
 .pagination li {
 	display: inline-block;
+	border: 1px solid green;
 }
 
 .pagination a {
 	display: inline-block;
+	border: 1px solid yellow;
 }
 
 @media all and (min-width: 700px) {
