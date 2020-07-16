@@ -347,6 +347,10 @@ header.bg-wave {
 	border: 1px solid yellow;
 }
 
+.pagination a.btn {
+	margin-bottom: 0;
+}
+
 @media all and (min-width: 700px) {
 
 	.pagination {
