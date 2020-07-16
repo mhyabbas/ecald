@@ -260,6 +260,16 @@ header.bg-wave {
 	}
 }
 
+/*Breadcrumb*/
+
+.breadcrumb ul {
+    display: block;
+}
+
+.breadcrumb ul li {
+    display: inline-block;
+}
+
 /*Media*/
 
 .media {
