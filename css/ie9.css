@@ -330,6 +330,32 @@ header.bg-wave {
 	}
 }
 
+/*Pagination*/
+
+.pagination ul {
+	display: block;
+}
+
+.pagination li {
+	display: inline-block;
+}
+
+.pagination a {
+	display: block;
+}
+
+@media all and (min-width: 700px) {
+
+	.pagination {
+		display: block;
+	}
+
+	.pagination-total {
+		display: block;
+	}
+	
+}
+
 /*Cards*/
 
 .cards {
