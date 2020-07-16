@@ -336,20 +336,12 @@ header.bg-wave {
 	border: 1px solid red;
 }
 
-.pagination ul {
-	display: inline-block;
-	float: right;
-	border: 1px solid pink;
-}
-
 .pagination li {
 	display: inline-block;
-	border: 1px solid green;
 }
 
 .pagination a {
 	display: inline-block;
-	border: 1px solid yellow;
 }
 
 .pagination a.btn {
@@ -362,8 +354,19 @@ header.bg-wave {
 		display: block;
 	}
 
+	.pagination ul {
+		display: inline-block;
+		float: right;
+		border: 1px solid pink;
+	}
+
 	.pagination-total {
 		display: block;
+	}
+
+	.pagination-total .pagination {
+		display: inline-block;
+		float: right;
 	}
 
 }
