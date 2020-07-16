@@ -337,9 +337,8 @@ header.bg-wave {
 }
 
 .pagination ul {
-	display: block;
-	width: 50%;
-	margin-left: auto;
+	display: inline-block;
+	float: right;
 	border: 1px solid pink;
 }
 
