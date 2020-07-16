@@ -349,7 +349,6 @@ header.bg-wave {
 	.pagination {
 		display: block;
 		height: 35px;
-		border: 1px solid pink;
 	}
 
 	.pagination ul {
