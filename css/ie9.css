@@ -332,10 +332,6 @@ header.bg-wave {
 
 /*Pagination*/
 
-.pagination {
-	border: 1px solid red;
-}
-
 .pagination li {
 	display: inline-block;
 }
@@ -357,11 +353,14 @@ header.bg-wave {
 	.pagination ul {
 		display: inline-block;
 		float: right;
-		border: 1px solid pink;
 	}
 
 	.pagination-total {
 		display: block;
+	}
+
+	.pagination-total p {
+		display: inline-block;
 	}
 
 	.pagination-total .pagination {
