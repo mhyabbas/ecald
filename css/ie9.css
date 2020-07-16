@@ -341,7 +341,7 @@ header.bg-wave {
 }
 
 .pagination a {
-	display: block;
+	display: inline-block;
 }
 
 @media all and (min-width: 700px) {
@@ -353,7 +353,7 @@ header.bg-wave {
 	.pagination-total {
 		display: block;
 	}
-	
+
 }
 
 /*Cards*/
