@@ -170,7 +170,7 @@ header.bg-wave {
 	}
 
 	.item.account.active {
-	    display: none;
+		display: none;
 	}
 
 	.nav .item.search {
@@ -430,6 +430,19 @@ header.bg-wave {
 	.two-wide .spotlight {
 		width: 45%;
 	}
+}
+
+/*Sidebar*/
+
+.sidebar div a {
+	display: table;
+}
+
+.sidebar div a { > * {
+	display: table-cell;
+	width: auto;
+	vertical-align: middle;
+	white-space: nowrap;
 }
 
 /*Statistics*/
