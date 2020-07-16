@@ -332,8 +332,13 @@ header.bg-wave {
 
 /*Pagination*/
 
+.pagination {
+	border: 1px solid red;
+}
+
 .pagination ul {
-	display: block;
+	display: inline-block;
+	margin-left: auto;
 	border: 1px solid pink;
 }
 
