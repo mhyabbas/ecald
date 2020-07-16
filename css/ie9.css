@@ -435,14 +435,7 @@ header.bg-wave {
 /*Sidebar*/
 
 .sidebar div a {
-	display: table;
-}
-
-.sidebar div a { > * {
-	display: table-cell;
-	width: auto;
-	vertical-align: middle;
-	white-space: nowrap;
+	display: inline-block;
 }
 
 /*Statistics*/
