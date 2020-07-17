@@ -256,8 +256,7 @@ header.bg-wave {
 
 	.main-nav .sub-item a {
 		display: block;
-		min-height: 65px;
-		border: 1px solid pink;
+		min-height: 70px;
 		white-space: normal;
 	}
 }
