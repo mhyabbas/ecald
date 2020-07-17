@@ -501,7 +501,8 @@ header.bg-wave {
 /*Sidebar*/
 
 .sidebar {
-	display: block;
+	display: inline-block;
+	border: 1px solid pink;
 }
 
 .sidebar div a {
