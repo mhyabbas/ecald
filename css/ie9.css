@@ -475,6 +475,10 @@ header.bg-wave {
 		width: 45%;
 	}
 
+	.spotlight .content {
+		min-height: 150px;
+	}
+
 	.two-wide {
 		width: 63%;
 	}
@@ -495,6 +499,10 @@ header.bg-wave {
 }
 
 /*Sidebar*/
+
+.sidebar {
+	display: block;
+}
 
 .sidebar div a {
 	display: inline-block;
