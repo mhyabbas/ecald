@@ -600,8 +600,14 @@ header.bg-wave {
 /*Timeline*/
 
 @media all and (min-width: 800px) {
+	.timeline {
+		display: block;
+		width: 100%;
+	}
+
 	.timeline .event {
 		display: table;
+		width: 100%;
 	}
 
 	.timeline .event > * {
@@ -617,7 +623,6 @@ header.bg-wave {
 	.timeline .event .content {
 		width: 66%;
 	}
-
 }
 
 /*Footer*/
