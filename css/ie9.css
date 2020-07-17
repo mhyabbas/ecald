@@ -463,6 +463,10 @@ header.bg-wave {
 	width: 99%;
 }
 
+.accordion .panel ol {
+	margin-left: 20px;
+}
+
 /*Spotlight*/
 
 .listing {
