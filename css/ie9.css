@@ -475,6 +475,15 @@ header.bg-wave {
 	margin-right: auto;
 }
 
+.two-wide .spotlight .thumbnail {
+	display: block;
+	float: left;
+}
+
+.two-wide .spotlight .content {
+	text-align: left;
+}
+
 @media all and (min-width: 800px) {
 	.spotlight {
 		float: left;
