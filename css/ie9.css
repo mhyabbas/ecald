@@ -613,6 +613,7 @@ header.bg-wave {
 	.timeline .event .thumbnail {
 		display: table-cell;
 		width: 33%;
+		padding-bottom: 0;
 	}
 
 	.timeline .event .thumbnail img {
