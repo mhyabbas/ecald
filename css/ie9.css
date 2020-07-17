@@ -518,13 +518,6 @@ header.bg-wave {
 	display: inline-block;
 }
 
-@media all and (min-width: 800px) {
-	.sidebar {
-		margin-left: 15px;
-		margin-right: 15px;
-	}
-}
-
 /*Statistics*/
 
 .statistics {
