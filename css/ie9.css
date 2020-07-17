@@ -603,11 +603,13 @@ header.bg-wave {
 	.timeline {
 		display: block;
 		width: 100%;
+		border: 1px solid blue;
 	}
 
 	.timeline .event {
 		display: table;
 		width: 100%;
+		border: 1px solid yellow;
 	}
 
 	.timeline .event > * {
@@ -617,11 +619,14 @@ header.bg-wave {
 	}
 
 	.timeline .event .thumbnail {
+		display: table-cell;
 		width: 33%;
+		border: 1px solid pink;
 	}
 
 	.timeline .event .content {
 		width: 66%;
+		border: 1px solid green;
 	}
 }
 
