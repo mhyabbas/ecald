@@ -450,10 +450,12 @@ header.bg-wave {
 
 .accordion .button {
 	display: block;
+	border: 1px solid yellow;
 }
 
 .accordion .button .btn {
 	float: right;
+	border: 1px solid pink;
 }
 
 /*Spotlight*/
