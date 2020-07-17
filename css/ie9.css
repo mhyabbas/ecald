@@ -455,7 +455,6 @@ header.bg-wave {
 
 .accordion .button > * {
 	display: table-cell;
-	width: auto;
 	vertical-align: middle;
 	white-space: nowrap;
 }
