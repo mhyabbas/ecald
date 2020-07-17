@@ -10,7 +10,6 @@
 .listing {
 	display: -webkit-box;
 	display: -ms-flexbox;
-	-js-display: flex;
 	display: flex;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
@@ -22,7 +21,6 @@
 .spotlight {
 	display: -webkit-box;
 	display: -ms-flexbox;
-	-js-display: flex;
 	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
@@ -40,7 +38,6 @@
 .spotlight .thumbnail {
 	display: -webkit-box;
 	display: -ms-flexbox;
-	-js-display: flex;
 	display: flex;
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
@@ -84,7 +81,6 @@
 .two-wide {
 	display: -webkit-box;
 	display: -ms-flexbox;
-	-js-display: flex;
 	display: flex;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;

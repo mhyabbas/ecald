@@ -14,7 +14,9 @@
         <link rel="stylesheet" href="slick/slick-theme.css" type="text/css"/>
         <link rel="stylesheet" href="css/main.css" type="text/css">
 
-
+        <!--[if lte IE 9]>
+            <link rel="stylesheet" type="text/css" href="css/ie9.css" />
+        <![endif]-->
 
     </head>
     <body style="padding: 0;">
@@ -1689,15 +1691,14 @@
         <script src="js/statistics.js"></script>
         <script src="js/timeline.js"></script>
         <script src="js/accordion.js"></script>
-        <script src="js/flexibility.js"></script>
 
         <script>
             const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
         </script>
 
-        <script type="text/javascript">
-            flexibility(document.body);
-        </script>
+        <!--[if lte IE 9]>
+            <script src="js/ie9.js"></script>
+        <![endif]-->
 
     </body>
 </html>
