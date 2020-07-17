@@ -450,6 +450,7 @@ header.bg-wave {
 
 .accordion .button {
 	display: table;
+	width: 100%;
 }
 
 .accordion .button > * {
