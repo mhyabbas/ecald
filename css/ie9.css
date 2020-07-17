@@ -621,7 +621,7 @@ header.bg-wave {
 
 	.timeline .event .content {
 		display: table-cell;
-		width: auto;
+		vertical-align: top;
 	}
 }
 
