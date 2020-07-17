@@ -610,12 +610,6 @@ header.bg-wave {
 		width: 100%;
 	}
 
-	.timeline .event > * {
-		display: table-cell;
-		vertical-align: middle;
-		white-space: nowrap;
-	}
-
 	.timeline .event .thumbnail {
 		display: table-cell;
 		width: 33%;
