@@ -475,13 +475,20 @@ header.bg-wave {
 	margin-right: auto;
 }
 
+.two-wide .spotlight {
+	border: 1px solid green;
+}
+
 .two-wide .spotlight .thumbnail {
 	display: block;
 	float: left;
+	border: 1px solid pink;
 }
 
 .two-wide .spotlight .content {
+	min-height: 150px;
 	text-align: left;
+	border: 1px solid pink;
 }
 
 @media all and (min-width: 800px) {
