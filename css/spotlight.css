@@ -8,9 +8,9 @@
 /*3-wide layout*/
 
 .listing {
+	-js-display: flex;
 	display: -webkit-box;
 	display: -ms-flexbox;
-	-js-display: flex;
 	display: flex;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
@@ -20,9 +20,9 @@
 }
 
 .spotlight {
+	-js-display: flex;
 	display: -webkit-box;
 	display: -ms-flexbox;
-	-js-display: flex;
 	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
@@ -38,9 +38,9 @@
 }
 
 .spotlight .thumbnail {
+	-js-display: flex;
 	display: -webkit-box;
 	display: -ms-flexbox;
-	-js-display: flex;
 	display: flex;
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
@@ -82,9 +82,9 @@
 /*2-wide layout with sidebar*/
 
 .two-wide {
+	-js-display: flex;
 	display: -webkit-box;
 	display: -ms-flexbox;
-	-js-display: flex;
 	display: flex;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
