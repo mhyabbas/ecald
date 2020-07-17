@@ -459,13 +459,8 @@ header.bg-wave {
 	white-space: nowrap;
 }
 
-.accordion .button .btn {
-	width: 30px;
-	height: 30px;
-}
-
 .accordion .button h4 {
-	width: 95%;
+	width: 99%;
 }
 
 /*Spotlight*/
