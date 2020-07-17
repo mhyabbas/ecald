@@ -624,6 +624,10 @@ header.bg-wave {
 		border: 1px solid pink;
 	}
 
+	.timeline .event .thumbnail img {
+		max-width: 350px;
+	}
+
 	.timeline .event .content {
 		width: 66%;
 		border: 1px solid green;
