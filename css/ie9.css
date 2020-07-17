@@ -458,6 +458,12 @@ header.bg-wave {
 	clear: both;
 }
 
+.spotlight {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .spotlight .thumbnail {
 	display: block;
 }
@@ -472,6 +478,8 @@ header.bg-wave {
 @media all and (min-width: 800px) {
 	.spotlight {
 		float: left;
+		margin-left: 15px;
+		margin-right: 15px;
 		width: 45%;
 	}
 
@@ -502,11 +510,19 @@ header.bg-wave {
 
 .sidebar {
 	display: inline-block;
-	border: 1px solid pink;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .sidebar div a {
 	display: inline-block;
+}
+
+@media all and (min-width: 800px) {
+	.sidebar {
+		margin-left: 15px;
+		margin-right: 15px;
+	}
 }
 
 /*Statistics*/
