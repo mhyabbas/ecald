@@ -612,8 +612,8 @@ header.bg-wave {
 
 	.timeline .event .thumbnail {
 		display: table-cell;
-		width: 33%;
-		padding-bottom: 0;
+		width: 25%;
+		padding-bottom: 30px;
 	}
 
 	.timeline .event .thumbnail img {
@@ -623,14 +623,13 @@ header.bg-wave {
 	.timeline .event .content {
 		display: table-cell;
 		vertical-align: top;
-		height: 100%;
 		border: 1px solid pink;
 	}
 }
 
 @media all and (min-width: 1200px) {
 	.timeline .event .thumbnail img {
-		max-width: 350px;
+		max-width: 280px;
 	}
 }
 
