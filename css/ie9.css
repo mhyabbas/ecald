@@ -625,12 +625,19 @@ header.bg-wave {
 	}
 
 	.timeline .event .thumbnail img {
-		max-width: 350px;
+		max-width: 215px;
 	}
 
 	.timeline .event .content {
+		display: table-cell;
 		width: 66%;
 		border: 1px solid green;
+	}
+}
+
+@media all and (min-width: 1200px) {
+	.timeline .event .thumbnail img {
+		max-width: 350px;
 	}
 }
 
