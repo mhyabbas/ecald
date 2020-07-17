@@ -263,11 +263,11 @@ header.bg-wave {
 /*Breadcrumb*/
 
 .breadcrumb ul {
-    display: block;
+	display: block;
 }
 
 .breadcrumb ul li {
-    display: inline-block;
+	display: inline-block;
 }
 
 /*Media*/
@@ -444,6 +444,16 @@ header.bg-wave {
 	.cards.two-column .card {
 		width: 45%;
 	}
+}
+
+/*Accordion*/
+
+.accordion .button {
+	display: block;
+}
+
+.accordion .button .btn {
+	float: right;
 }
 
 /*Spotlight*/
