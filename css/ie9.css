@@ -252,6 +252,7 @@ header.bg-wave {
 		display: block;
 		float: left;
 		width: 50%;
+		min-height: 60px;
 	}
 
 	.main-nav .sub-item a {
