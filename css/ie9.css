@@ -623,6 +623,7 @@ header.bg-wave {
 	.timeline .event .content {
 		display: table-cell;
 		vertical-align: top;
+		padding-bottom: 0;
 		border: 1px solid pink;
 	}
 }
