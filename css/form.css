@@ -26,11 +26,11 @@
 	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
 	-webkit-box-flex: 1;
-	    -ms-flex: 1;
-	        flex: 1;
+	-ms-flex: 1;
+	flex: 1;
 	margin-bottom: 20px;
 }
 
@@ -59,12 +59,70 @@
 	display: -ms-inline-flexbox;
 	display: inline-flex;
 	-webkit-box-flex: 0;
-	    -ms-flex: 0 0 auto;
-	        flex: 0 0 auto;
+	-ms-flex: 0 0 auto;
+	flex: 0 0 auto;
 }
 
 .form .btn {
 	cursor: pointer;
+}
+
+.form .form-error-message {
+	position: relative;
+	margin-bottom: 30px;
+	padding-left: 65px;
+	padding-right: 10px;
+	border: 1px solid #CA0000;
+	border-radius: 4px;
+	background-color: #F9E6E6;
+	font-size: 14px;
+}
+
+.form .form-error-message::before {
+    content: "\e002";
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #CA0000;
+    font-family: "Material Icons";
+    font-size: 34px;
+}
+
+.form .form-error-message > p {
+	font-weight: bold;
+}
+
+.form .form-error-message a {
+	color: inherit;
+}
+
+.form .form-error {
+	display: none;
+	position: relative;
+	margin: 5px 0 0 0;
+	padding-left: 30px;
+	color: #CA0000;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.form input:required:invalid {
+	border: 2px solid #CA0000;
+}
+
+.form input:required:invalid + .form-error {
+	display: block;
+}
+
+.form .form-error::before {
+    content: "\e002";
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #CA0000;
+    font-family: "Material Icons";
+    font-size: 24px;
 }
 
 /*Dark form*/
@@ -88,6 +146,22 @@
 	color: white;
 }
 
+.form.dark .form-error-message > p {
+	color: inherit;
+}
+
+.form.dark .form-error {
+	color: #FF5050;
+}
+
+.form.dark input:required:invalid {
+	border: 2px solid #FF5050;
+}
+
+.form.dark .form-error::before {
+    color: #FF5050;
+}
+
 @media all and (min-width: 800px) {
 
 	.form-title {
@@ -95,8 +169,8 @@
 		display: -ms-flexbox;
 		display: flex;
 		-webkit-box-pack: justify;
-		    -ms-flex-pack: justify;
-		        justify-content: space-between;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
 	}
 
 	.form-row {
@@ -104,14 +178,14 @@
 		display: -ms-flexbox;
 		display: flex;
 		-webkit-box-pack: justify;
-		    -ms-flex-pack: justify;
-		        justify-content: space-between;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
 	}
 
 	.form-group {
 		-webkit-box-flex: 0;
-		    -ms-flex: 0 0 49%;
-		        flex: 0 0 49%;
+		-ms-flex: 0 0 49%;
+		flex: 0 0 49%;
 	}
 
 }
