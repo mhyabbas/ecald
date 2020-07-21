@@ -296,7 +296,7 @@ header.bg-wave {
 }
 
 .form .form-error-message::before {
-    top: 0;
+    top: 10px;
     transform: none;
 }
 
