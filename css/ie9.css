@@ -295,6 +295,11 @@ header.bg-wave {
 	width: 100%;
 }
 
+.form .form-error-message::before {
+    top: 0;
+    transform: none;
+}
+
 @media all and (min-width: 800px) {
 	.form-title {
 		display: table;
