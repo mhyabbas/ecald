@@ -47,56 +47,6 @@ header .double-column p:first-of-type {
 	margin-top: 0;
 }
 
-/*Header with sidebar*/
-
-header .sidebar.border {
-	padding: inherit;
-	padding-left: 20px;
-	background: inherit; 
-	border-radius: inherit;
-	border-left: 5px solid #8691a5;
-	-webkit-box-shadow: inherit;
-	        box-shadow: inherit;
-	font-size: 14px;
-}
-
-header .sidebar.border p {
-	margin: 0 0 10px 0;
-	padding: 0;
-	color: #576784;
-}
-
-header .sidebar.border p:last-of-type {
-	margin: 0;
-}
-
-/*Header with sidebar and links*/
-
-header .sidebar.links ol {
-	list-style: none;
-	-webkit-padding-start: 40px;
-	        padding-inline-start: 40px;
-}
-
-header .sidebar.links li {
-	position: relative;
-	padding-bottom: 15px;
-	color: #8F5EA7;
-}
-
-header .sidebar.links li a {
-	text-decoration: none;
-}
-
-header .sidebar.links li:before {
-	position: absolute;
-	left: -40px;
-	color: #334154;
-	font-family: "Material Icons";
-	font-size: 25px;
-	content: "\e415";
-}
-
 /*Header with search*/
 
 header .search {

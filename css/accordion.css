@@ -63,7 +63,7 @@
   display: none;
 }
 
-.accordion .panel a:hover {
+.accordion .panel a:not(.tag):hover {
   color: inherit;
   text-decoration: underline;
 }

@@ -1,0 +1,378 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>eCALD Website Rebuild 2020</title>
+        <meta name="description" content="eCALD Website rebuild 2020 design system start">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Zilla+Slab:400,500,600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="css/plyr.css" type="text/css">
+        <link rel="stylesheet" href="slick/slick.css" type="text/css"/>
+        <link rel="stylesheet" href="slick/slick-theme.css" type="text/css"/>
+        <link rel="stylesheet" href="css/main.css" type="text/css">
+
+        <!--[if lte IE 9]>
+            <link rel="stylesheet" type="text/css" href="css/ie9.css" />
+        <![endif]-->
+
+    </head>
+    <body>
+
+        <!-- SVG symbols -->
+
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            <symbol id="curve" viewBox="0 0 315 200">
+                <title>Curve</title>
+                <path d="M315,0v200H0v-13.4C110.8,182.1,202.6,104.1,227.8,0H315z"/>
+            </symbol>
+
+            <symbol id="quote" viewBox="0 0 26 28">
+                <title>Quote</title>
+                <path d="M12 15v6c0 1.656-1.344 3-3 3h-6c-1.656 0-3-1.344-3-3v-11c0-4.406 3.594-8 8-8h1c0.547 0 1 0.453 1 1v2c0 0.547-0.453 1-1 1h-1c-2.203 0-4 1.797-4 4v0.5c0 0.828 0.672 1.5 1.5 1.5h3.5c1.656 0 3 1.344 3 3zM26 15v6c0 1.656-1.344 3-3 3h-6c-1.656 0-3-1.344-3-3v-11c0-4.406 3.594-8 8-8h1c0.547 0 1 0.453 1 1v2c0 0.547-0.453 1-1 1h-1c-2.203 0-4 1.797-4 4v0.5c0 0.828 0.672 1.5 1.5 1.5h3.5c1.656 0 3 1.344 3 3z"></path>
+            </symbol>
+
+            <symbol id="arrow-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <title>Arrow down</title>
+                <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+                <path d="M0 0h24v24H0V0z" fill="none"/>
+            </symbol>
+
+            <symbol id="arrow-up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <title>Arrow up</title>
+                <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+                <path d="M0 0h24v24H0z" fill="none"/>
+            </symbol>
+        </svg>
+
+        <!-- Navigation -->
+
+        <nav class="nav">
+            <ul>
+                <li class="toggle"><a href="#"><i class="material-icons">&#xe5d2;</i> <span>Menu</span></a></li>
+                <li class="logo"><a href=""><img src="assets/logo.svg" alt="logo"></a></li>
+                <li class="item search"><a id="search-toggle" href=""><i class="material-icons">&#xe8b6;</i></a></li>
+
+                <li class="main-nav">
+                    <ul>
+                        <li class="item">
+                            <a class="dropdown" href="#">
+                                Courses
+                                <svg class="arrow-down">
+                                    <use xlink:href="#arrow-down"/>
+                                </svg>
+                                <svg class="arrow-up">
+                                    <use xlink:href="#arrow-up"/>
+                                </svg> 
+                            </a>
+                            <ul class="sub-nav">
+                                <li class="sub-item">
+                                    <a href="">Courses for working with CALD Patients</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="">Courses for Culturally Diverse Workplaces</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="">Eligibility</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="">Courses Calendar</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="item">
+                            <a class="dropdown" href="#">
+                                Resources
+                                <svg class="arrow-down">
+                                    <use xlink:href="#arrow-down"/>
+                                </svg>
+                                <svg class="arrow-up">
+                                    <use xlink:href="#arrow-up"/>
+                                </svg> 
+                            </a>
+                            <ul class="sub-nav">
+                                <li class="sub-item">
+                                    <a href="">Cross Cultural Resources</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="">Translated Information</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="">Publications</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="">Research Commentary</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="">Migrant and Refugee Services</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="">Screening Tools</a>
+                                </li>
+                                 <li class="sub-item">
+                                    <a href="">Cultural Competence Assessment Tools</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="item"><a href="#">About us</a></li>
+                        <li class="item"><a href="#">News and updates</a></li>
+                    </ul>
+                </li>
+
+                <li class="item login"><a class="btn dark" href=""><i class="material-icons">&#xe853;</i><span>Log in</span></a></li>
+                <li class="item account"><a class="btn" href=""><i class="material-icons">&#xe7fe;</i><span>Create an account</span></a></li>
+                
+                <!--[if lte IE 9]>
+                <li class="top-nav">
+                    <ul>
+                <![endif]-->
+
+                <li class="item"><a href="">FAQs</a></li>
+                <li class="item"><a href="">Course Calendar</a></li>
+                <li class="item"><a href="">Cross-Cultural Interest group</a></li>
+                <li class="item"><a href="">Locations</a></li>
+                <li class="item"><a href="">Contact us</a></li>
+
+                <!--[if lte IE 9]>
+                    </ul>
+                </li>
+                <![endif]-->
+            </ul>
+
+            <div id="search">
+                <input type="search" name="search" placeholder="Search">
+                <a href=""><i class="material-icons">&#xe5cd;</i></a>
+            </div>
+
+        </nav>
+
+        <header class="bg-light pb-0">
+            <div class="container">
+                <div class="column">
+                    <nav class="breadcrumb" aria-label="breadcrumb">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Resources</a></li>
+                            <li><span aria-current="page">Cross Cultural Resources</span></li>
+                        </ul>
+                    </nav>
+                    <h1>Cross Cultural Resources</h1>
+                </div>
+
+                <div class="row">
+                    <div class="double-column slide-in">
+                        <p>Cultural competency is a developmental process which requires an individual to pursue ongoing education, to develop approaches based on cultural considerations, to seek ongoing mentoring and supervision of cultural practice in order to advance along the cultural competence continuum <a href="">(see more about the Cultural Competence Continuum)</a>.</p>
+                    </div>
+                    <div class="column fade-in">
+                        <div class="sidebar border">
+                            <p>In this section we have also published other cross-cultural resources on request from other authors/copyright owners.</p>
+                            <p>NB: You can search specific resources using the Keyword filter below e.g. enter Child, or Children or Older, or Mental Health.</p>
+                        </div>
+                    </div>                   
+                </div>
+            </div>
+
+            <div class="search bg-blue">
+                <div class="container">
+                    <div class="column">
+                        <h3>Search resources</h3>
+                        <input type="search" name="search" placeholder="Enter a keyword">
+                        <a class="btn icon outline white" href=""><i class="material-icons">filter_list</i> <span>Filter options</span></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <div class="container">
+                <div class="column mb-0">
+                    <div class="pagination-total">
+                        <p>Showing total 25 resources</p>
+                        <nav class="pagination" aria-label="pagination">
+                            <ul>
+                                <li><a class="btn arrow" href=""><i class="material-icons">arrow_back</i></a></li>
+                                <li><a href="">1</a></li>
+                                <li><a href="" aria-current="page">2</a></li>
+                                <li><a href="">3</a></li>
+                                <li><a href="">4</a></li>
+                                <li><a href="">5</a></li>
+                                <li><a class="btn arrow" href=""><i class="material-icons">arrow_forward</i></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class="card resource">
+                        <div class="thumbnail">
+                            <img src="assets/resource ccr.jpg" alt="image">
+                        </div>
+                        <div class="content">
+                            <a class="tag flag softblue" href="">E-Tool Kits</a>
+                            <h3><a href="">Cross Cultural Resource</a></h3>
+                            <p>This is a comprehensive guide for health practitioners working with CALD clients/patients from Asian, Middle Eastern and African cultures.</p>
+                        </div>
+                        <div class="footer">
+                            <div class="detail">
+                                <p><i class="material-icons">picture_as_pdf</i><a href="">Download toolkits (PDF, 127kb)</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card resource">
+                        <div class="thumbnail">
+                            <img src="assets/resource diverse workplace.jpg" alt="image">
+                        </div>
+                        <div class="content">
+                            <a class="tag flag blue" href="">PDF</a>
+                            <h3><a href="">Toolkit for Health Workforce Working in a Culturally Diverse Workplace</a></h3>
+                            <p>This resource provides guidance for the New Zealand health workforce working in a culturally diverse workplace to improve cross-cultural interactions.</p>
+                        </div>
+                        <div class="footer">
+                            <div class="detail">
+                                <p><i class="material-icons">picture_as_pdf</i><a href="">Download toolkits (PDF, 127kb)</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card resource">
+                        <div class="thumbnail">
+                            <img src="assets/resource asian children.jpg" alt="image">
+                        </div>
+                        <div class="content">
+                            <a class="tag flag softblue" href="">Article</a>
+                            <h3><a href="">Caring for Asian Children Resource</a></h3>
+                            <p>This e-book and downloadable PDF resource is written for health providers caring for Asian children and young people and their families.</p>
+                        </div>
+                    </div>
+
+                    <div class="card resource">
+                        <div class="thumbnail">
+                            <img src="assets/resource talking therapies.jpg" alt="image">
+                        </div>
+                        <div class="content">
+                            <a class="tag flag blue" href="">PDF</a>
+                            <h3><a href="">Talking Therapies for Refugees</a></h3>
+                            <p>This PDF resource, produced by Te Pou o Te Whakaaro Nui), provides guidance relating to therapies relevant for three subgroups of migrants: those from culturally and linguistically diverse backgrounds, refugees and asylum seekers.</p>
+                        </div>
+                        <div class="footer">
+                            <div class="detail">
+                                <p><i class="material-icons">picture_as_pdf</i><a href="">Download toolkits (PDF, 127kb)</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card resource">
+                        <div class="thumbnail">
+                            <img src="assets/resource supporting muslim.jpg" alt="image">
+                        </div>
+                        <div class="content">
+                            <a class="tag flag blue" href="">PDF</a>
+                            <h3><a href="">Supporting Muslim Service Users</a></h3>
+                            <p>This booklet provides information about different aspects of Muslim cultures to help service providers gain better understanding.</p>
+                        </div>
+                        <div class="footer">
+                            <div class="detail">
+                                <p><i class="material-icons">picture_as_pdf</i><a href="">Download toolkits (PDF, 127kb)</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card resource">
+                        <div class="thumbnail">
+                            <img src="assets/resource muslim mh.jpg" alt="image">
+                        </div>
+                        <div class="content">
+                            <a class="tag flag softblue" href="">Article</a>
+                            <h3><a href="">Working with Muslim Mental Health Clients</a></h3>
+                            <p>This resource provides a broad overview of the key concepts around mental health within the Muslim culture with specific knowledge and tips as well as case studies to exemplify cultural perspectives.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <nav class="pagination" aria-label="pagination">
+                        <ul>
+                            <li><a class="btn arrow" href=""><i class="material-icons">arrow_back</i></a></li>
+                            <li><a href="">1</a></li>
+                            <li><a href="" aria-current="page">2</a></li>
+                            <li><a href="">3</a></li>
+                            <li><a href="">4</a></li>
+                            <li><a href="">5</a></li>
+                            <li><a class="btn arrow" href=""><i class="material-icons">arrow_forward</i></a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+        </section>
+
+        <footer>
+          <div class="footer">
+            <div>
+              <ul>
+                <li><strong>Training venues</strong></li>
+                <li><a href="#">North Shore Hospital</a></li>
+                <li><a href="#">Waitakere Hospital</a></li>
+                <li><a href="#">Auckland City Hospital</a></li>
+                <li><a href="#">Greenlane Clinical Centre</a></li>
+                <li><a href="#">Middlemore Hospital</a></li>
+              </ul>
+            </div>
+            <div>
+              <ul class="pb-1">
+                <li><strong>CALD® newsletters</strong></li>
+                <li><a href="#">View newsletters</a></li>
+                <li><a href="#">Newsletter subscription</a></li>
+              </ul>
+              <ul>
+                <li><strong>About us</strong></li>
+                <li><a href="#">About eCALD</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li><strong>Contact</strong></li>
+                <li>Phone: DDI 09 440 6926</li>
+                <li>Email: cald@waitematadhb.govt.nz</li>
+                <li>Contact hours: Mon - Fri, 10am - 4pm</li>
+                <li>Excluding public holidays and weekends</li>
+                <li><a class="btn outline white" href="">Send a message</a></li>
+              </ul>
+            </div>
+            <!-- Twitter feed -->
+            <div>
+              <div style="box-sizing:border-box;height:100%;width:100%;padding:2px 20px;border-radius:5px;background:rgba(0,0,0,.1);">
+                <ul>
+                    <li><strong>Twitter feed</strong></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="copyright">
+            <ul>
+              <li class="logo"><a href=""><img src="assets/logo-white.svg" alt="logo"></a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li>Copyright © Waitemata DHB 2020</li>
+            </ul>
+          </div>
+        </footer>
+
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/gsap.min.js"></script>
+        <script src="js/ScrollMagic.min.js"></script>
+        <script src="js/animation.gsap.min.js"></script>
+        <script src="js/navigation.js"></script>
+        <script src="js/header.js"></script>
+        <script src="js/expand.js"></script>
+
+        <!--[if lte IE 9]>
+            <script src="js/ie9.js"></script>
+        <![endif]-->
+
+    </body>
+</html>
