@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="css/plyr.css" type="text/css">
         <link rel="stylesheet" href="slick/slick.css" type="text/css"/>
         <link rel="stylesheet" href="slick/slick-theme.css" type="text/css"/>
+        <link rel="stylesheet" href="multipleselect/multiple-select.min.css" type="text/css"/>
         <link rel="stylesheet" href="css/main.css" type="text/css">
 
         <!--[if lte IE 9]>
@@ -176,10 +177,35 @@
 
             <div class="search bg-blue">
                 <div class="container">
-                    <div class="column">
-                        <h3>Search resources</h3>
-                        <input type="search" name="search" placeholder="Enter a keyword">
-                        <a class="btn icon outline white" href=""><i class="material-icons">filter_list</i> <span>Filter options</span></a>
+                    <div class="row">
+                        <div class="column">
+                            <label>Search resources</label>
+                            <input type="search" name="search" placeholder="Enter a keyword">
+                        </div>
+                        <div class="column">
+                            <label>Select resources types</label>
+                            <select id="search-type" multiple="multiple" placeholder="All resource types" data-width="100%">
+                                <option value="1">PDF</option>
+                                <option value="2">Toolkits</option>
+                                <option value="3">Articles</option>
+                                <option value="4">Videos</option>
+                            </select>
+                        </div>
+                        <div class="column">
+                            <label>Select cultural competencies</label>
+                            <select id="search-comp" multiple="multiple" placeholder="All cultural competencies" data-width="100%">>
+                                <option id="search-comp-clear">Clear</option>
+                                <option value="1">Asian</option>
+                                <option value="2">African</option>
+                                <option value="3">Middle Eastern</option>
+                                <option value="4">Refugee</option>
+                                <option value="5">Muslim</option>
+                                <option value="6">Indian</option>
+                            </select>
+                        </div>
+                        <div class="column">
+                            <a class="btn dark hover-white" href="">Search</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -369,6 +395,7 @@
         <script src="js/navigation.js"></script>
         <script src="js/header.js"></script>
         <script src="js/expand.js"></script>
+        <script src="multipleselect/multiple-select.min.js"></script>
 
         <!--[if lte IE 9]>
             <script src="js/ie9.js"></script>

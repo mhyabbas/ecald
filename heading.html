@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="css/plyr.css" type="text/css">
         <link rel="stylesheet" href="slick/slick.css" type="text/css"/>
         <link rel="stylesheet" href="slick/slick-theme.css" type="text/css"/>
+        <link rel="stylesheet" href="multipleselect/multiple-select.min.css" type="text/css"/>
         <link rel="stylesheet" href="css/main.css" type="text/css">
 
     </head>
@@ -508,10 +509,35 @@
 
             <div class="search bg-blue">
                 <div class="container">
-                    <div class="column">
-                        <h3>Search resources</h3>
-                        <input type="search" name="search" placeholder="Enter a keyword">
-                        <a class="btn icon outline white" href=""><i class="material-icons">filter_list</i> <span>Filter options</span></a>
+                    <div class="row">
+                        <div class="column">
+                            <label>Search resources</label>
+                            <input type="search" name="search" placeholder="Enter a keyword">
+                        </div>
+                        <div class="column">
+                            <label>Select resources types</label>
+                            <select id="search-type" multiple="multiple" placeholder="All resource types" data-width="100%">
+                                <option value="1">PDF</option>
+                                <option value="2">Toolkits</option>
+                                <option value="3">Articles</option>
+                                <option value="4">Videos</option>
+                            </select>
+                        </div>
+                        <div class="column">
+                            <label>Select cultural competencies</label>
+                            <select id="search-comp" multiple="multiple" placeholder="All cultural competencies" data-width="100%">>
+                                <option id="search-comp-clear">Clear</option>
+                                <option value="1">Asian</option>
+                                <option value="2">African</option>
+                                <option value="3">Middle Eastern</option>
+                                <option value="4">Refugee</option>
+                                <option value="5">Muslim</option>
+                                <option value="6">Indian</option>
+                            </select>
+                        </div>
+                        <div class="column">
+                            <a class="btn dark hover-white" href="">Search</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -550,13 +576,39 @@
 
     &lt;div class="search bg-blue"&gt;
         &lt;div class="container"&gt;
-            &lt;div class="column"&gt;
-                &lt;h3&gt;Search resources&lt;/h3&gt;
-                &lt;input type="search" name="search" placeholder="Enter a keyword"&gt;
-                &lt;a class="btn icon outline white" href=""&gt;&lt;i class="material-icons"&gt;filter_list&lt;/i&gt; &lt;span&gt;Filter options&lt;/span&gt;&lt;/a&gt;
+            &lt;div class="row"&gt;
+                &lt;div class="column"&gt;
+                    &lt;label&gt;Search resources&lt;/label&gt;
+                    &lt;input type="search" name="search" placeholder="Enter a keyword"&gt;
+                &lt;/div&gt;
+                &lt;div class="column"&gt;
+                    &lt;label&gt;Select resources types&lt;/label&gt;
+                    &lt;select id="search-type" multiple="multiple" placeholder="All resource types" data-width="100%"&gt;
+                        &lt;option value="1"&gt;PDF&lt;/option&gt;
+                        &lt;option value="2"&gt;Toolkits&lt;/option&gt;
+                        &lt;option value="3"&gt;Articles&lt;/option&gt;
+                        &lt;option value="4"&gt;Videos&lt;/option&gt;
+                    &lt;/select&gt;
+                &lt;/div&gt;
+                &lt;div class="column"&gt;
+                    &lt;label&gt;Select cultural competencies&lt;/label&gt;
+                    &lt;select id="search-comp" multiple="multiple" placeholder="All cultural competencies" data-width="100%"&gt;&gt;
+                        &lt;option id="search-comp-clear"&gt;Clear&lt;/option&gt;
+                        &lt;option value="1"&gt;Asian&lt;/option&gt;
+                        &lt;option value="2"&gt;African&lt;/option&gt;
+                        &lt;option value="3"&gt;Middle Eastern&lt;/option&gt;
+                        &lt;option value="4"&gt;Refugee&lt;/option&gt;
+                        &lt;option value="5"&gt;Muslim&lt;/option&gt;
+                        &lt;option value="6"&gt;Indian&lt;/option&gt;
+                    &lt;/select&gt;
+                &lt;/div&gt;
+                &lt;div class="column"&gt;
+                    &lt;a class="btn dark hover-white" href=""&gt;Search&lt;/a&gt;
+                &lt;/div&gt;
             &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
+
 &lt;/header&gt;</code></pre>
 
                 </div>                
@@ -570,6 +622,7 @@
         <script src="js/MorphSVGPlugin.min.js"></script>
         <script src="js/header.js"></script>
         <script src="js/expand.js"></script>
+        <script src="multipleselect/multiple-select.min.js"></script>
 
     </body>
 </html>
