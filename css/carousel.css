@@ -7,14 +7,14 @@
 
 .carousel {
 	width: 100%;
-	max-width: 560px;
+	max-width: 500px;
 }
 
 .carousel .card {
 	-webkit-box-flex: inherit;
 	    -ms-flex: inherit;
 	        flex: inherit;
-	max-width: inherit;
+	max-width: 500px;
 	margin: inherit;
 	background: #576784;
 	-webkit-box-shadow: none;
