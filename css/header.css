@@ -234,6 +234,15 @@ header .slide-in, header .fade-in {
 
 /*Background animation*/
 
+header .svg-wave {
+    position: absolute; 
+    bottom: 0;
+    height: 0; 
+    width: 100%; 
+    padding: 0;
+    padding-bottom: 22.43%; 
+}
+
 header svg[class^="wave"] {
 	position: absolute; 
 	left: 0; 

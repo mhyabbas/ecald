@@ -2,11 +2,29 @@ body {
 	margin: 0;
 }
 
+.svg-wrapper {
+    position: absolute; 
+    bottom: 0;
+    height: 0; 
+    width: 100%; 
+    padding: 0;
+    padding-bottom: 22.43%; 
+}
+
 header {
 	position: relative;
 	height: 700px;
 	background-image: linear-gradient(to top right, #5F3483, #943791);
 	overflow: hidden;
+}
+
+header .svg-wave {
+    position: absolute; 
+    bottom: 0;
+    height: 0; 
+    width: 100%; 
+    padding: 0;
+    padding-bottom: 22.43%; 
 }
 
 header svg.svg-divider, header svg[class^=wave] {
