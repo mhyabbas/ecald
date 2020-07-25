@@ -1,17 +1,18 @@
 $(document).ready(function() {
 
 	// Header wave animation
+	if($('.wave1').length) {
+		var wave = document.querySelector(".wave1 path")
+		var wave2 = document.querySelector(".wave2 path")
+		var wave3 = document.querySelector(".wave3 path")
 
-	var wave = document.querySelector(".wave1 path")
-	var wave2 = document.querySelector(".wave2 path")
-	var wave3 = document.querySelector(".wave3 path")
+		var tl = gsap.timeline({repeat: -1, yoyo: true})
 
-	var tl = gsap.timeline({repeat: -1, yoyo: true})
-
-	tl
-	.to(wave, {duration: 5, morphSVG: ".wave-morph1 path", ease: "power1.inOut"}, 0)
-	.to(wave2, {duration: 7, morphSVG: ".wave-morph2 path", ease: "power1.inOut"}, 0)
-	.to(wave3, {duration: 9, morphSVG: ".wave-morph3 path", ease: "power1.inOut"}, 0);
+		tl
+		.to(wave, {duration: 5, morphSVG: ".wave-morph1 path", ease: "power1.inOut"}, 0)
+		.to(wave2, {duration: 7, morphSVG: ".wave-morph2 path", ease: "power1.inOut"}, 0)
+		.to(wave3, {duration: 9, morphSVG: ".wave-morph3 path", ease: "power1.inOut"}, 0);
+	}
 
 	// Header circle animation
 
