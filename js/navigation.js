@@ -21,13 +21,13 @@ $(function() {
 
 	// Mobile navigation
 	
-	$(".main-nav ul li").on("click", function(e) {
+	$(".main-nav ul li a svg").on("click", function(e) {
 		e.preventDefault();
-		if ($(this).hasClass("current")) {
+		if ($(this).parent().parent().hasClass("current")) {
 			$(".item").removeClass("current");
 		} else {
 			$(".item").removeClass("current");
-			$(this).addClass("current");
+			$(this).parent().parent().addClass("current");
 		}
 	});
 
