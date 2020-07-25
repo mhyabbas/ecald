@@ -46,7 +46,7 @@ $(document).ready(function() {
 
 	var divider = document.querySelector("#divider .divider")
 	var controller = new ScrollMagic.Controller();
-	var tween = gsap.to(divider, {morphSVG: ".curve", ease: "power1.in"})
+	var tween = gsap.to(divider, {morphSVG: ".divider-curve", ease: "power1.in"})
 
 	var scene = new ScrollMagic.Scene({triggerElement: '#divider', duration: 500})
 	.setTween(tween)
@@ -54,7 +54,7 @@ $(document).ready(function() {
 
 	var divider2 = document.querySelector("#divider2 .divider")
 	var controller2 = new ScrollMagic.Controller();
-	var tween2 = gsap.to(divider2, {morphSVG: ".curve", ease: "power1.in"})
+	var tween2 = gsap.to(divider2, {morphSVG: ".divider-curve", ease: "power1.in"})
 
 	var scene2 = new ScrollMagic.Scene({triggerElement: '#divider2', duration: 500})
 	.setTween(tween2)
