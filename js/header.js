@@ -22,7 +22,7 @@ $(document).ready(function() {
 		var $circle = $('circle');
 
 		$circle.each(function(index) {
-			gsap.fromTo(this, { scale: 1, opacity: 0.9 }, {duration: 2, scale: 1.1, opacity: 1, ease: Back.easeOut, delay: index/9, yoyo: true, repeat: -1 });
+			gsap.fromTo(this, { scale: 1 }, {duration: 2, scale: 1.1, ease: Back.easeOut, delay: index/9, yoyo: true, repeat: -1 });
 		})
 	}
 
