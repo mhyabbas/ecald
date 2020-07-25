@@ -113,6 +113,10 @@ svg.svg-divider {
     display: none;
 }
 
+#divider-alt #line {
+    visibility: hidden;
+}
+
 svg.white {
     fill: white;
 }
