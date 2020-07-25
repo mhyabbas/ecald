@@ -13,6 +13,37 @@ $(document).ready(function() {
 	.to(wave2, {duration: 7, morphSVG: ".wave-morph2 path", ease: "power1.inOut"}, 0)
 	.to(wave3, {duration: 9, morphSVG: ".wave-morph3 path", ease: "power1.inOut"}, 0);
 
+	// Header circle animation
+
+	if($('#circles').length) {
+		gsap.set('circle', {transformOrigin: 'center center'});
+
+		var $circle = $('circle');
+
+		$circle.each(function(index) {
+			gsap.fromTo(this, { scale: 1, opacity: 0.9 }, {duration: 2, scale: 1.1, opacity: 1, ease: Back.easeOut, delay: index/9, yoyo: true, repeat: -1 });
+		})
+	}
+
+	// Header text draw animation
+
+	if($('#letters').length) {
+		var c_outer = document.querySelector("#letters #C-outer")
+		var c_inner = document.querySelector("#letters #C-inner")
+		var a1 = document.querySelector("#letters #A-1")
+		var a2 = document.querySelector("#letters #A-2")
+		var a3 = document.querySelector("#letters #A-3")
+
+		var drawtl = gsap.timeline({repeat: -1, yoyo: true});
+
+		drawtl
+		.fromTo(c_outer, {drawSVG: "0% 0%"}, {duration: 7, drawSVG: "0% 100%"}, 0)
+		.fromTo(c_inner, {drawSVG: "100% 100%"}, {duration: 7, drawSVG: "0% 100%"}, 0.5)
+		.fromTo(a1, {drawSVG: "0% 0%"}, {duration: 7, drawSVG: "0% 100%"}, 0)
+		.fromTo(a2, {drawSVG: "100% 100%"}, {duration: 7, drawSVG: "0% 100%"}, 0.5)
+		.fromTo(a3, {drawSVG: "0% 0%"}, {duration: 7, drawSVG: "0% 100%"}, 0)
+	}
+
 	// Slide and Fade animation
 
 	var slideincontroller = new ScrollMagic.Controller();
