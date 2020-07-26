@@ -6,17 +6,14 @@ $(document).ready(function() {
 
 	event.forEach(function(self) {
 
-		var content = self.querySelectorAll(".content");
-		var h2 = self.querySelectorAll(".content h2");
-		var p = self.querySelectorAll(".content p");
+		var detail = self.querySelectorAll(".content .detail");
 		var img = self.querySelectorAll(".thumbnail img");
 		var circle = self.querySelectorAll(".content svg.circle circle");
 
 		var tl = gsap.timeline();
 
 		tl
-		.from(h2, {duration: .5, autoAlpha: 0, y: 40, ease: "power1.out"}, "0")
-		.from(p, {duration: .5, autoAlpha: 0, y: 40, ease: "power1.out"}, "0.2")
+		.from(detail, {duration: .5, autoAlpha: 0, y: 40, ease: "power1.out"}, "0")
 		.from(img, {duration: .5, autoAlpha: 0, x: -40, ease: "power1.out"}, "0")
 		.fromTo(circle, {drawSVG: "0% 0%"}, {duration: .2, drawSVG: "0% 100%"}, "0")
 		.to(circle, {duration: .2, fill:"#334154", ease: "power1.out"}, "0.2")
