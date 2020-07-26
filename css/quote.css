@@ -53,10 +53,6 @@
 	bottom: -50px;
 }
 
-.speech .slick-dots li button::before {
-	font-size: 10px;
-}
-
 .speech svg {
 	width: 49px;
 	height: 46px;
