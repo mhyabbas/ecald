@@ -7,6 +7,10 @@
 
 /* Slick Dots */
 
+.slick-dotted.slick-slider {
+	margin-bottom: 0;
+}
+
 .slick-dots {
     position: absolute;
     bottom: -40px;
