@@ -5,6 +5,64 @@
 * Browsers: last 4 version
 */
 
+/* Slick Dots */
+
+.slick-dots {
+    position: absolute;
+    bottom: -40px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.slick-dots li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.slick-dots li.slick-active button {
+    background: black;
+}
+
+.slick-dots li button {
+	display: block;
+    width: 12px;
+    height: 12px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 18px;
+    outline: none;
+    text-indent: -9999px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+/*Slick Arrows*/
+
+.slick-arrow {
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+}
+
+.slick-arrow.prev {
+	left: -40px;
+}
+
+.slick-arrow.next {
+	right: -40px;
+}
+
+/*Carousel*/
+
 .carousel {
 	width: 100%;
 	max-width: 500px;
@@ -30,36 +88,12 @@
 	font-size: 20px;
 }
 
-.carousel .slick-dots {
-	bottom: -40px;
-}
-
-.carousel .slick-dots li button::before {
-	font-size: 10px;
-}
-
-.carousel .slick-arrow {
-	position: absolute;
-	top: 50%;
-	-webkit-transform: translate(0, -50%);
-	-ms-transform: translate(0, -50%);
-	transform: translate(0, -50%);
-}
-
-.carousel .slick-arrow.prev {
-	left: -40px;
-}
-
-.carousel .slick-arrow.next {
-	right: -40px;
-}
-
 @media all and (min-width: 800px) {
-	.carousel .slick-arrow.prev {
+	.slick-arrow.prev {
 		left: -50px;
 	}
 
-	.carousel .slick-arrow.next {
+	.slick-arrow.next {
 		right: -50px;
 	}
 }
