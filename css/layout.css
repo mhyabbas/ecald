@@ -102,9 +102,10 @@ section.pb-sm-2 {
 
 svg.svg-divider {
     position: absolute;
+    display: block;
     left: 0; 
     top: 0;
-    height: 101%; 
+    height: 100%; 
     width: 100%; 
     z-index: 0;
 }
