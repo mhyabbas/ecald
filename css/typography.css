@@ -27,15 +27,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
+    font-size: 28px;
+}
+
+h1.large {
     font-size: 32px;
 }
 
 h2 {
-    font-size: 28px;
+    font-size: 24px;
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 22px;
 }
 
 h4 {
@@ -99,22 +103,22 @@ ul, ol {
 @media all and (min-width: 1200px) {
 
     h1 {
+        font-size: 42px;
+    }
+
+    h1.large {
         font-size: 50px;
     }
 
     h2 {
-        font-size: 42px;
+        font-size: 36px;
     }
 
     h3 {
-        font-size: 32px;
+        font-size: 30px;
     }
 
     h4 {
         font-size: 24px;
-    }
-
-    h5 {
-        font-size: 20px;
     }
 }
