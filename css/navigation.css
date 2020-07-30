@@ -452,7 +452,7 @@
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    width: 1140px;
+    width: 1024px;
   }
 
   .main-nav ul li {
@@ -532,7 +532,7 @@
     display: none;
     top: 67px;
     left: -15px;
-    width: 480px;
+    width: 240px;
     margin-bottom: 30px;
     padding-top: 10px;
     padding-bottom: 15px;
@@ -540,7 +540,12 @@
     border-bottom-right-radius: 10px;
   }
 
+  .main-nav .sub-nav.double {
+    width: 480px;
+  }
+
   .main-nav ul li:last-of-type .sub-nav {
+    left: inherit;
     right: 0;
   }
 
@@ -549,6 +554,15 @@
   }
 
   .main-nav .sub-item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -ms-flex-item-align: stretch;
+        -ms-grid-row-align: stretch;
+        align-self: stretch;
+    padding: 0;
+  }
+
+  .main-nav .sub-nav.double .sub-item {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
     -ms-flex-item-align: stretch;
@@ -563,11 +577,11 @@
     border-bottom: 1px solid #D5D5D5;
   }
 
-  .main-nav .sub-item:nth-child(even) a {
+  .main-nav .sub-nav.double .sub-item:nth-child(even) a {
     margin-left: 10px;
-  }  
+  }   
 
-  .main-nav .sub-item:last-of-type a, .main-nav .sub-item:nth-last-child(2):nth-child(odd) a {
+  .main-nav .sub-item:last-of-type a, .main-nav .sub-nav.double .sub-item:nth-last-child(2):nth-child(odd) a {
     border-bottom: 0;
   }
 
