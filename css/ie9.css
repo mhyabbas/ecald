@@ -597,6 +597,11 @@ header.bg-animation {
 		margin-right: 15px;
 		width: 45%;
 	}
+
+	.statistics.total .statistic {
+		margin-left: 15px;
+		margin-right: 15px;
+	}
 }
 
 @media all and (min-width: 1200px) {
