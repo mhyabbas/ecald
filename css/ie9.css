@@ -603,6 +603,30 @@ header.bg-animation {
 	.statistic {
 		width: 30%;
 	}
+
+	.statistics.total .statistic:first-of-type {
+		display: block;
+		width: 63%;
+	}
+
+	.statistics.total .statistic:first-of-type:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	.statistics.total .statistic:first-of-type > .detail {
+		display: block;
+	}
+
+	.statistics.total .statistic:last-of-type {
+		width: 30%;
+	}
+
+	.statistics.total .statistic:last-of-type .btn {
+		display: block;
+	}
+
 }
 
 /*Timeline*/
