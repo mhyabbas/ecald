@@ -4,6 +4,7 @@ $(document).ready(function(){
 	var visitor = new CountUp("visitor-count", 0, 2774);
 	var country = new CountUp("country-count", 0, 159);
 	var subscriber = new CountUp("subscriber-count", 0, 12768);
+	var enrol = new CountUp("enrol-count", 0, 30895);
 
 	// Trigger count on scroll
 	var controller = new ScrollMagic.Controller();
@@ -23,6 +24,12 @@ $(document).ready(function(){
 	.addTo(controller)
 	.on("start", function () {
 		subscriber.start();
+	});
+
+	new ScrollMagic.Scene({triggerElement: "#enrol-count", triggerHook: 1})
+	.addTo(controller)
+	.on("start", function () {
+		enrol.start();
 	});
 
 });
