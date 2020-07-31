@@ -606,6 +606,7 @@ header.bg-animation {
 
 	.statistics.total .statistic:first-of-type {
 		display: block;
+		float: left;
 		width: 63%;
 	}
 
@@ -615,11 +616,21 @@ header.bg-animation {
 		clear: both;
 	}
 
+	.statistics.total .statistic:first-of-type > h3 {
+		float: left;
+		margin-bottom: 0;
+		width: 30%;
+		min-width: 210px;
+	}
+
 	.statistics.total .statistic:first-of-type > .detail {
+		float: left;
 		display: block;
+		width: 60%;
 	}
 
 	.statistics.total .statistic:last-of-type {
+		float: left;
 		width: 30%;
 	}
 
