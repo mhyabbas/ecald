@@ -633,6 +633,7 @@ header.bg-animation {
 		display: block;
 		float: left;
 		width: 65%;
+		padding-top: 10px;
 	}
 
 	.statistics.total .statistic:last-of-type {
