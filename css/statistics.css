@@ -71,7 +71,7 @@
 	}
 
 	.statistics.total .statistic {
-		text-align: inherit;
+		text-align: left;
 	}
 
 	.statistics.total .statistic:last-of-type {
