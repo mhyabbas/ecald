@@ -627,7 +627,7 @@ header.bg-animation {
 	.statistics.total .statistic:first-of-type > .detail {
 		display: block;
 		float: left;
-		width: 70%;
+		width: 65%;
 	}
 
 	.statistics.total .statistic:last-of-type {
