@@ -54,18 +54,12 @@ header.bg-animation {
 }
 
 @media all and (min-width: 1200px) {
-/*	header .column {
-		width: 50%;
-	}*/
-
 	header .column {
-		float: left;
-		width: 33%;
+		width: 50%;
 	}
 
-	header .double-column {
-		float: left;
-		width: 66%;
+	header .double-column + header .column {
+		width: 33%;
 	}
 
 
