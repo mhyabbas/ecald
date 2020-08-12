@@ -393,18 +393,42 @@
         <script src="js/animation.gsap.min.js"></script>
         <script src="multipleselect/multiple-select.min.js"></script>
         <script src="js/navigation.js"></script>
-        <!-- <script src="js/header.js"></script> -->
+        <script src="js/header.js"></script>
         <script src="js/expand.js"></script>
 
         <!--[if lte IE 9]>
             <script src="js/ie9.js"></script>
         <![endif]-->
-
+<!-- 
         <script>
           $(function() {
             $('select').multipleSelect()
           })
-        </script>
+        </script> -->
+
+
+
+<script>
+    if($('.search select').length) {
+        $(function () {
+            $(".search select").multipleSelect({
+                selectAll: false,
+                ellipsis: true,
+                onClick: function () {
+                    var count = $("#search-comp + .ms-parent li.selected").length;
+                    $("#search-comp + .ms-parent li:first-of-type label").attr('data-before', count + ' selected');
+                }
+            });
+
+            $("#search-comp + .ms-parent li:first-of-type label").attr('data-before', '0 selected'); 
+
+            $("input[value='Clear']").click(function(){
+                $("#search-comp").multipleSelect('uncheckAll');
+                $("#search-comp + .ms-parent li:first-of-type label").attr('data-before', '0 selected');  
+            });
+        })
+    }
+</script>
 
 
     </body>
