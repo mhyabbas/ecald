@@ -17,21 +17,15 @@ img {
 	clear: both;
 }
 
-.column, .double-column {
-	display: block;
-}
-
 @media all and (min-width: 1200px) {
 	.column {
 		float: left;
 		width: 33%;
-		border: 1px solid green;
 	}
 
 	.double-column {
 		float: left;
-		width: 60%;
-		border: 1px solid pink;
+		width: 66%;
 	}
 }
 
@@ -60,9 +54,21 @@ header.bg-animation {
 }
 
 @media all and (min-width: 1200px) {
-	header .column {
+/*	header .column {
 		width: 50%;
+	}*/
+
+	header .column {
+		float: left;
+		width: 33%;
 	}
+
+	header .double-column {
+		float: left;
+		width: 66%;
+	}
+
+
 }
 
 /*Tags*/
