@@ -68,26 +68,4 @@ $(document).ready(function() {
 	.from(star2, {duration: 0.3, autoAlpha:0, ease: "power1.inOut"}, 0.6)
 	.from(star3, {duration: 0.3, autoAlpha:0, ease: "power1.inOut"}, 0.9);
 
-	// Search filter
-
-	// if($('.search select').length) {
-	// 	$(function () {
-	// 		$(".search select").multipleSelect({
-	// 			selectAll: false,
-	// 			ellipsis: true,
-	// 			onClick: function () {
-	// 				var count = $("#search-comp + .ms-parent li.selected").length;
-	// 				$("#search-comp + .ms-parent li:first-of-type label").attr('data-before', count + ' selected');
-	// 			}
-	// 		});
-
-	// 		$("#search-comp + .ms-parent li:first-of-type label").attr('data-before', '0 selected'); 
-
-	// 		$("input[value='Clear']").click(function(){
-	// 			$("#search-comp").multipleSelect('uncheckAll');
-	// 			$("#search-comp + .ms-parent li:first-of-type label").attr('data-before', '0 selected');  
-	// 		});
-	// 	})
-	// }
-
 });
