@@ -21,11 +21,13 @@ img {
 	.column {
 		float: left;
 		width: 33%;
+		border: 1px solid green;
 	}
 
 	.double-column {
 		float: left;
-		width: 60%;
+		width: 55%;
+		border: 1px solid pink;
 	}
 }
 
