@@ -58,11 +58,9 @@ header.bg-animation {
 		width: 50%;
 	}
 
-	.double-column + .column {
-		width: 30%;
-		border: 1px solid pink;
+	header .double-column + .column {
+		width: 33%;
 	}
-
 
 }
 
