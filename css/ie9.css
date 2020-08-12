@@ -53,6 +53,10 @@ header.bg-animation {
 	background-color: #8F5EA7;
 }
 
+header .search .column .ms-choice span {
+	top: 40%;
+}
+
 @media all and (min-width: 1200px) {
 	header .column {
 		width: 50%;
