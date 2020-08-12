@@ -17,6 +17,10 @@ img {
 	clear: both;
 }
 
+.column, .double-column {
+	display: block;
+}
+
 @media all and (min-width: 1200px) {
 	.column {
 		float: left;
@@ -26,7 +30,7 @@ img {
 
 	.double-column {
 		float: left;
-		width: 55%;
+		width: 60%;
 		border: 1px solid pink;
 	}
 }
