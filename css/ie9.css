@@ -62,10 +62,6 @@ header .search .column #search-comp + .ms-parent .ms-drop ul > li:first-of-type 
 	width: 100%;
 }
 
-header .search .column #search-comp + .ms-parent .ms-drop ul > li:first-of-type input {
-	display: none;
-}
-
 header .search .column #search-comp + .ms-parent .ms-drop ul > li:first-of-type label > * {
 	display: table-cell;
 	vertical-align: middle;
@@ -74,6 +70,10 @@ header .search .column #search-comp + .ms-parent .ms-drop ul > li:first-of-type 
 
 header .search .column #search-comp + .ms-parent .ms-drop ul > li:first-of-type label::before {
 	width: 99%;
+}
+
+header .search .column #search-comp + .ms-parent input[value='Clear'] {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 }
 
 @media all and (min-width: 1200px) {
