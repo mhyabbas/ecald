@@ -62,6 +62,10 @@ header .search .column #search-comp + .ms-parent .ms-drop ul > li:first-of-type 
 	width: 100%;
 }
 
+header .search .column #search-comp + .ms-parent .ms-drop ul > li:first-of-type input {
+	display: none;
+}
+
 header .search .column #search-comp + .ms-parent .ms-drop ul > li:first-of-type label > * {
 	display: table-cell;
 	vertical-align: middle;
