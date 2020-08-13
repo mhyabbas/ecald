@@ -53,16 +53,6 @@ header.bg-animation {
 	background-color: #8F5EA7;
 }
 
-/*header .search .column .ms-choice > div.icon-caret {
-	background: url('../assets/arrow-down.png') no-repeat;
-	background-position: center center;
-}
-
-header .search .column .ms-choice > div.icon-caret.open {
-	background: url('../assets/arrow-up.png') no-repeat; 
-	background-position: center center;
-}*/
-
 header .search .column .ms-choice span {
 	top: 22%;
 }

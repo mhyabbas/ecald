@@ -27,15 +27,15 @@ header.bg-light {
 }
 
 header.bg-dark {
-	background: -webkit-gradient(linear, left bottom, left top, from(rgba(51, 72, 84, 0.8)), to(rgba(51, 72, 84, 0.9))), url('../assets/header.jpg') no-repeat center center;
 	background: -o-linear-gradient(bottom, rgba(51, 72, 84, 0.8), rgba(51, 72, 84, 0.9)), url('../assets/header.jpg') no-repeat center center;
+	background: -webkit-gradient(linear, left bottom, left top, from(rgba(51, 72, 84, 0.8)), to(rgba(51, 72, 84, 0.9))), url('../assets/header.jpg') no-repeat center center;
 	background: linear-gradient(0deg, rgba(51, 72, 84, 0.8), rgba(51, 72, 84, 0.9)), url('../assets/header.jpg') no-repeat center center;
 	background-size: cover;
 }
 
 header.bg-animation {
-	background-image: -webkit-gradient(linear, left bottom, right top, from(#5F3483), to(#943791));
 	background-image: -o-linear-gradient(bottom left, #5F3483, #943791);
+	background-image: -webkit-gradient(linear, left bottom, right top, from(#5F3483), to(#943791));
 	background-image: linear-gradient(to top right, #5F3483, #943791);
 	overflow: hidden;
 }
@@ -46,7 +46,9 @@ header svg#circles {
 	min-height: 100%;
 	left: 50%;
 	top: 50%;
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 }
 
 header svg#letters {
@@ -55,7 +57,9 @@ header svg#letters {
 	min-height: 100%;
 	left: 50%;
 	top: 50%;
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 }
 
 header .container {
@@ -161,14 +165,12 @@ header .search .column .ms-choice > div.icon-caret {
 	right: 12px;
 	height: 25px;
 	width: 25px;
-/*	background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' height='38' viewBox='0 0 24 24' width='38'><path d='M0 0h24v24H0V0z' fill='none'/><path d='M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z' fill='%238F5EA7'/></svg>") no-repeat;*/
 	background: url('../assets/arrow-down.png') no-repeat;
 	background-position: center center;
 	border: none;
 }
 
 header .search .column .ms-choice > div.icon-caret.open {
-/*	background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' height='36' viewBox='0 0 24 24' width='36'><path d='M0 0h24v24H0z' fill='none'/><path d='M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z' fill='%238F5EA7'/></svg>") no-repeat;*/ 
 	background: url('../assets/arrow-up.png') no-repeat; 
 	background-position: center center;
 }
@@ -182,7 +184,9 @@ header .search .column .ms-choice span {
 	font-family: "Open Sans";
 	font-size: 16px;
 	top: 50%;
-	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	        transform: translateY(-50%);
 	padding-left: 15px;
 	padding-right: 20px;
 }
@@ -203,8 +207,12 @@ header .search .column .ms-drop ul > li:first-of-type {
 }
 
 header .search .column #search-comp + .ms-parent .ms-drop ul > li:first-of-type label {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	padding-left: 0;
 	padding-right: 15px;
 }
@@ -288,7 +296,8 @@ header svg polygon[id^="star"] {
 	}
 
 	header .search .column {
-		flex-basis: 50%;
+		-ms-flex-preferred-size: 50%;
+		    flex-basis: 50%;
 		padding-left: 10px;
 		padding-right: 10px;
 	}
@@ -302,7 +311,8 @@ header svg polygon[id^="star"] {
 	}
 
 	header .search .column:last-of-type {
-		align-self: flex-end;
+		-ms-flex-item-align: end;
+		    align-self: flex-end;
 	}
 
 	header .search .column:last-of-type .btn {
@@ -314,7 +324,8 @@ header svg polygon[id^="star"] {
 @media all and (min-width: 1200px) {
 
 	header .search .column {
-		flex-basis: 25%;
+		-ms-flex-preferred-size: 25%;
+		    flex-basis: 25%;
 		padding-left: 10px;
 		padding-right: 10px;
 	}
@@ -332,7 +343,9 @@ header svg polygon[id^="star"] {
 	}
 
 	header .search .column:last-of-type {
-		flex: 0 1 auto;
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 1 auto;
+		        flex: 0 1 auto;
 		padding-right: 30px;
 	}
 
