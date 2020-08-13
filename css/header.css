@@ -161,13 +161,15 @@ header .search .column .ms-choice > div.icon-caret {
 	right: 12px;
 	height: 25px;
 	width: 25px;
-	background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' height='38' viewBox='0 0 24 24' width='38'><path d='M0 0h24v24H0V0z' fill='none'/><path d='M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z' fill='%238F5EA7'/></svg>") no-repeat;
+/*	background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' height='38' viewBox='0 0 24 24' width='38'><path d='M0 0h24v24H0V0z' fill='none'/><path d='M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z' fill='%238F5EA7'/></svg>") no-repeat;*/
+	background: url('../assets/arrow-down.png') no-repeat;
 	background-position: center center;
 	border: none;
 }
 
 header .search .column .ms-choice > div.icon-caret.open {
-	background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' height='36' viewBox='0 0 24 24' width='36'><path d='M0 0h24v24H0z' fill='none'/><path d='M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z' fill='%238F5EA7'/></svg>") no-repeat; 
+/*	background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' height='36' viewBox='0 0 24 24' width='36'><path d='M0 0h24v24H0z' fill='none'/><path d='M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z' fill='%238F5EA7'/></svg>") no-repeat;*/ 
+	background: url('../assets/arrow-up.png') no-repeat; 
 	background-position: center center;
 }
 
