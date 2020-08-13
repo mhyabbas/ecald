@@ -59,7 +59,8 @@ header .search .column .ms-choice {
 
 header .search .column .ms-choice span {
 	position: absolute;
-	top: 22%;
+	top: 10px;
+	transform: none;
 	border: 1px solid pink;
 }
 
