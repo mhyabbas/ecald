@@ -95,6 +95,12 @@ header .search .column #search-comp + .ms-parent input[value='Clear'] {
 		width: 33%;
 	}
 
+	header .search .column {
+		display: block;
+		float: left;
+		width: 25%;
+	}
+
 }
 
 /*Tags*/
