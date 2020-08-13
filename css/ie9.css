@@ -54,7 +54,7 @@ header.bg-animation {
 }
 
 header .search .column .ms-choice span {
-	top: 25%;
+	top: 22%;
 }
 
 header .search .column #search-comp + .ms-parent .ms-drop ul > li:first-of-type label {
@@ -102,7 +102,7 @@ header .search .column #search-comp + .ms-parent input[value='Clear'] {
 	header .search .column {
 		display: block;
 		float: left;
-		width: 28%;
+		width: 26%;
 	}
 
 }
