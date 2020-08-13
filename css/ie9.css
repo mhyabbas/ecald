@@ -53,12 +53,8 @@ header.bg-animation {
 	background-color: #8F5EA7;
 }
 
-header .search .column .ms-choice {
-	position: relative;
-}
-
 header .search .column .ms-choice span {
-	display: block;
+	position: absolute;
 	top: 22%;
 }
 
