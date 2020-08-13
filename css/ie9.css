@@ -83,10 +83,8 @@ header .search .column #search-comp + .ms-parent input[value='Clear'] {
 		width: 50%;
 	}
 
-	header .search .column:last-of-type {
-		display: table-cell;
-		vertical-align: bottom;
-		text-align: right;
+	header .search .column:last-of-type .btn {
+		display: block;
 	}
 }
 
@@ -102,7 +100,7 @@ header .search .column #search-comp + .ms-parent input[value='Clear'] {
 	header .search .column {
 		display: block;
 		float: left;
-		width: 26%;
+		width: 25%;
 	}
 
 }
