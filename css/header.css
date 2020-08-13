@@ -296,8 +296,11 @@ header svg polygon[id^="star"] {
 	}
 
 	header .search .column {
-		-ms-flex-preferred-size: 45%;
-		    flex-basis: 50%;
+		-ms-flex-preferred-size: 44%;
+		    flex-basis: 44%;
+		-webkit-box-flex: 1;
+		    -ms-flex-positive: 1;
+		        flex-grow: 1;
 		padding-left: 10px;
 		padding-right: 10px;
 	}
