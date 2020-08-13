@@ -53,9 +53,14 @@ header.bg-animation {
 	background-color: #8F5EA7;
 }
 
+header .search .column .ms-choice {
+	position: relative;
+}
+
 header .search .column .ms-choice span {
 	position: absolute;
 	top: 22%;
+	border: 1px solid pink;
 }
 
 header .search .column #search-comp + .ms-parent .ms-drop ul > li:first-of-type label {
