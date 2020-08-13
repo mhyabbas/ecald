@@ -84,10 +84,6 @@ header .search .column #search-comp + .ms-parent input[value='Clear'] {
 	}
 
 	header .search .column:last-of-type {
-		display: table;
-	}
-
-	header .search .column:last-of-type .btn {
 		display: table-cell;
 		vertical-align: bottom;
 		text-align: right;
