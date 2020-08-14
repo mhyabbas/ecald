@@ -18,7 +18,7 @@ img {
 }
 
 @media all and (min-width: 1200px) {
-	.column {
+/*	.column {
 		float: left;
 		width: 33%;
 	}
@@ -26,7 +26,7 @@ img {
 	.double-column {
 		float: left;
 		width: 66%;
-	}
+	}*/
 }
 
 /*Buttons*/
