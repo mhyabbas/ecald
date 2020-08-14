@@ -84,7 +84,6 @@ header .search .column:last-of-type .btn {
 header .sidebar {
 	margin-left: inherit !important;
 	margin-right: inherit !important;
-	border: 1px solid yellow;
 }
 
 @media all and (min-width: 800px) {
