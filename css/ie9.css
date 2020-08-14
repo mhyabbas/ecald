@@ -424,6 +424,12 @@ header .sidebar {
 		display: block;
 	}
 
+	.pagination-total:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
 	.pagination-total p {
 		display: inline-block;
 	}
