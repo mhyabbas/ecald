@@ -81,6 +81,11 @@ header .search .column:last-of-type .btn {
 	display: block;
 }
 
+header .search .sidebar {
+	margin-left: none !important;
+	margin-right: none !important;
+}
+
 @media all and (min-width: 800px) {
 	header .search .column {
 		display: block;
