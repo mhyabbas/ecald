@@ -17,18 +17,6 @@ img {
 	clear: both;
 }
 
-@media all and (min-width: 1200px) {
-/*	.column {
-		float: left;
-		width: 33%;
-	}
-
-	.double-column {
-		float: left;
-		width: 66%;
-	}*/
-}
-
 /*Buttons*/
 
 .btn {
@@ -100,10 +88,17 @@ header .sidebar {
 
 @media all and (min-width: 1200px) {
 	header .column {
+		float: left;
 		width: 50%;
 	}
 
+	header .double-column {
+		float: left;
+		width: 66%;
+	}
+
 	header .double-column + .column {
+		float: left;
 		width: 33%;
 	}
 
@@ -112,7 +107,6 @@ header .sidebar {
 		float: left;
 		width: 25%;
 	}
-
 }
 
 /*Tags*/
@@ -423,7 +417,6 @@ header .sidebar {
 	.pagination-total {
 		display: block;
 		width: 100%;
-		border: 1px solid yellow;
 	}
 
 	.pagination-total p {
@@ -483,7 +476,7 @@ header .sidebar {
 	}
 
 	.card .content {
-		min-height: 150px;
+		min-height: 300px;
 	}
 
 	.card.horizontal {
