@@ -473,10 +473,11 @@ header .sidebar {
 		margin-left: 15px;
 		margin-right: 15px;
 		width: 45%;
+		min-height: 650px;
 	}
 
 	.card .content {
-		min-height: 300px;
+		min-height: 150px;
 	}
 
 	.card.horizontal {
