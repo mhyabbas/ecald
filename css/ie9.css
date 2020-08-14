@@ -422,12 +422,8 @@ header .sidebar {
 
 	.pagination-total {
 		display: block;
-	}
-
-	.pagination-total:after {
-		content: "";
-		display: table;
-		clear: both;
+		width: 100%;
+		border: 1px solid yellow;
 	}
 
 	.pagination-total p {
