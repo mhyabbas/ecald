@@ -500,7 +500,7 @@ header .sidebar {
 		clear: none;
 	}
 
-	.card:nth-child(3n+1) {
+	.cards .card:nth-child(3n+1) {
 		clear: both;
 	}
 
