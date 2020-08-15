@@ -475,12 +475,8 @@ header .sidebar {
 		width: 45%;
 	}
 
-	.card:nth-child(2n+1) {
+	.cards .card:nth-child(2n+1) {
 		clear: both;
-	}
-
-	.card .content {
-		min-height: 150px;
 	}
 
 	.card.horizontal {
@@ -500,7 +496,7 @@ header .sidebar {
 		width: 30%;
 	}
 
-	.card:nth-child(2n+1) {
+	.cards .card:nth-child(2n+1) {
 		clear: none;
 	}
 
