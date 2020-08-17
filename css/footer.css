@@ -5,6 +5,28 @@
 * Browsers: last 4 version
 */
 
+/*Create an account*/
+
+section .account {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+section .account i {
+  font-size: 50px;
+}
+
+/*Create an account - Horizontal layout*/
+
+section .account.horizontal h2 {
+  font-size: 24px;
+}
+
+/*Footer*/
+
 footer {
   background-color: #576784;
   color: white;
@@ -43,9 +65,15 @@ footer .footer li {
   font-size: 14px;
 }
 
-footer .footer .btn {
-  padding: 10px;
+footer .footer a.btn {
+    color: #8F5EA7;
 }
+
+footer .footer a.btn:hover {
+    color: #334154;
+}
+
+/*Copyright*/
 
 footer .copyright {
   padding: 15px 50px;
@@ -78,20 +106,49 @@ footer .copyright .logo img {
 }
 
 @media all and (min-width: 800px) {
+  section .account {
+    width: 750px;
+  }
+
+  section .account.horizontal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: initial;
+    text-align: initial;
+  }
+
+  section .account.horizontal i {
+    padding-right: 20px;
+  }
+
+  section .account.horizontal div {
+    flex-basis: 40%;
+    flex-grow: 1;
+  }
+
   footer .footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
 
   footer .footer div {
     -webkit-box-flex: 1;
-        -ms-flex: 1 0 0px;
-            flex: 1 0 0;
+    -ms-flex: 1 0 0px;
+    flex: 1 0 0;
     padding: 0 10px;
+  }
+
+  footer .footer div:last-of-type {
+    padding-left: 30px;
+    border-left: 1px solid #334154;
   }
 
   footer .copyright ul {
@@ -99,10 +156,10 @@ footer .copyright .logo img {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     width: 100%;
   }
 
@@ -117,8 +174,8 @@ footer .copyright .logo img {
 
   footer .copyright .logo {
     -webkit-box-flex: 1;
-        -ms-flex: 1 0 120px;
-            flex: 1 0 120px;
+    -ms-flex: 1 0 120px;
+    flex: 1 0 120px;
   }
 
   footer .copyright .logo img {
