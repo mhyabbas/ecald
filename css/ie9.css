@@ -754,7 +754,14 @@ footer .footer:after {
 
 @media all and (min-width: 800px) {
 	section .account.horizontal {
-		display: inline-block;
+		display: table;
+	}
+
+	section .account.horizontal > * {
+		display: table-cell;
+		width: auto;
+		vertical-align: middle;
+		white-space: nowrap;
 	}
 
 	section .account.horizontal div {
