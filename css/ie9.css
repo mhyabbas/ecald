@@ -767,6 +767,10 @@ footer .footer:after {
 		width: 40%;
 	}
 
+	section .account.horizontal .btn {
+		display: inline-block;
+	}
+
 	footer .footer div {
 		float: left;
 		width: 20%;
