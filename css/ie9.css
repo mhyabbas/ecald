@@ -761,7 +761,6 @@ footer .footer:after {
 		display: table-cell;
 		width: auto;
 		vertical-align: middle;
-		white-space: nowrap;
 	}
 
 	section .account.horizontal div {
