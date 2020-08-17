@@ -763,6 +763,11 @@ footer .footer:after {
 		clear: both;
 	}
 
+	section .account.horizontal > * {
+		float: left;
+		width: auto;
+	}
+
 	section .account.horizontal div {
 		width: 40%;
 	}
