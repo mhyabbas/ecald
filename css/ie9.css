@@ -754,13 +754,13 @@ footer .footer:after {
 
 @media all and (min-width: 800px) {
 	section .account.horizontal {
-		display: table;
+		display: block;
 	}
 
-	section .account.horizontal > * {
-		display: table-cell;
-		width: auto;
-		vertical-align: middle;
+	section .account.horizontal:after {
+		content: "";
+		display: table;
+		clear: both;
 	}
 
 	section .account.horizontal div {
