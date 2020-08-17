@@ -769,11 +769,12 @@ footer .footer:after {
 	}
 
 	section .account.horizontal div {
-		width: 40%;
+		width: 50%;
 	}
 
 	section .account.horizontal .btn {
 		display: inline-block;
+		margin-left: auto;
 	}
 
 	footer .footer div {
