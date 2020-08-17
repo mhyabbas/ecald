@@ -117,8 +117,8 @@ footer .copyright .logo img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: inherit;
-    text-align: inherit;
+    width: auto;
+    text-align: left;
   }
 
   section .account.horizontal i {
