@@ -753,9 +753,21 @@ footer .footer:after {
 }
 
 @media all and (min-width: 800px) {
+	section .account.horizontal {
+		display: inline-block;
+	}
+
+	section .account.horizontal div {
+		width: 40%;
+	}
+
 	footer .footer div {
 		float: left;
-		width: 25%;
+		width: 20%;
+	}
+
+	footer .footer div:last-of-type {
+		width: 40%;
 	}
 
 	footer .copyright ul {
