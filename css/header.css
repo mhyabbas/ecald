@@ -47,8 +47,8 @@ header svg#circles {
 	left: 50%;
 	top: 50%;
 	-webkit-transform: translate(-50%, -50%);
-	    -ms-transform: translate(-50%, -50%);
-	        transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 }
 
 header svg#letters {
@@ -58,8 +58,8 @@ header svg#letters {
 	left: 50%;
 	top: 50%;
 	-webkit-transform: translate(-50%, -50%);
-	    -ms-transform: translate(-50%, -50%);
-	        transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 }
 
 header .container {
@@ -149,18 +149,89 @@ header .search .column > input::-ms-input-placeholder { /* Microsoft Edge */
 	color: #576784;
 }
 
-/*Multiple Select*/
+/*Header with search - SilverStripe markup*/
 
-header .search .column .ms-parent {
+header .search.filter fieldset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+header .search.filter fieldset > div, header .search.filter .btn-toolbar {
+	margin-bottom: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+header .search.filter fieldset div > label {
+	display: block;
+	margin-bottom: 10px;
+	color: white;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+header .search.filter fieldset div > div > input {
+	display: block;
+	padding: 10px 15px;
+	width: 100%;
+	border: 1px solid #757D8C;
+	border-radius: 4px;
+	color: #334154;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+header .search.filter fieldset div > div > input:focus {
+	outline: 1px solid #8F5EA7;
+}
+
+header .search.filter .btn-toolbar input {
+	display: block;
+	padding: 10px 25px;
+	width: 100%;
+	background-color: #8F5EA7;
+	border-radius: 4px;
+	border: 1px solid #8F5EA7;
+	-webkit-box-shadow: 0 2px 4px rgba(0,0,0,.1);
+	box-shadow: 0 2px 4px rgba(0,0,0,.1);
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	text-decoration: none;
+	-webkit-transition: all .4s;
+	-o-transition: all .4s;
+	transition: all .4s;
+	vertical-align: middle;
+	cursor: pointer;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+header .search.filter .btn-toolbar input:hover {
+	border-color: white;
+	background-color: white;
+	color: #334154;
+	text-decoration: underline;
+}
+
+/*Multiple Select - SilverStripe markup*/
+
+header .search .column .ms-parent, header .search.filter fieldset .ms-parent {
 	display: block;
 	font-size: 16px;
 }
 
-header .search .column .ms-choice {
+header .search .column .ms-choice, header .search.filter fieldset .ms-choice {
 	height: 45px;
 }
 
-header .search .column .ms-choice > div.icon-caret {
+header .search .column .ms-choice > div.icon-caret, header .search.filter fieldset .ms-choice > div.icon-caret {
 	top: 28%;
 	right: 12px;
 	height: 25px;
@@ -170,39 +241,39 @@ header .search .column .ms-choice > div.icon-caret {
 	border: none;
 }
 
-header .search .column .ms-choice > div.icon-caret.open {
+header .search .column .ms-choice > div.icon-caret.open, header .search.filter fieldset .ms-choice > div.icon-caret.open {
 	background: url('../assets/arrow-up.png') no-repeat; 
 	background-position: center center;
 }
 
-header .search .column .ms-choice:focus {
+header .search .column .ms-choice:focus, header .search.filter fieldset .ms-choice:focus {
 	outline: 2px solid #8F5EA7;
 }
 
-header .search .column .ms-choice span {
+header .search .column .ms-choice span, header .search.filter fieldset .ms-choice span {
 	color: #222222;
 	font-family: "Open Sans";
 	font-size: 16px;
 	top: 50%;
 	-webkit-transform: translateY(-50%);
-	    -ms-transform: translateY(-50%);
-	        transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
 	padding-left: 15px;
 	padding-right: 20px;
 }
 
-header .search .column .ms-drop {
+header .search .column .ms-drop, header .search.filter fieldset .ms-drop {
 	border-radius: 0 0 4px 4px;
 }
 
-header .search .column .ms-drop ul > li {
+header .search .column .ms-drop ul > li, header .search.filter fieldset .ms-drop ul > li {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-left: 15px;
 	border-top: 1px solid #CDCDCD;
 }
 
-header .search .column .ms-drop ul > li:first-of-type {
+header .search .column .ms-drop ul > li:first-of-type, header .search.filter fieldset .ms-drop ul > li:first-of-type {
 	border-top: none;
 }
 
@@ -211,8 +282,8 @@ header .search .column #search-comp + .ms-parent .ms-drop ul > li:first-of-type 
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 	padding-left: 0;
 	padding-right: 15px;
 }
@@ -246,12 +317,12 @@ header .slide-in, header .fade-in {
 /*Background animation*/
 
 header .svg-wave {
-    position: absolute; 
-    bottom: 0;
-    height: 0; 
-    width: 100%; 
-    padding: 0;
-    padding-bottom: 22.43%; 
+	position: absolute; 
+	bottom: 0;
+	height: 0; 
+	width: 100%; 
+	padding: 0;
+	padding-bottom: 22.43%; 
 }
 
 header svg[class^="wave"] {
@@ -297,10 +368,10 @@ header svg polygon[id^="star"] {
 
 	header .search .column {
 		-ms-flex-preferred-size: 44%;
-		    flex-basis: 44%;
+		flex-basis: 44%;
 		-webkit-box-flex: 1;
-		    -ms-flex-positive: 1;
-		        flex-grow: 1;
+		-ms-flex-positive: 1;
+		flex-grow: 1;
 		padding-left: 10px;
 		padding-right: 10px;
 	}
@@ -315,20 +386,53 @@ header svg polygon[id^="star"] {
 
 	header .search .column:last-of-type {
 		-ms-flex-item-align: end;
-		    align-self: flex-end;
+		align-self: flex-end;
 	}
 
 	header .search .column:last-of-type .btn {
 		margin-bottom: 0;
 	}
 
+	/*Silverstripe markup*/
+
+	header .search.filter form {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		width: 100%;
+	}
+
+	header .search.filter fieldset {
+		width: 100%;
+	}
+
+	header .search.filter fieldset .field {
+		padding-left: 10px;
+		padding-right: 10px;
+		float: left;
+		width: 50%;
+	}
+
+	header .search.filter.filter-single .field {
+		width: 100%;
+	}
+
+	header .search.filter fieldset .field:first-of-type {
+		padding-left: 30px;
+	}
+
+	header .search.filter .btn-toolbar {
+		-ms-flex-item-align: end;
+		align-self: flex-end;
+		padding-left: 10px;
+	}
 }
 
 @media all and (min-width: 1200px) {
 
 	header .search .column {
 		-ms-flex-preferred-size: 25%;
-		    flex-basis: 25%;
+		flex-basis: 25%;
 		padding-left: 10px;
 		padding-right: 10px;
 	}
@@ -347,8 +451,8 @@ header svg polygon[id^="star"] {
 
 	header .search .column:last-of-type {
 		-webkit-box-flex: 0;
-		    -ms-flex: 0 1 auto;
-		        flex: 0 1 auto;
+		-ms-flex: 0 1 auto;
+		flex: 0 1 auto;
 		padding-right: 30px;
 	}
 
