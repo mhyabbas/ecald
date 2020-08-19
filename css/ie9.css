@@ -99,12 +99,15 @@ header .sidebar {
 
 	header .search.filter form > * {
 		float: left;
-		width: auto;
-		border: 1px solid white;
+	}
+
+	header .search.filter fieldset {
+		width: 85%;
 	}
 
 	header .search.filter .btn-toolbar {
-		margin-top: 30px;
+		width: 15%;
+		margin-top: 32px;
 	}
 }
 
