@@ -224,7 +224,7 @@ header .search.filter .btn-toolbar input:hover {
 	text-decoration: underline;
 }
 
-/*Multiple Select - SilverStripe markup*/
+/*Multiple Select - including SilverStripe markup*/
 
 header .search .column .ms-parent, header .search.filter fieldset .ms-parent {
 	display: block;

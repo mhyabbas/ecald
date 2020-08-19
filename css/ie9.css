@@ -84,6 +84,31 @@ header .sidebar {
 	header .search .column:last-of-type .btn {
 		margin-top: 30px;
 	}
+
+	/*Silverstripe markup*/
+
+	header .search.filter form {
+		display: block;
+	}
+
+	header .search.filter form:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	header .search.filter form > * {
+		float: left;
+		width: auto;
+	}
+
+	header .search.filter fieldset {
+		width: 99%;
+	}
+
+	header .search.filter .btn-toolbar {
+		margin-top: 30px;
+	}
 }
 
 @media all and (min-width: 1200px) {
