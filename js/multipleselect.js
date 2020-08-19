@@ -1,23 +1,34 @@
 $(document).ready(function() {
 
-    if($('.search select').length) {
-        $(function () {
-            $(".search select").multipleSelect({
-                selectAll: false,
-                ellipsis: true,
-                onClick: function () {
-                    var count = $("#search-comp + .ms-parent li.selected").length;
-                    $("#search-comp + .ms-parent li:first-of-type label").attr('data-before', count + ' selected');
-                }
-            });
+    $('.search select').each(function() {
 
-            $("#search-comp + .ms-parent li:first-of-type label").attr('data-before', '0 selected'); 
+        if($(this).length) {
+            if($(this).children('option:first').val() == 'Clear') {
 
-            $("input[value='Clear']").click(function(){
-                $("#search-comp").multipleSelect('uncheckAll');
-                $("#search-comp + .ms-parent li:first-of-type label").attr('data-before', '0 selected');  
-            });
-        })
-    }
+                var attr = $(this).attr('placeholder');
+                $(this).parent().addClass("has-clear");
+
+                $(this).multipleSelect({
+                    selectAll: false,
+                    ellipsis: true,
+                    onClick: function () {
+                        var count = $("[placeholder='" + attr + "'] + .ms-parent li.selected").length;
+                        $("[placeholder='" + attr + "'] + .ms-parent li:first-of-type label").attr('data-before', count + ' selected');
+                    }
+                });
+
+                $(this).parent().find(".ms-parent li:first-of-type label").attr('data-before', '0 selected');
+
+                $(this).parent().find("input[value='Clear']").click(function(){
+                    $("[placeholder='" + attr + "']").multipleSelect('uncheckAll');
+                    $("[placeholder='" + attr + "'] + .ms-parent li:first-of-type label").attr('data-before', '0 selected');
+                });
+
+            } else {
+                $(this).multipleSelect();
+            }
+        }
+
+    })
 
 });

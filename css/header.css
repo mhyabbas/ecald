@@ -281,7 +281,8 @@ header .search .column .ms-drop ul > li:first-of-type, header .search.filter fie
 	border-top: none;
 }
 
-header .search .column #search-comp + .ms-parent .ms-drop ul > li:first-of-type label {
+header .search .column.has-clear select + .ms-parent .ms-drop ul > li:first-of-type label,
+header .search.filter fieldset .has-clear select + .ms-parent .ms-drop ul > li:first-of-type label {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -292,7 +293,8 @@ header .search .column #search-comp + .ms-parent .ms-drop ul > li:first-of-type 
 	padding-right: 15px;
 }
 
-header .search .column #search-comp + .ms-parent .ms-drop ul > li:first-of-type label::before {
+header .search .column.has-clear select + .ms-parent .ms-drop ul > li:first-of-type label::before,
+header .search.filter fieldset .has-clear select + .ms-parent .ms-drop ul > li:first-of-type label::before {
 	content: attr(data-before);
 	position: relative;
 	color: #242A35;
@@ -300,11 +302,13 @@ header .search .column #search-comp + .ms-parent .ms-drop ul > li:first-of-type 
 	font-weight: bold;
 }
 
-header .search .column #search-comp + .ms-parent input[value='Clear'] {
+header .search .column.has-clear select + .ms-parent input[value='Clear'],
+header .search.filter fieldset .has-clear select + .ms-parent input[value='Clear'] {
 	display: none;
 }
 
-header .search .column #search-comp + .ms-parent input[value='Clear'] + span {
+header .search .column.has-clear select + .ms-parent input[value='Clear'] + span,
+header .search.filter fieldset .has-clear select + .ms-parent input[value='Clear'] + span {
 	color: #8F5EA7;
 	font-size: 14px;
 	font-weight: bold;

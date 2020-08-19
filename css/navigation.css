@@ -114,6 +114,8 @@
           align-items: center;
 }
 
+/*Site search - SilverStripe markup*/
+
 .nav #search {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -138,6 +140,11 @@
   width: 100%;
 }
 
+.nav #search form {
+  display: block;
+  width: 100%;
+}
+
 .nav #search input {
   display: none;
   -webkit-box-flex: 1;
@@ -159,6 +166,7 @@
 
 .nav #search.show input {
   display: block;
+  width: 100%;
 }
 
 .nav #search a {
