@@ -102,12 +102,12 @@ header .sidebar {
 	}
 
 	header .search.filter fieldset {
-		width: 85%;
+		width: 80%;
 	}
 
 	header .search.filter .btn-toolbar {
-		width: 15%;
-		margin-top: 32px;
+		width: 20%;
+		margin-top: 31px;
 	}
 }
 
