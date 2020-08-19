@@ -100,10 +100,7 @@ header .sidebar {
 	header .search.filter form > * {
 		float: left;
 		width: auto;
-	}
-
-	header .search.filter fieldset {
-		width: 99%;
+		border: 1px solid white;
 	}
 
 	header .search.filter .btn-toolbar {
