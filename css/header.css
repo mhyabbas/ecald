@@ -185,6 +185,10 @@ header .search.filter fieldset div > div > input {
 	appearance: none;
 }
 
+header .search.filter fieldset div > div > input[type="date"] {
+	height: 45px;
+}
+
 header .search.filter fieldset div > div > input:focus {
 	outline: 1px solid #8F5EA7;
 }
