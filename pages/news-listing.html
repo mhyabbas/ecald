@@ -9,13 +9,13 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Zilla+Slab:400,500,600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" href="css/plyr.css" type="text/css">
-        <link rel="stylesheet" href="slick/slick.css" type="text/css"/>
-        <link rel="stylesheet" href="multipleselect/multiple-select.min.css" type="text/css"/>
-        <link rel="stylesheet" href="css/main.css" type="text/css">
+        <link rel="stylesheet" href="../css/plyr.css" type="text/css">
+        <link rel="stylesheet" href="../slick/slick.css" type="text/css"/>
+        <link rel="stylesheet" href="../multipleselect/multiple-select.min.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/main.css" type="text/css">
 
         <!--[if lte IE 9]>
-            <link rel="stylesheet" type="text/css" href="css/ie9.css" />
+            <link rel="stylesheet" type="text/css" href="../css/ie9.css" />
         <![endif]-->
 
     </head>
@@ -52,7 +52,7 @@
         <nav class="nav">
             <ul>
                 <li class="toggle"><a href="#"><i class="material-icons">&#xe5d2;</i> <span>Menu</span></a></li>
-                <li class="logo"><a href=""><img src="assets/logo.svg" alt="logo"></a></li>
+                <li class="logo"><a href=""><img src="../assets/logo.svg" alt="logo"></a></li>
                 <li class="item search"><a id="search-toggle" href=""><i class="material-icons">&#xe8b6;</i></a></li>
 
                 <li class="main-nav">
@@ -142,147 +142,56 @@
             </ul>
 
             <div id="search">
-                <form id="SearchForm_SearchForm" action="/home/SearchForm/" method="get" enctype="application/x-www-form-urlencoded">
-                    <input type="search" name="Search" id="SearchForm_SearchForm_Search" placeholder="Search" />
-                </form>
+                <input type="search" name="search" placeholder="Search">
                 <a href=""><i class="material-icons">&#xe5cd;</i></a>
             </div>
 
         </nav>
 
-        <header class="bg-light pb-0">
-            <div class="container">
-                <div class="column">
-                    <nav class="breadcrumb" aria-label="breadcrumb">
-                        <ul>
-                            <li><a href="">Home</a></li>
-                            <li><span aria-current="page">Silverstripe markup</span></li>
-                        </ul>
-                    </nav>
-                    <h1>Silverstripe markup</h1>
-                </div>
+        <header>
+    <div class="svg-wrapper">
+        <svg class="white svg-divider" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             viewBox="0 0 1400 314" style="enable-background:new 0 0 1400 314;" xml:space="preserve">
+            <path d="M1400,0v314H0c0-2,0-3,0-3C808.5,311,1275.2,207.3,1400,0z"/>
+        </svg>
+    </div>
 
-                <div class="row">
-                    <div class="column">
-                        <p>This page has various form markup that Silverstripe generates:</p>
-                        <ul>
-                            <li>Site search</li>
-                            <li>Resource filters</li>
-                        </ul>
-                        <p>View all filter types <a href="http://dev2-ss.ecald.com/resources/" target="_blank">here, under resources.</a> Filter combination examples can be seen below.</p>
-                        <ul>
-                            <li><a href="http://dev2-ss.ecald.com/resources/cross-cultural-resources/" target="_blank">Cross cultural resources - keyword</a></li>
-                            <li><a href="http://dev2-ss.ecald.com/resources/translated-information/" target="_blank">Translated information - dropdown + keyword</a></li>
-                            <li><a href="http://dev2-ss.ecald.com/resources/research-commentary/" target="_blank">Research commentary - date</a></li>
-                        </ul>
+    <div class="container">
+        <div class="column">
+            <nav class="breadcrumb" aria-label="breadcrumb">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Section</a></li>
+                    <li><span aria-current="page">H1 page heading</span></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="row">
+            <div class="double-column slide-in">
+                <h1>Latest news</h1>
+                <h3>Cross-Cultural Interest Group (CCIG) Seminar <br> 20th October 2020</h3>
+                <p>This is a comprehensive guide for health practitioners working with CALD clients/patients from Asian, Middle Eastern and African cultures.</p> 
+                <a class="btn dark"> Find out more</a>
+                <a class="btn cyan outline"> View all updates</a>
+            </div>
+            <div class="column fade-in">
+                 <div class="card event">
+                    <div class="thumbnail">
+                        <img src="../assets/card-event.jpg" alt="image">
                     </div>
-                </div>
-            </div>
-
-            <!-- Silverstripe form markup -->
-            <div class="container">
-                <h2>Keyword search</h2>
-            </div>
-            <div class="search bg-blue filter filter-single">
-                <div class="container">
-                    <div class="row">
-                        <form action="/resources/cross-cultural-resources/Filter/" method="post" enctype="application/x-www-form-urlencoded">
-                            <fieldset>
-                                <div id="Form_Filter_Keyword_Holder" class="field text">
-                                    <label class="left" for="Form_Filter_Keyword">Keyword search</label>
-                                    <div class="middleColumn">
-                                        <input type="text" name="Keyword" class="text" id="Form_Filter_Keyword" placeholder="Enter a keyword" />
-                                    </div>
-                                </div>
-                                <input type="hidden" name="SecurityID" value="731d835028a8d147d721113b2bb65267a905543f" class="hidden" id="Form_Filter_SecurityID" />
-                                <div class="clear"><!-- --></div>
-                            </fieldset>
-                            <div class="btn-toolbar">
-                                <input type="submit" name="action_submitFilter" value="Filter" class="action" id="Form_Filter_action_submitFilter" />
+                    <div class="content">
+                        <h3>eNews - 56th Edition</h3>
+                        <p>Find out about upcoming events and new publications</p>
+                            <div class="detail">
+                                <p><i class="material-icons">&#xe916;</i>August 2020</p>
                             </div>
-                        </form>
                     </div>
                 </div>
-            </div>
-
-            <!-- Silverstripe form markup -->
-            <div class="container">
-                <br />
-                <h2>Keyword and dropdown search</h2>
-            </div>
+            </div>                   
+        </div>
+    </div>
             <div class="search bg-blue filter">
-                <div class="container">
-                    <div class="row">
-                        <form action="/resources/translated-information/Filter/" method="post" enctype="application/x-www-form-urlencoded">
-                            <fieldset>
-                                <div id="Form_Filter_Keyword_Holder" class="field text">
-                                    <label class="left" for="Form_Filter_Keyword">Keyword search</label>
-                                    <div class="middleColumn">
-                                        <input type="text" name="Keyword" class="text" id="Form_Filter_Keyword" placeholder="Enter a keyword" />
-                                    </div>   
-                                </div>
-                                <div id="Form_Filter_Language_Holder" class="field listbox">
-                                    <label class="left" for="Form_Filter_Language">Language</label>
-                                    <div class="middleColumn">
-                                        <select name="Language[]" class="listbox" id="Form_Filter_Language" multiple="true" placeholder="All languages" data-width="100%">
-                                            <option value="Clear">Clear</option>
-                                            <option value="107">Afrikaans</option>
-                                            <option value="106">Amharic</option>
-                                            <option value="111">Arabic</option>
-                                            <option value="82">bengali</option>
-                                            <option value="102">Bosnian</option>
-                                            <option value="109">Burmese</option>
-                                            <option value="97">Cambodian</option>
-                                        </select>
-                                    </div>
-                                </div>        
-                                <div class="clear"><!-- --></div>
-                            </fieldset>
-                            <div class="btn-toolbar">
-                                <input type="submit" name="action_submitFilter" value="Filter" class="action" id="Form_Filter_action_submitFilter" />
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Silverstripe form markup -->
-            <div class="container">
-                <br />
-                <h2>Date search</h2>
-            </div>
-            <div class="search bg-blue filter">
-                <div class="container">
-                    <div class="row">
-                        <form id="Form_Filter" action="/resources/research-commentary/Filter/" method="post" enctype="application/x-www-form-urlencoded">
-                            <fieldset>
-                                <div id="Form_Filter_From_Holder" class="field date text">
-                                    <label class="left" for="Form_Filter_From">From</label>
-                                    <div class="middleColumn">
-                                        <input type="date" name="From" class="date text" id="Form_Filter_From" lang="en-US" />
-                                    </div>
-                                </div>
-                                <div id="Form_Filter_To_Holder" class="field date text">
-                                    <label class="left" for="Form_Filter_To">To</label>
-                                    <div class="middleColumn">
-                                        <input type="date" name="To" class="date text" id="Form_Filter_To" lang="en-US" />
-                                    </div>
-                                </div>                                
-                                <div class="clear"><!-- --></div>
-                            </fieldset>
-                            <div class="btn-toolbar">
-                                <input type="submit" name="action_submitFilter" value="Filter" class="action" id="Form_Filter_action_submitFilter" />
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-
-             <div class="container">
-                <br />
-                <h2>Original Markup</h2>
-            </div>
-            <div class="search bg-blue">
                 <div class="container">
                     <div class="row">
                         <div class="column">
@@ -300,7 +209,7 @@
                         </div>
                         <div class="column">
                             <label>Select cultural competencies</label>
-                            <select id="search-comp" multiple="multiple" placeholder="All cultural competencies" data-width="100%">
+                            <select id="search-comp" multiple="multiple" placeholder="All cultural competencies" data-width="100%">>
                                 <option id="search-comp-clear">Clear</option>
                                 <option value="1">Asian</option>
                                 <option value="2">African</option>
@@ -316,9 +225,132 @@
                     </div>
                 </div>
             </div>
-        </header>
+</header>
 
-        
+        <section>
+            <div class="container">
+                <div class="column mb-0">
+                    <div class="pagination-total">
+                        <p>Showing total 25 resources</p>
+                        <nav class="pagination" aria-label="pagination">
+                            <ul>
+                                <li><a class="btn arrow" href=""><i class="material-icons">arrow_back</i></a></li>
+                                <li><a href="">1</a></li>
+                                <li><a href="" aria-current="page">2</a></li>
+                                <li><a href="">3</a></li>
+                                <li><a href="">4</a></li>
+                                <li><a href="">5</a></li>
+                                <li><a class="btn arrow" href=""><i class="material-icons">arrow_forward</i></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class="card resource">
+                        <div class="thumbnail">
+                            <img src="../assets/resource ccr.jpg" alt="image">
+                        </div>
+                        <div class="content">
+                            <a class="tag flag softblue" href="">E-Tool Kits</a>
+                            <h3><a href="">Cross Cultural Resource</a></h3>
+                            <p>This is a comprehensive guide for health practitioners working with CALD clients/patients from Asian, Middle Eastern and African cultures.</p>
+                        </div>
+                        <div class="footer">
+                            <div class="detail">
+                                <p><i class="material-icons">picture_as_pdf</i><a href="">Download toolkits (PDF, 127kb)</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card resource">
+                        <div class="thumbnail">
+                            <img src="../assets/resource diverse workplace.jpg" alt="image">
+                        </div>
+                        <div class="content">
+                            <a class="tag flag blue" href="">PDF</a>
+                            <h3><a href="">Toolkit for Health Workforce Working in a Culturally Diverse Workplace</a></h3>
+                            <p>This resource provides guidance for the New Zealand health workforce working in a culturally diverse workplace to improve cross-cultural interactions.</p>
+                        </div>
+                        <div class="footer">
+                            <div class="detail">
+                                <p><i class="material-icons">picture_as_pdf</i><a href="">Download toolkits (PDF, 127kb)</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card resource">
+                        <div class="thumbnail">
+                            <img src="../assets/resource asian children.jpg" alt="image">
+                        </div>
+                        <div class="content">
+                            <a class="tag flag softblue" href="">Article</a>
+                            <h3><a href="">Caring for Asian Children Resource</a></h3>
+                            <p>This e-book and downloadable PDF resource is written for health providers caring for Asian children and young people and their families.</p>
+                        </div>
+                    </div>
+
+                    <div class="card resource">
+                        <div class="thumbnail">
+                            <img src="../assets/resource talking therapies.jpg" alt="image">
+                        </div>
+                        <div class="content">
+                            <a class="tag flag blue" href="">PDF</a>
+                            <h3><a href="">Talking Therapies for Refugees</a></h3>
+                            <p>This PDF resource, produced by Te Pou o Te Whakaaro Nui), provides guidance relating to therapies relevant for three subgroups of migrants: those from culturally and linguistically diverse backgrounds, refugees and asylum seekers.</p>
+                        </div>
+                        <div class="footer">
+                            <div class="detail">
+                                <p><i class="material-icons">picture_as_pdf</i><a href="">Download toolkits (PDF, 127kb)</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card resource">
+                        <div class="thumbnail">
+                            <img src="../assets/resource supporting muslim.jpg" alt="image">
+                        </div>
+                        <div class="content">
+                            <a class="tag flag blue" href="">PDF</a>
+                            <h3><a href="">Supporting Muslim Service Users</a></h3>
+                            <p>This booklet provides information about different aspects of Muslim cultures to help service providers gain better understanding.</p>
+                        </div>
+                        <div class="footer">
+                            <div class="detail">
+                                <p><i class="material-icons">picture_as_pdf</i><a href="">Download toolkits (PDF, 127kb)</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card resource">
+                        <div class="thumbnail">
+                            <img src="../assets/resource muslim mh.jpg" alt="image">
+                        </div>
+                        <div class="content">
+                            <a class="tag flag softblue" href="">Article</a>
+                            <h3><a href="">Working with Muslim Mental Health Clients</a></h3>
+                            <p>This resource provides a broad overview of the key concepts around mental health within the Muslim culture with specific knowledge and tips as well as case studies to exemplify cultural perspectives.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <nav class="pagination" aria-label="pagination">
+                        <ul>
+                            <li><a class="btn arrow" href=""><i class="material-icons">arrow_back</i></a></li>
+                            <li><a href="">1</a></li>
+                            <li><a href="" aria-current="page">2</a></li>
+                            <li><a href="">3</a></li>
+                            <li><a href="">4</a></li>
+                            <li><a href="">5</a></li>
+                            <li><a class="btn arrow" href=""><i class="material-icons">arrow_forward</i></a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+        </section>
+
         <footer>
           <div class="footer">
             <div>
@@ -355,14 +387,16 @@
             </div>
             <!-- Twitter feed -->
             <div>
+              <div style="box-sizing:border-box;height:100%;width:100%;padding:2px 20px;border-radius:5px;background:rgba(0,0,0,.1);">
                 <ul>
                     <li><strong>Twitter feed</strong></li>
                 </ul>
+              </div>
             </div>
           </div>
           <div class="copyright">
             <ul>
-              <li class="logo"><a href=""><img src="assets/logo-white.svg" alt="logo"></a></li>
+              <li class="logo"><a href=""><img src="../assets/logo-white.svg" alt="logo"></a></li>
               <li><a href="#">Terms & Conditions</a></li>
               <li><a href="#">Privacy Policy</a></li>
               <li>Copyright © Waitemata DHB 2020</li>
@@ -370,19 +404,19 @@
           </div>
         </footer>
 
-        <script src="js/jquery-3.2.1.min.js"></script>
-        <script src="js/gsap.min.js"></script>
-        <script src="js/ScrollMagic.min.js"></script>
-        <script src="js/animation.gsap.min.js"></script>
-        <script src="multipleselect/multiple-select.min.js"></script>
-        <script src="js/navigation.js"></script>
-        <script src="js/header.js"></script>
-        <script src="js/expand.js"></script>
-        <script src="js/multipleselect.js"></script>
+        <script src="../js/jquery-3.2.1.min.js"></script>
+        <script src="../js/gsap.min.js"></script>
+        <script src="../js/ScrollMagic.min.js"></script>
+        <script src="../js/animation.gsap.min.js"></script>
+        <script src="../js/navigation.js"></script>
+        <script src="../js/header.js"></script>
+        <script src="../js/expand.js"></script>
+        <script src="../multipleselect/multiple-select.min.js"></script>
 
         <!--[if lte IE 9]>
-            <script src="js/ie9.js"></script>
+            <script src="../js/ie9.js"></script>
         <![endif]-->
 
     </body>
 </html>
+ No newline at end of file
