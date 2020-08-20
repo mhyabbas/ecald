@@ -477,6 +477,10 @@ header .sidebar {
 	display: block;
 }
 
+.card .footer {
+	text-align: right;
+}
+
 .card.colour .footer {
 	text-align: center;
 }
@@ -490,6 +494,10 @@ header .sidebar {
 	margin-top: 30px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.card.event .footer, .card.resource .footer {
+	text-align: left;
 }
 
 @media all and (min-width: 800px) {
