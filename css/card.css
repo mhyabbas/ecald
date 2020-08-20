@@ -121,20 +121,6 @@
 	color: #334154;
 }
 
-/*.card .content .btn.arrow {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	margin-left: auto;
-	font-size: 24px;
-	font-weight: normal;
-}
-
-.card:hover .content .btn.arrow {
-	border-color: #334154;
-	color: #334154;
-}*/
-
 /*Base card with tag and heading*/
 
 .card .content .tag {
