@@ -97,7 +97,31 @@
 
 /*Base card with forward arrow button*/
 
-.card .content .btn.arrow {
+.card .footer {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: flex-end;
+	    -ms-flex-pack: flex-end;
+	        justify-content: flex-end;
+	padding: 0 20px 10px;
+	overflow: hidden;
+}
+
+.card .footer .btn.arrow {
+	font-size: 24px;
+	font-weight: normal;
+}
+
+.card:hover .footer .btn.arrow {
+	border-color: #334154;
+	color: #334154;
+}
+
+/*.card .content .btn.arrow {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -109,7 +133,7 @@
 .card:hover .content .btn.arrow {
 	border-color: #334154;
 	color: #334154;
-}
+}*/
 
 /*Base card with tag and heading*/
 
@@ -325,6 +349,9 @@
 }
 
 .card.event .footer {
+	-webkit-box-pack: flex-start;
+	    -ms-flex-pack: flex-start;
+	        justify-content: flex-start;
 	padding: 0 30px 20px;
 }
 
@@ -361,6 +388,9 @@
 }
 
 .card.resource .footer {
+	-webkit-box-pack: flex-start;
+    -ms-flex-pack: flex-start;
+        justify-content: flex-start;
 	padding: 0 30px 20px;
 }
 
