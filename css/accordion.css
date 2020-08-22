@@ -19,15 +19,16 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 15px 0;
   border-top: 1px solid #ccc;
   cursor: pointer;
 }
 
-.accordion .button h4 {
+.accordion .button h1, .accordion .button h2, .accordion .button h3, .accordion .button h4, .accordion .button h5, .accordion .button h6 {
   margin: 0;
+  font-size: 20px;
 }
 
 .accordion .button .btn {
@@ -54,8 +55,8 @@
 
 .accordion .button.active i {
   -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .accordion .panel {
@@ -70,7 +71,7 @@
 
 .accordion .panel ol {
   -webkit-padding-start: 55px;
-          padding-inline-start: 55px;
+  padding-inline-start: 55px;
 }
 
 .accordion .panel li {
@@ -86,4 +87,10 @@
   font-family: "Material Icons";
   font-size: 25px;
   content: "\e415";
+}
+
+@media all and (min-width: 1200px) {
+  .accordion .button h1, .accordion .button h2, .accordion .button h3, .accordion .button h4, .accordion .button h5, .accordion .button h6 {
+    font-size: 24px;
+  }
 }
