@@ -179,9 +179,17 @@ footer .copyright .logo img {
     margin-bottom: 0;
   }
 
-  footer .copyright ul li:nth-of-type(2)::after, footer .copyright ul li:nth-of-type(3)::after {
+  footer .copyright ul li:after
+  {
     margin: 0 10px;
     content: "|";
+  }
+
+  footer .copyright ul li:first-of-type:after,
+  footer .copyright ul li:last-of-type:after
+  {
+    margin: 0px;
+    content: "";
   }
 
   footer .copyright .logo {

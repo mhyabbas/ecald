@@ -7,7 +7,7 @@
 
 * {
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
@@ -20,7 +20,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     color: #334154;
     font-family: 'Zilla Slab', serif;
     line-height: 1.2;
@@ -50,6 +50,10 @@ h5 {
     font-size: 18px;
 }
 
+h6 {
+    font-size: 16px;
+}
+
 a {
     color: #8F5EA7;
     -webkit-transition: all .4s;
@@ -60,6 +64,30 @@ a {
 a:hover {
     color: #334154;
     text-decoration: none;
+}
+
+a.zoom {
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+}
+
+a.zoom i {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding-top: 8px;
+    border-radius: 4px;
+    background-color: #334154;
+    color: white;
+    font-size: 36px;
+}
+
+a.zoom img {
+    border: 1px solid #F5F7FA;
 }
 
 pre {
@@ -82,6 +110,13 @@ ul, ol {
     margin-left: 0;
 }
 
+hr {
+    width: 100%;
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #CACACA;
+}
+
 .small {
     font-size: 12px;
 }
@@ -96,6 +131,21 @@ ul, ol {
 
 .text-white, .text-white a {
     color: white;
+}
+
+.date {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+.date i {
+    padding-right: 8px;
+    color: #576784;
 }
 
 @media all and (min-width: 1024px) {

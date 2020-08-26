@@ -2,15 +2,27 @@
 <html class="no-js" lang="en">
     <head>
         <meta charset="utf-8">
-        <title>eCALD Website Rebuild 2020</title>
+        <title>Calendar + bits and pieces</title>
         <meta name="description" content="eCALD Website rebuild 2020 design system start">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Zilla+Slab:400,500,600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="../css/plyr.css" type="text/css">
         <link rel="stylesheet" href="../slick/slick.css" type="text/css"/>
+        <link rel="stylesheet" href="../multipleselect/multiple-select.min.css" type="text/css"/>
         <link rel="stylesheet" href="../css/main.css" type="text/css">
+
+        <style>
+            .double-column ol li {
+                margin: 20px 0;
+            }
+
+            code {
+                padding: 0px;
+            }
+        </style>
 
         <!--[if lte IE 9]>
             <link rel="stylesheet" type="text/css" href="../css/ie9.css" />
@@ -140,163 +152,94 @@
             </ul>
 
             <div id="search">
-                <input type="search" name="search" placeholder="Search">
+                <form id="SearchForm_SearchForm" action="/home/SearchForm/" method="get" enctype="application/x-www-form-urlencoded">
+                    <input type="search" name="Search" id="SearchForm_SearchForm_Search" placeholder="Search" />
+                </form>
                 <a href=""><i class="material-icons">&#xe5cd;</i></a>
             </div>
 
         </nav>
 
-        <section>
+        <header class="bg-light pb-0">
             <div class="container">
-
                 <div class="column">
                     <nav class="breadcrumb" aria-label="breadcrumb">
                         <ul>
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Resources</a></li>
-                            <li><a href="">Cross Cultural Resources</a></li>
-                            <li><span aria-current="page">Cross cultural resource for health practioners</span></li>
+                            <li><a href="/">Home</a></li>
+                            <li>
+                                <span aria-current="page">Calendar + bits and pieces</span>
+                            </li>
                         </ul>
                     </nav>
                 </div>
 
                 <div class="row">
+                    <div class="double-column slide-in">
+                        <h1>Calendar + bits and pieces</h1>
+                        <span class="tag flag softblue">Latest news</span>
+                        <h2>Title of latest news item</h2>
+                        <p class="date"><i class="material-icons">today</i>August 23rd, 2020</p>
+                        <p>Additional stying bits and pieces and some calendar components.</p>
+                        <p><a class="btn dark" href="$Link">Read more</a></p>
+                    </div>
+                    
+                    <div class="column fade-in">
+                        <div class="card one-column resource">
+                            <div class="content">
+                                <h2>eNews</h2>
+                                <h3>58th Edition</h3>
+                                <p>Upcoming events and new publication</p>
+                                <p><a href="#" class="btn outline icon"><i class="material-icons">chrome_reader_mode</i> <span>View latest newsletter</span></a></p>
+                            </div>
+                            <div class="footer">
+                                <div class="detail">
+                                    <p class="icon"><i class="material-icons">chrome_reader_mode</i><a href="/news-and-updates/#">View all eNews</a></p>
+                                    <p class="icon"><i class="material-icons">add_box</i><a href="/news-and-updates/#">Subscribe to eNews</a></p>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>            
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <div class="container">
+                <div class="row">
                     <div class="double-column">
-                        <h1>CALD 2 - Culture and Cultural Competency</h1>
-                        <a class="tag flag softblue" href="">Face to face</a>
-                        <p>The aim of the course is to increase your awareness of your cultural background and those of others’ cultures; and to improve your understanding of how cross cultural differences can affect communication, consultation and diagnosis.</p> 
-                        <div class="btn-wrapper">
-                            <a href="">Find out more</a>
-                            <a class="btn arrow" href=""><i class="material-icons">arrow_forward</i></a>
-                        </div>
-                        <div class="card detail">
-                            <div>
-                                <p class="icon"><i class="material-icons">today</i>Date</p>
-                                <p>Tuesday, 23 October 2019</p>
-                            </div>
-                            <div>
-                                <p class="icon"><i class="material-icons">access_time</i>Time</p>
-                                <p>9:00am - 10:30am</p>
-                            </div>
-                            <div>
-                                <p class="icon"><i class="material-icons">location_on</i>Address</p>
-                                <p>North Shore Hospital, 124 Shakespeare Road, Takapuna, North Shore <a href="" class="map-link">View map</a></p>
-                            </div>
-                        </div>
-                        <h4>Prerequisites</h4>
-                        <ul>
-                            <li><a href="">CALD 1 - Culture and Cultural Competency</a></li>
-                        </ul>
-
-                        <div class="card detail alternate">
-                            <div>
-                                <i class="material-icons">groups</i>
-                                <div>
-                                    <p>Spaces</p>
-                                    <p>10 spaces left</p>
-                                </div>
-                            </div>
-                            <div>
-                                <i class="material-icons">today</i>
-                                <div>
-                                    <p>Enrolment closing dates</p>
-                                    <p>15 September 2020</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <h4>About the venue</h4>
-                        <div class="address">
-                            <p><strong>Address:</strong></p>
-                            <p>North Shore Hospital, 124 Shakespeare Road, Takapuna, North Shore, Auckland</p>
-                        </div>
-                        <div id="map" class="map"></div>
-
-                        <h4>Training rooms</h4>
-                        <div class="accordion">
-                            <div class="button">
-                                <h5>Conference Room 1</h5>
-                                <a class="btn arrow" href=""><i class="material-icons">&#xe313;</i></a>
-                            </div>
-                            <div class="panel">
-
-                            </div>
-                            <div class="button">
-                                <h5>Conference Room 2</h5>
-                                <a class="btn arrow" href=""><i class="material-icons">&#xe313;</i></a>
-                            </div>
-                            <div class="panel">
-                                <p><strong>Location</strong></p>
-                                <p>Lower Ground Floor, North Shore Hospital, 124 Shakespeare Road, Takapuna, North Shore</p>
-
-                                <p><strong>Directions</strong></p>
-                                <p>From the main entrance, go through the main foyer and towards the lifts. Take the stairs/lift down to the Lower Ground Floor and go through the double doors into the main corridor. Turn left and continue down the corridor, past the Copy Centre. Conference Room 2 is down the next corridor on the right hand side.</p>
-
-                                <p><strong>Floor map</strong></p>
-                                <a class="zoom" href="../assets/NSH-Conference-Room-2.pdf" target="_blank">
-                                    <i class="material-icons">zoom_in</i>
-                                    <img src="../assets/NSH-Conference-Room-2.png" alt="map">
-                                </a>
-                            </div>
-                            <div class="button">
-                                <h5>West Wing Large Meeting Room</h5>
-                                <a class="btn arrow" href=""><i class="material-icons">&#xe313;</i></a>
-                            </div>
-                            <div class="panel">
-
-                            </div>
-                            <div class="button">
-                                <h5>Conference Room 4</h5>
-                                <a class="btn arrow" href=""><i class="material-icons">&#xe313;</i></a>
-                            </div>
-                            <div class="panel">
-
+                        <h2>Elements to style:</h2>
+                        <ol>
+                            <li>Add a style for <code>p class="date"</code> with calendar icon that can be used consistently throughout the site in different contexts. The text should be a smaller size than standard body copy, maybe the same size as what the current events cards have</li>
+                            <li>Adjust vertical alignment of icons in cards and sidebar so a wider range of icons can be used throughout the site (at the moment the ones in the header and sidebar on this page don't quite look centered)</li>
+                            <li>Allow for use of cards in sidebar - at the moment <code>sidebar</code> and a <code>card</code> in a sidebar aren't quite left-aligned to match - as per markup example on the right</li>
+                            <li>Tidy of the card style that's in the current header: allow for full width buttons for cards in the header with a margin below as well as icons in these buttons</li>
+                            <li>Create missing components for event detail page as per Lydia's design here: <a href="https://assets.v7-io.invisionapp.com/assets/A_MGFjZjlkZDY2YjhlM2JmOcU4lhW46tzOf0CeV78b6YsREdzNhJ1tOTDWtfSYVBi5VOYkh03qDebQHqoRgnb_riBqMxsohSFbTQtp17IYhCXVSOILX2el5AjN6cdD8GxO" target="_blank">event detail page design</a></li>
+                            <li>Create cards with calendar dates as per Lydia's designs here: <a href="https://lydiabae673668.invisionapp.com/console/eCALD-Website-ckbvzsrp71yn50155vqhxxf24/cke51iyav06er0114bmh40s0f/" target="_blank">calendar date design</a>
+                        </ol>
+                        <h2>Date style</h2>
+                        <p class="date"><i class="material-icons">today</i>August 23rd, 2020</p>
+                    </div>
+                    
+                    <div class="column">
+                        <div class="card one-column btn-wide event">
+                            <div class="content">
+                                <h3>Event stuff</h3>
+                                <p>Example event content</p>
                             </div>
                         </div>
                         
-                    </div>
-
-                    <div class="column">
-                        <div class="card one-column colour alternate blue">
-                            <div class="thumbnail">                   
-                                <img src="../assets/details.jpg" alt="image">
-                                <svg class="curve">
-                                    <use xlink:href="#curve"/>
-                                </svg>
-                                <h3>August 18th 2020</h3>
+                        <div class="sidebar">
+                            <div>
+                                <p class="icon"><i class="material-icons">content_paste</i><a href="/cross-cultural-interest-group/membership-application/">Membership application</a></p>
+                                <p class="icon"><i class="material-icons">chrome_reader_mode</i><a href="/cross-cultural-interest-group/ccig-enews/">CCIG enews</a></p>
+                                <p class="icon"><i class="material-icons">event_note</i><a href="/cross-cultural-interest-group/past-events/">Past events</a></p>
                             </div>
-                            <div class="content">
-                            </div>
-                        </div>
-
-                        <div class="sidebar links">
-                            <h4>Enrol in this course</h4>
-                            <h5>Already a member</h5>
-                            <p>Check that you have completed the prerequisites and enrol now</p>
-                            <a class="btn dark">Enrol now</a>
-                            <hr>
-                            <h5>If you are a new user</h5>
-                            <p>Check your eligibility and create an account</p> 
-                            <a class="btn outline">Create an an account</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <section class="bg-light">
-            <div class="container">
-                <div class="account horizontal">
-                    <i class="material-icons">&#xe853;</i>
-                    <div>
-                        <h2>Create an account</h2>
-                        <p>Welcome and please check your eligibility before you start creating an account on this website.</p>
-                    </div>
-                    <a class="btn dark" href="">Check your eligibility and register</a>
-                </div>
-            </div>
-        </section>
-
+        
         <footer>
           <div class="footer">
             <div>
@@ -331,37 +274,32 @@
                 <li><a class="btn outline white" href="">Send a message</a></li>
               </ul>
             </div>
+            <!-- Twitter feed -->
             <div>
-              <ul>
-                <li><i class="material-icons large">&#xe85d;</i></li>
-                <li><strong>Stay up to date with the latest from the eCALD</strong></li>
-                <li><a class="btn" href="">Subscribe for newsletter</a></li>
-              </ul>
+                <ul>
+                    <li><strong>Twitter feed</strong></li>
+                </ul>
             </div>
           </div>
           <div class="copyright">
             <ul>
-              <li class="logo"><a href=""><img src="assets/logo-white.svg" alt="logo"></a></li>
-              <li><a href="#">Terms &amp; Conditions</a></li>
+              <li class="logo"><a href=""><img src="../assets/logo-white.svg" alt="logo"></a></li>
+              <li><a href="#">Terms & Conditions</a></li>
               <li><a href="#">Privacy Policy</a></li>
-              <li>Copyright &copy; Waitemata DHB 2020</li>
+              <li>Copyright © Waitemata DHB 2020</li>
             </ul>
           </div>
         </footer>
 
         <script src="../js/jquery-3.2.1.min.js"></script>
-        <script src="../slick/slick.min.js"></script>
         <script src="../js/gsap.min.js"></script>
         <script src="../js/ScrollMagic.min.js"></script>
         <script src="../js/animation.gsap.min.js"></script>
-        <script src="../js/MorphSVGPlugin.min.js"></script>
+        <script src="../multipleselect/multiple-select.min.js"></script>
         <script src="../js/navigation.js"></script>
-        <script src="../js/accordion.js"></script>
-        <script src="../js/carousel.js"></script>
-        <script src="../js/divider.js"></script>
-        <script src="../js/quote.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFpyonnyhConFtPsTDhjZkAbKPIlCFj5o&callback=initMap&libraries=&v=weekly" defer></script>
-        <script src="../js/map.js"></script>
+        <script src="../js/header.js"></script>
+        <script src="../js/expand.js"></script>
+        <script src="../js/multipleselect.js"></script>
 
         <!--[if lte IE 9]>
             <script src="../js/ie9.js"></script>

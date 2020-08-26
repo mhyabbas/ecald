@@ -28,7 +28,7 @@
 	transition: all .4s;
 }
 
-.tag:hover {
+a.tag:hover {
 	color: white;
 	background-color: #334154;
 	text-decoration: underline;

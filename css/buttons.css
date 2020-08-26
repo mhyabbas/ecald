@@ -200,8 +200,14 @@
 	text-decoration: none;
 }
 
-.btn-wrapper .btn {
-	margin: 10px 15px;
+.btn-wrapper .btn.arrow {
+	margin: 10px;
+    width: 22px;
+    height: 22px;
+}
+
+.btn-wrapper .btn.arrow i {
+	font-size: 14px;
 }
 
 input[type='submit'] {
