@@ -555,12 +555,12 @@ a.card:hover {
 	}
 
 	.card.detail.alternate > div:nth-of-type(1) {
-		padding-bottom: initial;
-		border-bottom: initial;
+		padding-bottom: 0;
+		border-bottom: 0;
 	}
 
 	.card.detail.alternate > div:nth-of-type(2) {
-		padding-top: initial;
+		padding-top: 0;
 	}
 
 	.card.detail.alternate > div:nth-of-type(1) {
