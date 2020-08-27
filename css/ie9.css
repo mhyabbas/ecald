@@ -17,6 +17,10 @@ img {
 	clear: both;
 }
 
+.map {
+    display: none;
+}
+
 @media all and (min-width: 1200px) {
 	.row .double-column {
 		float: left;
