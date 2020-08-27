@@ -530,10 +530,6 @@ header .sidebar {
 	text-align: left;
 }
 
-.card.one-column {
-	width: 100%;
-}
-
 @media all and (min-width: 800px) {
 	.card {
 		float: left;
@@ -561,6 +557,28 @@ header .sidebar {
 		float: none;
 		width: 100%;
 	}
+
+
+
+	.card.detail > div {
+		display: table-cell;
+		vertical-align: top;
+		width: auto;
+	}
+
+	.card.detail > div > p:nth-of-type(1) {
+		width: 33%;
+	}
+
+/*	.card.detail.alternate {
+		flex-direction: row;
+	}*/
+
+	.card.detail.alternate > div {
+		display: table-cell;
+		vertical-align: top;
+		width: 50%;
+	}
 }
 
 @media all and (min-width: 1200px) {
@@ -582,6 +600,10 @@ header .sidebar {
 
 	.cards.two-column .card {
 		width: 45%;
+	}
+
+	.card.one-column {
+		width: 100%;
 	}
 }
 
