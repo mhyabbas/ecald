@@ -17,6 +17,23 @@ img {
 	clear: both;
 }
 
+@media all and (min-width: 1200px) {
+	.column {
+		float: left;
+		width: 50%;
+	}
+
+	.double-column {
+		float: left;
+		width: 66%;
+	}
+
+	.double-column + .column {
+		float: left;
+		width: 33%;
+	}
+}
+
 /*Buttons*/
 
 .btn {
