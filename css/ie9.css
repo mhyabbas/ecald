@@ -530,7 +530,9 @@ header .sidebar {
 	text-align: left;
 }
 
-
+.card.one-column {
+	width: 100%;
+}
 
 @media all and (min-width: 800px) {
 	.card {
