@@ -539,7 +539,7 @@ header .sidebar {
 		width: 40%;
 	}
 
-	.card.detail, .card.detail.alternate {
+	.card.detail {
 		clear: both;
 	}
 }
@@ -563,6 +563,10 @@ header .sidebar {
 
 	.cards.two-column .card {
 		width: 45%;
+	}
+
+	.card.detail {
+		width: 100%;
 	}
 }
 
