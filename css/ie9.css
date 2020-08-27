@@ -558,25 +558,21 @@ header .sidebar {
 		width: 100%;
 	}
 
-
-
 	.card.detail > div {
 		display: table-cell;
 		vertical-align: top;
-		width: auto;
 	}
 
 	.card.detail > div > p:nth-of-type(1) {
 		width: 33%;
 	}
 
-/*	.card.detail.alternate {
-		flex-direction: row;
-	}*/
+	.card.detail.alternate {
+		display: table-cell;
+		vertical-align: middle;
+	}
 
 	.card.detail.alternate > div {
-		display: table-cell;
-		vertical-align: top;
 		width: 50%;
 	}
 }
