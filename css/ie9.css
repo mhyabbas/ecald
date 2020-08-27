@@ -559,6 +559,11 @@ header .sidebar {
 	}
 
 	.card.detail > div {
+		display: table;
+		width: 100%;
+	}
+
+	.card.detail > div > * {
 		display: table-cell;
 		vertical-align: top;
 	}
@@ -568,11 +573,13 @@ header .sidebar {
 	}
 
 	.card.detail.alternate {
-		display: table-cell;
-		vertical-align: middle;
+		display: table;
+		width: 100%;
 	}
 
-	.card.detail.alternate > div {
+	.card.detail.alternate > * {
+		display: table-cell;
+		vertical-align: middle;
 		width: 50%;
 	}
 }
