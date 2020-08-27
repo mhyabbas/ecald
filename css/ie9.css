@@ -540,7 +540,9 @@ header .sidebar {
 	}
 
 	.card.detail {
+		display: block;
 		clear: both;
+		width: 100%;
 	}
 }
 
@@ -566,6 +568,8 @@ header .sidebar {
 	}
 
 	.card.detail {
+		display: block;
+		clear: both;
 		width: 100%;
 	}
 }
