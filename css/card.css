@@ -378,8 +378,7 @@ a.card:hover {
 /*Detail cards*/
 
 .card.detail {
-	margin-left: 0;
-	margin-right: 0;
+	margin: 30px 0;
 	padding: 15px 30px;
 	border-radius: 10px;
 	background-color: #F5F7FA;
