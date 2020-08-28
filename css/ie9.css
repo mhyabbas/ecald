@@ -51,6 +51,10 @@ img {
 	padding: 3px;
 }
 
+.btn-wrapper .btn.arrow {
+	padding: 1px;
+}
+
 /*Header*/
 
 header.bg-animation {
