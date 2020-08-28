@@ -598,7 +598,7 @@ header .sidebar {
 	.card.detail.alternate > * {
 		display: table-cell;
 		vertical-align: middle;
-		width: 50%;
+		width: 40%;
 	}
 }
 
