@@ -580,10 +580,11 @@ header .sidebar {
 	.card.detail > div > * {
 		display: table-cell;
 		vertical-align: top;
+		padding: 10px 0;
 	}
 
 	.card.detail > div > p:nth-of-type(1) {
-		width: 30%;
+		width: 25%;
 	}
 
 	.card.detail.alternate {
