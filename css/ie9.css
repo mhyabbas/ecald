@@ -534,10 +534,6 @@ header .sidebar {
 	text-align: left;
 }
 
-.card.detail.alternate > div {
-	display: table;
-}
-
 .card.detail.alternate > div > * {
     display: table-cell;
     vertical-align: middle;
@@ -598,7 +594,7 @@ header .sidebar {
 	.card.detail.alternate > * {
 		display: table-cell;
 		vertical-align: middle;
-		width: 40%;
+		width: 50%;
 	}
 }
 
