@@ -534,6 +534,15 @@ header .sidebar {
 	text-align: left;
 }
 
+.card.detail.alternate div {
+	display: table;
+}
+
+.card.detail.alternate i {
+    display: table-cell;
+    vertical-align: middle;
+}
+
 @media all and (min-width: 800px) {
 	.card {
 		float: left;
@@ -573,7 +582,7 @@ header .sidebar {
 	}
 
 	.card.detail > div > p:nth-of-type(1) {
-		width: 33%;
+		width: 30%;
 	}
 
 	.card.detail.alternate {
