@@ -534,11 +534,11 @@ header .sidebar {
 	text-align: left;
 }
 
-.card.detail.alternate div {
+.card.detail.alternate > div {
 	display: table;
 }
 
-.card.detail.alternate i {
+.card.detail.alternate > div > i {
     display: table-cell;
     vertical-align: middle;
 }
