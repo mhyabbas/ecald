@@ -507,14 +507,8 @@ header .sidebar {
 	display: block;
 }
 
-.card .icon {
-	display: table;
-}
-
-.card .icon > * {
-	display: table-cell;
+.card .icon i {
 	vertical-align: middle;
-	width: 50%;
 }
 
 .card .footer {
