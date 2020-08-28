@@ -538,9 +538,10 @@ header .sidebar {
 	display: table;
 }
 
-.card.detail.alternate > div > i {
+.card.detail.alternate > div > * {
     display: table-cell;
     vertical-align: middle;
+    width: auto;
 }
 
 @media all and (min-width: 800px) {
