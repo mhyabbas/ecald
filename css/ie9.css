@@ -514,6 +514,7 @@ header .sidebar {
 .card .icon > * {
 	display: table-cell;
 	vertical-align: middle;
+	width: 50%;
 }
 
 .card .footer {
