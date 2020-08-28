@@ -544,6 +544,10 @@ header .sidebar {
     width: auto;
 }
 
+.card.detail.alternate > div > div {
+    width: 80%;
+}
+
 @media all and (min-width: 800px) {
 	.card {
 		float: left;
