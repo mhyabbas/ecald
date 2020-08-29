@@ -542,6 +542,14 @@ header .sidebar {
 	text-align: left;
 }
 
+.card.calendar .footer {
+	text-align: left;
+}
+
+.card.calendar .footer .detail i {
+	vertical-align: top;
+}
+
 .card.detail.alternate > div > * {
     display: table-cell;
     vertical-align: middle;
