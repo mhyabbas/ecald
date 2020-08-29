@@ -375,6 +375,205 @@ a.card:hover {
 	margin: 3px;
 }
 
+/*Calendar cards*/
+
+.card.calendar .curve {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 101%;
+	height: 101%;
+}
+
+.card.calendar.blue .curve {
+	fill: #90B9D5;
+}
+
+.card.calendar.green .curve {
+	fill: #478462;
+}
+
+.card.calendar.purple .curve {
+	fill: #A194B5;
+}
+
+.card.calendar .content {
+	padding: 20px 30px 10px;
+}
+
+.card.calendar .content h3 {
+	color: #8F5EA7;
+}
+
+.card.calendar .thumbnail .date {
+	position: absolute;
+	display: block;	
+	right: 30px;
+	bottom: 25px;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.card.calendar .thumbnail .date h3 {
+	margin: 0;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 26px;
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 1.1;
+}
+
+.card.calendar .thumbnail .date h3.day {
+	font-size: 54px;
+	line-height: 0.9;
+}
+
+.card.calendar .thumbnail .date h3.month {
+	font-size: 27px;
+}
+
+.card.calendar .footer {
+	display: block;
+	padding: 0 30px 20px;
+}
+
+.card.calendar .detail {
+	padding-top: 10px;
+	border-top: 1px solid #CACACA;
+}
+
+.card.calendar .detail p {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	color: #334154;
+	font-size: 14px;
+}
+
+.card.calendar .detail i {
+	margin-right: 10px;
+}
+
+/*Calendar cards - date with background*/
+
+.card.calendar.date-bg .date {
+	right: 20px;
+	bottom: 20px;
+	padding: 8px 18px;
+}
+
+.card.calendar.date-bg.blue .date {
+	background-color: #769CB6;
+}
+
+.card.calendar.date-bg.green .date {
+	background-color: #478462;
+}
+
+.card.calendar.date-bg.purple .date {
+	background-color: #A194B5;
+}
+
+/*Calendar cards - date with white background and no image*/
+
+.card.calendar.no-image h3 {
+    color: white;
+}
+
+.card.calendar.no-image p {
+    color: white;
+}
+
+.card.calendar.no-image .thumbnail {
+    padding: 30px 30px 0;
+}
+
+.card.calendar.no-image .date {
+    position: relative;
+    display: inline-block;
+    right: auto;
+    bottom: auto;
+    padding: 8px 18px;
+    background-color: white;
+}
+
+.card.calendar.no-image.blue {
+    background-color: #769CB6;
+}
+
+.card.calendar.no-image.blue .date h3 {
+    color: #769CB6;
+}
+
+.card.calendar.no-image.green {
+    background-color: #478462;
+}
+
+.card.calendar.no-image.green .date h3 {
+    color: #478462;
+}
+
+.card.calendar.no-image.purple {
+    background-color: #A194B5;
+}
+
+.card.calendar.no-image.purple .date h3 {
+    color: #A194B5;
+}
+
+/*Calendar cards - date left side*/
+
+.card.calendar.no-image.date-left .thumbnail {
+    padding-left: 0;
+}
+
+.card.calendar.no-image.date-left .date {
+	padding-left: 30px;
+	padding-right: 30px;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.card.calendar.no-image.date-left .date h3 {
+    color: white;
+}
+
+/*Calendar cards - date right side*/
+
+.card.calendar.no-image.date-right .thumbnail {
+    padding-right: 0;
+}
+
+.card.calendar.no-image.date-right .thumbnail > h3 {
+	font-size: 24px;
+    font-weight: 500;
+   }
+
+.card.calendar.no-image.date-right .date {
+	float: right;
+	margin-left: 15px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	background-color: rgba(0,0,0,0.2);
+}
+
+.card.calendar.no-image.date-right .date h3 {
+    color: white;
+}
+
+.card.calendar.no-image.date-right .content {
+    padding-top: 0;
+}
+
 /*Detail cards*/
 
 .card.detail {
@@ -382,13 +581,18 @@ a.card:hover {
 	padding: 15px 30px;
 	border-radius: 10px;
 	background-color: #F5F7FA;
-	box-shadow: none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
 }
 
 .card.detail div p:nth-of-type(1) {
-	flex-basis: 20%;
-	flex-grow: 0;
-	flex-shrink: 0;
+	-ms-flex-preferred-size: 20%;
+	    flex-basis: 20%;
+	-webkit-box-flex: 0;
+	    -ms-flex-positive: 0;
+	        flex-grow: 0;
+	-ms-flex-negative: 0;
+	    flex-shrink: 0;
 	font-weight: bold;
 }
 
@@ -475,7 +679,9 @@ a.card:hover {
 	}
 
 	.cards.left {
-		justify-content: left;
+		-webkit-box-pack: left;
+		    -ms-flex-pack: left;
+		        justify-content: left;
 	}
 
 	.card {
@@ -544,7 +750,10 @@ a.card:hover {
 	}
 
 	.card.detail.alternate {
-		flex-direction: row;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
 	}
 
 	.card.detail.alternate > div {
