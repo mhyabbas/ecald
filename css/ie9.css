@@ -5,6 +5,10 @@ img {
 	border: 0px;
 }
 
+.date i {
+    vertical-align: middle;
+}
+
 /*Layout*/
 
 .row {
