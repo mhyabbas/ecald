@@ -538,6 +538,10 @@ header .sidebar {
 	margin-right: auto;
 }
 
+.card.event .detail i {
+    vertical-align: top;
+}
+
 .card.event .footer, .card.resource .footer {
 	text-align: left;
 }
