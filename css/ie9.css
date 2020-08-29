@@ -746,6 +746,10 @@ header .sidebar {
 	display: inline-block;
 }
 
+.sidebar .icon i {
+	vertical-align: middle;
+}
+
 @media all and (min-width: 800px) {
 	.sidebar {
 		display: inline-block;
