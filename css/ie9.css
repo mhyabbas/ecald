@@ -6,7 +6,7 @@ img {
 }
 
 .date i {
-    vertical-align: middle;
+    vertical-align: top;
 }
 
 /*Layout*/
@@ -516,7 +516,7 @@ header .sidebar {
 }
 
 .card .icon i {
-	vertical-align: middle;
+	vertical-align: top;
 }
 
 .card .footer {
@@ -747,7 +747,7 @@ header .sidebar {
 }
 
 .sidebar .icon i {
-	vertical-align: middle;
+	vertical-align: top;
 }
 
 @media all and (min-width: 800px) {
