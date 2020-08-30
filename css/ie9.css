@@ -515,6 +515,10 @@ header .sidebar {
 	display: block;
 }
 
+.card .btn {
+	display: block;
+}
+
 .card .icon i {
 	vertical-align: top;
 }
@@ -754,8 +758,8 @@ header .sidebar {
 	display: block;
 }
 
-.sidebar div a {
-	display: inline-block;
+.sidebar .btn {
+	display: block;
 }
 
 .sidebar .icon i {

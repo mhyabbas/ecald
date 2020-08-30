@@ -36,6 +36,12 @@
 	text-decoration: underline;
 }
 
+.sidebar .btn {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
 .sidebar .icon {
 	display: -webkit-box;
 	display: -ms-flexbox;

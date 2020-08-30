@@ -103,6 +103,12 @@ a.card:hover {
 	text-decoration: underline;
 }
 
+.card .btn {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
 .card .icon {
 	display: -webkit-box;
 	display: -ms-flexbox;
