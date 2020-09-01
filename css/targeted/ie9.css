@@ -527,10 +527,6 @@ header .sidebar {
 	text-align: right;
 }
 
-.card .footer .btn.arrow {
-	display: inline-block;
-}
-
 .card.colour .footer {
 	text-align: center;
 }
@@ -593,10 +589,6 @@ header .sidebar {
 	.card.horizontal > div {
 		float: left;
 		width: 40%;
-	}
-
-	.card.horizontal .content .btn {
-		display: inline-block;
 	}
 
 	.card.detail {

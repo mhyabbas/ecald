@@ -3,12 +3,12 @@ body {
 }
 
 .svg-wrapper {
-    position: absolute; 
-    bottom: 0;
-    height: 0; 
-    width: 100%; 
-    padding: 0;
-    padding-bottom: 22.43%; 
+	position: absolute; 
+	bottom: 0;
+	height: 0; 
+	width: 100%; 
+	padding: 0;
+	padding-bottom: 22.43%; 
 }
 
 header {
@@ -19,12 +19,12 @@ header {
 }
 
 header .svg-wave {
-    position: absolute; 
-    bottom: 0;
-    height: 0; 
-    width: 100%; 
-    padding: 0;
-    padding-bottom: 22.43%; 
+	position: absolute; 
+	bottom: 0;
+	height: 0; 
+	width: 100%; 
+	padding: 0;
+	padding-bottom: 22.43%;
 }
 
 header svg.svg-divider, header svg[class^=wave] {
@@ -49,6 +49,16 @@ header svg#letters {
 	min-height: 100%;
 	left: 50%;
 	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+header svg#timeline {
+	position: absolute;
+	height: 100%;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
 
@@ -90,4 +100,12 @@ svg {
 
 #divider-alt #line {
 	visibility: hidden;
+}
+
+@media all and (min-width: 1200px) {
+	header svg#timeline {
+		height: auto;
+		min-width: 100%;
+		min-height: 100%;
+	}
 }

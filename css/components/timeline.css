@@ -70,6 +70,11 @@
   stroke-miterlimit: 10;
 }
 
+.timeline h3 {
+    font-size: 26px;
+    margin: 10px 0 -10px 0;
+}
+
 @media all and (min-width: 800px) {
   .timeline .event .thumbnail {
     display: block;

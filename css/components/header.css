@@ -27,9 +27,9 @@ header.bg-light {
 }
 
 header.bg-dark {
-	background: -o-linear-gradient(bottom, rgba(51, 72, 84, 0.8), rgba(51, 72, 84, 0.9)), url('../assets/header.jpg') no-repeat center center;
-	background: -webkit-gradient(linear, left bottom, left top, from(rgba(51, 72, 84, 0.8)), to(rgba(51, 72, 84, 0.9))), url('../assets/header.jpg') no-repeat center center;
-	background: linear-gradient(0deg, rgba(51, 72, 84, 0.8), rgba(51, 72, 84, 0.9)), url('../assets/header.jpg') no-repeat center center;
+	background: -o-linear-gradient(bottom, rgba(51, 72, 84, 0.8), rgba(51, 72, 84, 0.9)), url('../../assets/header.jpg') no-repeat center center;
+	background: -webkit-gradient(linear, left bottom, left top, from(rgba(51, 72, 84, 0.8)), to(rgba(51, 72, 84, 0.9))), url('../../assets/header.jpg') no-repeat center center;
+	background: linear-gradient(0deg, rgba(51, 72, 84, 0.8), rgba(51, 72, 84, 0.9)), url('../../assets/header.jpg') no-repeat center center;
 	background-size: cover;
 }
 
@@ -55,6 +55,16 @@ header svg#letters {
 	position: absolute;
 	min-width: 100%;
 	min-height: 100%;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+header svg#timeline {
+	position: absolute;
+	height: 100%;
 	left: 50%;
 	top: 50%;
 	-webkit-transform: translate(-50%, -50%);
@@ -437,6 +447,12 @@ header svg polygon[id^="star"] {
 }
 
 @media all and (min-width: 1200px) {
+
+	header svg#timeline {
+		height: auto;
+		min-width: 100%;
+		min-height: 100%;
+	}
 
 	header .search .column {
 		-ms-flex-preferred-size: 25%;
