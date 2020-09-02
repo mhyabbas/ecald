@@ -47,24 +47,20 @@ $(document).ready(function() {
 	var c2 = $('#timeline circle.tl2');
 	var c3 = $('#timeline circle.tl0');
 	var c4 = $('#timeline path.tl1');
-	var lineDown = $('#timeline line.tl0');
 
-	gsap.set(line, {autoAlpha: 0, transformOrigin: 'center center'});
 	gsap.set(c1, {autoAlpha: 0, transformOrigin: 'center center'});
 	gsap.set(c2, {autoAlpha: 0, transformOrigin: 'center center'});
 	gsap.set(c3, {autoAlpha: 0, transformOrigin: 'center center'});
 	gsap.set(c4, {autoAlpha: 0, transformOrigin: 'center center'});
-	gsap.set(lineDown, {autoAlpha: 0});
 
 	var timelinetl = gsap.timeline({repeat: -1, yoyo: true});
 
 	timelinetl
-	.fromTo(line, {drawSVG: "50% 50%"}, {duration: 1, autoAlpha: 1, drawSVG: "0% 100%"}, 0)
-	.fromTo(c1, {scale: 0 }, {duration: 1, autoAlpha: 1, scale: 1}, 1)
-	.fromTo(c2, {scale: 0.4 }, {duration: .5, autoAlpha: 1, scale: 1}, 1.5)
-	.fromTo(c3, {scale: 0.4 }, {duration: .5, autoAlpha: 1, scale: 1}, 2)
-	.fromTo(lineDown, {drawSVG: "0% 0%"}, {duration: .5, autoAlpha: 1, drawSVG: "0% 100%"}, 2.5)
-	.fromTo(c4, {scale: 0.4 }, {duration: .5, autoAlpha: 1, scale: 1}, 3)
+	.fromTo(line, {drawSVG: "0% 0%"}, {duration: 1, drawSVG: "0% 100%"}, 0)
+	.fromTo(c1, {scale: 0 }, {duration: 1, autoAlpha: 1, scale: 1, stagger: 0.2}, 1)
+	.fromTo(c2, {scale: 0.4 }, {duration: .5, autoAlpha: 1, scale: 1, stagger: 0.2}, 1.5)
+	.fromTo(c3, {scale: 0.4 }, {duration: .5, autoAlpha: 1, scale: 1, stagger: 0.2}, 2)
+	.fromTo(c4, {scale: 0.4 }, {duration: .5, autoAlpha: 1, scale: 1, stagger: 0.2}, 2.5)
 
 	// Divider animation on scroll
 
