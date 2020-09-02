@@ -214,9 +214,9 @@ svg.purple {
     }
 }
 
-@media all and (min-width: 1200px) {
+@media all and (min-width: 1024px) {
     .container {
-        width: 1140px;
+        width: 1010px;
     }
 
     .row {
@@ -247,5 +247,10 @@ svg.purple {
         -ms-flex: 2;
         flex: 2;
     }
+}
 
+@media all and (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
 }
