@@ -661,6 +661,7 @@ header .sidebar {
 	}
 
 	.card.calendar.horizontal.footer {
+		display: table-cell;
 		vertical-align: middle;
 	}
 
@@ -694,8 +695,6 @@ header .sidebar {
 	.card.calendar.horizontal > div {
 		width: auto;
 	}
-
-
 
 	.cards.two-column .card {
 		width: 45%;
