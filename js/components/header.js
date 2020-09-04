@@ -49,12 +49,12 @@ $(document).ready(function() {
 
 	if($('#timeline').length) {
 		var line = $("#timeline #line");
-		// var c1 = $('#timeline circle.tl1');
+		var c1 = $('#timeline circle.tl1');
 		// var c2 = $('#timeline circle.tl2');
 		// var c3 = $('#timeline circle.tl0');
 		// var c4 = $('#timeline path.tl1');
 
-		// gsap.set(c1, {autoAlpha: 0, transformOrigin: 'center center'});
+		gsap.set(c1, {autoAlpha: 0, transformOrigin: 'center center'});
 		// gsap.set(c2, {autoAlpha: 0, transformOrigin: 'center center'});
 		// gsap.set(c3, {autoAlpha: 0, transformOrigin: 'center center'});
 		// gsap.set(c4, {autoAlpha: 0, transformOrigin: 'center center'});
@@ -63,7 +63,7 @@ $(document).ready(function() {
 
 		timelinetl
 		.fromTo(line, {drawSVG: "0% 0%"}, {duration: 1, drawSVG: "0% 100%"}, 0)
-		// .fromTo(c1, {scale: 0 }, {duration: 1, autoAlpha: 1, scale: 1, stagger: 0.2}, 1)
+		.fromTo(c1, {scale: 0 }, {duration: 1, autoAlpha: 1, scale: 1, stagger: 0.2}, 1)
 		// .fromTo(c2, {scale: 0.4 }, {duration: .5, autoAlpha: 1, scale: 1, stagger: 0.2}, 1.5)
 		// .fromTo(c3, {scale: 0.4 }, {duration: .5, autoAlpha: 1, scale: 1, stagger: 0.2}, 2)
 		// .fromTo(c4, {scale: 0.4 }, {duration: .5, autoAlpha: 1, scale: 1, stagger: 0.2}, 2.5)
