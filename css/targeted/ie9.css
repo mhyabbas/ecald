@@ -659,6 +659,16 @@ header .sidebar {
 	.card.calendar.horizontal .content {
 		width: 60%;
 	}
+
+	.card.calendar.horizontal.footer {
+		vertical-align: middle;
+	}
+
+	.card.calendar.horizontal .detail {
+		display: block;
+		float: left;
+		width: 50%;
+	}
 }
 
 @media all and (min-width: 1200px) {
