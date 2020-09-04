@@ -797,6 +797,9 @@ a.card:hover {
 	}
 
 	.card.calendar.horizontal .content {
+		-webkit-box-flex: 0;
+		-ms-flex: none;
+		flex: none;
 		margin: 0;
 		padding: 20px 30px 10px;
 	}
