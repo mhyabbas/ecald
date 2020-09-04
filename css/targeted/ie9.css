@@ -65,17 +65,6 @@ header.bg-animation {
 	background-color: #8F5EA7;
 }
 
-header svg#timeline {
-	position: absolute;
-	min-width: 100%;
-	min-height: 100%;
-	left: 50%;
-	top: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-}
-
 header .search .column .ms-choice > div.icon-caret, header .search.filter fieldset .ms-choice > div.icon-caret {
 	background: url('../assets/arrow-down.png') no-repeat;
 	background-position: center center;
@@ -161,17 +150,6 @@ header .sidebar {
 }
 
 @media all and (min-width: 1200px) {
-	header svg#timeline {
-		position: absolute;
-		min-width: 100%;
-		min-height: 100%;
-		left: 50%;
-		top: 50%;
-		-webkit-transform: translate(-50%, -50%);
-		-ms-transform: translate(-50%, -50%);
-		transform: translate(-50%, -50%);
-	}
-
 	header .column {
 		float: left;
 		width: 50%;
@@ -617,8 +595,6 @@ header .sidebar {
 		width: 40%;
 	}
 
-
-
 	.card.calendar.horizontal {
 		margin: 10px 15px 20px;
 		width: 45%;
@@ -628,10 +604,6 @@ header .sidebar {
 		float: none;
 		width: auto;
 	}
-
-
-
-
 
 	.card.detail {
 		float: none;
@@ -673,6 +645,20 @@ header .sidebar {
 	}
 }
 
+@media all and (min-width: 1024px) {
+	.card.calendar.horizontal {
+		display: table;
+	}
+
+	.card.calendar.horizontal > div {
+		display: table-cell;
+	}
+
+	.card.calendar.horizontal .content {
+		width: 60%;
+	}
+}
+
 @media all and (min-width: 1200px) {
 	.card {
 		width: 30%;
@@ -689,6 +675,12 @@ header .sidebar {
 	.card.horizontal > div {
 		width: 45%;
 	}
+
+	.card.calendar.horizontal > div {
+		width: auto;
+	}
+
+
 
 	.cards.two-column .card {
 		width: 45%;
