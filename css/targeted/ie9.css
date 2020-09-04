@@ -648,6 +648,7 @@ header .sidebar {
 @media all and (min-width: 1024px) {
 	.card.calendar.horizontal {
 		display: table;
+		width: 100%;
 	}
 
 	.card.calendar.horizontal > div {
