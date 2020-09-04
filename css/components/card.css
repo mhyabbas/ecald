@@ -759,7 +759,7 @@ a.card:hover {
 		display: -webkit-inline-box;
 		display: -ms-inline-flexbox;
 		display: inline-flex;
-		margin: inherit;
+		margin: 0;
 		padding: 10px 40px;
 	}
 
@@ -848,6 +848,67 @@ a.card:hover {
 	}
 }
 
+@media all and (min-width: 1024px) {
+
+	/*Calendar cards - horizontal*/
+
+	.card.calendar.horizontal {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-preferred-size: 100%;
+		    flex-basis: 100%;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+	}
+
+	.card.calendar.horizontal .thumbnail {
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 0 auto;
+		        flex: 0 0 auto;
+		width: auto;
+		margin: 0;
+		padding: 30px 25px 0;
+	}
+
+	.card.calendar.horizontal .content {
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 0 60%;
+		        flex: 0 0 60%;
+		margin: 0;
+		padding: 30px 0;		
+	}
+
+	.card.calendar.horizontal .detail {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+	}
+
+	.card.calendar.horizontal .detail p {
+		padding-left: 15px;
+	}
+
+	.card.calendar.horizontal .detail p:nth-of-type(1) {
+		padding-left: 0;
+	}
+
+	.card.calendar.horizontal .footer {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		margin: 0;
+	}
+}
+
 @media all and (min-width: 1200px) {
 
 	/*Base card*/
@@ -883,63 +944,5 @@ a.card:hover {
 
 	.card.colour .content h3 {
 		font-size: 34px;
-	}
-
-	/*Calendar cards - horizontal*/
-
-	.card.calendar.horizontal {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-ms-flex-preferred-size: 100%;
-		    flex-basis: 100%;
-		-webkit-box-orient: horizontal;
-		-webkit-box-direction: normal;
-		-ms-flex-direction: row;
-		flex-direction: row;
-		-webkit-box-pack: justify;
-		-ms-flex-pack: justify;
-		justify-content: space-between;
-	}
-
-	.card.calendar.horizontal .thumbnail {
-		-webkit-box-flex: 0;
-		    -ms-flex: 0 0 auto;
-		        flex: 0 0 auto;
-		width: auto;
-		margin: 0;
-		padding: 30px 30px 0;
-	}
-
-	.card.calendar.horizontal .content {
-		-webkit-box-flex: 0;
-		    -ms-flex: 0 0 60%;
-		        flex: 0 0 60%;
-		margin: 0;
-		padding: 30px 0;		
-	}
-
-	.card.calendar.horizontal .detail {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-	}
-
-	.card.calendar.horizontal .detail p {
-		padding-left: 15px;
-	}
-
-	.card.calendar.horizontal .detail p:nth-of-type(1) {
-		padding-left: 0;
-	}
-
-	.card.calendar.horizontal .footer {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-pack: center;
-		-ms-flex-pack: center;
-		justify-content: center;
-		margin: 0;
 	}
 }

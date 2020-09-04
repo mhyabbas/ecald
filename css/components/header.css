@@ -167,6 +167,10 @@ header .search.filter fieldset {
 	border: 0;
 }
 
+header .search.filter fieldset .field {
+	display: block;
+}
+
 header .search.filter fieldset > div, header .search.filter .btn-toolbar {
 	margin-bottom: 30px;
 	padding-left: 30px;
