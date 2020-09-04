@@ -617,6 +617,22 @@ header .sidebar {
 		width: 40%;
 	}
 
+
+
+	.card.calendar.horizontal {
+		margin: 10px 15px 20px;
+		width: 45%;
+	}
+
+	.card.calendar.horizontal > div {
+		float: none;
+		width: auto;
+	}
+
+
+
+
+
 	.card.detail {
 		float: none;
 		width: 100%;
