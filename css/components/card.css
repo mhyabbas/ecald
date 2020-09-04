@@ -805,6 +805,9 @@ a.card:hover {
 	}
 
 	.card.calendar.horizontal .footer {
+		-webkit-box-flex: 0;
+		-ms-flex: none;
+		flex: none;
 		margin: 0;
 	}
 
