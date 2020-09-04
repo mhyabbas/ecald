@@ -63,10 +63,10 @@ $(document).ready(function() {
 
 		timelinetl
 		.fromTo(line, {drawSVG: "0% 0%"}, {duration: 1, drawSVG: "0% 100%"}, 0)
-		.fromTo(c1, {autoAlpha: 0, scale: 0 }, {duration: 1, autoAlpha: 1, scale: 1}, 1)
-		.fromTo(c2, {autoAlpha: 0, scale: 0.4 }, {duration: .5, autoAlpha: 1, scale: 1}, 1.5)
-		.fromTo(c3, {autoAlpha: 0, scale: 0.4 }, {duration: .5, autoAlpha: 1, scale: 1}, 2)
-		.fromTo(c4, {autoAlpha: 0, scale: 0.4 }, {duration: .5, autoAlpha: 1, scale: 1}, 2.5)
+		// .fromTo(c1, {autoAlpha: 0, scale: 0 }, {duration: 1, autoAlpha: 1, scale: 1}, 1)
+		// .fromTo(c2, {autoAlpha: 0, scale: 0.4 }, {duration: .5, autoAlpha: 1, scale: 1}, 1.5)
+		// .fromTo(c3, {autoAlpha: 0, scale: 0.4 }, {duration: .5, autoAlpha: 1, scale: 1}, 2)
+		// .fromTo(c4, {autoAlpha: 0, scale: 0.4 }, {duration: .5, autoAlpha: 1, scale: 1}, 2.5)
 	}
 
 	// Header slide and fade animation
