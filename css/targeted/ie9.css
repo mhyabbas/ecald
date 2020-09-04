@@ -656,6 +656,10 @@ header .sidebar {
 		vertical-align: middle;
 	}
 
+	.card.calendar.horizontal .thumbnail {
+		vertical-align: top;
+	}
+
 	.card.calendar.horizontal .content {
 		width: 60%;
 	}
