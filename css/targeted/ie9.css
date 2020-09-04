@@ -653,7 +653,7 @@ header .sidebar {
 
 	.card.calendar.horizontal > div {
 		display: table-cell;
-		vertical-align: top;
+		vertical-align: middle;
 	}
 
 	.card.calendar.horizontal .content {
@@ -662,7 +662,6 @@ header .sidebar {
 
 	.card.calendar.horizontal.footer {
 		display: table-cell;
-		vertical-align: middle;
 	}
 
 	.card.calendar.horizontal .detail {
