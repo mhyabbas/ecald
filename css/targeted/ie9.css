@@ -653,6 +653,7 @@ header .sidebar {
 
 	.card.calendar.horizontal > div {
 		display: table-cell;
+		vertical-align: top;
 	}
 
 	.card.calendar.horizontal .content {
