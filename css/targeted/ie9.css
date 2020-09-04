@@ -666,6 +666,9 @@ header .sidebar {
 
 	.card.calendar.horizontal .detail {
 		display: block;
+	}
+
+	.card.calendar.horizontal .detail p {
 		float: left;
 		width: 50%;
 	}
