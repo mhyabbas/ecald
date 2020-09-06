@@ -5,11 +5,43 @@
 * Browsers: last 4 version
 */
 
+.chart .mb-large {
+	margin-bottom: 50px;
+}
+
+.chart .chart-title {
+	margin-bottom: 5px;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.chart .chart-date {
+	margin: 0;
+	color: #334154;
+	font-size: 14px;
+}
+
+.chart .chart-value {
+	margin: 0;
+	color: #576784;
+	font-family: "Open Sans";
+	font-size: 60px;
+	font-weight: bold;
+	line-height: 1;
+}
+
+.chart .chart-label {
+	color: #576784;
+	font-family: "Zilla Slab";
+	font-size: 18px;
+	font-weight: 600;
+}
+
 .highcharts-figure {
 	position: relative;
 	min-width: 310px; 
 	max-width: 900px;
-	margin: 20px auto;
+	margin: 0 auto;
 }
 
 .highcharts-figure .chart {
@@ -24,8 +56,8 @@
 	height: 20%;
 	text-align: center;
 	-webkit-transform: translate(-50%,-50%);
-	    -ms-transform: translate(-50%,-50%);
-	        transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
 }
 
 .highcharts-figure .highcharts-axis-labels.highcharts-xaxis-labels span {

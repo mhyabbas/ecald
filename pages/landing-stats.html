@@ -1,0 +1,632 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>eCALD Website Rebuild 2020</title>
+        <meta name="description" content="eCALD Website rebuild 2020 design system start">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Zilla+Slab:400,500,600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <link rel="stylesheet" href="../css/main.css" type="text/css">
+
+        <!--[if lte IE 9]>
+            <link rel="stylesheet" type="text/css" href="../css/targeted/ie9.css" />
+        <![endif]-->
+
+    </head>
+    <body>
+
+        <!-- SVG symbols -->
+
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            <symbol id="curve" viewBox="0 0 315 200">
+                <title>Curve</title>
+                <path d="M315,0v200H0v-13.4C110.8,182.1,202.6,104.1,227.8,0H315z"/>
+            </symbol>
+
+            <symbol id="quote" viewBox="0 0 26 28">
+                <title>Quote</title>
+                <path d="M12 15v6c0 1.656-1.344 3-3 3h-6c-1.656 0-3-1.344-3-3v-11c0-4.406 3.594-8 8-8h1c0.547 0 1 0.453 1 1v2c0 0.547-0.453 1-1 1h-1c-2.203 0-4 1.797-4 4v0.5c0 0.828 0.672 1.5 1.5 1.5h3.5c1.656 0 3 1.344 3 3zM26 15v6c0 1.656-1.344 3-3 3h-6c-1.656 0-3-1.344-3-3v-11c0-4.406 3.594-8 8-8h1c0.547 0 1 0.453 1 1v2c0 0.547-0.453 1-1 1h-1c-2.203 0-4 1.797-4 4v0.5c0 0.828 0.672 1.5 1.5 1.5h3.5c1.656 0 3 1.344 3 3z"></path>
+            </symbol>
+
+            <symbol id="arrow-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <title>Arrow down</title>
+                <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+                <path d="M0 0h24v24H0V0z" fill="none"/>
+            </symbol>
+
+            <symbol id="arrow-up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <title>Arrow up</title>
+                <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+                <path d="M0 0h24v24H0z" fill="none"/>
+            </symbol>
+        </svg>
+
+        <!-- Navigation -->
+
+        <nav class="nav">
+            <ul>
+                <li class="toggle"><a href="#"><i class="material-icons">&#xe5d2;</i> <span>Menu</span></a></li>
+                <li class="logo"><a href=""><img src="../assets/logo.svg" alt="logo"></a></li>
+                <li class="item search"><a id="search-toggle" href=""><i class="material-icons">&#xe8b6;</i></a></li>
+
+                <li class="main-nav">
+                    <ul>
+                        <li class="item">
+                            <a class="dropdown" href="#">
+                                Courses
+                                <svg class="arrow-down">
+                                    <use xlink:href="#arrow-down"/>
+                                </svg>
+                                <svg class="arrow-up">
+                                    <use xlink:href="#arrow-up"/>
+                                </svg> 
+                            </a>
+                            <ul class="sub-nav">
+                                <li class="sub-item">
+                                    <a href="">Courses for working with CALD Patients</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="">Courses for Culturally Diverse Workplaces</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="">Eligibility</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="">Courses Calendar</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="item">
+                            <a class="dropdown" href="#">
+                                Resources
+                                <svg class="arrow-down">
+                                    <use xlink:href="#arrow-down"/>
+                                </svg>
+                                <svg class="arrow-up">
+                                    <use xlink:href="#arrow-up"/>
+                                </svg> 
+                            </a>
+                            <ul class="sub-nav">
+                                <li class="sub-item">
+                                    <a href="">Cross Cultural Resources</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="">Translated Information</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="">Publications</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="">Research Commentary</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="">Migrant and Refugee Services</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="">Screening Tools</a>
+                                </li>
+                                 <li class="sub-item">
+                                    <a href="">Cultural Competence Assessment Tools</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="item"><a href="#">About us</a></li>
+                        <li class="item"><a href="#">News and updates</a></li>
+                    </ul>
+                </li>
+
+                <li class="item login"><a class="btn dark" href=""><i class="material-icons">&#xe853;</i><span>Log in</span></a></li>
+                <li class="item account"><a class="btn" href=""><i class="material-icons">&#xe7fe;</i><span>Create an account</span></a></li>
+                
+                <!--[if lte IE 9]>
+                <li class="top-nav">
+                    <ul>
+                <![endif]-->
+
+                <li class="item"><a href="">FAQs</a></li>
+                <li class="item"><a href="">Course Calendar</a></li>
+                <li class="item"><a href="">Cross-Cultural Interest group</a></li>
+                <li class="item"><a href="">Locations</a></li>
+                <li class="item"><a href="">Contact us</a></li>
+
+                <!--[if lte IE 9]>
+                    </ul>
+                </li>
+                <![endif]-->
+            </ul>
+
+            <div id="search">
+                <input type="search" name="search" placeholder="Search">
+                <a href=""><i class="material-icons">&#xe5cd;</i></a>
+            </div>
+
+        </nav>
+
+        <header>
+            <div class="svg-wrapper">
+                <svg class="white svg-divider" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     viewBox="0 0 1400 314" style="enable-background:new 0 0 1400 314;" xml:space="preserve">
+                    <path d="M1400,0v314H0c0-2,0-3,0-3C808.5,311,1275.2,207.3,1400,0z"/>
+                </svg>
+            </div>
+            <div class="container">
+                <div class="column">
+                    <nav class="breadcrumb" aria-label="breadcrumb">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About Us</a></li>
+                            <li><span aria-current="page">Our Performance</span></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="row">
+                    <div class="column slide-in">
+                        <h1>Our Performance</h1>
+                        <p>eCALD team is constantly tracking our performance against our performance indicators ensure value is being delivered for our users, with a particular focus on couse uptake, course evaluations and website stastics.</p>
+                    </div>                 
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <div class="container">
+                <div class="column">
+                    <h2>Course uptake</h2>
+                    <p>Overview Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus nulla luctus pharetra vulputat.</p>
+                </div>
+                <div class="chart row">
+                    <div class="column">
+                        <h3 class="chart-title">Cumulative course uptake</h3>
+                        <p class="chart-date">As at August 2020</p>
+                        <hr>
+                        <p class="chart-value">36,788</p>
+                        <p class="chart-label">Enrolments</p>
+                        <a class="btn outline" href="">View detailed statistics</a>
+                    </div>
+                    <div class="double-column">
+                        <figure class="highcharts-figure">
+                            <div id="chart1" class="chart"></div>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-light">
+            <div class="container">
+                <div class="column">
+                    <h2>Course evaluation</h2>
+                    <p>Overview Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus nulla luctus pharetra vulputat.</p>
+                </div>
+                <div class="chart row">
+                    <div class="double-column">
+                        <figure class="highcharts-figure">
+                            <div id="chart2" class="chart"></div>
+                        </figure>
+                    </div>
+                    <div class="column">
+                        <h3 class="chart-title">Average learning experience score</h3>
+                        <p class="chart-date">As at August 2020</p>
+                        <hr>
+                        <p class="chart-value">93%</p>
+                        <p class="chart-label">Satisfaction with experience score</p>
+                        <a class="btn outline" href="">View detailed statistics</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="column">
+                    <h2>Websites and eNews</h2>
+                    <p>Overview Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus nulla luctus pharetra vulputat.</p>
+                </div>
+                <div class="chart row">
+                    <div class="column">
+                        <h3 class="chart-title">New subscribers to eNews</h3>
+                        <p class="chart-date">As at August 2020</p>
+                        <hr>
+                        <p class="chart-value">1,100</p>
+                        <p class="chart-label mb-large">New subscribers</p>
+
+                        <h3 class="chart-title">Page views this month</h3>
+                        <p class="chart-date">As at August 2020</p>
+                        <hr>
+                        <p class="chart-value">2,500</p>
+                        <p class="chart-label">Unique page views</p>
+                        <a class="btn outline" href="">View detailed statistics</a>
+                    </div>
+                    <div class="double-column">
+                        <figure class="highcharts-figure">
+                            <div id="chart3" class="chart"></div>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-light">
+            <div class="container">
+                <div class="account horizontal">
+                    <i class="material-icons">&#xe853;</i>
+                    <div>
+                        <h2>Create an account</h2>
+                        <p>Welcome and please check your eligibility before you start creating an account on this website.</p>
+                    </div>
+                    <a class="btn dark" href="">Check your eligibility and register</a>
+                </div>
+            </div>
+        </section>
+        <footer>
+          <div class="footer">
+            <div>
+              <ul>
+                <li><strong>Training venues</strong></li>
+                <li><a href="#">North Shore Hospital</a></li>
+                <li><a href="#">Waitakere Hospital</a></li>
+                <li><a href="#">Auckland City Hospital</a></li>
+                <li><a href="#">Greenlane Clinical Centre</a></li>
+                <li><a href="#">Middlemore Hospital</a></li>
+              </ul>
+            </div>
+            <div>
+              <ul class="pb-1">
+                <li><strong>CALD® newsletters</strong></li>
+                <li><a href="#">View newsletters</a></li>
+                <li><a href="#">Newsletter subscription</a></li>
+              </ul>
+              <ul>
+                <li><strong>About us</strong></li>
+                <li><a href="#">About eCALD</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li><strong>Contact</strong></li>
+                <li>Phone: DDI 09 440 6926</li>
+                <li>Email: cald@waitematadhb.govt.nz</li>
+                <li>Contact hours: Mon - Fri, 10am - 4pm</li>
+                <li>Excluding public holidays and weekends</li>
+                <li><a class="btn outline white" href="">Send a message</a></li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li><i class="material-icons large">&#xe85d;</i></li>
+                <li><strong>Stay up to date with the latest from the eCALD</strong></li>
+                <li><a class="btn" href="">Subscribe for newsletter</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="copyright">
+            <ul>
+              <li class="logo"><a href=""><img src="../assets/logo-white.svg" alt="logo"></a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li>Copyright © Waitemata DHB 2020</li>
+            </ul>
+          </div>
+        </footer>
+
+        <script src="../js/lib/jquery-3.2.1.min.js"></script>
+        <script src="../js/lib/gsap.min.js"></script>
+        <script src="../js/lib/ScrollMagic.min.js"></script>
+        <script src="../js/lib/animation.gsap.min.js"></script>
+        <script src="../js/lib/highcharts.js"></script>
+        <script src="../js/components/navigation.js"></script>
+        <script src="../js/components/header.js"></script>
+        <script src="../js/components/expand.js"></script>
+
+        <script>
+            Highcharts.chart('chart1', {
+                chart: {
+                    type: 'column',
+                    backgroundColor: 'rgba(0,0,0,0)',
+                    spacingBottom: 0,
+                    spacingTop: 5,
+                    spacingLeft: 0,
+                    spacingRight: 0,
+                    height: 500,
+                    style: {
+                        fontFamily: 'OpenSans'
+                    }
+                },
+                colors: [
+                    '#8f5ea7',
+                ],
+                title: {
+                    text: undefined
+                },
+                xAxis: {
+                    categories: ['Oct 2018', 'Nov 2018', 'Dec 2018', 'Jan 2019', 'Feb 2019', 'Mar 2019', 'Apr 2019', 'May 2019', 'Jun 2019', 'Jul 2019', 'Aug 2019'],
+                    labels: {
+                        useHTML: true,
+                        style: {
+                            color: '#576784',
+                            fontSize: '14px',
+                            width: '45px',
+                        },
+                        format: '{value:%b %Y}'
+                    },
+                    lineColor: '#979797',
+                    gridLineColor: '#979797',
+                    gridLineWidth: 1,
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: null,
+                    },
+                    labels: {
+                        style: {
+                            color: '#576784',
+                            fontSize: '14px',
+                            fontWeight: 'bold'
+                        }
+                    },
+                    tickInterval: 5000,
+                    gridLineWidth: 0,
+                    lineWidth: 1,
+                    lineColor: '#979797',
+                    tickWidth: 1,
+                    tickLength: 10,
+                    tickColor: '#979797'
+                },
+                plotOptions: {
+                    bar: {
+                        borderColor: 'none',
+                        pointPadding: 0.15,
+                        groupPadding: 0.1
+                    }
+                },
+                legend: {
+                    itemMarginTop: 20,
+                    symbolRadius: 0,
+                    itemStyle: {
+                        color: '#576784',
+                        fontSize: '14px',
+                        fontWeight: 'normal'
+                    }
+                },
+                credits: {
+                    enabled: false
+                },
+                tooltip: {
+                    backgroundColor: '#334154',
+                    borderColor: 'white',
+                    borderRadius: 15,
+                    padding: 15,
+                    style: {
+                        color: 'white',
+                    },
+                    formatter: function () {
+                        yNum = Highcharts.numberFormat(this.y, -1, '.', ',');
+
+                        return '<span style="display: inline-block; margin-bottom: 8px; font-size: 12px;">' + this.x + '</span><br><span style="display: inline-block; margin-right: 8px; margin-bottom: 8px;"><svg height="12" width="12"><circle cx="50%" cy="50%" r="5" stroke="white" stroke-width="1" fill="' + this.point.color + '" /></svg></span><span style="display: inline-block; font-size: 12px; font-weight: bold;">' + this.series.name + '</span><br><span style="display: block; margin-left: 21px; font-size: 16px; font-weight: bold;">' + yNum + '</span>';
+                    },
+                    useHTML: true
+                },
+                series: [{
+                    name: 'Enrolled',
+                    data: [17000, 22000, 24000, 24000, 26000, 27000, 29000, 30000, 31000, 35000, 37000],
+                    color: {
+                        linearGradient: {
+                          x1: 0,
+                          x2: 0,
+                          y1: 0,
+                          y2: 1
+                        },
+                        stops: [
+                            [0, '#58307c'],
+                            [1, '#8f5ea7']
+                        ]
+                    }
+                }]
+                
+            });   
+
+            Highcharts.chart('chart2', {
+                chart: {
+                    type: 'bar',
+                    backgroundColor: 'rgba(0,0,0,0)',
+                    spacingBottom: 0,
+                    spacingTop: 5,
+                    spacingLeft: 1,
+                    spacingRight: 0,
+                    height: 500,
+                    style: {
+                        fontFamily: 'OpenSans'
+                    }
+                },
+                colors: [
+                '#629fc3', '#8f5ea7', '#334154', '#e48e5e', '#448890'
+                ],
+                title: {
+                    text: undefined
+                },
+                xAxis: {
+                    visible: false,
+                    categories: ['Waitemata DHB', 'Auckland DHB', 'Manukau DHB', 'Outside of Auckland DHB', 'Other'],
+                    labels: {
+                        align: 'right',
+                        style: {
+                            color: '#576784',
+                            fontSize: '14px',
+                            fontWeight: 'bold'
+                        }
+                    },
+                    lineWidth: 1,
+                    lineColor: '#979797',
+                    tickWidth: 1,
+                    tickLength: 10,
+                    tickColor: '#979797'
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: null,
+                    },
+                    labels: {
+                        style: {
+                            color: '#576784',
+                            fontSize: '14px',
+                        }
+                    },
+                    tickInterval: 1000,
+                    lineWidth: 1,
+                    lineColor: '#979797',
+                    gridLineColor: '#979797',
+                    endOnTick: false,
+                },
+                plotOptions: {
+                    bar: {
+                        borderColor: 'none',
+                        pointPadding: 0.15,
+                        groupPadding: 0.1
+                    }
+                },
+                legend: {
+                    itemMarginTop: 20,
+                    symbolRadius: 0,
+                    itemStyle: {
+                        color: '#576784',
+                        fontSize: '14px',
+                        fontWeight: 'normal'
+                    }
+                },
+                credits: {
+                    enabled: false
+                },
+                tooltip: {
+                    backgroundColor: '#334154',
+                    borderColor: 'white',
+                    borderRadius: 15,
+                    padding: 15,
+                    style: {
+                        color: 'white',
+                    },
+                    formatter: function () {
+                        yNum = Highcharts.numberFormat(this.y, -1, '.', ',');
+
+                        return '<span style="display: inline-block; margin-bottom: 8px; font-size: 12px;">' + this.x + '</span><br><span style="display: inline-block; margin-right: 8px; margin-bottom: 8px;"><svg height="12" width="12"><circle cx="50%" cy="50%" r="5" stroke="white" stroke-width="1" fill="' + this.point.color + '" /></svg></span><span style="display: inline-block; font-size: 12px; font-weight: bold;">' + this.series.name + '</span><br><span style="display: block; margin-left: 21px; font-size: 16px; font-weight: bold;">' + yNum + '</span>';
+                    },
+                    useHTML: true
+                },
+                series: [{
+                    name: 'E-learning courses',
+                    data: [6000, 8000, 7500, 4200, 3300]
+                }, {
+                    name: 'Face-to-face courses',
+                    data: [3600, 4800, 4700, 2500, 2200]
+                }, {
+                    name: 'Total',
+                    data: [9500, 11000, 12500, 6800, 5600]
+                }]
+                
+            });
+
+            Highcharts.chart('chart3', {
+                chart: {
+                    type: 'pie',
+                    backgroundColor: 'rgba(0,0,0,0)',
+                    spacingBottom: 0,
+                    spacingTop: 0,
+                    spacingLeft: 0,
+                    spacingRight: 0,
+                    height: 500,
+                    style: {
+                        fontFamily: 'OpenSans'
+                    }
+                },
+                colors: [
+                '#629fc3', '#8f5ea7', '#334154', '#e48e5e', '#448890'
+                ],
+                title: {
+                    text: 'Website view by service group',
+                    style: {
+                        fontWeight: 'bold',
+                        fontSize: '18px',
+                        color: '#334154'
+                    }
+                },
+                plotOptions: {
+                    pie: {
+                        allowPointSelect: true,
+                        cursor: 'pointer',
+                        dataLabels: {
+                            enabled: false
+                        },
+                        showInLegend: true,
+                        borderWidth: 0,
+                        states: {
+                            hover: {
+                                halo: {
+                                    size: 15
+                                }
+                            },
+                            inactive: {
+                                opacity: 1
+                            }
+                        }
+                    }
+                },
+                legend: {
+                    itemMarginTop: 20,
+                    symbolRadius: 0,
+                    itemStyle: {
+                        color: '#576784',
+                        fontSize: '14px',
+                        fontWeight: 'normal'
+                    }
+                },
+                credits: {
+                    enabled: false
+                },
+                tooltip: {
+                    followPointer: false,
+                    backgroundColor: '#334154',
+                    borderColor: 'white',
+                    borderRadius: 15,
+                    padding: 15,
+                    style: {
+                        color: 'white',
+                    },
+                    formatter: function () {
+                        yNum = Highcharts.numberFormat(this.y, -1, '.', ',');
+
+                        return '<span style="display: inline-block; margin-bottom: 8px; font-size: 12px;">' + this.point.name + '</span><br><span style="display: inline-block; margin-right: 8px; margin-bottom: 8px;"><svg height="12" width="12"><circle cx="50%" cy="50%" r="5" stroke="white" stroke-width="1" fill="' + this.point.color + '" /></svg></span><span style="display: inline-block; font-size: 12px; font-weight: bold;">Value</span><br><span style="display: block; margin-left: 21px; font-size: 16px; font-weight: bold;">' + yNum + '%</span>';
+                    },
+                    useHTML: true
+                },
+                series: [{
+                    colorByPoint: true,
+                    data: [{
+                        name: 'Administration',
+                        y: 57,
+                    }, {
+                        name: 'Allied Health',
+                        y: 25
+                    }, {
+                        name: 'Doctor/Physician',
+                        y: 10
+                    }, {
+                        name: 'Enrolled nurse',
+                        y: 8
+                    }]
+                }]
+            });
+
+        </script>
+
+        <!--[if lte IE 9]>
+            <script src="../js/targeted/ie9.js"></script>
+        <![endif]-->
+
+    </body>
+</html>
