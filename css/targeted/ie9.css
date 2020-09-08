@@ -234,6 +234,9 @@ header .sidebar {
 
 .main-nav ul li a.dropdown svg {
 	float: right;
+	width: 24px;
+	height: 24px;
+	padding: 0;
 }
 
 .main-nav ul li a.dropdown svg.arrow-up {
