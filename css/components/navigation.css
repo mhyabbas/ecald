@@ -318,7 +318,7 @@ body.nav-open {
 @media all and (min-width: 1024px) {
 
   body.nav-open {
-    overflow: auto;
+    overflow: visible;
   }
 
   .nav {
