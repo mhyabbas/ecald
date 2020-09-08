@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Highcharts test with data module</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            padding: 40px;
+            font-family: sans-serif;
+        }
+    </style>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+</head>
+
+    <body>
+        <h1>Example 1: Data from CSV</h1>
+        <figure class="highcharts-figure">
+            <div id="container2"></div>
+            <p class="highcharts-description">
+                Chart showing how an CSV can be used as the data source
+            </p>
+        </figure>
+    </body>
+    <script>
+        Highcharts.chart('container2', {
+            chart: {
+                type: 'bar'
+            },
+            data: {
+                // enablePolling: true,
+                csvURL: window.location.origin + '/highcharts/data.csv'
+            },
+            title: {
+                text: 'Fruit Consumption'
+            },
+            yAxis: {
+                title: {
+                    text: 'Units'
+                }
+            }
+        });
+    </script>
+</html>

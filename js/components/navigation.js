@@ -6,8 +6,10 @@ $(function() {
 		e.preventDefault();
 		if ($(".nav").hasClass("active")) {
 			$(".nav").removeClass("active");
+			$("body").removeClass("nav-open");
 		} else {
 			$(".nav").addClass("active");
+			$("body").addClass("nav-open");
 		}
 
 		if ($(".item").hasClass("active")) {
