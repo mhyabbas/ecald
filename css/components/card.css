@@ -856,6 +856,41 @@ a.card:hover {
 
 @media all and (min-width: 1024px) {
 
+	/*Base card*/
+
+	.card {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 1 30%;
+		flex: 0 1 30%;
+	}
+
+	.cards.two-column {
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+	}
+
+	.cards.two-column .card {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 1 45%;
+		flex: 0 1 45%;
+		margin: 10px 24px;
+	}
+
+	/*Base cards - horizontal layout*/
+
+	.card.horizontal > div {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 1 45%;
+		flex: 0 1 45%;
+	}
+
+	/*Colour card*/
+
+	.card.colour .content h3 {
+		font-size: 34px;
+	}
+
 	/*Calendar cards - horizontal*/
 
 	.card.calendar.horizontal {
@@ -917,39 +952,7 @@ a.card:hover {
 }
 
 @media all and (min-width: 1200px) {
-
-	/*Base card*/
-
-	.card {
-		-webkit-box-flex: 0;
-		-ms-flex: 0 1 30%;
-		flex: 0 1 30%;
-	}
-
-	.cards.two-column {
-		-webkit-box-pack: justify;
-		-ms-flex-pack: justify;
-		justify-content: space-between;
-	}
-
 	.cards.two-column .card {
-		-webkit-box-flex: 0;
-		-ms-flex: 0 1 45%;
-		flex: 0 1 45%;
 		margin: 10px 25px;
-	}
-
-	/*Base cards - horizontal layout*/
-
-	.card.horizontal > div {
-		-webkit-box-flex: 0;
-		-ms-flex: 0 1 45%;
-		flex: 0 1 45%;
-	}
-
-	/*Colour card*/
-
-	.card.colour .content h3 {
-		font-size: 34px;
 	}
 }

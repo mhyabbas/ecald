@@ -160,7 +160,7 @@
 
 }
 
-@media all and (min-width: 1200px) {
+@media all and (min-width: 1024px) {
 
 	.spotlight {
 		-webkit-box-flex: 0;

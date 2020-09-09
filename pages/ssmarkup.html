@@ -186,7 +186,7 @@
                     <div class="row">
                         <form action="/resources/cross-cultural-resources/Filter/" method="post" enctype="application/x-www-form-urlencoded">
                             <fieldset>
-                                <div id="Form_Filter_Keyword_Holder" class="field text">
+                                <div id="Form_Filter_Keyword_Holder" class="field text has-clear">
                                     <label class="left" for="Form_Filter_Keyword">Keyword search</label>
                                     <div class="middleColumn">
                                         <input type="text" name="Keyword" class="text" id="Form_Filter_Keyword" placeholder="Enter a keyword" />
@@ -213,17 +213,16 @@
                     <div class="row">
                         <form action="/resources/translated-information/Filter/" method="post" enctype="application/x-www-form-urlencoded">
                             <fieldset>
-                                <div id="Form_Filter_Keyword_Holder" class="field text">
+                                <div id="Form_Filter_Keyword_Holder" class="field text has-clear">
                                     <label class="left" for="Form_Filter_Keyword">Keyword search</label>
                                     <div class="middleColumn">
                                         <input type="text" name="Keyword" class="text" id="Form_Filter_Keyword" placeholder="Enter a keyword" />
                                     </div>   
                                 </div>
-                                <div id="Form_Filter_Language_Holder" class="field listbox">
+                                <div id="Form_Filter_Language_Holder" class="field listbox has-clear">
                                     <label class="left" for="Form_Filter_Language">Language</label>
                                     <div class="middleColumn">
                                         <select name="Language[]" class="listbox" id="Form_Filter_Language" multiple="true" placeholder="All languages" data-width="100%">
-                                            <option value="Clear">Clear</option>
                                             <option value="107">Afrikaans</option>
                                             <option value="106">Amharic</option>
                                             <option value="111">Arabic</option>
@@ -254,13 +253,13 @@
                     <div class="row">
                         <form id="Form_Filter" action="/resources/research-commentary/Filter/" method="post" enctype="application/x-www-form-urlencoded">
                             <fieldset>
-                                <div id="Form_Filter_From_Holder" class="field date text">
+                                <div id="Form_Filter_From_Holder" class="field date text has-clear">
                                     <label class="left" for="Form_Filter_From">From</label>
                                     <div class="middleColumn">
                                         <input type="date" name="From" class="date text" id="Form_Filter_From" lang="en-US" />
                                     </div>
                                 </div>
-                                <div id="Form_Filter_To_Holder" class="field date text">
+                                <div id="Form_Filter_To_Holder" class="field date text has-clear">
                                     <label class="left" for="Form_Filter_To">To</label>
                                     <div class="middleColumn">
                                         <input type="date" name="To" class="date text" id="Form_Filter_To" lang="en-US" />
@@ -376,7 +375,7 @@
         <script src="../js/components/navigation.js"></script>
         <script src="../js/components/header.js"></script>
         <script src="../js/components/expand.js"></script>
-        <script src="../js/components/multipleselect.js"></script>
+        <script src="../js/components/search.js"></script>
 
         <!--[if lte IE 9]>
             <script src="../js/targeted/ie9.js"></script>
