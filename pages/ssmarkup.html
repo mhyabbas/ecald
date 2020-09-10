@@ -256,13 +256,13 @@
                                 <div id="Form_Filter_From_Holder" class="field date text has-clear">
                                     <label class="left" for="Form_Filter_From">From</label>
                                     <div class="middleColumn">
-                                        <input type="date" name="From" class="date text" id="Form_Filter_From" lang="en-US" />
+                                        <input type="text" name="From" class="date text" id="Form_Filter_From" lang="en-US" placeholder="dd/mm/yyyy"/>
                                     </div>
                                 </div>
                                 <div id="Form_Filter_To_Holder" class="field date text has-clear">
                                     <label class="left" for="Form_Filter_To">To</label>
                                     <div class="middleColumn">
-                                        <input type="date" name="To" class="date text" id="Form_Filter_To" lang="en-US" />
+                                        <input type="text" name="To" class="date text" id="Form_Filter_To" lang="en-US" placeholder="dd/mm/yyyy"/>
                                     </div>
                                 </div>                                
                                 <div class="clear"><!-- --></div>
@@ -286,7 +286,7 @@
                             <label>Search resources</label>
                             <input type="search" name="search" placeholder="Enter a keyword">
                         </div>
-                        <div class="column">
+                        <div class="column has-clear">
                             <label>Select resources types</label>
                             <select id="search-type" multiple="multiple" placeholder="All resource types" data-width="100%">
                                 <option value="1">PDF</option>
@@ -295,7 +295,7 @@
                                 <option value="4">Videos</option>
                             </select>
                         </div>
-                        <div class="column">
+                        <div class="column has-clear">
                             <label>Select cultural competencies</label>
                             <select id="search-comp" multiple="multiple" placeholder="All cultural competencies" data-width="100%">
                                 <option id="search-comp-clear">Clear</option>
@@ -372,6 +372,7 @@
         <script src="../js/lib/ScrollMagic.min.js"></script>
         <script src="../js/lib/animation.gsap.min.js"></script>
         <script src="../js/plugins/multiple-select.min.js"></script>
+        <script src="../js/plugins/jquery.datetimepicker.full.min.js"></script>
         <script src="../js/components/navigation.js"></script>
         <script src="../js/components/header.js"></script>
         <script src="../js/components/expand.js"></script>

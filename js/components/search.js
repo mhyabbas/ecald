@@ -11,7 +11,7 @@ $(document).ready(function() {
         $input.on("input", function(){
             $clear.toggle(!!this.value);
         });
-      
+
         $clear.on("touchstart click", function(e) {
             e.preventDefault();
             $input.val("").trigger("input");
@@ -48,6 +48,16 @@ $(document).ready(function() {
                 e.stopPropagation();
                 $(this).hide();
             })
+        }
+    });
+
+    // Date picker and clear button
+
+    $("input.date").datetimepicker({
+        timepicker: false,
+        format: 'd/m/Y',
+        onSelectDate:function(dp,$input){
+            $input.next("i").show();
         }
     });
 

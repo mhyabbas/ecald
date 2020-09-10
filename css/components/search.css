@@ -185,7 +185,7 @@ div.search .column .ms-choice, div.search.filter fieldset .ms-choice {
 	height: 45px;
 }
 
-.has-clear .middleColumn div.icon-close {
+.has-clear div.icon-close {
 	display: none;
 	top: 25%;
 	right: 42px;
@@ -193,11 +193,11 @@ div.search .column .ms-choice, div.search.filter fieldset .ms-choice {
 	width: 25px;
 }
 
-.has-clear .middleColumn div.icon-close::before {
+.has-clear div.icon-close::before {
     display: none;
 }
 
-.has-clear .middleColumn div.icon-close i {
+.has-clear div.icon-close i {
 	display: block;
     top: 0;
     right: 0;
