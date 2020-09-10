@@ -75,6 +75,33 @@ div.search .column > input::-ms-input-placeholder { /* Microsoft Edge */
 	color: #576784;
 }
 
+/*Date picker*/
+
+.xdsoft_datetimepicker .xdsoft_label>.xdsoft_select>div>.xdsoft_option:hover {
+    color: #fff;
+    background: #8F5EA7;
+}
+
+.xdsoft_datetimepicker .xdsoft_label>.xdsoft_select>div>.xdsoft_option.xdsoft_current {
+    background: #334154;
+    box-shadow: #334154 0 1px 3px 0 inset;
+    color: #fff;
+}
+
+.xdsoft_datetimepicker .xdsoft_calendar td:hover {
+    background: #8F5EA7 !important;
+}
+
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_today {
+    color: #8F5EA7;
+}
+
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current {
+    background: #334154;
+    box-shadow: #334154 0 1px 3px 0 inset;
+    color: white;
+}
+
 /*Clear button*/
 
 .has-clear .middleColumn {
