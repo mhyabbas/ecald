@@ -53,12 +53,14 @@ $(document).ready(function() {
 
     // Date picker and clear button
 
-    $("input.date").datetimepicker({
-        timepicker: false,
-        format: 'd/m/Y',
-        onSelectDate:function(dp,$input){
-            $input.next("i").show();
-        }
-    });
+    if($('input.date').length) {
+        $("input.date").datetimepicker({
+            timepicker: false,
+            format: 'd/m/Y',
+            onSelectDate:function(dp,$input){
+                $input.next("i").show();
+            }
+        });
+    }
 
 });

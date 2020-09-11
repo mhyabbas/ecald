@@ -146,7 +146,7 @@
 
         </nav>
 
-        <header class="bg-light pb-0">
+        <header class="hero bg-light pb-0">
             <div class="container">
                 <div class="column">
                     <nav class="breadcrumb" aria-label="breadcrumb">
@@ -179,7 +179,7 @@
                             <label>Search resources</label>
                             <input type="search" name="search" placeholder="Enter a keyword">
                         </div>
-                        <div class="column">
+                        <div class="column has-clear">
                             <label>Select resources types</label>
                             <select id="search-type" multiple="multiple" placeholder="All resource types" data-width="100%">
                                 <option value="1">PDF</option>
@@ -188,10 +188,9 @@
                                 <option value="4">Videos</option>
                             </select>
                         </div>
-                        <div class="column">
+                        <div class="column has-clear">
                             <label>Select cultural competencies</label>
                             <select id="search-comp" multiple="multiple" placeholder="All cultural competencies" data-width="100%">
-                                <option id="search-comp-clear">Clear</option>
                                 <option value="1">Asian</option>
                                 <option value="2">African</option>
                                 <option value="3">Middle Eastern</option>
@@ -239,7 +238,7 @@
                         </div>
                         <div class="footer">
                             <div class="detail">
-                                <p><i class="material-icons">picture_as_pdf</i><a href="">Download toolkits (PDF, 127kb)</a></p>
+                                <p class="icon"><i class="material-icons">picture_as_pdf</i><a href="">Download toolkits (PDF, 127kb)</a></p>
                             </div>
                         </div>
                     </div>
@@ -255,7 +254,7 @@
                         </div>
                         <div class="footer">
                             <div class="detail">
-                                <p><i class="material-icons">picture_as_pdf</i><a href="">Download toolkits (PDF, 127kb)</a></p>
+                                <p class="icon"><i class="material-icons">picture_as_pdf</i><a href="">Download toolkits (PDF, 127kb)</a></p>
                             </div>
                         </div>
                     </div>
@@ -282,7 +281,7 @@
                         </div>
                         <div class="footer">
                             <div class="detail">
-                                <p><i class="material-icons">picture_as_pdf</i><a href="">Download toolkits (PDF, 127kb)</a></p>
+                                <p class="icon"><i class="material-icons">picture_as_pdf</i><a href="">Download toolkits (PDF, 127kb)</a></p>
                             </div>
                         </div>
                     </div>
@@ -298,7 +297,7 @@
                         </div>
                         <div class="footer">
                             <div class="detail">
-                                <p><i class="material-icons">picture_as_pdf</i><a href="">Download toolkits (PDF, 127kb)</a></p>
+                                <p class="icon"><i class="material-icons">picture_as_pdf</i><a href="">Download toolkits (PDF, 127kb)</a></p>
                             </div>
                         </div>
                     </div>
@@ -365,13 +364,12 @@
                 <li><a class="btn outline white" href="">Send a message</a></li>
               </ul>
             </div>
-            <!-- Twitter feed -->
             <div>
-              <div style="box-sizing:border-box;height:100%;width:100%;padding:2px 20px;border-radius:5px;background:rgba(0,0,0,.1);">
-                <ul>
-                    <li><strong>Twitter feed</strong></li>
-                </ul>
-              </div>
+              <ul>
+                <li><i class="material-icons large">&#xe85d;</i></li>
+                <li><strong>Stay up to date with the latest from the eCALD</strong></li>
+                <li><a class="btn" href="">Subscribe for newsletter</a></li>
+              </ul>
             </div>
           </div>
           <div class="copyright">
@@ -390,7 +388,7 @@
         <script src="../js/lib/animation.gsap.min.js"></script>
         <script src="../js/plugins/multiple-select.min.js"></script>
         <script src="../js/components/navigation.js"></script>
-        <script src="../js/components/header.js"></script>
+        <script src="../js/components/banner.js"></script>
         <script src="../js/components/expand.js"></script>
         <script src="../js/components/search.js"></script>
 

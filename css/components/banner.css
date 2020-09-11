@@ -1,8 +1,16 @@
-body {
-	margin: 0;
+/*Banner animation*/
+
+.bg-animation {
+	min-height: 500px;
+	background-image: -o-linear-gradient(bottom left, #5F3483, #943791);
+	background-image: -webkit-gradient(linear, left bottom, right top, from(#5F3483), to(#943791));
+	background-image: linear-gradient(to top right, #5F3483, #943791);
+	overflow: hidden;
 }
 
-.svg-wrapper {
+/*Banner wave animation*/
+
+.bg-animation .svg-wave {
 	position: absolute; 
 	bottom: 0;
 	height: 0; 
@@ -11,48 +19,48 @@ body {
 	padding-bottom: 22.43%; 
 }
 
-header {
-	position: relative;
-	height: 700px;
-	background-image: linear-gradient(to top right, #5F3483, #943791);
-	overflow: hidden;
-}
-
-header .svg-wave {
+.bg-animation svg[class^="wave"] {
 	position: absolute; 
-	bottom: 0;
-	height: 0; 
+	left: 0; 
+	top: 0;
+	height: 100%; 
 	width: 100%; 
-	padding: 0;
-	padding-bottom: 22.43%;
+	z-index: 0;
 }
 
-header svg.svg-divider, header svg[class^=wave] {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: auto;
+.bg-animation .wave-morph1, .bg-animation .wave-morph2, .bg-animation .wave-morph3 {
+	display: none;
 }
 
-header svg#circles {
+/*Banner circle animation*/
+
+.bg-animation svg#circles {
 	position: absolute;
 	min-width: 100%;
 	min-height: 100%;
 	left: 50%;
 	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
 
-header svg#letters {
+/*Banner text draw animation*/
+
+.bg-animation svg#letters {
 	position: absolute;
 	min-width: 100%;
 	min-height: 100%;
 	left: 50%;
 	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
 
-header svg#timeline {
+/*Banner timeline animation*/
+
+.bg-animation svg#timeline {
 	position: absolute;
 	height: 100%;
 	left: 50%;
@@ -62,48 +70,31 @@ header svg#timeline {
 	transform: translate(-50%, -50%);
 }
 
-section {
-	position: relative;
-	height: 500px;
+/*Banner slide and fade animation*/
+
+.bg-animation .slide-in, .bg-animation .fade-in {
+	visibility: hidden;
 }
 
-section svg {
+/*Banner SVG icon animation*/
+
+.bg-animation svg.svg-animation {
 	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: auto;
+	top: 50%;
+	left: 50%;
+	width: auto;
+	height: 80%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 }
 
-svg {
-	display: block;
-}
-
-.white {
-	fill: white;
-}
-
-.grey {
-	fill: #F6F9FC;
-}
-
-.bg-white {
-	background-color: white;
-}
-
-.bg-grey {
-	background-color: #F6F9FC;
-}
-
-.wave-morph1, .wave-morph2, .wave-morph3, .divider-curve {
-	display: none;
-}
-
-#divider-alt #line {
+.bg-animation svg polygon[id^="star"] {
 	visibility: hidden;
 }
 
 @media all and (min-width: 1200px) {
-	header svg#timeline {
+	.bg-animation svg#timeline {
 		height: auto;
 		min-width: 100%;
 		min-height: 100%;

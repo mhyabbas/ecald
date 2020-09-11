@@ -5,133 +5,37 @@
 * Browsers: last 4 version
 */
 
-header {
+header.hero {
 	position: relative;
-	min-height: 500px;
 	padding-top: 40px;
 	padding-bottom: 40px;
 	background-color: #F6F9FC;
 	font-size: 18px;
 }
 
-header.pb-0 {
+header.hero.pb-0 {
 	padding-bottom: 0;
 }
 
-header.lg {
+header.hero.lg {
 	min-height: 700px;
 }
 
-header.bg-light {
-	min-height: 300px;
+header.hero.bg-light {
 	background-color: #f6f6f7;
 }
 
-header.bg-dark {
+header.hero.bg-dark {
 	background: -o-linear-gradient(bottom, rgba(51, 72, 84, 0.8), rgba(51, 72, 84, 0.9)), url('../../assets/header.jpg') no-repeat center center;
 	background: -webkit-gradient(linear, left bottom, left top, from(rgba(51, 72, 84, 0.8)), to(rgba(51, 72, 84, 0.9))), url('../../assets/header.jpg') no-repeat center center;
 	background: linear-gradient(0deg, rgba(51, 72, 84, 0.8), rgba(51, 72, 84, 0.9)), url('../../assets/header.jpg') no-repeat center center;
 	background-size: cover;
 }
 
-header.bg-animation {
-	background-image: -o-linear-gradient(bottom left, #5F3483, #943791);
-	background-image: -webkit-gradient(linear, left bottom, right top, from(#5F3483), to(#943791));
-	background-image: linear-gradient(to top right, #5F3483, #943791);
-	overflow: hidden;
-}
-
-header svg#circles {
-	position: absolute;
-	min-width: 100%;
-	min-height: 100%;
-	left: 50%;
-	top: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-}
-
-header svg#letters {
-	position: absolute;
-	min-width: 100%;
-	min-height: 100%;
-	left: 50%;
-	top: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-}
-
-header svg#timeline {
-	position: absolute;
-	height: 100%;
-	left: 50%;
-	top: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-}
-
-header .container {
+header.hero .container {
 	position: relative;
 }
 
-header .double-column p:first-of-type {
+header.hero .double-column p:first-of-type {
 	margin-top: 0;
-}
-
-/*Slide and Fade animation*/
-
-header .slide-in, header .fade-in {
-	visibility: hidden;
-}
-
-/*Background animation*/
-
-header .svg-wave {
-	position: absolute; 
-	bottom: 0;
-	height: 0; 
-	width: 100%; 
-	padding: 0;
-	padding-bottom: 22.43%; 
-}
-
-header svg[class^="wave"] {
-	position: absolute; 
-	left: 0; 
-	top: 0;
-	height: 100%; 
-	width: 100%; 
-	z-index: 0;
-}
-
-header .wave-morph1, header .wave-morph2, header .wave-morph3 {
-	display: none;
-}
-
-/*SVG icon animation*/
-
-header svg.svg-animation {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: auto;
-	height: 80%;
-	-webkit-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-}
-
-header svg polygon[id^="star"] {
-	visibility: hidden;
-}
-
-@media all and (min-width: 1200px) {
-	header svg#timeline {
-		height: auto;
-		min-width: 100%;
-		min-height: 100%;
-	}
 }
