@@ -49,6 +49,17 @@ a.card:hover {
 	box-shadow: 0 10px 10px rgba(0,0,0,.15);
 }
 
+.card .curve {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 101%;
+	height: 101%;
+	fill: #8F5EA7;
+}
+
 .card .thumbnail {
 	position: relative;
 	width: 100%;
@@ -204,38 +215,8 @@ a.card:hover {
 
 /*Colour cards*/ 
 
-.card.colour.blue {
-	background-color: #629FC3;
-}
-
-.card.colour.teal {
-	background-color: #75A2A7;
-}
-
-.card.colour.orange {
-	background-color: #E48E5E;
-}
-
-.card.colour .curve {
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	width: 101%;
-	height: 101%;
-}
-
-.card.colour.blue .curve {
-	fill: #629FC3;
-}
-
-.card.colour.teal .curve {
-	fill: #75A2A7;
-}
-
-.card.colour.orange .curve {
-	fill: #E48E5E;
+.card.colour {
+	background-color: #8F5EA7;
 }
 
 .card.colour .thumbnail h3 {
@@ -383,28 +364,6 @@ a.card:hover {
 
 /*Calendar cards*/
 
-.card.calendar .curve {
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	width: 101%;
-	height: 101%;
-}
-
-.card.calendar.blue .curve {
-	fill: #90B9D5;
-}
-
-.card.calendar.green .curve {
-	fill: #478462;
-}
-
-.card.calendar.purple .curve {
-	fill: #A194B5;
-}
-
 .card.calendar .content {
 	padding: 20px 30px 10px;
 }
@@ -472,21 +431,18 @@ a.card:hover {
 	right: 20px;
 	bottom: 20px;
 	padding: 8px 18px;
-}
-
-.card.calendar.date-bg.blue .date {
-	background-color: #769CB6;
-}
-
-.card.calendar.date-bg.green .date {
-	background-color: #478462;
-}
-
-.card.calendar.date-bg.purple .date {
-	background-color: #A194B5;
+	background-color: #8F5EA7;
 }
 
 /*Calendar cards - date with white background and no image*/
+
+.card.calendar.no-image {
+	background-color: #8F5EA7;
+}
+
+.card.calendar.no-image .date h3 {
+	color: #8F5EA7;
+}
 
 .card.calendar.no-image h3 {
 	color: white;
@@ -509,31 +465,7 @@ a.card:hover {
 	background-color: white;
 }
 
-.card.calendar.no-image.blue {
-	background-color: #769CB6;
-}
-
-.card.calendar.no-image.blue .date h3 {
-	color: #769CB6;
-}
-
-.card.calendar.no-image.green {
-	background-color: #478462;
-}
-
-.card.calendar.no-image.green .date h3 {
-	color: #478462;
-}
-
-.card.calendar.no-image.purple {
-	background-color: #A194B5;
-}
-
-.card.calendar.no-image.purple .date h3 {
-	color: #A194B5;
-}
-
-/*Calendar cards - date left side*/
+/*Calendar cards - date left side*/c
 
 .card.calendar.no-image.date-left .thumbnail {
 	padding-left: 0;

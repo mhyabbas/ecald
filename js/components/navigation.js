@@ -35,17 +35,17 @@ $(function() {
 
 	// Search toggle
 	
-	// $("#search-toggle").click(function(e){
-	// 	e.preventDefault();
-	// 	$("#search").addClass("show");
-	// 	$(".nav > ul > li.item").addClass("hide");
-	// 	setTimeout(function() {$("#search input").focus();}, 400);
-	// });
+	$("#search-toggle").click(function(e){
+		e.preventDefault();
+		$("#search").addClass("show");
+		$(".nav > ul > li.item").addClass("hide");
+		setTimeout(function() {$("#search input").focus();}, 400);
+	});
 
-	// $("#search a").click(function(e){
-	// 	e.preventDefault();
-	// 	$("#search").removeClass("show");
-	// 	$(".nav > ul > li.item").removeClass("hide");
-	// });
+	$("#search a").click(function(e){
+		e.preventDefault();
+		$("#search").removeClass("show");
+		$(".nav > ul > li.item").removeClass("hide");
+	});
 
 });
