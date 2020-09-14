@@ -5,49 +5,22 @@
 * Browsers: last 4 version
 */
 
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 50px 0 0 0;
+    color: #334154;
+    line-height: 1.5;
+}
+
 section {
     padding-top: 30px;
     padding-bottom: 30px;
     position: relative;
-}
-
-section.p-sm-0 {
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-section.pt-sm-0 {
-    padding-top: 0;
-}
-
-section.pb-sm-0 {
-    padding-bottom: 0;
-}
-
-section.p-sm-1 {
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-section.pt-sm-1 {
-    padding-top: 30px;
-}
-
-section.pb-sm-1 {
-    padding-bottom: 30px;
-}
-
-section.p-sm-2 {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-
-section.pt-sm-2 {
-    padding-top: 60px;
-}
-
-section.pb-sm-2 {
-    padding-bottom: 60px;
 }
 
 .bg-light {
@@ -79,10 +52,6 @@ section.pb-sm-2 {
     margin-bottom: 30px;
     padding-left: 30px;
     padding-right: 30px;
-}
-
-.column.mb-0 {
-    margin-bottom: 0;
 }
 
 .double-column {
@@ -153,58 +122,6 @@ svg.purple {
 }
 
 @media all and (min-width: 800px) {
-    section.p-md-1 {
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-
-    section.pt-md-1 {
-        padding-top: 30px;
-    }
-
-    section.pb-md-1 {
-        padding-bottom: 30px;
-    }
-
-    section.p-md-2 {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
-
-    section.pt-md-2 {
-        padding-top: 60px;
-    }
-
-    section.pb-md-2 {
-        padding-bottom: 60px;
-    }
-
-    section.p-md-3 {
-        padding-top: 90px;
-        padding-bottom: 90px;
-    }
-
-    section.pt-md-3 {
-        padding-top: 90px;
-    }
-
-    section.pb-md-3 {
-        padding-bottom: 90px;
-    }
-
-    section.p-md-4 {
-        padding-top: 120px;
-        padding-bottom: 120px;
-    }
-
-    section.pt-md-4 {
-        padding-top: 120px;
-    }
-
-    section.pb-md-4 {
-        padding-bottom: 120px;
-    }
-
     .container {
         width: 90%;
     }
@@ -215,6 +132,10 @@ svg.purple {
 }
 
 @media all and (min-width: 1024px) {
+    body {
+        padding: 138px 0 0 0;
+    }
+
     .container {
         width: 1010px;
     }
@@ -234,10 +155,6 @@ svg.purple {
         -webkit-box-flex: 1;
         -ms-flex: 1;
         flex: 1;
-    }
-
-    .column.border-right {
-        border-right: 1px solid #677794;
     }
 
     .double-column {

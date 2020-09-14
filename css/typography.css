@@ -5,17 +5,8 @@
 * Browsers: last 4 version
 */
 
-* {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
 body {
-    margin: 0;
-    padding: 50px 0 0 0;
-    color: #334154;
     font-family: 'Open Sans', sans-serif;
-    line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -148,14 +139,7 @@ hr {
     color: #576784;
 }
 
-@media all and (min-width: 1024px) {
-    body {
-        padding: 138px 0 0 0;
-    }
-}
-
 @media all and (min-width: 1200px) {
-
     h1 {
         font-size: 42px;
     }
