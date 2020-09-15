@@ -17,9 +17,6 @@ $(document).ready(function() {
 
 		var tablist = $(".tab-list li");
 		var tabpanels = $(".tab-panel");
-		var charts = $(".highcharts-figure .chart");
-
-		$("#chart1").highcharts().reflow();
 
 		tablist.each(function(index) {
 			var element = $(this);
