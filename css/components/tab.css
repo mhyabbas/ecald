@@ -36,9 +36,11 @@
 	-webkit-box-ordinal-group: 1;
 	order: 0;
 	padding-left: 15px;
+	padding-right: 40px;
 	height: 45px;
 	border-bottom: 1px solid #CDCDCD;
 	line-height: 45px;
+	overflow: hidden;
 }
 
 .tabs .tab-list li:last-of-type {
