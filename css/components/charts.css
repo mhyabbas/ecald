@@ -5,8 +5,26 @@
 * Browsers: last 4 version
 */
 
-.chart .mb-large {
-	margin-bottom: 50px;
+.chart .chart-cards {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between
+}
+
+.chart .chart-card {
+	-webkit-box-flex: 0;
+	-ms-flex: 0 1 47%;
+	flex: 0 1 47%;
+	margin: 10px 0 20px;
+	padding: 20px 10px 10px;
+	width: 100%;
+	max-width: 400px;
+	border: 1px solid #CACACA;
+	border-radius: 10px;
+	text-align: center;
 }
 
 .chart .chart-title {
@@ -25,7 +43,7 @@
 	margin: 0;
 	color: #576784;
 	font-family: "Open Sans";
-	font-size: 60px;
+	font-size: 25px;
 	font-weight: bold;
 	line-height: 1;
 }
@@ -35,13 +53,14 @@
 	font-family: "Zilla Slab";
 	font-size: 18px;
 	font-weight: 600;
+	line-height: 1.2;
 }
 
 .highcharts-figure {
 	position: relative;
-	min-width: 310px; 
-	max-width: 900px;
-	margin: 0 auto;
+	max-width: 650px;
+	margin-right: 0;
+	margin-left: 0;
 }
 
 .highcharts-figure .chart {
@@ -62,4 +81,16 @@
 
 .highcharts-figure .highcharts-axis-labels.highcharts-xaxis-labels span {
 	text-align: center;
+}
+
+@media all and (min-width: 400px) {
+	.chart .chart-value {
+		font-size: 35px;
+	}
+}
+
+@media all and (min-width: 800px) {
+	.chart .chart-value {
+		font-size: 60px;
+	}
 }

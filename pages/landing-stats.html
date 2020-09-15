@@ -232,7 +232,7 @@
                         <p class="chart-date">As at August 2020</p>
                         <hr>
                         <p class="chart-value">1,100</p>
-                        <p class="chart-label mb-large">New subscribers</p>
+                        <p class="chart-label mb-2">New subscribers</p>
 
                         <h3 class="chart-title">Page views this month</h3>
                         <p class="chart-date">As at August 2020</p>
@@ -340,6 +340,9 @@
                         height: 500,
                         style: {
                             fontFamily: 'OpenSans'
+                        },
+                        scrollablePlotArea: {
+                            minWidth: 500
                         }
                     },
                     colors: [
@@ -355,9 +358,9 @@
                             style: {
                                 color: '#576784',
                                 fontSize: '14px',
-                                width: '45px',
                             },
-                            format: '{value:%b %Y}'
+                            format: '{value:%b %Y}',
+                            autoRotation: false
                         },
                         lineColor: '#979797',
                         gridLineColor: '#979797',
@@ -454,6 +457,9 @@
                         height: 500,
                         style: {
                             fontFamily: 'OpenSans'
+                        },
+                        scrollablePlotArea: {
+                            minWidth: 500
                         }
                     },
                     colors: [
@@ -471,7 +477,8 @@
                                 color: '#576784',
                                 fontSize: '14px',
                                 fontWeight: 'bold'
-                            }
+                            },
+                            autoRotation: false
                         },
                         lineWidth: 1,
                         lineColor: '#979797',

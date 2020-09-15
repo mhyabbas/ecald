@@ -13,14 +13,6 @@ header.hero {
 	font-size: 18px;
 }
 
-header.hero.pb-0 {
-	padding-bottom: 0;
-}
-
-header.hero.lg {
-	min-height: 700px;
-}
-
 header.hero.bg-light {
 	background-color: #f6f6f7;
 }

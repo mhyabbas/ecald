@@ -13,9 +13,9 @@
 	display: flex;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
+-webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+        justify-content: space-between
 }
 
 .cards > a {
@@ -465,7 +465,7 @@ a.card:hover {
 	background-color: white;
 }
 
-/*Calendar cards - date left side*/c
+/*Calendar cards - date left side*/
 
 .card.calendar.no-image.date-left .thumbnail {
 	padding-left: 0;

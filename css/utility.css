@@ -44,8 +44,20 @@
     padding-bottom: 60px !important;
 }
 
+.pb-0 {
+    padding-bottom: 0 !important;
+}
+
 .mb-0 {
     margin-bottom: 0 !important;
+}
+
+.mb-1 {
+    margin-bottom: 30px !important;
+}
+
+.mb-2 {
+    margin-bottom: 60px !important;
 }
 
 @media all and (min-width: 800px) {

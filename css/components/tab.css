@@ -1,0 +1,117 @@
+.tabs {
+	position: relative;
+	height: 45px;
+}
+
+.tabs .tab-list {
+	position: absolute;
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	flex-direction: column;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding-left: 0;
+	height: 45px;
+	width: 100%;
+	background-color: white;
+	border: 1px solid #576784;
+	border-radius: 4px;
+	color: #8F5EA7;
+	list-style: none;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.tabs.active .tab-list {
+	height: auto;
+	overflow: visible;
+}
+
+.tabs .tab-list li {
+	-webkit-box-flex: 0;
+	flex: 0 0 auto;
+	-webkit-box-ordinal-group: 1;
+	order: 0;
+	padding-left: 15px;
+	height: 45px;
+	border-bottom: 1px solid #CDCDCD;
+	line-height: 45px;
+}
+
+.tabs .tab-list li:last-of-type {
+	border-bottom: none;
+}
+
+.tabs .tab-list li.active {
+	-webkit-box-ordinal-group: 0;
+	order: -1;
+	color: #242A35;
+}
+
+.tabs.active li.active {
+	-webkit-box-ordinal-group: 1;
+	order: 0;
+}
+
+.tabs svg {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 60px;
+	height: 45px;
+	padding: 5px;
+	fill: #8F5EA7;
+	cursor: pointer;
+}
+
+.tabs .arrow-up {
+	display: none;
+}
+
+.tabs.active .arrow-down {
+	display: none;
+}
+
+.tabs.active .arrow-up {
+	display: block;
+}
+
+.tab-panel:not(:first-of-type) {
+	height: 0;
+	overflow: hidden;
+}
+
+@media all and (min-width: 1024px) {
+	.tabs {
+		height: auto;
+	}
+
+	.tabs .tab-list {
+		display: block;
+		height: auto;
+		border: none;
+		overflow: visible;
+	}
+
+	.tabs .tab-list li {
+		padding: 15px 0;
+		height: auto;
+		line-height: normal;
+		font-family: "Zilla Slab";
+		font-size: 20px;
+		font-weight: 600;
+		border: none;
+		border-top: 1px solid #CACACA;
+	}
+
+	.tabs .tab-list li:last-of-type {
+		border-bottom: 1px solid #CACACA;
+	}
+
+	.tabs svg, .tabs.active .arrow-down, .tabs.active .arrow-up {
+		display: none;
+	}
+}

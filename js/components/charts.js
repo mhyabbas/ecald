@@ -26,6 +26,9 @@ $(document).ready(function() {
                         spacingLeft: 50,
                         spacingRight: 50,
                         height: 500,
+                        scrollablePlotArea: {
+                            minWidth: 500
+                        }
                     },
                     colors: [
                     '#629fc3', '#8f5ea7', '#334154', '#e48e5e', '#448890'
@@ -63,7 +66,8 @@ $(document).ready(function() {
                             style: {
                                 color: '#576784',
                                 fontSize: '12px',
-                            }
+                            },
+                            autoRotation: false
                         },
                         tickInterval: 1000,
                         lineWidth: 1,
@@ -140,6 +144,9 @@ $(document).ready(function() {
                         spacingLeft: 50,
                         spacingRight: 50,
                         height: 500,
+                        scrollablePlotArea: {
+                            minWidth: 500
+                        }
                     },
                     colors: [
                         '#8f5ea7',
@@ -162,9 +169,9 @@ $(document).ready(function() {
                             style: {
                                 color: '#576784',
                                 fontSize: '12px',
-                                width: '45px',
                             },
-                            format: '{value:%b %Y}'
+                            format: '{value:%b %Y}',
+                            autoRotation: false
                         },
                         lineColor: '#979797',
                         gridLineColor: '#979797',
@@ -265,6 +272,9 @@ $(document).ready(function() {
                         spacingLeft: 50,
                         spacingRight: 50,
                         height: 500,
+                        scrollablePlotArea: {
+                            minWidth: 500
+                        }
                     },
                     colors: [
                         '#8f5ea7',
@@ -286,10 +296,10 @@ $(document).ready(function() {
                             useHTML: true,
                             style: {
                                 color: '#576784',
-                                fontSize: '12px',
-                                width: '45px',
+                                fontSize: '12px'
                             },
-                            format: '{value:%b %Y}'
+                            format: '{value:%b %Y}',
+                            autoRotation: false
                         },
                         lineColor: '#979797',
                         gridLineWidth: 1,
