@@ -6,7 +6,6 @@
 */
 
 .form.padding {
-	margin: 20px 0;
 	padding: 20px;
 }
 
@@ -20,7 +19,7 @@
 	font-size: 14px;
 }
 
-.form-group {
+.form {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -34,23 +33,34 @@
 	margin-bottom: 20px;
 }
 
-.form-group label {
+.form label {
 	margin-bottom: 5px;
 	color: #334154;
 	font-size: 14px;
 	font-weight: 600;
+	display: block;
 }
 
-.form-group input {
+.form input.text,
+.form textarea
+{
 	padding: 5px;
 	border: 1px solid #757D8C;
 	border-radius: 4px;
 	color: #334154;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
+	box-sizing: border-box;
+	width: 100%;
 }
 
-.form-group input:focus {
+.form div.field {
+	margin: 0 0 20px 0;
+}
+
+.form-group input.text:focus,
+.form textarea:focus
+{
 	outline: 1px solid #8F5EA7;
 }
 
@@ -63,7 +73,7 @@
 	flex: 0 0 auto;
 }
 
-.form .btn {
+.form .btn, .btn-toolbar input {
 	cursor: pointer;
 }
 
@@ -97,8 +107,8 @@
 	color: inherit;
 }
 
-.form .form-error {
-	display: none;
+.form span.message.error {
+	display: block;
 	position: relative;
 	margin: 5px 0 0 0;
 	padding-left: 30px;
@@ -107,15 +117,7 @@
 	line-height: 24px;
 }
 
-.form input:required:invalid {
-	border: 2px solid #CA0000;
-}
-
-.form input:required:invalid + .form-error {
-	display: block;
-}
-
-.form .form-error::before {
+.form span.message.error::before {
     content: "\e002";
     position: absolute;
     top: 0;
@@ -124,6 +126,11 @@
     font-family: "Material Icons";
     font-size: 24px;
 }
+
+.form .requiredField.error {
+	border: 2px solid #CA0000;
+}
+
 
 /*Dark form*/
 

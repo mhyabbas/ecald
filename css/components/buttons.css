@@ -5,7 +5,7 @@
 * Browsers: last 4 version
 */
 
-.btn {
+.btn, .btn-toolbar input {
 	position: relative;
 	display: -webkit-inline-box;
 	display: -ms-inline-flexbox;
@@ -40,13 +40,13 @@
 	text-decoration: underline;
 }
 
-.btn.dark {
+.btn.dark, .btn-toolbar input {
 	border: 1px solid #8F5EA7;
 	background-color: #8F5EA7;
 	color: white;
 }
 
-.btn.dark:hover {
+.btn.dark:hover, .btn-toolbar input:hover {
 	border-color: #334154;
 	background-color: #334154;
 }

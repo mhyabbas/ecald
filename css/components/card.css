@@ -13,9 +13,9 @@
 	display: flex;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
--webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-        justify-content: space-between
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between
 }
 
 .cards > a {
@@ -385,18 +385,22 @@ a.card:hover {
 	margin: 0;
 	color: white;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 26px;
+	font-size: 24px;
 	font-weight: 700;
 	text-transform: uppercase;
 	line-height: 1.1;
 }
 
-.card.calendar .thumbnail .date h3.day {
+.card.calendar .thumbnail .date h3 strong {
+	display: block;
+}
+
+.card.calendar .thumbnail .date h3 .day {
 	font-size: 54px;
 	line-height: 0.9;
 }
 
-.card.calendar .thumbnail .date h3.month {
+.card.calendar .thumbnail .date h3 .month {
 	font-size: 27px;
 }
 
@@ -515,19 +519,75 @@ a.card:hover {
 /*Calendar cards - horizontal*/
 
 .card.calendar.horizontal {
+	margin-bottom: 20px;
+	background-color: white;
 	border-radius: 10px;
+	-webkit-box-shadow: 0 3px 5px rgba(0,0,0,.15);
+	box-shadow: 0 3px 5px rgba(0,0,0,.15);
+}
+
+a.card.calendar.horizontal:hover {
+	-webkit-box-shadow: 0 10px 10px rgba(0,0,0,.15);
+	box-shadow: 0 10px 10px rgba(0,0,0,.15);
+}
+
+.card.calendar.horizontal .date {
+	padding: 8px 18px;
+	background-color: #8F5EA7;
+	border-radius: 5px;
+	color: white;
+}
+
+.card.calendar.horizontal .date h3 {
+	color: white;
+}
+
+.card.calendar.horizontal .date h3 strong {
+	display: inline-block;
+}
+
+.card.calendar.horizontal .date h3 .day {
+	font-size: 24px;
+	line-height: 1.1;
+}
+
+.card.calendar.horizontal .date h3 .month {
+	font-size: 24px;
+	line-height: 1.1;
+}
+
+.card.calendar.horizontal .date h3 .year {
+	display: none;
 }
 
 .card.calendar.horizontal h3 {
+	color: #8F5EA7;
 	font-size: 24px;
 }
 
+.card.calendar.horizontal .detail {
+	padding-top: 0;
+	border-top: 0;
+	border-bottom: 1px solid #CACACA;
+}
+
 .card.calendar.horizontal p {
+	color: #334154;
 	font-size: 14px;
 }
 
-.card.calendar.horizontal .detail {
-	margin-top: 20px;
+.card.calendar.horizontal .btn-wrapper .btn {
+	width: 30px;
+	height: 30px;
+	text-decoration: none;
+}
+
+.card.calendar.horizontal:hover .btn-wrapper .btn {
+	border-color: #334154;
+}
+
+.card.calendar.horizontal .btn-wrapper .btn i {
+	font-size: 20px;
 }
 
 /*Detail cards*/
@@ -697,18 +757,62 @@ a.card:hover {
 
 	/*Calendar cards - horizontal*/
 
-	.card.calendar.horizontal {
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		    -ms-flex-direction: column;
-		        flex-direction: column;
+	.card.calendar.horizontal .thumbnail {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
 		-webkit-box-flex: 0;
-		-ms-flex: 0 1 45%;
-		flex: 0 1 45%;
-		-webkit-box-pack: none;
-		    -ms-flex-pack: none;
-		        justify-content: none;
-		margin: 10px 15px 20px;
+		    -ms-flex: 0 0 130px;
+		        flex: 0 0 130px;
+		margin: 0;
+		padding: 0;
+		border-radius: 10px 0 0 10px;
+	}
+
+	.card.calendar.horizontal .date {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		border-radius: 10px 0 0 10px;
+	}
+
+	.card.calendar.horizontal .date h3 .day {
+		font-size: 54px;
+		line-height: 0.9;
+	}
+
+	.card.calendar.horizontal .date h3 .month {
+		font-size: 27px;
+	}
+
+	.card.calendar.horizontal .date h3 .year {
+		display: block;
+	}
+
+	.card.calendar.horizontal .content {
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 1 auto;
+		        flex: 0 1 auto;
+		padding: 10px 0;
+	}
+
+	.card.calendar.horizontal .detail {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		border-bottom: 0;
+	}
+
+	.card.calendar.horizontal .detail p {
+		-webkit-box-flex: 1;
+		-ms-flex: 1 0 50%;
+		flex: 1 0 50%;
+		margin: 5px 0;
 	}
 
 	.card.calendar.horizontal h3 {
@@ -719,28 +823,9 @@ a.card:hover {
 		font-size: 14px;
 	}
 
-	.card.calendar.horizontal .thumbnail {
-		-webkit-box-flex: 0;
-		    -ms-flex: 0 0 auto;
-		        flex: 0 0 auto;
-		width: auto;
-		margin: 0;
-		padding: 30px 30px 0;
-	}
-
-	.card.calendar.horizontal .content {
-		-webkit-box-flex: 0;
-		-ms-flex: none;
-		flex: none;
-		margin: 0;
-		padding: 20px 30px 10px;
-	}
-
-	.card.calendar.horizontal .footer {
-		-webkit-box-flex: 0;
-		-ms-flex: none;
-		flex: none;
-		margin: 0;
+	.card.calendar.horizontal .btn-wrapper .btn {
+		margin: 10px;
+		padding: 10px;
 	}
 
 	/*Detail cards*/
@@ -825,61 +910,38 @@ a.card:hover {
 
 	/*Calendar cards - horizontal*/
 
-	.card.calendar.horizontal {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-ms-flex-preferred-size: 100%;
-		    flex-basis: 100%;
-		-webkit-box-orient: horizontal;
-		-webkit-box-direction: normal;
-		-ms-flex-direction: row;
-		flex-direction: row;
-		-webkit-box-pack: justify;
-		-ms-flex-pack: justify;
-		justify-content: space-between;
-	}
-
-	.card.calendar.horizontal .thumbnail {
-		-webkit-box-flex: 0;
-		    -ms-flex: 0 0 auto;
-		        flex: 0 0 auto;
-		width: auto;
-		margin: 0;
-		padding: 30px 25px 0;
-	}
-
-	.card.calendar.horizontal .content {
-		-webkit-box-flex: 0;
-		    -ms-flex: 0 0 60%;
-		        flex: 0 0 60%;
-		margin: 0;
-		padding: 30px 0;		
-	}
-
 	.card.calendar.horizontal .detail {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-ms-flex-wrap: wrap;
-		flex-wrap: wrap;
+		-ms-flex-wrap: nowrap;
+		    flex-wrap: nowrap;
 	}
 
 	.card.calendar.horizontal .detail p {
-		-webkit-box-flex: 1;
-		-ms-flex: 1 0 50%;
-		flex: 1 0 50%;
-		margin: 5px 0;
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 0 auto;
+		        flex: 0 0 auto;
 	}
 
-	.card.calendar.horizontal .footer {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-pack: center;
-		-ms-flex-pack: center;
-		justify-content: center;
-		margin: 0;
+	.card.calendar.horizontal .detail p:not(:first-of-type) {
+		margin-left: 20px;
+	}
+
+	/*Calendar cards - horizontal alternate*/
+
+	.card.calendar.horizontal.alternate .content h3 {
+		display: inline-block;
+	}
+
+	.card.calendar.horizontal.alternate .detail {
+		display: block;
+		float: right;
+		margin-left: 30px;
+		width: 250px;
+		height: 100%;
+		border-left: 1px solid #CACACA;
+	}
+
+	.card.calendar.horizontal.alternate .detail p {
+		margin: 15px 0 15px 30px;
 	}
 }
 
