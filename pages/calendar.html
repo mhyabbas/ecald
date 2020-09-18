@@ -1,0 +1,427 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>eCALD Website Rebuild 2020</title>
+        <meta name="description" content="eCALD Website rebuild 2020 design system start">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Zilla+Slab:400,500,600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <link rel="stylesheet" href="../css/main.css" type="text/css">
+
+        <!--[if lte IE 9]>
+            <link rel="stylesheet" type="text/css" href="../css/targeted/ie9.css" />
+        <![endif]-->
+
+    </head>
+    <body>
+
+        <!-- SVG symbols -->
+
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            <symbol id="curve" viewBox="0 0 315 200">
+                <title>Curve</title>
+                <path d="M315,0v200H0v-13.4C110.8,182.1,202.6,104.1,227.8,0H315z"/>
+            </symbol>
+
+            <symbol id="quote" viewBox="0 0 26 28">
+                <title>Quote</title>
+                <path d="M12 15v6c0 1.656-1.344 3-3 3h-6c-1.656 0-3-1.344-3-3v-11c0-4.406 3.594-8 8-8h1c0.547 0 1 0.453 1 1v2c0 0.547-0.453 1-1 1h-1c-2.203 0-4 1.797-4 4v0.5c0 0.828 0.672 1.5 1.5 1.5h3.5c1.656 0 3 1.344 3 3zM26 15v6c0 1.656-1.344 3-3 3h-6c-1.656 0-3-1.344-3-3v-11c0-4.406 3.594-8 8-8h1c0.547 0 1 0.453 1 1v2c0 0.547-0.453 1-1 1h-1c-2.203 0-4 1.797-4 4v0.5c0 0.828 0.672 1.5 1.5 1.5h3.5c1.656 0 3 1.344 3 3z"></path>
+            </symbol>
+
+            <symbol id="arrow-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <title>Arrow down</title>
+                <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+                <path d="M0 0h24v24H0V0z" fill="none"/>
+            </symbol>
+
+            <symbol id="arrow-up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <title>Arrow up</title>
+                <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+                <path d="M0 0h24v24H0z" fill="none"/>
+            </symbol>
+        </svg>
+
+        <!-- Navigation -->
+
+        <nav class="nav">
+            <ul>
+                <li class="toggle"><a href="#"><i class="material-icons">&#xe5d2;</i> <span>Menu</span></a></li>
+                <li class="logo"><a href=""><img src="../assets/logo.svg" alt="logo"></a></li>
+                <li class="item search"><a id="search-toggle" href=""><i class="material-icons">&#xe8b6;</i></a></li>
+
+                <li class="main-nav">
+                    <ul>
+                        <li class="item">
+                            <a class="dropdown" href="#">
+                                Courses
+                                <svg class="arrow-down">
+                                    <use xlink:href="#arrow-down"/>
+                                </svg>
+                                <svg class="arrow-up">
+                                    <use xlink:href="#arrow-up"/>
+                                </svg> 
+                            </a>
+                            <ul class="sub-nav">
+                                <li class="sub-item">
+                                    <a href="">Courses for working with CALD Patients</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="">Courses for Culturally Diverse Workplaces</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="">Eligibility</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="">Courses Calendar</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="item">
+                            <a class="dropdown" href="#">
+                                Resources
+                                <svg class="arrow-down">
+                                    <use xlink:href="#arrow-down"/>
+                                </svg>
+                                <svg class="arrow-up">
+                                    <use xlink:href="#arrow-up"/>
+                                </svg> 
+                            </a>
+                            <ul class="sub-nav">
+                                <li class="sub-item">
+                                    <a href="">Cross Cultural Resources</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="">Translated Information</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="">Publications</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="">Research Commentary</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="">Migrant and Refugee Services</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="">Screening Tools</a>
+                                </li>
+                                 <li class="sub-item">
+                                    <a href="">Cultural Competence Assessment Tools</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="item"><a href="#">About us</a></li>
+                        <li class="item"><a href="#">News and updates</a></li>
+                    </ul>
+                </li>
+
+                <li class="item login"><a class="btn dark" href=""><i class="material-icons">&#xe853;</i><span>Log in</span></a></li>
+                <li class="item account"><a class="btn" href=""><i class="material-icons">&#xe7fe;</i><span>Create an account</span></a></li>
+                
+                <!--[if lte IE 9]>
+                <li class="top-nav">
+                    <ul>
+                <![endif]-->
+
+                <li class="item"><a href="">FAQs</a></li>
+                <li class="item"><a href="">Course Calendar</a></li>
+                <li class="item"><a href="">Cross-Cultural Interest group</a></li>
+                <li class="item"><a href="">Locations</a></li>
+                <li class="item"><a href="">Contact us</a></li>
+
+                <!--[if lte IE 9]>
+                    </ul>
+                </li>
+                <![endif]-->
+            </ul>
+
+            <div id="search">
+                <input type="search" name="search" placeholder="Search">
+                <a href=""><i class="material-icons">&#xe5cd;</i></a>
+            </div>
+
+        </nav>
+
+        <header class="hero bg-light pb-0">
+            <div class="container">
+                <div class="column">
+                    <nav class="breadcrumb" aria-label="breadcrumb">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><span aria-current="page">Calendar</span></li>
+                        </ul>
+                    </nav>
+                    <h1>Calendar</h1>
+                </div>
+
+                <div class="row">
+                    <div class="double-column slide-in">
+                        <p>The following are scheduled face-to-face Auckland-based CALD Cultural Competency "Working with CALD Patients" courses.</p>
+                    </div>                 
+                </div>
+            </div>
+
+            <div class="search bg-blue">
+                <div class="container">
+                    <div class="row">
+                        <div class="column has-clear" data-filter="course">
+                            <label>Course</label>
+                            <select multiple="multiple" placeholder="All courses" data-width="100%">
+                                <option value="1">CALD 1</option>
+                                <option value="2">CALD 2</option>
+                                <option value="3">CALD 3</option>
+                                <option value="4">CALD 4</option>
+                                <option value="5">CALD 5</option>
+                                <option value="6">CALD 6</option>
+                                <option value="7">CALD 7</option>
+                                <option value="8">CALD 8</option>
+                                <option value="9">CALD 9</option>
+                                <option value="10">CALD 10</option>
+                            </select>
+                        </div>
+                        <div class="column has-clear" data-filter="month">
+                            <label>Month</label>
+                            <select multiple="multiple" placeholder="All months" data-width="100%">
+                                <option value="1">January</option>
+                                <option value="2">February</option>
+                                <option value="3">March</option>
+                                <option value="4">April</option>
+                                <option value="5">May</option>
+                                <option value="6">June</option>
+                                <option value="7">July</option>
+                                <option value="8">August</option>
+                                <option value="9">September</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">December</option>
+                            </select>
+                        </div>
+                        <div class="column">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <div class="container">
+                <div class="cards left">
+                    <a href="" class="card calendar date-bg" data-course="1" data-month="1">
+                        <div class="thumbnail">                   
+                            <img src="../assets/card-colour.jpg" alt="image">
+                            <div class="date">
+                                <h3><time datetime="2020-05-07">
+                                    <strong class="day">01</strong>
+                                    <strong class="month">Jan</strong>
+                                    <strong class="year">2020</strong>
+                                </time></h3>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h3>Module 1 - Culture & Cultural Competency</h3>
+                            <p>The aim of this course is to understand ways that you can interact in a culturally competent manner with your CALD patients and families.</p>
+                        </div>
+                        <div class="footer">
+                            <div class="detail">
+                                <p><i class="material-icons">&#xe8df;</i><time datetime="2019-10-23">Tuesday, 23 October 2019</time></p>
+                                <p><i class="material-icons">&#xe192;</i><time>9:00am - 10:30am</time></p>
+                                <p><i class="material-icons">&#xe31e;</i>Delivered via video conference</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="" class="card calendar date-bg" data-course="1" data-month="2">
+                        <div class="thumbnail">                   
+                            <img src="../assets/card-colour2.jpg" alt="image">
+                            <div class="date">
+                                <h3><time datetime="2020-02-01">
+                                    <strong class="day">01</strong>
+                                    <strong class="month">Feb</strong>
+                                    <strong class="year">2020</strong>
+                                </time></h3>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h3>Module 1 - Culture & Cultural Competency</h3>
+                            <p>The aim of this course is to understand ways that you can interact in a culturally competent manner with your CALD patients and families.</p>
+                        </div>
+                        <div class="footer">
+                            <div class="detail">
+                                <p><i class="material-icons">&#xe8df;</i><time datetime="2019-10-23">Tuesday, 23 October 2019</time></p>
+                                <p><i class="material-icons">&#xe192;</i><time>9:00am - 10:30am</time></p>
+                                <p><i class="material-icons">&#xe31e;</i>Delivered via video conference</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="" class="card calendar date-bg" data-course="2" data-month="2">
+                        <div class="thumbnail">                   
+                            <img src="../assets/card-colour3.jpg" alt="image">
+                            <div class="date">
+                                <h3><time datetime="2020-02-01">
+                                    <strong class="day">01</strong>
+                                    <strong class="month">Feb</strong>
+                                    <strong class="year">2020</strong>
+                                </time></h3>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h3>Module 2 - Working with Migrant Patients</h3>
+                            <p>The aim of this course is to understand ways that you can interact in a culturally competent manner with your CALD patients and families.</p>
+                        </div>
+                        <div class="footer">
+                            <div class="detail">
+                                <p><i class="material-icons">&#xe8df;</i><time datetime="2019-10-23">Tuesday, 23 October 2019</time></p>
+                                <p><i class="material-icons">&#xe192;</i><time>9:00am - 10:30am</time></p>
+                                <p><i class="material-icons">&#xe31e;</i>Delivered via video conference</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="" class="card calendar date-bg" data-course="6" data-month="10">
+                        <div class="thumbnail">                   
+                            <img src="../assets/card-colour2.jpg" alt="image">
+                            <div class="date">
+                                <h3><time datetime="2020-10-01">
+                                    <strong class="day">01</strong>
+                                    <strong class="month">Oct</strong>
+                                    <strong class="year">2020</strong>
+                                </time></h3>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h3>Module 6</h3>
+                            <p>The aim of this course is to understand ways that you can interact in a culturally competent manner with your CALD patients and families.</p>
+                        </div>
+                        <div class="footer">
+                            <div class="detail">
+                                <p><i class="material-icons">&#xe8df;</i><time datetime="2019-10-23">Tuesday, 23 October 2019</time></p>
+                                <p><i class="material-icons">&#xe192;</i><time>9:00am - 10:30am</time></p>
+                                <p><i class="material-icons">&#xe31e;</i>Delivered via video conference</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="" class="card calendar date-bg" data-course="8" data-month="11">
+                        <div class="thumbnail">                   
+                            <img src="../assets/card-colour.jpg" alt="image">
+                            <div class="date">
+                                <h3><time datetime="2020-11-01">
+                                    <strong class="day">01</strong>
+                                    <strong class="month">Nov</strong>
+                                    <strong class="year">2020</strong>
+                                </time></h3>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h3>Module 8</h3>
+                            <p>The aim of this course is to understand ways that you can interact in a culturally competent manner with your CALD patients and families.</p>
+                        </div>
+                        <div class="footer">
+                            <div class="detail">
+                                <p><i class="material-icons">&#xe8df;</i><time datetime="2019-10-23">Tuesday, 23 October 2019</time></p>
+                                <p><i class="material-icons">&#xe192;</i><time>9:00am - 10:30am</time></p>
+                                <p><i class="material-icons">&#xe31e;</i>Delivered via video conference</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="" class="card calendar date-bg" data-course="10" data-month="12">
+                        <div class="thumbnail">                   
+                            <img src="../assets/card-colour3.jpg" alt="image">
+                            <div class="date">
+                                <h3><time datetime="2020-12-01">
+                                    <strong class="day">01</strong>
+                                    <strong class="month">Dec</strong>
+                                    <strong class="year">2020</strong>
+                                </time></h3>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h3>Module 10</h3>
+                            <p>The aim of this course is to understand ways that you can interact in a culturally competent manner with your CALD patients and families.</p>
+                        </div>
+                        <div class="footer">
+                            <div class="detail">
+                                <p><i class="material-icons">&#xe8df;</i><time datetime="2019-10-23">Tuesday, 23 October 2019</time></p>
+                                <p><i class="material-icons">&#xe192;</i><time>9:00am - 10:30am</time></p>
+                                <p><i class="material-icons">&#xe31e;</i>Delivered via video conference</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+          <div class="footer">
+            <div>
+              <ul>
+                <li><strong>Training venues</strong></li>
+                <li><a href="#">North Shore Hospital</a></li>
+                <li><a href="#">Waitakere Hospital</a></li>
+                <li><a href="#">Auckland City Hospital</a></li>
+                <li><a href="#">Greenlane Clinical Centre</a></li>
+                <li><a href="#">Middlemore Hospital</a></li>
+              </ul>
+            </div>
+            <div>
+              <ul class="pb-1">
+                <li><strong>CALD® newsletters</strong></li>
+                <li><a href="#">View newsletters</a></li>
+                <li><a href="#">Newsletter subscription</a></li>
+              </ul>
+              <ul>
+                <li><strong>About us</strong></li>
+                <li><a href="#">About eCALD</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li><strong>Contact</strong></li>
+                <li>Phone: DDI 09 440 6926</li>
+                <li>Email: cald@waitematadhb.govt.nz</li>
+                <li>Contact hours: Mon - Fri, 10am - 4pm</li>
+                <li>Excluding public holidays and weekends</li>
+                <li><a class="btn outline white" href="">Send a message</a></li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li><i class="material-icons large">&#xe85d;</i></li>
+                <li><strong>Stay up to date with the latest from the eCALD</strong></li>
+                <li><a class="btn" href="">Subscribe for newsletter</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="copyright">
+            <ul>
+              <li class="logo"><a href=""><img src="../assets/logo-white.svg" alt="logo"></a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li>Copyright © Waitemata DHB 2020</li>
+            </ul>
+          </div>
+        </footer>
+
+        <script src="../js/lib/jquery-3.2.1.min.js"></script>
+        <script src="../js/lib/gsap.min.js"></script>
+        <script src="../js/lib/ScrollMagic.min.js"></script>
+        <script src="../js/lib/animation.gsap.min.js"></script>
+        <script src="../js/plugins/multiple-select.min.js"></script>
+        <script src="../js/components/navigation.js"></script>
+        <script src="../js/components/banner.js"></script>
+        <script src="../js/components/expand.js"></script>
+        <script src="../js/components/search.js"></script>
+
+        <!--[if lte IE 9]>
+            <script src="../js/targeted/ie9.js"></script>
+        <![endif]-->
+
+    </body>
+</html>
