@@ -172,6 +172,7 @@ div.search.filter fieldset div > div > input:focus {
 
 div.search.filter .btn-toolbar input {
 	display: block;
+	margin: 0;
 	padding: 10px 25px;
 	width: 100%;
 	background-color: #8F5EA7;
@@ -274,6 +275,14 @@ div.search .column .ms-drop ul > li, div.search.filter fieldset .ms-drop ul > li
 
 div.search .column .ms-drop ul > li:first-of-type, div.search.filter fieldset .ms-drop ul > li:first-of-type {
 	border-top: none;
+}
+
+/*Search filter*/
+
+div.search .column .ms-drop .ms-search input, div.search.filter fieldset .ms-drop .ms-search input {
+    padding: 10px 15px;
+    font-family: "Open Sans";
+    font-size: 16px;
 }
 
 @media all and (min-width: 800px) {

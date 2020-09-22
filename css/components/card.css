@@ -762,8 +762,8 @@ a.card.calendar.horizontal:hover {
 		display: -ms-flexbox;
 		display: flex;
 		-webkit-box-flex: 0;
-		    -ms-flex: 0 0 130px;
-		        flex: 0 0 130px;
+		-ms-flex: 0 0 130px;
+		flex: 0 0 130px;
 		margin: 0;
 		padding: 0;
 		border-radius: 10px 0 0 10px;
@@ -793,10 +793,11 @@ a.card.calendar.horizontal:hover {
 	}
 
 	.card.calendar.horizontal .content {
-		-webkit-box-flex: 0;
-		    -ms-flex: 0 1 auto;
-		        flex: 0 1 auto;
+		-webkit-box-flex: 1;
+		-ms-flex: 1 1 auto;
+		flex: 1 1 auto;
 		padding: 10px 0;
+		overflow-y: hidden;
 	}
 
 	.card.calendar.horizontal .detail {
@@ -910,19 +911,14 @@ a.card.calendar.horizontal:hover {
 
 	/*Calendar cards - horizontal*/
 
-	.card.calendar.horizontal .detail {
-		-ms-flex-wrap: nowrap;
-		    flex-wrap: nowrap;
-	}
-
 	.card.calendar.horizontal .detail p {
 		-webkit-box-flex: 0;
-		    -ms-flex: 0 0 auto;
-		        flex: 0 0 auto;
+		-ms-flex: 0 0 auto;
+		flex: 0 0 auto;
 	}
 
-	.card.calendar.horizontal .detail p:not(:first-of-type) {
-		margin-left: 20px;
+	.card.calendar.horizontal .detail p:not(:last-of-type) {
+		margin-right: 20px;
 	}
 
 	/*Calendar cards - horizontal alternate*/
@@ -934,14 +930,14 @@ a.card.calendar.horizontal:hover {
 	.card.calendar.horizontal.alternate .detail {
 		display: block;
 		float: right;
-		margin-left: 30px;
-		width: 250px;
+		margin-left: 15px;
+		width: 270px;
 		height: 100%;
 		border-left: 1px solid #CACACA;
 	}
 
 	.card.calendar.horizontal.alternate .detail p {
-		margin: 15px 0 15px 30px;
+		margin: 15px 0 15px 15px;
 	}
 }
 
