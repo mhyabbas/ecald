@@ -69,18 +69,18 @@
   text-decoration: underline;
 }
 
-.accordion .panel ol {
+.accordion .panel ol.links {
   -webkit-padding-start: 55px;
   padding-inline-start: 55px;
 }
 
-.accordion .panel li {
+.accordion .panel ol.links li {
   position: relative;
   color: #8F5EA7;
   line-height: 40px;
 }
 
-.accordion .panel li:before {
+.accordion .panel ol.links li:before {
   position: absolute;
   left: -55px;
   color: #334154;
