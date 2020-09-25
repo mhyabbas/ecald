@@ -113,10 +113,11 @@ $(document).ready(function() {
                         $("[placeholder='All courses'] + .ms-parent").find(".icon-close").hide();
                     }
                     applyFilter();
+                    clearFilter();
                 },
                 onClear: function () {
                     applyFilter();
-                    $("[placeholder='All courses']").multipleSelect('close');
+                    clearFilter();
                 },
                 onFocus: function () {
                     clearFilter();
@@ -129,13 +130,20 @@ $(document).ready(function() {
                 },
                 onAfterCreate: function () {
                     $("[placeholder='All courses'] + .ms-parent").find(".icon-close").append("<i class='material-icons'>&#xe5cd;</i>");
+                    clearFilter();
                 },
             });
-
             function clearFilter() { // clear filters function
-                $("[placeholder='All courses'] + .ms-parent").find(".icon-close").click(function(e) {
+                button = $("[placeholder='All courses'] + .ms-parent").find(".ms-choice");
+                button.on("click", function(e) {
                     e.stopPropagation();
-                    $(this).hide();
+                    var x = e.clientX, y = e.clientY,
+                    clear = document.elementFromPoint(x, y);
+                    if(clear.className == "material-icons") {
+                        $("[placeholder='All courses'] + .ms-parent").find(".icon-close").hide();
+                        $("[placeholder='All courses']").multipleSelect('close');
+                        $("[placeholder='All courses']").multipleSelect('uncheckAll');
+                    } 
                 })
             }
         }, 10);
@@ -156,10 +164,11 @@ $(document).ready(function() {
                     $("[placeholder='All months'] + .ms-parent").find(".icon-close").hide();
                 }
                 applyFilter();
+                clearFilter();
             },
             onClear: function () {
                 applyFilter();
-                $("[placeholder='All months']").multipleSelect('close');
+                clearFilter();
             },
             onFocus: function () {
                 clearFilter();
@@ -172,12 +181,20 @@ $(document).ready(function() {
             },
             onAfterCreate: function () {
                 $("[placeholder='All months'] + .ms-parent").find(".icon-close").append("<i class='material-icons'>&#xe5cd;</i>");
+                clearFilter();
             },
         });
         function clearFilter() { // clear filters function
-            $("[placeholder='All months'] + .ms-parent").find(".icon-close").click(function(e) {
+            button = $("[placeholder='All months'] + .ms-parent").find(".ms-choice");
+            button.on("click", function(e) {
                 e.stopPropagation();
-                $(this).hide();
+                var x = e.clientX, y = e.clientY,
+                clear = document.elementFromPoint(x, y);
+                if(clear.className == "material-icons") {
+                    $("[placeholder='All months'] + .ms-parent").find(".icon-close").hide();
+                    $("[placeholder='All months']").multipleSelect('close');
+                    $("[placeholder='All months']").multipleSelect('uncheckAll');
+                } 
             })
         }
     } else {
