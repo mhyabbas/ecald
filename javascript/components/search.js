@@ -198,6 +198,7 @@ $(document).ready(function() {
                     } else {
                         $("[placeholder='" + attr + "'] + .ms-parent").find(".icon-close").hide();
                     }
+                    clearFilter(attr);
                 },
                 onFocus: function () {
                     clearFilter(attr);
@@ -206,35 +207,29 @@ $(document).ready(function() {
                     clearFilter(attr);
                 },
                 onClear: function () {
-                    $("[placeholder='" + attr + "']").multipleSelect('close');
-                    $("[placeholder='" + attr + "'] + .ms-parent").find(".icon-close").hide();
+                    clearFilter(attr);
                 },
                 formatCountSelected: function (count) {
                     return count + " selected";
                 },
                 onAfterCreate: function () {
                     $("[placeholder='" + attr + "'] + .ms-parent").find(".icon-close").append("<i class='material-icons'>&#xe5cd;</i>");
+                    clearFilter(attr);
                 },
             });
 
             function clearFilter(attr) { // clear filters function
-                if (isIE11) {
-                    button = $("[placeholder='" + attr + "'] + .ms-parent").find(".ms-choice");
-                    button.on("click", function(e) {
-                        var x = e.clientX, y = e.clientY,
-                        clear = document.elementFromPoint(x, y);
-                        if(clear.className == "material-icons") {
-                            $("[placeholder='" + attr + "'] + .ms-parent").find(".icon-close").hide();
-                            $("[placeholder='" + attr + "']").multipleSelect('close');
-                            $("[placeholder='" + attr + "']").multipleSelect('uncheckAll');
-                        }
-                    })
-                } else {
-                    $("[placeholder='" + attr + "'] + .ms-parent").find(".icon-close").click(function(e) {
-                        e.stopPropagation();
-                        $(this).hide();
-                    })                    
-                }
+                button = $("[placeholder='" + attr + "'] + .ms-parent").find(".ms-choice");
+                button.on("click", function(e) {
+                    e.stopPropagation();
+                    var x = e.clientX, y = e.clientY,
+                    clear = document.elementFromPoint(x, y);
+                    if(clear.className == "material-icons") {
+                        $("[placeholder='" + attr + "'] + .ms-parent").find(".icon-close").hide();
+                        $("[placeholder='" + attr + "']").multipleSelect('close');
+                        $("[placeholder='" + attr + "']").multipleSelect('uncheckAll');
+                    } 
+                })
             }
         });
     }
