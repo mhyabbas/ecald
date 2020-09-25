@@ -143,6 +143,7 @@ $(document).ready(function() {
                         $("[placeholder='All courses'] + .ms-parent").find(".icon-close").hide();
                         $("[placeholder='All courses']").multipleSelect('close');
                         $("[placeholder='All courses']").multipleSelect('uncheckAll');
+                        applyFilter();
                     } 
                 })
             }
@@ -194,6 +195,7 @@ $(document).ready(function() {
                     $("[placeholder='All months'] + .ms-parent").find(".icon-close").hide();
                     $("[placeholder='All months']").multipleSelect('close');
                     $("[placeholder='All months']").multipleSelect('uncheckAll');
+                    applyFilter();
                 } 
             })
         }
