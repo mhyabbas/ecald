@@ -20,6 +20,8 @@ $(document).ready(function() {
 
     // Calendar Filter: Create course select HTML markup based on available calendar item
 
+    var isIE11 = !!window.MSInputMethodContext && !!document.documentMode; // check if IE11 for clear button fix
+
     var $items = $('.card.calendar');
     var courseNumbers = [];
     $items.each(function(){
@@ -220,6 +222,17 @@ $(document).ready(function() {
                     $(this).hide();
                 })
             }
+
+            button = $("[placeholder='" + attr + "'] + .ms-choice");
+            button.addEventListener("click", function(e) {
+                var x = e.clientX, y = e.clientY,
+                clear = document.elementFromPoint(x, y);
+
+                if (isIE11) {
+                    clear.click()
+                    alert("clicked");
+                }
+         })
         });
     }
 
@@ -243,9 +256,4 @@ $(document).ready(function() {
             }
         });
     }
-
-    // Internet Exlpoer 11 fix for clear button
-    var isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
-    alert(isIE11);
-
 });
