@@ -217,26 +217,19 @@ $(document).ready(function() {
             });
 
             function clearFilter(attr) { // clear filters function
-                $("[placeholder='" + attr + "'] + .ms-parent").find(".icon-close").click(function(e) {
-                    e.stopPropagation();
-                    $(this).hide();
-                })
-            }
-
-            if (isIE11) {
-                alert("is IE 11");
-                button = $("[placeholder='" + attr + "'] + .ms-choice");
-                button.addEventListener("click", function(e) {
-                    alert("button clicked");
-                    var x = e.clientX, y = e.clientY,
-                    clear = document.elementFromPoint(x, y);
-                    
-                    clear.click()
-
-                    clear.addEventListener("click", function() {
-                        alert("clear clicked");
+                if (isIE11) {
+                    button = $("[placeholder='" + attr + "'] + .ms-parent").find(".ms-choice");
+                    button.on("click", function(e) {
+                        var x = e.clientX, y = e.clientY,
+                        clear = document.elementFromPoint(x, y);
+                        alert(clear);
                     })
-                })
+                } else {
+                    $("[placeholder='" + attr + "'] + .ms-parent").find(".icon-close").click(function(e) {
+                        e.stopPropagation();
+                        $(this).hide();
+                    })                    
+                }
             }
         });
     }
