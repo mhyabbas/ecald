@@ -234,7 +234,7 @@ $(document).ready(function() {
                     clear.click()
                     alert("clear clicked");
                 }
-            })
+            }
         });
     }
 
