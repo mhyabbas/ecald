@@ -166,6 +166,10 @@ div.search.filter fieldset div > div > input {
 	appearance: none;
 }
 
+div.search.filter fieldset div > div > input::-ms-clear {
+	display: none;
+}
+
 div.search.filter fieldset div > div > input[type="date"] {
 	height: 45px;
 }
