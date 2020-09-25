@@ -232,8 +232,11 @@ $(document).ready(function() {
                     clear = document.elementFromPoint(x, y);
                     
                     clear.click()
-                    alert("clear clicked");
-                }
+
+                    clear.addEventListener("click", function() {
+                        alert("clear clicked");
+                    })
+                })
             }
         });
     }
