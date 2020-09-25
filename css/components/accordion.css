@@ -70,8 +70,7 @@
 }
 
 .accordion .panel ol.links {
-  -webkit-padding-start: 55px;
-  padding-inline-start: 55px;
+  padding-left: 55px;
 }
 
 .accordion .panel ol.links li {
