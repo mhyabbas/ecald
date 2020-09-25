@@ -277,6 +277,10 @@ div.search .column .ms-drop ul > li:first-of-type, div.search.filter fieldset .m
 	border-top: none;
 }
 
+div.search .column .ms-drop ul > li label, div.search.filter fieldset .ms-drop ul > li label {
+	white-space: normal;
+}
+
 /*Search filter*/
 
 div.search .column .ms-drop .ms-search input, div.search.filter fieldset .ms-drop .ms-search input {

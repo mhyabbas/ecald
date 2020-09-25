@@ -1,6 +1,7 @@
 .tabs {
 	position: relative;
 	height: 45px;
+	z-index: 10;
 }
 
 .tabs .tab-list {

@@ -54,3 +54,7 @@ a.tag:hover {
 .tag.softblue {
 	background-color: #576784;
 }
+
+.tag.transparent {
+	background: rgba(0, 0, 0, 0.3);
+}

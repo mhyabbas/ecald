@@ -23,18 +23,33 @@
                 Chart showing how an CSV can be used as the data source
             </p>
         </figure>
+        <pre id="csv" style="display:none">
+            Categories,Enrolled
+            "Sep 2019",33501
+            "Oct 2019",33959
+            "Nov 2019",34572
+            "Dec 2019",34881
+            "Jan 2020",35229
+            "Feb 2020",35687
+            "Mar 2020",36071
+            "Apr 2020",36984
+            "May 2020",37434
+            "Jun 2020",37826
+            "Jul 2020",38133
+            "Aug 2020",38622
+        </pre>
     </body>
     <script>
         Highcharts.chart('container2', {
             chart: {
-                type: 'bar'
+                type: 'column'
             },
             data: {
                 // enablePolling: true,
-                csvURL: window.location.origin + '/highcharts/data.csv'
+                csv: document.getElementById('csv').innerHTML
             },
             title: {
-                text: 'Fruit Consumption'
+                text: 'Test data'
             },
             yAxis: {
                 title: {
