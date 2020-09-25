@@ -201,14 +201,29 @@
 	text-decoration: none;
 }
 
+.btn-wrapper a span {
+	vertical-align: text-top;
+}
+
 .btn-wrapper .btn.arrow {
 	margin: 10px;
     width: 22px;
     height: 22px;
 }
 
-.btn-wrapper .btn.arrow i {
+.btn-wrapper i {
 	font-size: 14px;
+    font-weight: normal;
+}
+
+.btn-wrapper i.btn.arrow {
+	-webkit-transition: border-color .4s;
+	-o-transition: border-color .4s;
+	transition: border-color .4s;
+}
+
+.btn-wrapper a:hover .btn.arrow {
+    border-color: #334154;
 }
 
 input[type='submit'] {
