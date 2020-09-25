@@ -223,16 +223,18 @@ $(document).ready(function() {
                 })
             }
 
-            button = $("[placeholder='" + attr + "'] + .ms-choice");
-            button.addEventListener("click", function(e) {
-                var x = e.clientX, y = e.clientY,
-                clear = document.elementFromPoint(x, y);
-
-                if (isIE11) {
+            if (isIE11) {
+                alert("is IE 11");
+                button = $("[placeholder='" + attr + "'] + .ms-choice");
+                button.addEventListener("click", function(e) {
+                    alert("button clicked");
+                    var x = e.clientX, y = e.clientY,
+                    clear = document.elementFromPoint(x, y);
+                    
                     clear.click()
-                    alert("clicked");
+                    alert("clear clicked");
                 }
-         })
+            })
         });
     }
 
