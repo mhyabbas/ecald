@@ -222,7 +222,11 @@ $(document).ready(function() {
                     button.on("click", function(e) {
                         var x = e.clientX, y = e.clientY,
                         clear = document.elementFromPoint(x, y);
-                        alert(clear);
+                        if(clear.className == "material-icons") {
+                            $("[placeholder='" + attr + "'] + .ms-parent").find(".icon-close").hide();
+                            $("[placeholder='" + attr + "']").multipleSelect('close');
+                            $("[placeholder='" + attr + "']").multipleSelect('uncheck', 2)
+                        }
                     })
                 } else {
                     $("[placeholder='" + attr + "'] + .ms-parent").find(".icon-close").click(function(e) {
