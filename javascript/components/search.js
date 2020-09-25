@@ -225,7 +225,7 @@ $(document).ready(function() {
                         if(clear.className == "material-icons") {
                             $("[placeholder='" + attr + "'] + .ms-parent").find(".icon-close").hide();
                             $("[placeholder='" + attr + "']").multipleSelect('close');
-                            $("[placeholder='" + attr + "']").multipleSelect('uncheck', 2)
+                            $("[placeholder='" + attr + "']").multipleSelect('uncheckAll');
                         }
                     })
                 } else {
