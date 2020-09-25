@@ -20,6 +20,8 @@ $(document).ready(function() {
 
     // Calendar Filter: Create course select HTML markup based on available calendar item
 
+    var isIE11 = !!window.MSInputMethodContext && !!document.documentMode; // check if IE11 for clear button fix
+
     var $items = $('.card.calendar');
     var courseNumbers = [];
     $items.each(function(){
@@ -129,16 +131,11 @@ $(document).ready(function() {
                     $("[placeholder='All courses'] + .ms-parent").find(".icon-close").append("<i class='material-icons'>&#xe5cd;</i>");
                 },
             });
+
             function clearFilter() { // clear filters function
-                button = $("[placeholder='All courses'] + .ms-parent").find(".ms-choice");
-                button.on("click", function(e) {
-                    var x = e.clientX, y = e.clientY,
-                    clear = document.elementFromPoint(x, y);
-                    if(clear.className == "material-icons") {
-                        $("[placeholder='All courses'] + .ms-parent").find(".icon-close").hide();
-                        $("[placeholder='All courses']").multipleSelect('close');
-                        $("[placeholder='All courses']").multipleSelect('uncheckAll');
-                    }
+                $("[placeholder='All courses'] + .ms-parent").find(".icon-close").click(function(e) {
+                    e.stopPropagation();
+                    $(this).hide();
                 })
             }
         }, 10);
@@ -178,15 +175,9 @@ $(document).ready(function() {
             },
         });
         function clearFilter() { // clear filters function
-            button = $("[placeholder='All months'] + .ms-parent").find(".ms-choice");
-            button.on("click", function(e) {
-                var x = e.clientX, y = e.clientY,
-                clear = document.elementFromPoint(x, y);
-                if(clear.className == "material-icons") {
-                    $("[placeholder='All months'] + .ms-parent").find(".icon-close").hide();
-                    $("[placeholder='All months']").multipleSelect('close');
-                    $("[placeholder='All months']").multipleSelect('uncheckAll');
-                }
+            $("[placeholder='All months'] + .ms-parent").find(".icon-close").click(function(e) {
+                e.stopPropagation();
+                $(this).hide();
             })
         }
     } else {
@@ -216,6 +207,7 @@ $(document).ready(function() {
                 },
                 onClear: function () {
                     $("[placeholder='" + attr + "']").multipleSelect('close');
+                    $("[placeholder='" + attr + "'] + .ms-parent").find(".icon-close").hide();
                 },
                 formatCountSelected: function (count) {
                     return count + " selected";
@@ -226,16 +218,23 @@ $(document).ready(function() {
             });
 
             function clearFilter(attr) { // clear filters function
-                button = $("[placeholder='" + attr + "'] + .ms-parent").find(".ms-choice");
-                button.on("click", function(e) {
-                    var x = e.clientX, y = e.clientY,
-                    clear = document.elementFromPoint(x, y);
-                    if(clear.className == "material-icons") {
-                        $("[placeholder='" + attr + "'] + .ms-parent").find(".icon-close").hide();
-                        $("[placeholder='" + attr + "']").multipleSelect('close');
-                        $("[placeholder='" + attr + "']").multipleSelect('uncheckAll');
-                    }
-                })
+                if (isIE11) {
+                    button = $("[placeholder='" + attr + "'] + .ms-parent").find(".ms-choice");
+                    button.on("click", function(e) {
+                        var x = e.clientX, y = e.clientY,
+                        clear = document.elementFromPoint(x, y);
+                        if(clear.className == "material-icons") {
+                            $("[placeholder='" + attr + "'] + .ms-parent").find(".icon-close").hide();
+                            $("[placeholder='" + attr + "']").multipleSelect('close');
+                            $("[placeholder='" + attr + "']").multipleSelect('uncheckAll');
+                        }
+                    })
+                } else {
+                    $("[placeholder='" + attr + "'] + .ms-parent").find(".icon-close").click(function(e) {
+                        e.stopPropagation();
+                        $(this).hide();
+                    })                    
+                }
             }
         });
     }
