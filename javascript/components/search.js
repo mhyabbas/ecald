@@ -243,4 +243,9 @@ $(document).ready(function() {
             }
         });
     }
+
+    // Internet Exlpoer 11 fix for clear button
+    var isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
+    alert(isIE11);
+
 });
