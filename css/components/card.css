@@ -585,6 +585,7 @@ a.card.calendar.horizontal:hover {
 }
 
 .card.calendar.horizontal .btn-wrapper .btn {
+	padding: 0;
 	width: 30px;
 	height: 30px;
 	text-decoration: none;
@@ -826,9 +827,13 @@ a.card.calendar.horizontal:hover {
 		font-size: 14px;
 	}
 
+	.card.calendar.horizontal .btn-wrapper {
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+
 	.card.calendar.horizontal .btn-wrapper .btn {
-		margin: 10px;
-		padding: 0;
+		margin: 10px 0;
 	}
 
 	/*Detail cards*/
