@@ -66,7 +66,7 @@
 .sidebar.links ul 
 {
 	list-style: none;
-	padding-left: 40px;
+	padding-left: 35px;
 }
 
 .sidebar.links li {
@@ -82,18 +82,37 @@
 
 .sidebar.links li:before {
 	position: absolute;
-	left: -40px;
-	top: -2px;
+	left: -35px;
+	top: -7px;
 	color: #334154;
 	font-family: "Material Icons";
 	font-size: 25px;
+	content: "\e250";
+}
+
+
+/* Icons */
+.sidebar.links li.icon-pdf::before {
 	content: "\e415";
+	top: -5px;
+}
+
+.sidebar.links li.icon-mp4::before {
+	font-size: 23px;
+	content: "\e63a";
+	top: -5px;
+}
+
+.sidebar.links li.icon-mp3::before {
+	font-size: 23px;
+	content: "\e3a1";
+	top: -5px;
 }
 
 .sidebar.links li.icon-external::before {
 	font-size: 23px;
 	content: "\e89e";
-	top: -4px;
+	top: -5px;
 }
 
 /*Header with sidebar*/

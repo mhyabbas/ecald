@@ -1,10 +1,8 @@
 $(document).ready(function() {
 
-	MorphSVGPlugin.convertToPath("rect");
-
 	// Divider animation on scroll
-
 	if($('#divider').length) {
+		MorphSVGPlugin.convertToPath("rect");
 		var divider = document.querySelector("#divider .divider")
 		var controller = new ScrollMagic.Controller();
 		var tween = gsap.to(divider, {morphSVG: ".divider-curve", ease: "power1.in"})
@@ -15,6 +13,7 @@ $(document).ready(function() {
 	}
 
 	if($('#divider2').length) {
+		MorphSVGPlugin.convertToPath("rect");
 		var divider2 = document.querySelector("#divider2 .divider")
 		var controller2 = new ScrollMagic.Controller();
 		var tween2 = gsap.to(divider2, {morphSVG: ".divider-curve", ease: "power1.in"})
@@ -27,6 +26,7 @@ $(document).ready(function() {
 	// Divider draw and fill animation on scroll
 
 	if($('#divider-alt').length) {
+		MorphSVGPlugin.convertToPath("rect");
 		var dividerline = document.querySelector("#divider-alt #line")
 		var dividerline2 = document.querySelector("#divider-alt2 #line")
 		var dividerbg = document.querySelector("#divider-alt #bg")
