@@ -700,6 +700,17 @@ a.card.calendar.horizontal:hover {
 	margin: 0 0 30px;
 }
 
+/*Image only card*/
+
+.card.image .thumbnail {
+    padding-top: 0;
+    border-radius: 10px;
+}
+
+.card.image .thumbnail img {
+    position: relative;
+}
+
 @media all and (min-width: 800px) {
 
 	/*Base card*/

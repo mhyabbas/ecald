@@ -6,14 +6,14 @@
 */
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
     margin-bottom: 20px;
     color: #334154;
-    font-family: 'Zilla Slab', serif;
+    font-family: 'Zilla Slab', Helvetica, Arial, serif;
     line-height: 1.2;
 }
 
@@ -43,6 +43,12 @@ h5 {
 
 h6 {
     font-size: 16px;
+}
+
+h3.alternate, h4.alternate {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 a {
@@ -96,6 +102,16 @@ img {
     max-width: 100%;
 }
 
+img.left {
+    float: left;
+    margin: 0 20px 10px 0;
+}
+
+img.right {
+    float: right;
+    margin: 0 0 10px 20px;
+}
+
 ul, ol {
     padding-left: 20px;
     margin-left: 0;
@@ -106,6 +122,10 @@ hr {
     margin: 20px 0;
     border: 0;
     border-top: 1px solid #CACACA;
+}
+
+.uc {
+    text-transform: uppercase;
 }
 
 .small {
@@ -139,6 +159,33 @@ hr {
     color: #576784;
 }
 
+/*
+    Blockquote
+*/
+blockquote {
+    display: block;
+    margin: 30px 0;
+    border-left: 5px solid #8F5EA7;
+    padding: 0 0 0 30px;
+    color: #576884;
+}
+
+    blockquote p {
+        font-size: 1.1rem;
+    }
+
+/*
+    Lead paragraph
+*/
+div.lead {
+    margin: 0 0 30px 0;
+}
+
+div.lead, p.lead {
+    font-size: 1.2rem;
+    margin-top: 0px;
+}
+
 @media all and (min-width: 1200px) {
     h1 {
         font-size: 42px;
@@ -158,5 +205,13 @@ hr {
 
     h4 {
         font-size: 24px;
+    }
+}
+
+@media all and (max-width: 640px) {
+    img.left,
+    img.right {
+        float: none;
+        margin: 0 0 10px 0;
     }
 }

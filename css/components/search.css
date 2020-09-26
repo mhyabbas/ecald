@@ -297,6 +297,33 @@ div.search .column .ms-drop .ms-search input, div.search.filter fieldset .ms-dro
     font-size: 16px;
 }
 
+/*Silverstripe search result page styles*/
+ul#SearchResults, ul#SearchResults li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul#SearchResults a {
+	display: block;
+	text-decoration: none;
+	margin-bottom: 10px;
+}
+
+ul#SearchResults h2 {
+	font-size: 1.4rem;
+	margin: 0px;
+}
+
+ul#SearchResults p {
+	margin: 0px;
+}
+
+ul#SearchResults li {
+	margin: 20px 0;
+	padding: 20px 0 10px 0;
+}
+
 @media all and (min-width: 800px) {
 
 	div.search .row {
