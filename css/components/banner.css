@@ -72,23 +72,20 @@
 
 /*Banner celebration timeline animation*/
 
-#balloon-container {
-	overflow: hidden;
+#balloons {
+	position: absolute;
+	width: 100%;
+	height: 100%;
 }
 
-#balloon-container .svg-wrapper {
-	z-index: 1;
-}
-
-#balloon-container #balloon {
+#balloons #balloon {
 	display: none;
 }
 
-#balloon-container .balloon {
+#balloons .balloon {
 	position: absolute;
-	top: 800px;
+	width: 140px;
 	height: auto;
-	width: 130px;    		
 }
 
 /*Banner slide and fade animation*/

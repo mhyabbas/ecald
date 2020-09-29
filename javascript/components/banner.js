@@ -69,32 +69,31 @@ $(document).ready(function() {
 
 	// Banner celebration timeline animation
 
-	if($('#balloon-container').length) {
+	if($('#balloons').length) {
 		function random(num) {
 			return Math.floor(Math.random()*num)
 		}
 		var headerHeight = $("header").outerHeight();
 
 		function createBalloons(num) {
-			var balloonContainer = $("#balloon-container")
+			var balloons = $("#balloons")
 			var balloon = $("#balloon");
 
 			for (var i = num; i > 0; i--) {
 				var top = headerHeight;
 				var left = random(1400);
-				var dur = (random(5)+5)*1000;
 				newBalloon = balloon.clone().removeAttr('id');
 				newBalloon.css({"left": left, "top": top});
-				balloonContainer.prepend(newBalloon);
+				balloons.prepend(newBalloon);
 			}
 		}
 
 		createBalloons(20);
 
 		setTimeout(function(){
-			if($('#balloon-container').length) {
+			if($('#balloons').length) {
 				var yMove = -(headerHeight + 500);
-				var $balloon = $('#balloon-container .balloon');
+				var $balloon = $('#balloons .balloon');
 				gsap.to($balloon, {
 					duration: 10,
 					y: yMove,
