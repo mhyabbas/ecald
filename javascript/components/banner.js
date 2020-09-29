@@ -93,7 +93,7 @@ $(document).ready(function() {
 
 		setTimeout(function(){
 			if($('#balloon-container').length) {
-				var yMove = -(headerHeight + 400);
+				var yMove = -(headerHeight + 500);
 				var $balloon = $('#balloon-container .balloon');
 				gsap.to($balloon, {
 					duration: 10,
