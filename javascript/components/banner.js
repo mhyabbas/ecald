@@ -76,35 +76,84 @@ $(document).ready(function() {
 		var headerHeight = $("header").outerHeight();
 
 		function createBalloons(num) {
-			var balloons = $("#balloons")
+			var balloons = $("#balloons");
 			var balloon = $("#balloon");
 
 			for (var i = num; i > 0; i--) {
 				var top = headerHeight;
-				var left = random(1400);
 				newBalloon = balloon.clone().removeAttr('id');
-				newBalloon.css({"left": left, "top": top});
+				newBalloon.css({"top": top});
 				balloons.prepend(newBalloon);
 			}
 		}
 
-		createBalloons(20);
+		function createBalloonBunch(num) {
+			var balloons = $("#balloons");
+			var balloonBunch = $("#balloonBunch");
+
+			for (var i = num; i > 0; i--) {
+				var top = headerHeight;
+				newBalloonBunch = balloonBunch.clone().removeAttr('id');
+				newBalloonBunch.css({"top": top});
+				balloons.prepend(newBalloonBunch);
+			}
+		}
+
+		createBalloons(10);
+		createBalloonBunch(5);
 
 		setTimeout(function(){
 			if($('#balloons').length) {
+				// Variables
 				var yMove = -(headerHeight + 500);
 				var $balloon = $('#balloons .balloon');
+				var $balloonBunch = $('#balloons .balloonBunch');
+				var b1 = $(".balloon1"), b2 = $(".balloon2"), b3 = $(".balloon3"), b4 = $(".balloon4"), b5 = $(".balloon5");
+
+				// Single balloon animation
+				gsap.set($balloon, {x:"random(0, 1400, 140)"});
+
 				gsap.to($balloon, {
-					duration: 10,
+					duration: 12,
 					y: yMove,
 					stagger: {
 						each: 1,
 						from: "random",
-						grid: "auto",
-						ease: "power2.inOut",
 						repeat: -1
 					}
 				});
+
+				// Balloon bunch animation
+				gsap.set($balloonBunch, {x:"random(0, 1400, 240)"});
+
+				gsap.to($balloonBunch, {
+					duration: 10,
+					y: yMove,
+					stagger: {
+						each: 2,
+						from: "random",
+						repeat: -1
+					}
+				});
+
+				var tl = gsap.timeline({repeat: -1, yoyo:true});
+				gsap.set(b1, {transformOrigin: 'center bottom'});
+				gsap.set(b2, {transformOrigin: 'center bottom'});
+				gsap.set(b3, {transformOrigin: 'center bottom'});
+				gsap.set(b4, {transformOrigin: 'center bottom'});
+				gsap.set(b5, {transformOrigin: 'center bottom'});
+
+				tl
+				.to(b1, {duration: 2, rotation: 3, ease: "power1.inOut"}, 0)
+				.to(b1, {duration: 2, rotation: -3, ease: "power1.inOut"}, 2)
+				.to(b2, {duration: 2, rotation: -3, ease: "power1.inOut"}, 1)
+				.to(b2, {duration: 2, rotation: 0, ease: "power1.inOut"}, 3)
+				.to(b3, {duration: 2, rotation: 3, ease: "power1.inOut"}, 0)
+				.to(b3, {duration: 2, rotation: 1, ease: "power1.inOut"}, 2)
+				.to(b4, {duration: 2, rotation: 3, ease: "power1.inOut"}, 1)
+				.to(b4, {duration: 2, rotation: 1, ease: "power1.inOut"}, 3)
+				.to(b5, {duration: 2, rotation: 2, ease: "power1.inOut"}, 0)
+				.to(b5, {duration: 2, rotation: 2, ease: "power1.inOut"}, 2)
 			}
 		}, 10);
 	}
