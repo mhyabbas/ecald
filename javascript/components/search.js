@@ -21,16 +21,6 @@ $(document).ready(function() {
     // Calendar Filter: Create course select HTML markup based on available calendar item
 
     var $items = $('.card.calendar');
-    var courseNumbers = [];
-    $items.each(function(){
-        var courseFilter = $(this).attr("data-course");
-        courseNumbers.push(courseFilter);
-    });
-
-    var courseNumbersUnique = $.unique(courseNumbers).sort(function(a, b){return a-b}); // get unique course numbers only and sort
-    for (var i = 0; i < courseNumbersUnique.length; i++) {
-        $('[data-filter="course"]').find("select").append('<option value="' + courseNumbersUnique[i] + '">CALD ' + courseNumbersUnique[i] + '</option>');
-    }
 
     // Calendar Filter: Apply filter
 

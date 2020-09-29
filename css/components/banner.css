@@ -70,6 +70,27 @@
 	transform: translate(-50%, -50%);
 }
 
+/*Banner celebration timeline animation*/
+
+#balloon-container {
+	overflow: hidden;
+}
+
+#balloon-container .svg-wrapper {
+	z-index: 1;
+}
+
+#balloon-container #balloon {
+	display: none;
+}
+
+#balloon-container .balloon {
+	position: absolute;
+	top: 800px;
+	height: auto;
+	width: 130px;    		
+}
+
 /*Banner slide and fade animation*/
 
 .bg-animation .slide-in, .bg-animation .fade-in {

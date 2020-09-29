@@ -65,7 +65,6 @@
 }
 
 .accordion .panel a:not(.tag):hover {
-  color: inherit;
   text-decoration: underline;
 }
 

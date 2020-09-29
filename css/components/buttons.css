@@ -35,6 +35,11 @@
 	vertical-align: middle;
 }
 
+.btn-toolbar input {
+	padding: 15px 16%;
+	font-weight: normal;
+}
+
 .btn:hover {
 	color: #334154;
 	text-decoration: underline;

@@ -67,6 +67,49 @@ $(document).ready(function() {
 		.fromTo(c3, {scale: 0.4 }, {duration: .5, autoAlpha: 1, scale: 1, stagger: 0.2}, 2)
 	}
 
+	// Banner celebration timeline animation
+
+	if($('#balloon-container').length) {
+		function random(num) {
+			return Math.floor(Math.random()*num)
+		}
+		var headerHeight = $("header").outerHeight();
+
+		function createBalloons(num) {
+			var balloonContainer = $("#balloon-container")
+			var balloon = $("#balloon");
+
+			for (var i = num; i > 0; i--) {
+				var top = headerHeight;
+				var left = random(1400);
+				var dur = (random(5)+5)*1000;
+				newBalloon = balloon.clone().removeAttr('id');
+				newBalloon.css({"left": left, "top": top});
+				balloonContainer.prepend(newBalloon);
+			}
+		}
+
+		createBalloons(20);
+
+		setTimeout(function(){
+			if($('#balloon-container').length) {
+				var yMove = -(headerHeight + 400);
+				var $balloon = $('#balloon-container .balloon');
+				gsap.to($balloon, {
+					duration: 10,
+					y: yMove,
+					stagger: {
+						each: 1,
+						from: "random",
+						grid: "auto",
+						ease: "power2.inOut",
+						repeat: -1
+					}
+				});
+			}
+		}, 10);
+	}
+
 	// Banner slide and fade animation
 
 	if($('.slide-in').length) {
