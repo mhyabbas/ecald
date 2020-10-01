@@ -70,7 +70,7 @@
 	transform: translate(-50%, -50%);
 }
 
-/*Banner celebration timeline animation*/
+/*Banner balloon animation*/
 
 #balloons {
 	position: absolute;
@@ -91,6 +91,24 @@
 #balloons .balloonBunch {
 	position: absolute;
 	width: 280px;
+	height: auto;
+}
+
+/*Banner fireworks animation*/
+
+#fireworks {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#fireworks .firework {
+	display: none;
+}
+
+#fireworks .firework {
+	position: absolute;
+	width: 400px;
 	height: auto;
 }
 

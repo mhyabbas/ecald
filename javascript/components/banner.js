@@ -67,7 +67,7 @@ $(document).ready(function() {
 		.fromTo(c3, {scale: 0.4 }, {duration: .5, autoAlpha: 1, scale: 1, stagger: 0.2}, 2)
 	}
 
-	// Banner celebration timeline animation
+	// Banner celebration animation
 
 	if($('#balloons').length) {
 		function random(num) {
@@ -103,58 +103,93 @@ $(document).ready(function() {
 		createBalloonBunch(5);
 
 		setTimeout(function(){
-			if($('#balloons').length) {
-				// Variables
-				var yMove = -(headerHeight + 500);
-				var $balloon = $('#balloons .balloon');
-				var $balloonBunch = $('#balloons .balloonBunch');
-				var b1 = $(".balloon1"), b2 = $(".balloon2"), b3 = $(".balloon3"), b4 = $(".balloon4"), b5 = $(".balloon5");
+			// Variables
+			var yMove = -(headerHeight + 500);
+			var $balloon = $('#balloons .balloon');
+			var $balloonBunch = $('#balloons .balloonBunch');
+			var b1 = $(".balloon1"), b2 = $(".balloon2"), b3 = $(".balloon3"), b4 = $(".balloon4"), b5 = $(".balloon5");
 
-				// Single balloon animation
-				gsap.set($balloon, {x:"random(0, 1400, 140)"});
+			// Single balloon animation
+			gsap.set($balloon, {x:"random(0, 1400, 140)"});
 
-				gsap.to($balloon, {
-					duration: 12,
-					y: yMove,
-					stagger: {
-						each: 1,
-						from: "random",
-						repeat: -1
-					}
-				});
+			gsap.to($balloon, {
+				duration: 12,
+				y: yMove,
+				stagger: {
+					each: 1,
+					from: "random",
+					repeat: -1
+				}
+			});
 
-				// Balloon bunch animation
-				gsap.set($balloonBunch, {x:"random(0, 1400, 240)"});
+			// Balloon bunch animation
+			gsap.set($balloonBunch, {x:"random(0, 1400, 240)"});
 
-				gsap.to($balloonBunch, {
-					duration: 10,
-					y: yMove,
-					stagger: {
-						each: 2,
-						from: "random",
-						repeat: -1
-					}
-				});
+			gsap.to($balloonBunch, {
+				duration: 10,
+				y: yMove,
+				stagger: {
+					each: 2,
+					from: "random",
+					repeat: -1
+				}
+			});
 
-				var tl = gsap.timeline({repeat: -1, yoyo:true});
-				gsap.set(b1, {transformOrigin: 'center bottom'});
-				gsap.set(b2, {transformOrigin: 'center bottom'});
-				gsap.set(b3, {transformOrigin: 'center bottom'});
-				gsap.set(b4, {transformOrigin: 'center bottom'});
-				gsap.set(b5, {transformOrigin: 'center bottom'});
+			var tl = gsap.timeline({repeat: -1, yoyo:true});
+			gsap.set(b1, {transformOrigin: 'center 96%'});
+			gsap.set(b2, {transformOrigin: 'center 96%'});
+			gsap.set(b3, {transformOrigin: 'center 96%'});
+			gsap.set(b4, {transformOrigin: 'center 96%'});
+			gsap.set(b5, {transformOrigin: 'center 96%'});
+
+			tl
+			.to(b1, {duration: 2, rotation: 3, ease: "power1.inOut"}, 0)
+			.to(b1, {duration: 2, rotation: -3, ease: "power1.inOut"}, 2)
+			.to(b2, {duration: 2, rotation: -3, ease: "power1.inOut"}, 1)
+			.to(b2, {duration: 2, rotation: 0, ease: "power1.inOut"}, 3)
+			.to(b3, {duration: 2, rotation: 3, ease: "power1.inOut"}, 0)
+			.to(b3, {duration: 2, rotation: 1, ease: "power1.inOut"}, 2)
+			.to(b4, {duration: 2, rotation: 3, ease: "power1.inOut"}, 1)
+			.to(b4, {duration: 2, rotation: 1, ease: "power1.inOut"}, 3)
+			.to(b5, {duration: 2, rotation: 2, ease: "power1.inOut"}, 0)
+			.to(b5, {duration: 2, rotation: 2, ease: "power1.inOut"}, 2)
+		}, 10);
+	}
+
+	// Banner fireworks animation
+
+	if($('#fireworks').length) {
+		var headerHeight = $("header").outerHeight();
+
+		function createFireworks(num) {
+			var fireworks = $("#fireworks");
+			var firework = $("#firework");
+
+			for (var i = num; i > 0; i--) {
+				newFirework = firework.clone().removeAttr('id');
+				fireworks.prepend(newFirework);
+			}
+		}
+
+		createFireworks(12);
+
+		setTimeout(function(){
+			var $firework = $('#fireworks .firework');
+			$firework.css("display","block");
+
+			gsap.set($firework, {x:"random(0, 1400, 200)",y:"random(-200, 200, 50)"});
+
+			$firework.each(function(index) {
+				var fireworkLine = this.querySelectorAll("line");
+
+				var tl = gsap.timeline({delay:index,repeat:-1,repeatDelay:8});
+				gsap.set(fireworkLine, {autoAlpha:0});
 
 				tl
-				.to(b1, {duration: 2, rotation: 3, ease: "power1.inOut"}, 0)
-				.to(b1, {duration: 2, rotation: -3, ease: "power1.inOut"}, 2)
-				.to(b2, {duration: 2, rotation: -3, ease: "power1.inOut"}, 1)
-				.to(b2, {duration: 2, rotation: 0, ease: "power1.inOut"}, 3)
-				.to(b3, {duration: 2, rotation: 3, ease: "power1.inOut"}, 0)
-				.to(b3, {duration: 2, rotation: 1, ease: "power1.inOut"}, 2)
-				.to(b4, {duration: 2, rotation: 3, ease: "power1.inOut"}, 1)
-				.to(b4, {duration: 2, rotation: 1, ease: "power1.inOut"}, 3)
-				.to(b5, {duration: 2, rotation: 2, ease: "power1.inOut"}, 0)
-				.to(b5, {duration: 2, rotation: 2, ease: "power1.inOut"}, 2)
-			}
+				.fromTo(fireworkLine, {drawSVG: "0% 0%"}, {duration: 1.5, autoAlpha: 1, drawSVG: "0% 100%", ease: "power2.in"}, 0)
+				.fromTo(fireworkLine, {drawSVG: "0% 100%"}, {duration: .5, drawSVG: "99% 100%"}, 1)
+				.to(fireworkLine, {duration: 3, y: 40, autoAlpha:0}, 1.5)
+			})
 		}, 10);
 	}
 
