@@ -204,27 +204,27 @@ $(document).ready(function() {
 		var ebulb2 = $('#lights #ebulb2');
 		var ebulb3 = $('#lights #ebulb3');
 
-		gsap.set($lights, {autoAlpha:0.4});
+		gsap.set($lights, {autoAlpha:0.3});
 		gsap.set(e1, {autoAlpha:0});
 		gsap.set(e2, {autoAlpha:0});
 		gsap.set(e3, {autoAlpha:0});
-		gsap.set(ebulb1, {autoAlpha:0.1});
-		gsap.set(ebulb2, {autoAlpha:0.1});
-		gsap.set(ebulb3, {autoAlpha:0.1});
+		gsap.set(ebulb1, {autoAlpha:0.05});
+		gsap.set(ebulb2, {autoAlpha:0.05});
+		gsap.set(ebulb3, {autoAlpha:0.05});
 
 		var tl = gsap.timeline({repeat: -1, yoyo:true});
 		
 		tl
-		.to(e1, {duration:1.5, autoAlpha:1}, 0)
-		.to(ebulb1, {duration:1.5, autoAlpha:0.4}, 0)
-		.to(e2, {duration:1.5, autoAlpha:1}, 3)
-		.to(ebulb2, {duration:1.5, autoAlpha:0.4}, 3)
-		.to(e3, {duration:1.5, autoAlpha:1}, 6)
-		.to(ebulb3, {duration:1.5, autoAlpha:0.4}, 6)
+		.to(e1, {duration:1.5, autoAlpha:0.8}, 0)
+		.to(ebulb1, {duration:1.5, autoAlpha:0.3}, 0)
+		.to(e2, {duration:1.5, autoAlpha:0.8}, 3)
+		.to(ebulb2, {duration:1.5, autoAlpha:0.3}, 3)
+		.to(e3, {duration:1.5, autoAlpha:0.8}, 6)
+		.to(ebulb3, {duration:1.5, autoAlpha:0.3}, 6)
 
 		gsap.to($lights, {
 			duration: 1.5,
-			autoAlpha: .1,
+			autoAlpha: 0.05,
 			stagger: {
 				each: 1,
 				from: "random",
