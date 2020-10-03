@@ -112,6 +112,14 @@
 	height: auto;
 }
 
+/*Banner fair lights animation*/
+
+.bg-animation svg#lights {
+	position: absolute;
+	min-width: 100%;
+	top: 0;
+}
+
 /*Banner slide and fade animation*/
 
 .bg-animation .slide-in, .bg-animation .fade-in {

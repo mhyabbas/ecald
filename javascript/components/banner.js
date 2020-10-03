@@ -193,6 +193,47 @@ $(document).ready(function() {
 		}, 10);
 	}
 
+	// Banner fairy lights animation
+
+	if($('#lights').length) {
+		var $lights = $('#lights .fl1:not(.ebulb)');
+		var e1 = $('#lights #e1');
+		var e2 = $('#lights #e2');
+		var e3 = $('#lights #e3');
+		var ebulb1 = $('#lights #ebulb1');
+		var ebulb2 = $('#lights #ebulb2');
+		var ebulb3 = $('#lights #ebulb3');
+
+		gsap.set($lights, {autoAlpha:0.5});
+		gsap.set(e1, {autoAlpha:0});
+		gsap.set(e2, {autoAlpha:0});
+		gsap.set(e3, {autoAlpha:0});
+		gsap.set(ebulb1, {autoAlpha:0.1});
+		gsap.set(ebulb2, {autoAlpha:0.1});
+		gsap.set(ebulb3, {autoAlpha:0.1});
+
+		var tl = gsap.timeline({repeat: -1, yoyo:true});
+		
+		tl
+		.to(e1, {duration:1.5, autoAlpha:1}, 0)
+		.to(ebulb1, {duration:1.5, autoAlpha:0.5}, 0)
+		.to(e2, {duration:1.5, autoAlpha:1}, 3)
+		.to(ebulb2, {duration:1.5, autoAlpha:0.5}, 3)
+		.to(e3, {duration:1.5, autoAlpha:1}, 6)
+		.to(ebulb3, {duration:1.5, autoAlpha:0.5}, 6)
+
+		gsap.to($lights, {
+			duration: 1.5,
+			autoAlpha: .1,
+			stagger: {
+				each: 1,
+				from: "random",
+				yoyo: true,
+				repeat: -1
+			}
+		})
+	}
+
 	// Banner slide and fade animation
 
 	if($('.slide-in').length) {
