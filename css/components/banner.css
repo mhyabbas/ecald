@@ -45,6 +45,17 @@
 	transform: translate(-50%, -50%);
 }
 
+.bg-animation svg#circles .cr0 {
+	opacity:0.05;
+}
+
+.bg-animation svg#circles .cr1 {
+	fill:none;
+	stroke:#F6F9FC;
+	stroke-width:5;
+	stroke-miterlimit:1;
+}
+
 /*Banner text draw animation*/
 
 .bg-animation svg#letters {
@@ -56,6 +67,14 @@
 	-webkit-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
+}
+
+.bg-animation svg#letters .lt0 {
+	opacity:0.2;
+	fill:none;
+	stroke:#192242;
+	stroke-width:26;
+	stroke-miterlimit:10;
 }
 
 /*Banner timeline animation*/
@@ -70,46 +89,120 @@
 	transform: translate(-50%, -50%);
 }
 
+.bg-animation svg#timeline .tl0 {
+	fill:none;
+	stroke:#603483;
+	stroke-width:4;
+	stroke-miterlimit:10;
+}
+
+.bg-animation svg#timeline .tl1 {
+	fill:#603483;
+}
+
+.bg-animation svg#timeline .tl2 {
+	fill:none;
+	stroke:#603483;
+	stroke-width:12;
+	stroke-miterlimit:10;
+}
+
 /*Banner balloon animation*/
 
-#balloons {
+.bg-animation #balloons {
 	position: absolute;
 	width: 100%;
 	height: 100%;
 }
 
-#balloons #balloon, #balloons #balloonBunch {
+.bg-animation #balloons #balloon, .bg-animation #balloons #balloonBunch {
 	display: none;
 }
 
-#balloons .balloon {
+.bg-animation #balloons .balloon {
 	position: absolute;
 	width: 140px;
 	height: auto;
 }
 
-#balloons .balloonBunch {
+.bg-animation #balloons .balloonBunch {
 	position: absolute;
 	width: 280px;
 	height: auto;
 }
 
+.bg-animation #balloons .balloonBunch .st0 {
+	fill:#192242;
+	fill-opacity:0.3;
+
+}
+.bg-animation #balloons .balloonBunch .st1 {
+	fill:#FFFFFF;
+	fill-opacity:0.5;
+}
+
+.bg-animation #balloons .balloonBunch .st2 {
+	fill:none;
+	stroke:#FFFFFF;
+	stroke-width:6;
+	stroke-linecap:round;
+	stroke-opacity:0.3;
+}
+
 /*Banner fireworks animation*/
 
-#fireworks {
+.bg-animation #fireworks {
 	position: absolute;
 	width: 100%;
 	height: 100%;
 }
 
-#fireworks .firework {
+.bg-animation #fireworks .firework {
 	display: none;
-}
-
-#fireworks .firework {
 	position: absolute;
 	width: 400px;
 	height: auto;
+}
+
+.bg-animation #fireworks .fw0 {
+	fill:none;
+	stroke:#192242;
+	stroke-opacity:0.8;
+	stroke-width:7;
+	stroke-linecap:round;
+	stroke-miterlimit:14;
+}
+
+.bg-animation #fireworks .fw-sm {
+	stroke:white;
+	stroke-opacity:0.5;
+}
+
+/*Banner fireworks alternate animation*/
+
+.bg-animation #fireworks2 {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.bg-animation #fireworks2 .firework2 {
+	display: none;
+	position: absolute;
+	width: 500px;
+	height: auto;
+}
+
+.bg-animation #fireworks2 .fw0 {
+	fill:none;
+	stroke:#192242;
+	stroke-width:4;
+	stroke-linecap:round;
+	stroke-miterlimit:8;
+}
+
+.bg-animation #fireworks2 .fw0.short {
+	stroke:#ffffff;
 }
 
 /*Banner fairy lights animation*/
@@ -118,6 +211,27 @@
 	position: absolute;
 	min-width: 100%;
 	top: 0;
+}
+
+.bg-animation svg#lights .fl0 {
+	fill:none;
+	stroke:#182242;
+	stroke-opacity:0.2;
+	stroke-width:1.5;
+	stroke-miterlimit:10;
+}
+
+.bg-animation svg#lights .fl1 {
+	fill:#FFFFFF;
+}
+
+.bg-animation svg#lights .fl2 {
+	fill:#182242;
+	fill-opacity:0.2;
+}
+
+.bg-animation svg#lights .fl3 {
+	fill:#182242;
 }
 
 /*Banner slide and fade animation*/

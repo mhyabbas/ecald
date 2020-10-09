@@ -193,6 +193,42 @@ $(document).ready(function() {
 		}, 10);
 	}
 
+	// Banner fireworks alternate animation
+	if($('#fireworks2').length) {
+		var headerHeight = $("header").outerHeight();
+
+		function createFireworks(num) {
+			var fireworks = $("#fireworks2");
+			var firework = $("#firework2");
+
+			for (var i = num; i > 0; i--) {
+				newFirework = firework.clone().removeAttr('id');
+				fireworks.prepend(newFirework);
+			}
+		}
+
+		createFireworks(12);
+
+		setTimeout(function(){
+			var $firework = $('#fireworks2 .firework2');
+			$firework.css("display","block");
+
+			gsap.set($firework, {x:"random(-200, 1400, 50)",y:"random(-200, 200, 50)",scale:"random(0.4, 1.2, .4)"});
+
+			$firework.each(function(index) {
+				var fireworkLine = this.querySelectorAll('.fw0');
+
+				var tl = gsap.timeline({delay:index,repeat:-1,repeatDelay:4});
+				gsap.set(fireworkLine, {autoAlpha:0});
+
+				tl
+				.fromTo(fireworkLine, {drawSVG: "0% 0%"}, {duration: 1.5, autoAlpha: 1, drawSVG: "0% 100%", ease: "power2.in"}, 0)
+				.fromTo(fireworkLine, {drawSVG: "0% 100%"}, {duration: .5, drawSVG: "99% 100%"}, 1)
+				.to(fireworkLine, {duration: 3, y: 40, autoAlpha:0}, 1.5)
+			})
+		}, 10);
+	}
+
 	// Banner fairy lights animation
 
 	if($('#lights').length) {
