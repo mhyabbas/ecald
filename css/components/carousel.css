@@ -105,6 +105,7 @@
 /*Carousel - Full width with bleeding*/
 
 .carousel-full a.card {
+	max-width: none;
 	text-decoration: none;
 }
 

@@ -28,25 +28,29 @@ $(document).ready(function(){
 		nextArrow: '<a class="btn arrow next" href=""><i class="material-icons">&#xe5c8;</i></a>',
 		responsive: [
 		{
-			breakpoint: 1200,
+			breakpoint: 1024,
 			settings: {
-				arrows: true,
-				centerMode: true,
 				slidesToShow: 2
 			}
 		},
 		{
 			breakpoint: 700,
 			settings: {
-				arrows: true,
-				centerMode: true,
+				centerPadding: "100px",
+				slidesToShow: 1
+			}
+		},
+		{
+			breakpoint: 600,
+			settings: {
+				centerPadding: "50px",
 				slidesToShow: 1
 			}
 		}
 		]
 	};
 
-	if($('.carousel-full .card').length > 1) {
+	if($('.carousel-full .card').length > 3) {
 		fulloptions.dots = true;
 	}
 
