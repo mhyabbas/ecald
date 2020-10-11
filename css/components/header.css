@@ -24,6 +24,14 @@ header.hero.bg-dark {
 	background-size: cover;
 }
 
+header.hero.bg-img {
+	background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(51, 72, 84, 0.8)), to(rgba(51, 72, 84, 0.9))), url('../../assets/header.jpg');
+	background-image: -o-linear-gradient(bottom, rgba(51, 72, 84, 0.8), rgba(51, 72, 84, 0.9)), url('../../assets/header.jpg');
+	background-image: linear-gradient(0deg, rgba(51, 72, 84, 0.8), rgba(51, 72, 84, 0.9)), url('../../assets/header.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
 header.hero .container {
 	position: relative;
 }

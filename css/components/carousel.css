@@ -102,6 +102,25 @@
 	font-size: 18px;
 }
 
+/*Carousel - Full width with bleeding*/
+
+.carousel-full a.card {
+	text-decoration: none;
+}
+
+.carousel-full .slick-arrow {
+	top: 104%;
+	z-index: 1;
+}
+
+.carousel-full .slick-arrow.prev {
+	left: 0;
+}
+
+.carousel-full .slick-arrow.next {
+	right: 0;
+}
+
 @media all and (min-width: 800px) {
 	.slick-arrow.prev {
 		left: -50px;

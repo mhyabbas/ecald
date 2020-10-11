@@ -66,7 +66,11 @@ section {
     height: 0; 
     width: 100%; 
     padding: 0;
-    padding-bottom: 16.71%; 
+    padding-bottom: 22.43%;
+}
+
+.svg-wrapper.short {
+    padding-bottom: 16.71%;
 }
 
 svg.svg-divider {
