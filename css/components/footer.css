@@ -74,12 +74,12 @@ footer .footer li {
 }
 
 footer .footer a.btn {
-    margin-top: 16px;
-    color: #8F5EA7;
+  margin-top: 16px;
+  color: #8F5EA7;
 }
 
 footer .footer a.btn:hover {
-    color: #334154;
+  color: #334154;
 }
 
 /*Copyright*/
@@ -90,6 +90,13 @@ footer .copyright {
 }
 
 footer .copyright ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   width: 100%;
 }
 
@@ -114,6 +121,16 @@ footer .copyright .logo img {
   height: auto;
 }
 
+footer .copyright .wdhb-logo {
+  order: 1;
+}
+
+footer .copyright .wdhb-logo img {
+  display: inline-block;
+  width: 120px;
+  height: auto;
+}
+
 @media all and (min-width: 800px) {
   section .account {
     width: 750px;
@@ -124,8 +141,8 @@ footer .copyright .logo img {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     width: auto;
     text-align: left;
   }
@@ -136,10 +153,10 @@ footer .copyright .logo img {
 
   section .account.horizontal div {
     -ms-flex-preferred-size: 40%;
-        flex-basis: 40%;
+    flex-basis: 40%;
     -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
   }
 
   footer .footer {
@@ -164,9 +181,10 @@ footer .copyright .logo img {
   }
 
   footer .copyright ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-box-align: center;
@@ -185,7 +203,8 @@ footer .copyright .logo img {
     content: "|";
   }
 
-  footer .copyright ul li:first-of-type:after,
+  footer .copyright ul li:nth-of-type(1):after,
+  footer .copyright ul li:nth-of-type(2):after,
   footer .copyright ul li:last-of-type:after
   {
     margin: 0px;
@@ -196,10 +215,13 @@ footer .copyright .logo img {
     -webkit-box-flex: 1;
     -ms-flex: 1 0 120px;
     flex: 1 0 120px;
+    text-align: left;
   }
 
-  footer .copyright .logo img {
-    display: block;
+  footer .copyright .wdhb-logo {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 120px;
+    flex: 1 0 120px;
+    text-align: right;
   }
-
 }
