@@ -77,6 +77,28 @@
 	stroke-miterlimit:10;
 }
 
+/*Banner line pattern animation*/
+
+.bg-animation svg#line-pattern {
+	position: absolute;
+	min-width: 100%;
+	min-height: 100%;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.bg-animation svg#line-pattern .lp0 {
+	opacity:0.2;
+	fill:none;
+	stroke:#192242;
+	stroke-width:15;
+	stroke-linecap:square;
+	stroke-miterlimit:10;
+}
+
 /*Banner timeline animation*/
 
 .bg-animation svg#timeline {

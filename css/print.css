@@ -1,0 +1,119 @@
+/*Typography*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+	color: black !important;
+	text-decoration: none;
+}
+
+/*No breaking elements*/
+
+img,
+.map
+{
+	page-break-before: auto;
+	page-break-after: auto;
+	page-break-inside: avoid;
+}
+
+/*Layout*/
+
+body {
+	padding: 0;
+	color: black;
+}
+
+header.hero,
+section,
+.container,
+.row,
+.column,
+.double-column
+{
+	margin: 0;
+	padding: 0;
+}
+
+.nav,
+.breadcrumb,
+.sidebar,
+.card.one-column,
+.btn-wrapper,
+.map-link,
+.material-icons,
+.btn,
+section .account,
+footer > div > div:nth-of-type(1),
+footer > div > div:nth-of-type(2),
+footer > div > div:nth-of-type(4),
+footer .copyright,
+.responsive-video,
+div.search
+{
+	display: none;
+}
+
+/*Accordion*/
+
+.accordion {
+	margin: 0;
+	border-bottom: none;
+}
+
+.accordion .button {
+	border-top: none;
+}
+
+.accordion .panel {
+	display: block;
+}
+
+/*Tag*/
+
+.tag,
+.tag.small,
+.tag.flag
+{
+	padding: 0;
+	color: black;
+}
+
+/*Card*/
+
+.cards {
+	justify-content: space-around;
+}
+
+.card {
+	margin: 10px 0 !important;
+	padding: 0 !important;
+	flex: 0 1 30%;
+}
+
+.card.detail.alternate > div:nth-of-type(1),
+.card.detail.alternate > div:nth-of-type(2)
+{
+	padding: 10px 0;
+	border-bottom: none;
+}
+
+.card.detail.alternate > div > div p:nth-of-type(1),
+.card.detail.alternate > div > div p:nth-of-type(2)
+{
+	font-size: inherit;
+}
+
+/*Footer*/
+
+footer .footer {
+	padding: 0;
+}
+
+footer .footer li {
+	color: black;
+}

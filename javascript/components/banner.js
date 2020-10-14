@@ -46,6 +46,21 @@ $(document).ready(function() {
 		.fromTo(a3, {drawSVG: "0% 0%"}, {duration: 7, drawSVG: "0% 100%"}, 0)
 	}
 
+	// Banner line pattern animation
+
+	if($('#line-pattern').length) {
+		var p1 = $("#pattern1 path");
+		var p2 = $("#pattern2 path");
+		var p3 = $("#pattern3 line");
+
+		var tl = gsap.timeline({repeat: -1, yoyo: true});
+
+		tl
+		.fromTo(p1, {drawSVG: "0% 0%"}, {duration: 5, drawSVG: "0% 100%", stagger: 0.4}, 1)
+		.fromTo(p2, {drawSVG: "100% 100%"}, {duration: 6, drawSVG: "0% 100%", stagger: 0.4}, 0)
+		.fromTo(p3, {drawSVG: "100% 100%"}, {duration: 2, drawSVG: "0% 100%", stagger: 0.5}, 1)
+	}
+
 	// Banner timeline animation
 
 	if($('#timeline').length) {
