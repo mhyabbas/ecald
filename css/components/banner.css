@@ -95,7 +95,8 @@
 	fill:none;
 	stroke:#192242;
 	stroke-width:15;
-	stroke-linecap:square;
+	stroke-linejoin:round;
+	/*stroke-linecap:square;*/
 	stroke-miterlimit:10;
 }
 
