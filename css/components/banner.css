@@ -218,7 +218,7 @@
 	fill:none;
 	stroke:#192242;
 	stroke-width:4;
-	stroke-linecap:round;
+	stroke-linejoin:round;
 	stroke-linecap:round;
 	stroke-miterlimit:8;
 }
