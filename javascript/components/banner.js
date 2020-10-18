@@ -61,6 +61,33 @@ $(document).ready(function() {
 		.fromTo(p3, {drawSVG: "100% 100%"}, {duration: 2, drawSVG: "0% 100%", stagger: 0.5}, 1)
 	}
 
+	// Banner topographic animation
+
+	if($('#topographic').length) {
+		var a1 = document.querySelector("#a1-start")
+		var a2 = document.querySelector("#a2-start")
+		var a3 = document.querySelector("#a3-start")
+		var b1 = document.querySelector("#b1-start")
+		var b2 = document.querySelector("#b2-start")
+		var b3 = document.querySelector("#b3-start")
+		var b4 = document.querySelector("#b4-start")
+		var c1 = document.querySelector("#c1-start")
+		var c2 = document.querySelector("#c2-start")
+
+		var tl = gsap.timeline({repeat: -1, yoyo: true})
+
+		tl
+		.to(a1, {duration: 5, morphSVG: "#a1-end", ease: "power1.inOut"}, 0)
+		.to(a2, {duration: 5, morphSVG: "#a2-end", ease: "power1.inOut"}, 1)
+		.to(a3, {duration: 5, morphSVG: "#a3-end", ease: "power1.inOut"}, 2)
+		.to(b1, {duration: 5, morphSVG: "#b1-end", ease: "power1.inOut"}, 0)
+		.to(b2, {duration: 5, morphSVG: "#b2-end", ease: "power1.inOut"}, 1)
+		.to(b3, {duration: 5, morphSVG: "#b3-end", ease: "power1.inOut"}, 2)
+		.to(b4, {duration: 5, morphSVG: "#b4-end", ease: "power1.inOut"}, 3)
+		.to(c1, {duration: 5, morphSVG: "#c1-end", ease: "power1.inOut"}, 0)
+		.to(c2, {duration: 5, morphSVG: "#c2-end", ease: "power1.inOut"}, 1)
+	}
+
 	// Banner timeline animation
 
 	if($('#timeline').length) {

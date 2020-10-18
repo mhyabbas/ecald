@@ -98,6 +98,32 @@
 	stroke-miterlimit:10;
 }
 
+/*Banner line pattern animation*/
+
+.bg-animation svg#topographic {
+	position: absolute;
+	min-width: 100%;
+	min-height: 100%;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.bg-animation svg#topographic path[id$="end"] {
+	display: none;
+}
+
+.bg-animation svg#topographic .tp0 {
+	fill:#ffffff;
+	fill-opacity:0.04;
+	stroke-opacity:0.2;
+	stroke:#ffffff;
+	stroke-width:1;
+	stroke-miterlimit:2;
+}
+
 /*Banner timeline animation*/
 
 .bg-animation svg#timeline {
