@@ -88,6 +88,31 @@ $(document).ready(function() {
 		.to(c2, {duration: 5, morphSVG: "#c2-end", ease: "power1.inOut"}, 1)
 	}
 
+	// Banner flax animation
+
+	if($('#flax').length) {
+		var $f1 = $(".1-slantdown line");
+		var $f2 = $(".2-slantup line");
+		var $f3 = $(".3-slantdown line");
+		var $f4 = $(".4-slantup line");
+		var $f5 = $(".5-slantdown line");
+		var $f6 = $(".6-slantup line");
+		var $f7 = $(".7-slantdown line");
+		var $f8 = $(".8-slantup line");
+
+		var tl = gsap.timeline({repeat: -1, yoyo: true});
+
+		tl
+		.fromTo($f1, {drawSVG: "50% 50%"}, {duration: 3, drawSVG: "0% 100%"}, 0)
+		.fromTo($f2, {drawSVG: "0% 0%"}, {duration: 3, drawSVG: "0% 100%"}, 1)
+		.fromTo($f3, {drawSVG: "0% 0%"}, {duration: 3, drawSVG: "0% 100%"}, 2)
+		.fromTo($f4, {drawSVG: "0% 0%"}, {duration: 3, drawSVG: "0% 100%"}, 3)
+		.fromTo($f5, {drawSVG: "0% 0%"}, {duration: 3, drawSVG: "0% 100%"}, 4)
+		.fromTo($f6, {drawSVG: "0% 0%"}, {duration: 3, drawSVG: "0% 100%"}, 5)
+		.fromTo($f7, {drawSVG: "0% 0%"}, {duration: 3, drawSVG: "0% 100%"}, 6)
+		.fromTo($f8, {drawSVG: "0% 0%"}, {duration: 3, drawSVG: "0% 100%"}, 7)
+	}
+
 	// Banner timeline animation
 
 	if($('#timeline').length) {

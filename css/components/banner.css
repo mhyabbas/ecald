@@ -98,7 +98,7 @@
 	stroke-miterlimit:10;
 }
 
-/*Banner line pattern animation*/
+/*Banner topographic animation*/
 
 .bg-animation svg#topographic {
 	position: absolute;
@@ -122,6 +122,27 @@
 	stroke:#ffffff;
 	stroke-width:1;
 	stroke-miterlimit:2;
+}
+
+/*Banner flax animation*/
+
+.bg-animation svg#flax {
+	position: absolute;
+	min-width: 100%;
+	min-height: 100%;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.bg-animation svg#flax .fl0 {
+	fill:none;
+	stroke-opacity:0.1;
+	stroke:#192242;
+	stroke-width:10;
+	stroke-miterlimit:10;
 }
 
 /*Banner timeline animation*/
