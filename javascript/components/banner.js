@@ -46,6 +46,33 @@ $(document).ready(function() {
 		.fromTo(a3, {drawSVG: "0% 0%"}, {duration: 7, drawSVG: "0% 100%"}, 0)
 	}
 
+	// Banner CALD text draw animation
+
+	if($('#cald-letters').length) {
+		var c_out = document.querySelector("#cald-letters #c-out")
+		var c_in = document.querySelector("#cald-letters #c-in")
+		var a1 = document.querySelector("#cald-letters #a1")
+		var a2 = document.querySelector("#cald-letters #a2")
+		var a3 = document.querySelector("#cald-letters #a3")
+		var l_out = document.querySelector("#cald-letters #l-out")
+		var l_in = document.querySelector("#cald-letters #l-in")
+		var d_out = document.querySelector("#cald-letters #d-out")
+		var d_in = document.querySelector("#cald-letters #d-in")
+
+		var drawtl = gsap.timeline({repeat: -1, yoyo: true});
+
+		drawtl
+		.fromTo(c_out, {drawSVG: "0% 0%"}, {duration: 7, drawSVG: "0% 100%"}, 0)
+		.fromTo(c_in, {drawSVG: "100% 100%"}, {duration: 7, drawSVG: "0% 100%"}, 0.5)
+		.fromTo(a1, {drawSVG: "0% 0%"}, {duration: 7, drawSVG: "0% 100%"}, 0)
+		.fromTo(a2, {drawSVG: "100% 100%"}, {duration: 7, drawSVG: "0% 100%"}, 0.5)
+		.fromTo(a3, {drawSVG: "0% 0%"}, {duration: 7, drawSVG: "0% 100%"}, 0)
+		.fromTo(l_out, {drawSVG: "0% 0%"}, {duration: 7, drawSVG: "0% 100%"}, 0)
+		.fromTo(l_in, {drawSVG: "100% 100%"}, {duration: 7, drawSVG: "0% 100%"}, 0.5)
+		.fromTo(d_out, {drawSVG: "0% 0%"}, {duration: 7, drawSVG: "0% 100%"}, 0)
+		.fromTo(d_in, {drawSVG: "100% 100%"}, {duration: 7, drawSVG: "0% 100%"}, 0.5)
+	}
+
 	// Banner line pattern animation
 
 	if($('#line-pattern').length) {

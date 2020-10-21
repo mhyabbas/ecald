@@ -77,6 +77,27 @@
 	stroke-miterlimit:10;
 }
 
+/*Banner text draw animation*/
+
+.bg-animation svg#cald-letters {
+	position: absolute;
+	min-width: 100%;
+	min-height: 100%;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.bg-animation svg#cald-letters .ca0 {
+	opacity:0.2;
+	fill:none;
+	stroke:#192242;
+	stroke-width:14;
+	stroke-miterlimit:10;
+}
+
 /*Banner line pattern animation*/
 
 .bg-animation svg#line-pattern {
