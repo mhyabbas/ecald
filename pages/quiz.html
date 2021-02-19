@@ -1,0 +1,452 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>eCALD Website Rebuild 2020</title>
+        <meta name="description" content="eCALD Website rebuild 2020 design system start">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Zilla+Slab:400,500,600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <link rel="stylesheet" href="../css/main.css" type="text/css">
+
+        <!--[if lte IE 9]>
+            <link rel="stylesheet" type="text/css" href="../css/targeted/ie9.css" />
+        <![endif]-->
+
+    </head>
+    <body>
+
+        <!-- SVG symbols -->
+
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            <symbol id="curve" viewBox="0 0 315 200">
+                <title>Curve</title>
+                <path d="M315,0v200H0v-13.4C110.8,182.1,202.6,104.1,227.8,0H315z"/>
+            </symbol>
+
+            <symbol id="quote" viewBox="0 0 26 28">
+                <title>Quote</title>
+                <path d="M12 15v6c0 1.656-1.344 3-3 3h-6c-1.656 0-3-1.344-3-3v-11c0-4.406 3.594-8 8-8h1c0.547 0 1 0.453 1 1v2c0 0.547-0.453 1-1 1h-1c-2.203 0-4 1.797-4 4v0.5c0 0.828 0.672 1.5 1.5 1.5h3.5c1.656 0 3 1.344 3 3zM26 15v6c0 1.656-1.344 3-3 3h-6c-1.656 0-3-1.344-3-3v-11c0-4.406 3.594-8 8-8h1c0.547 0 1 0.453 1 1v2c0 0.547-0.453 1-1 1h-1c-2.203 0-4 1.797-4 4v0.5c0 0.828 0.672 1.5 1.5 1.5h3.5c1.656 0 3 1.344 3 3z"></path>
+            </symbol>
+
+            <symbol id="arrow-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <title>Arrow down</title>
+                <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+                <path d="M0 0h24v24H0V0z" fill="none"/>
+            </symbol>
+
+            <symbol id="arrow-up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <title>Arrow up</title>
+                <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+                <path d="M0 0h24v24H0z" fill="none"/>
+            </symbol>
+        </svg>
+
+        <!-- Navigation -->
+
+        <nav class="nav">
+            <ul>
+                <li class="toggle"><a href="#"><i class="material-icons">&#xe5d2;</i> <span>Menu</span></a></li>
+                <li class="logo"><a href=""><img src="../assets/logo.svg" alt="logo"></a></li>
+                <li class="item search"><a id="search-toggle" href=""><i class="material-icons">&#xe8b6;</i></a></li>
+
+                <li class="main-nav">
+                    <ul>
+                        <li class="item">
+                            <a class="dropdown" href="#">
+                                Courses
+                                <svg class="arrow-down">
+                                    <use xlink:href="#arrow-down"/>
+                                </svg>
+                                <svg class="arrow-up">
+                                    <use xlink:href="#arrow-up"/>
+                                </svg> 
+                            </a>
+                            <ul class="sub-nav">
+                                <li class="sub-item">
+                                    <a href="">Courses for working with CALD Patients</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="">Courses for Culturally Diverse Workplaces</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="">Eligibility</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="">Courses Calendar</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="item">
+                            <a class="dropdown" href="#">
+                                Resources
+                                <svg class="arrow-down">
+                                    <use xlink:href="#arrow-down"/>
+                                </svg>
+                                <svg class="arrow-up">
+                                    <use xlink:href="#arrow-up"/>
+                                </svg> 
+                            </a>
+                            <ul class="sub-nav">
+                                <li class="sub-item">
+                                    <a href="">Cross Cultural Resources</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="">Translated Information</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="">Publications</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="">Research Commentary</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="">Migrant and Refugee Services</a>
+                                </li>
+                                <li class="sub-item">
+                                    <a href="">Screening Tools</a>
+                                </li>
+                                 <li class="sub-item">
+                                    <a href="">Cultural Competence Assessment Tools</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="item"><a href="#">About us</a></li>
+                        <li class="item"><a href="#">News and updates</a></li>
+                    </ul>
+                </li>
+
+                <li class="item login"><a class="btn dark" href=""><i class="material-icons">&#xe853;</i><span>Log in</span></a></li>
+                <li class="item account"><a class="btn" href=""><i class="material-icons">&#xe7fe;</i><span>Create an account</span></a></li>
+                
+                <!--[if lte IE 9]>
+                <li class="top-nav">
+                    <ul>
+                <![endif]-->
+
+                <li class="item"><a href="">FAQs</a></li>
+                <li class="item"><a href="">Course Calendar</a></li>
+                <li class="item"><a href="">Cross-Cultural Interest group</a></li>
+                <li class="item"><a href="">Locations</a></li>
+                <li class="item"><a href="">Contact us</a></li>
+
+                <!--[if lte IE 9]>
+                    </ul>
+                </li>
+                <![endif]-->
+            </ul>
+
+            <div id="search">
+                <form id="SearchForm_SearchForm" action="/home/SearchForm/" method="get" enctype="application/x-www-form-urlencoded">
+                    <input type="search" name="Search" id="SearchForm_SearchForm_Search" placeholder="Search" />
+                </form>
+                <a href=""><i class="material-icons">&#xe5cd;</i></a>
+            </div>
+
+        </nav>
+
+        <section>
+            <div class="container">
+                <div class="column">
+                    <nav class="breadcrumb " aria-label="breadcrumb">
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/courses/?stage=Stage" class="breadcrumb-1">Courses</a></li>
+                            <li><a href="/courses/cald-cultural-competency-in-a-psychiatric-context/?stage=Stage" class="breadcrumb-2">
+                                        CALD Cultural Competency in a Psychiatric Context</a></li>
+                            <li><a href="/courses/cald-cultural-competency-in-a-psychiatric-context/module-301-1-pre-requisites-for-cald-practice/?stage=Stage" class="breadcrumb-3">Module 301-1 Pre-requisites for CALD practice</a></li>
+                            <li><span aria-current="page">Pre Module 301-1 Self-assessment</span></li> 
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <h1>Pre Module 301-1 Self-assessment</h1>
+                        <div class="quiz">
+                            <p>The following are questions to assess whether you need to take up ‘Module 301-1 Pre-requisites for CALD Practice’.</p>
+                            <div class="quiz-question">
+                                <h2>How confident are you in your ability to accurately describe the difference between culture, ethnicity and race?</h2>
+                                <p class="legend low">Not at all confident</p>
+                                <div class="quiz-dropdown">
+                                    <ul class="quiz-list">
+                                        <li class="quiz-link">
+                                            <input type="radio" id="label_111" name="question_1" value="1" data-series="Cultural constructs"><label for="label_111">1</label>
+                                        </li>
+                                        <li class="quiz-link">
+                                            <input type="radio" id="label_112" name="question_1" value="2" data-series="Cultural constructs"><label for="label_112">2</label>
+                                        </li>
+                                        <li class="quiz-link">
+                                            <input type="radio" id="label_113" name="question_1" value="3" data-series="Cultural constructs"><label for="label_113">3</label>
+                                        </li>
+                                        <li class="quiz-link">
+                                            <input type="radio" id="label_114" name="question_1" value="4" data-series="Cultural constructs"><label for="label_114">4</label>
+                                        </li>
+                                        <li class="quiz-link">
+                                            <input type="radio" id="label_115" name="question_1" value="5" data-series="Cultural constructs"><label for="label_115">5</label>
+                                        </li>
+                                        <li class="quiz-link">
+                                            <input type="radio" id="label_116" name="question_1" value="6" data-series="Cultural constructs"><label for="label_116">6</label>
+                                        </li>
+                                    
+                                        <li class="quiz-link">
+                                            <input type="radio" id="label_117" name="question_1" value="7" data-series="Cultural constructs"><label for="label_117">7</label>
+                                        </li>
+                                    
+                                        <li class="quiz-link">
+                                            <input type="radio" id="label_118" name="question_1" value="8" data-series="Cultural constructs"><label for="label_118">8</label>
+                                        </li>
+                                    
+                                        <li class="quiz-link">
+                                            <input type="radio" id="label_119" name="question_1" value="9" data-series="Cultural constructs"><label for="label_119">9</label>
+                                        </li>
+                                    
+                                        <li class="quiz-link">
+                                            <input type="radio" id="label_1110" name="question_1" value="10" data-series="Cultural constructs"><label for="label_1110">10</label>
+                                        </li>
+                                    </ul>
+                                    <svg class="quiz-arrow-down">
+                                        <use xlink:href="#arrow-down"/>
+                                    </svg>
+                                    <svg class="quiz-arrow-up">
+                                        <use xlink:href="#arrow-up"/>
+                                    </svg>
+                                </div>
+                                <p class="legend high">Extremely confident</p>
+                            </div>
+                            <div class="quiz-question">
+                                <h2>How confident are you in your ability to recognise if you are being ethnocentric?</h2>
+                                <p class="legend low">Not at all confident</p>
+                                <div class="quiz-dropdown">
+                                    <ul class="quiz-list">
+                                        <li class="quiz-link">
+                                            <input type="radio" id="label_121" name="question_2" value="1" data-series="Identifying assumptions, stereotypes and ethnocentrism"><label for="label_121">1</label>
+                                        </li>
+                                        <li class="quiz-link">
+                                            <input type="radio" id="label_122" name="question_2" value="2" data-series="Identifying assumptions, stereotypes and ethnocentrism"><label for="label_122">2</label>
+                                        </li>
+                                        <li class="quiz-link">
+                                            <input type="radio" id="label_123" name="question_2" value="3" data-series="Identifying assumptions, stereotypes and ethnocentrism"><label for="label_123">3</label>
+                                        </li>
+                                        <li class="quiz-link">
+                                            <input type="radio" id="label_124" name="question_2" value="4" data-series="Identifying assumptions, stereotypes and ethnocentrism"><label for="label_124">4</label>
+                                        </li>
+                                        <li class="quiz-link">
+                                            <input type="radio" id="label_125" name="question_2" value="5" data-series="Identifying assumptions, stereotypes and ethnocentrism"><label for="label_125">5</label>
+                                        </li>
+                                        <li class="quiz-link">
+                                            <input type="radio" id="label_126" name="question_2" value="6" data-series="Identifying assumptions, stereotypes and ethnocentrism"><label for="label_126">6</label>
+                                        </li>
+                                        <li class="quiz-link">
+                                            <input type="radio" id="label_127" name="question_2" value="7" data-series="Identifying assumptions, stereotypes and ethnocentrism"><label for="label_127">7</label>
+                                        </li>
+                                        <li class="quiz-link">
+                                            <input type="radio" id="label_128" name="question_2" value="8" data-series="Identifying assumptions, stereotypes and ethnocentrism"><label for="label_128">8</label>
+                                        </li>
+                                        <li class="quiz-link">
+                                            <input type="radio" id="label_129" name="question_2" value="9" data-series="Identifying assumptions, stereotypes and ethnocentrism"><label for="label_129">9</label>
+                                        </li>
+                                        <li class="quiz-link">
+                                            <input type="radio" id="label_1210" name="question_2" value="10" data-series="Identifying assumptions, stereotypes and ethnocentrism"><label for="label_1210">10</label>
+                                        </li>
+                                    </ul>
+                                    <svg class="quiz-arrow-down">
+                                        <use xlink:href="#arrow-down"/>
+                                    </svg>
+                                    <svg class="quiz-arrow-up">
+                                        <use xlink:href="#arrow-up"/>
+                                    </svg>
+                                </div>
+                                <p class="legend high">Extremely confident</p>
+                            </div>
+                            <button class="btn dark submit">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+          <div class="footer">
+            <div>
+              <ul>
+                <li><strong>Training venues</strong></li>
+                <li><a href="#">North Shore Hospital</a></li>
+                <li><a href="#">Waitakere Hospital</a></li>
+                <li><a href="#">Auckland City Hospital</a></li>
+                <li><a href="#">Greenlane Clinical Centre</a></li>
+                <li><a href="#">Middlemore Hospital</a></li>
+              </ul>
+            </div>
+            <div>
+              <ul class="pb-1">
+                <li><strong>CALD® newsletters</strong></li>
+                <li><a href="#">View newsletters</a></li>
+                <li><a href="#">Newsletter subscription</a></li>
+              </ul>
+              <ul>
+                <li><strong>About us</strong></li>
+                <li><a href="#">About eCALD</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li><strong>Contact</strong></li>
+                <li>Phone: DDI 09 440 6926</li>
+                <li>Email: cald@waitematadhb.govt.nz</li>
+                <li>Contact hours: Mon - Fri, 10am - 4pm</li>
+                <li>Excluding public holidays and weekends</li>
+                <li><a class="btn outline white" href="">Send a message</a></li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li><i class="material-icons large">&#xe85d;</i></li>
+                <li><strong>Stay up to date with the latest from the eCALD</strong></li>
+                <li><a class="btn" href="">Subscribe for newsletter</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="copyright">
+            <ul>
+              <li class="logo"><a href=""><img src="../assets/logo-white.svg" alt="logo"></a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li>Copyright © Waitemata DHB 2020</li>
+            </ul>
+          </div>
+        </footer>
+
+        <script src="../javascript/lib/jquery-3.2.1.min.js"></script>
+        <script src="../javascript/lib/gsap.min.js"></script>
+        <script src="../javascript/lib/ScrollMagic.min.js"></script>
+        <script src="../javascript/lib/animation.gsap.min.js"></script>
+        <script src="../javascript/plugins/multiple-select.min.js"></script>
+        <script src="../javascript/plugins/jquery.datetimepicker.full.min.js"></script>
+        <script src="../javascript/components/navigation.js"></script>
+        <script src="../javascript/components/banner.js"></script>
+        <script src="../javascript/components/expand.js"></script>
+        <script src="../javascript/components/search.js"></script>
+
+        <script>
+            // Mobile - Dropdown
+            let dropdowns = document.querySelectorAll(".quiz-dropdown");
+
+            if (dropdowns != null) {
+                for (let j=0; j<dropdowns.length; j++) {
+                    dropdowns[j].style.zIndex = 1000-j;
+                    createDropdown(dropdowns[j]);
+                }
+            }
+
+            function createDropdown(dropdownElement) {
+                let dropdown = dropdownElement;
+                let arrows = dropdown.querySelectorAll(".quiz-question svg");
+                let links = dropdown.getElementsByClassName("quiz-link");
+
+                for (let i=0; i<links.length; i++) {
+                    links[i].dataset.pos = i;
+
+                    links[i].childNodes[2].addEventListener("click", function() {
+                        for (let t of links) {
+                            t.classList.remove("active");
+                        }
+
+                        links[this.parentNode.dataset.pos].classList.add("active");
+                        dropdown.classList.toggle("active");
+                    });
+                }
+
+                for (let i=0; i<arrows.length; i++) {
+                    arrows[i].addEventListener("click", function() {
+                        dropdown.classList.toggle("active");
+                    });
+                }
+
+                links[0].classList.add("active");
+            }
+
+            // Quiz outcome
+
+            var outcome = '';
+            function processQuiz(val, seriesResults) {
+                outcome += '<h2>Thanks for completing the quiz!</h2>';
+                outcome += '<p class="lead">Your total score is <strong>' + val + ' out of 70</strong>.</p>';
+          
+                if(val >= 49) {
+                    outcome += '<p>Based on this score, you are not required to take up this module unless you wish to do a refresher.</p>';
+                } 
+                else {
+                    outcome += '<p>Based on this score, there are areas you may need to gain more knowledge. We encourage you to take up Module 301-1 and focus on the areas where you are less confident.</p>';
+                    outcome += '<p><a class="btn dark" href="http://dev.ecald.lms-wip/?ref=enrol&ID=1553" target="_blank">Enrol now</a></p>';
+                    outcome += '<hr />';
+                }
+          
+                outcome += '<p>See a break down of your results below:</p>';
+          
+                // First check if each confidence level exists, then loop through it
+                if(confidenceLevel(seriesResults, 7).length > 0) {
+                    outcome += '<h3>High confidence topics</h3>';
+                    outcome += '<ul>';
+                    confidenceLevel(seriesResults, 7).forEach(function (item) {
+                        outcome += '<li>' + item + '</li>';
+                    });
+                    outcome += '</ul>';
+                }
+          
+                if(confidenceLevel(seriesResults, 4, 7).length > 0) {
+                    outcome += '<h3>Average confidence topics</h3>';
+                    outcome += '<ul>';
+                    confidenceLevel(seriesResults, 4, 7).forEach(function (item) {
+                        outcome += '<li>' + item + '</li>';
+                    });
+                    outcome += '</ul>';
+                }
+          
+                if(confidenceLevel(seriesResults, 0, 4).length > 0) {
+                    outcome += '<h3>Low confidence topics</h3>';
+                    outcome += '<ul>';
+                    confidenceLevel(seriesResults, 0, 4).forEach(function (item) {
+                        outcome += '<li>' + item + '</li>';
+                    });
+                    outcome += '</ul>';
+                }
+            }
+
+            function confidenceLevel(seriesResults, lowVal, highVal = false) {
+                var result = [];
+                for (let value in seriesResults) {
+            
+                    // IMPORTANT: Get the average from the object and convert it to a number for comparison
+                    var average = parseFloat(seriesResults[value]);
+            
+                    // If 2 values are set then it should be greater than or equal to the low value and less than the high value
+                    if(highVal){
+                        if(average >= lowVal && average < highVal) {
+                            result.push(value);
+                        }
+                    }
+            
+                    // If only one value is set, then check that it is greater than or equal to that value
+                    else {
+                        if(average >= lowVal) {
+                            result.push(value);
+                        }
+                    }
+                }
+                return result;
+            }
+        </script>
+
+        <script src="../javascript/components/quiz.js"></script>
+
+        <!--[if lte IE 9]>
+            <script src="../javascript/targeted/ie9.js"></script>
+        <![endif]-->
+
+    </body>
+</html>

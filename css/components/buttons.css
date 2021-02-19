@@ -221,6 +221,12 @@
     font-weight: normal;
 }
 
+.btn-wrapper i.btn {
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+}
+
 .btn-wrapper i.btn.arrow {
 	-webkit-transition: border-color .4s;
 	-o-transition: border-color .4s;
@@ -229,6 +235,10 @@
 
 .btn-wrapper a:hover .btn.arrow {
     border-color: #334154;
+}
+
+.btn-wrapper a:hover {
+    text-decoration: none!important;
 }
 
 input[type='submit'] {
