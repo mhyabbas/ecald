@@ -25,16 +25,18 @@
 
 	.quiz .quiz-question .legend {
 		position: absolute;
-		bottom: 30px;
+		bottom: 10px;
 		left: 30px;
 		font-size: 12px;
 		margin: 0px;
 		font-weight: 600;
+		width: 100px;
 	}
 
 		.quiz .quiz-question .legend.high {
 			left: auto;
 			right: 30px;
+			text-align: right;
 		}
 
 	.quiz p.error {
@@ -110,6 +112,13 @@
 				color: white;
 				background: #8F5EA7;
 			}
+
+@media all and (min-width: 400px) {
+	.quiz .quiz-question .legend {
+		bottom: 30px;
+		width: auto;
+	}
+}
 
 @media all and (min-width: 600px) {
 		.quiz .quiz-question ul li {
